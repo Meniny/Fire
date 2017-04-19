@@ -22,8 +22,6 @@ Pod::Spec.new do |s|
                         DESC
 
   s.homepage         = "https://github.com/Meniny/Fire-in-Swift"
-
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Meniny" => "Meniny@qq.com" }
   s.source           = { :git => "https://github.com/Meniny/Fire-in-Swift.git", :tag => s.version.to_s }

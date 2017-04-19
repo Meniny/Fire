@@ -32,7 +32,7 @@ public typealias FireJOSNResponseCallback = ((_ json: FireJSON, _ response: HTTP
 public typealias FireDataResponseCallback = ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)
 public typealias FireStringResponseCallback = ((_ string: String?, _ response: HTTPURLResponse?) -> Void)
 
-public typealias FireErrorCallback = ((_ error: NSError) -> Void)
+public typealias FireErrorCallback = ((_ error: Error) -> Void)
 
 open class Fire {
     
@@ -281,27 +281,39 @@ extension Fire {
     
     // MARK: - Callback
     
-    open static func request(HTTPMethod method: HTTPMethod, url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, JSONCallback callback: FireJOSNResponseCallback?, onNetworkError errorCallback: FireErrorCallback? = FireEmptyErrorCallback) {
-        Fire.build(HTTPMethod: method, url: url, params: params, timeout: timeout).onNetworkError(errorCallback == nil ? FireEmptyErrorCallback : errorCallback!).responseJSON(callback)
+    open static func request(HTTPMethod method: HTTPMethod, url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: method, url: url, params: params, timeout: timeout)
+            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
+            .responseJSON(callback)
     }
     
-    open static func requestAPI(_ api: FireAPI, params: [String: Any], timeout: Double = FireManager.oneMinute, JSONCallback callback: FireJOSNResponseCallback?, onNetworkError errorCallback: FireErrorCallback? = FireEmptyErrorCallback) {
-        Fire.build(HTTPMethod: api.method, url: api.stringValue, params: params, timeout: timeout).onNetworkError(errorCallback == nil ? FireEmptyErrorCallback : errorCallback!).responseJSON(callback)
+    open static func requestAPI(_ api: FireAPI, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: api.method, url: api.stringValue, params: params, timeout: timeout)
+            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
+            .responseJSON(callback)
     }
     
-    open static func get(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError errorCallback: FireErrorCallback?) {
-        Fire.build(HTTPMethod: .GET, url: url, params: params, timeout: timeout).onNetworkError(errorCallback == nil ? FireEmptyErrorCallback : errorCallback!).responseJSON(callback)
+    open static func get(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .GET, url: url, params: params, timeout: timeout)
+            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
+            .responseJSON(callback)
     }
     
-    open static func post(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError errorCallback: FireErrorCallback? = FireEmptyErrorCallback) {
-        Fire.build(HTTPMethod: .POST, url: url, params: params, timeout: timeout).onNetworkError(errorCallback == nil ? FireEmptyErrorCallback : errorCallback!).responseJSON(callback)
+    open static func post(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .POST, url: url, params: params, timeout: timeout)
+            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
+            .responseJSON(callback)
     }
     
-    open static func put(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError errorCallback: FireErrorCallback? = FireEmptyErrorCallback) {
-        Fire.build(HTTPMethod: .PUT, url: url, params: params, timeout: timeout).onNetworkError(errorCallback == nil ? FireEmptyErrorCallback : errorCallback!).responseJSON(callback)
+    open static func put(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .PUT, url: url, params: params, timeout: timeout)
+            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
+            .responseJSON(callback)
     }
     
-    open static func delete(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError errorCallback: FireErrorCallback? = FireEmptyErrorCallback) {
-        Fire.build(HTTPMethod: .DELETE, url: url, params: params, timeout: timeout).onNetworkError(errorCallback == nil ? FireEmptyErrorCallback : errorCallback!).responseJSON(callback)
+    open static func delete(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .DELETE, url: url, params: params, timeout: timeout)
+            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
+            .responseJSON(callback)
     }
 }

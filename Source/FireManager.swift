@@ -63,7 +63,7 @@ class FireManager: NSObject, URLSessionDelegate {
     var files: [UploadFile]?
     var cancelCallback: (() -> Void)?
     var errorCallback: ((_ error: NSError) -> Void)?
-    var callback: ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)?
+    var callback: FireDataResponseCallback?
     
     var session: URLSession!
     let url: String!
@@ -107,30 +107,38 @@ class FireManager: NSObject, URLSessionDelegate {
         sessionConfiguration.timeoutIntervalForRequest = (timeout <= 0 ? FireManager.oneMinute : timeout)
         self.session = Foundation.URLSession(configuration: sessionConfiguration, delegate: self, delegateQueue: Foundation.URLSession.shared.delegateQueue)
     }
+    
     func addSSLPinning(LocalCertData dataArray: [Data], SSLValidateErrorCallBack: (()->Void)? = nil) {
         self.localCertDataArray = dataArray
         self.sSLValidateErrorCallBack = SSLValidateErrorCallBack
     }
+    
     func addParams(_ params: [String: Any]?) {
         self.params = params
     }
+    
     func addFiles(_ files: [UploadFile]?) {
         self.files = files
     }
-    func addErrorCallback(_ errorCallback: ((_ error: NSError) -> Void)?) {
+    
+    func addErrorCallback(_ errorCallback: FireErrorCallback?) {
         self.errorCallback = errorCallback
     }
+    
     func setHTTPHeader(Name key: String, Value value: String) {
         self.extraHTTPHeaders.append((key, value))
     }
+    
     func sethttpBodyRaw(_ rawString: String, isJSON: Bool = false) {
         self.HTTPBodyRaw = rawString
         self.HTTPBodyRawIsJSON = isJSON
     }
+    
     func setBasicAuth(_ auth: (String, String)) {
         self.basicAuth = auth
     }
-    func fire(_ callback: ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)? = nil) {
+    
+    func fire(_ callback: FireDataResponseCallback? = nil) {
         self.callback = callback
         
         self.buildRequest()
@@ -138,6 +146,7 @@ class FireManager: NSObject, URLSessionDelegate {
         self.buildBody()
         self.fireTask()
     }
+    
     fileprivate func buildRequest() {
         if self.method == "GET" && self.params?.count > 0 {
             self.request = URLRequest(url: URL(string: url + "?" + FireHelper.buildParams(self.params!))!)
@@ -145,6 +154,7 @@ class FireManager: NSObject, URLSessionDelegate {
         self.request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
         self.request.httpMethod = self.method
     }
+    
     fileprivate func buildHeader() {
         // multipart Content-Type; see http://www.rfc-editor.org/rfc/rfc2046.txt
         if self.params?.count > 0 {
@@ -165,13 +175,14 @@ class FireManager: NSObject, URLSessionDelegate {
             self.request.setValue(i.1, forHTTPHeaderField: i.0)
         }
     }
+    
     fileprivate func buildBody() {
         let data = NSMutableData()
         if self.HTTPBodyRaw != "" {
             data.append(self.HTTPBodyRaw.nsdata as Data)
         } else if self.files?.count > 0 {
             if self.method == "GET" {
-                print("\n\n------------------------\nThe remote server may not accept GET method with HTTP body. But Fire will send it anyway.\nBut it looks like iOS 9 SDK has prevented sending http body in GET method.\n------------------------\n\n")
+                print("\n\n------------------------\nThe remote server may not accept GET method with HTTP body. But Fire will send it anyway.\nIt looks like iOS 9 SDK has prevented sending http body in GET method.\n------------------------\n\n")
             } else {
                 if let ps = self.params {
                     for (key, value) in ps {
@@ -202,6 +213,7 @@ class FireManager: NSObject, URLSessionDelegate {
         }
         self.request.httpBody = data as Data
     }
+    
     fileprivate func fireTask() {
         if Fire.DEBUG { if let a = self.request.allHTTPHeaderFields { print("Fire Request HEADERS: ", a.description); }; }
         self.task = self.session.dataTask(with: self.request) { [weak self] (data, response, error) -> Void in

@@ -11,7 +11,6 @@
 		5C2D1C4D1EA777A00096A4AD /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1C401EA777A00096A4AD /* FireHelper.swift */; };
 		5C2D1C4E1EA777A00096A4AD /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1C411EA777A00096A4AD /* Fire.swift */; };
 		5C2D1C4F1EA777A00096A4AD /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1C421EA777A00096A4AD /* FireManager.swift */; };
-		5C2D1C521EA777A00096A4AD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1C451EA777A00096A4AD /* HTTPMethod.swift */; };
 		5C2D1C531EA777A00096A4AD /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1C461EA777A00096A4AD /* String+Fire.swift */; };
 		5C2D1C931EA77E910096A4AD /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C2D1C9D1EA77F7A0096A4AD /* Fire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463712051B04C2050019E1AB /* Fire.framework */; };
@@ -27,6 +26,7 @@
 		5C2D1CB91EA77FB90096A4AD /* SetTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAD1EA77FB90096A4AD /* SetTimeout.swift */; };
 		5C2D1CBA1EA77FB90096A4AD /* WithOtherTypeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAE1EA77FB90096A4AD /* WithOtherTypeParams.swift */; };
 		5C2D1CBB1EA77FB90096A4AD /* WithStringParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAF1EA77FB90096A4AD /* WithStringParams.swift */; };
+		5C5D4C0C1EA7A44B005E5691 /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C0B1EA7A44B005E5691 /* FireValues.swift */; };
 		5CD2DAE21EA785C6008B3C8A /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2DADE1EA785C6008B3C8A /* FireJSON+ArrayLiteralConvertible.swift */; };
 		5CD2DAE31EA785C6008B3C8A /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2DADF1EA785C6008B3C8A /* FireJSON+DictionaryLiteralConvertible.swift */; };
 		5CD2DAE41EA785C6008B3C8A /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2DAE01EA785C6008B3C8A /* FireJSON.swift */; };
@@ -51,7 +51,6 @@
 		5C2D1C401EA777A00096A4AD /* FireHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FireHelper.swift; path = Source/FireHelper.swift; sourceTree = SOURCE_ROOT; };
 		5C2D1C411EA777A00096A4AD /* Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fire.swift; path = Source/Fire.swift; sourceTree = SOURCE_ROOT; };
 		5C2D1C421EA777A00096A4AD /* FireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FireManager.swift; path = Source/FireManager.swift; sourceTree = SOURCE_ROOT; };
-		5C2D1C451EA777A00096A4AD /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = SOURCE_ROOT; };
 		5C2D1C461EA777A00096A4AD /* String+Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Fire.swift"; path = "Source/String+Fire.swift"; sourceTree = SOURCE_ROOT; };
 		5C2D1C551EA777AE0096A4AD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Fire/Info.plist; sourceTree = SOURCE_ROOT; };
 		5C2D1C8B1EA77DF20096A4AD /* Fire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fire.h; path = Fire/Fire.h; sourceTree = SOURCE_ROOT; };
@@ -69,6 +68,7 @@
 		5C2D1CAD1EA77FB90096A4AD /* SetTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeout.swift; sourceTree = "<group>"; };
 		5C2D1CAE1EA77FB90096A4AD /* WithOtherTypeParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithOtherTypeParams.swift; sourceTree = "<group>"; };
 		5C2D1CAF1EA77FB90096A4AD /* WithStringParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithStringParams.swift; sourceTree = "<group>"; };
+		5C5D4C0B1EA7A44B005E5691 /* FireValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FireValues.swift; path = Source/FireValues.swift; sourceTree = SOURCE_ROOT; };
 		5CD2DADE1EA785C6008B3C8A /* FireJSON+ArrayLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FireJSON+ArrayLiteralConvertible.swift"; sourceTree = "<group>"; };
 		5CD2DADF1EA785C6008B3C8A /* FireJSON+DictionaryLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FireJSON+DictionaryLiteralConvertible.swift"; sourceTree = "<group>"; };
 		5CD2DAE01EA785C6008B3C8A /* FireJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireJSON.swift; sourceTree = "<group>"; };
@@ -122,9 +122,9 @@
 				5C2D1C401EA777A00096A4AD /* FireHelper.swift */,
 				5C2D1C411EA777A00096A4AD /* Fire.swift */,
 				5CD2DB261EA7956F008B3C8A /* FireAPI.swift */,
+				5C5D4C0B1EA7A44B005E5691 /* FireValues.swift */,
 				5C2D1C421EA777A00096A4AD /* FireManager.swift */,
 				5CD2DB241EA78F85008B3C8A /* FileManager-SessionDelegate.swift */,
-				5C2D1C451EA777A00096A4AD /* HTTPMethod.swift */,
 				5C2D1C461EA777A00096A4AD /* String+Fire.swift */,
 				5CD2DADD1EA785C6008B3C8A /* FireJSON */,
 				5C2D1C551EA777AE0096A4AD /* Info.plist */,
@@ -284,13 +284,13 @@
 				5CD2DAE41EA785C6008B3C8A /* FireJSON.swift in Sources */,
 				5CD2DAE21EA785C6008B3C8A /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
 				5C2D1C4D1EA777A00096A4AD /* FireHelper.swift in Sources */,
-				5C2D1C521EA777A00096A4AD /* HTTPMethod.swift in Sources */,
 				5CD2DB251EA78F85008B3C8A /* FileManager-SessionDelegate.swift in Sources */,
 				5CD2DAE31EA785C6008B3C8A /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
 				5C2D1C4E1EA777A00096A4AD /* Fire.swift in Sources */,
 				5C2D1C4F1EA777A00096A4AD /* FireManager.swift in Sources */,
 				5C2D1C4C1EA777A00096A4AD /* UploadFile.swift in Sources */,
 				5CD2DAE51EA785C6008B3C8A /* FireJSONModel.swift in Sources */,
+				5C5D4C0C1EA7A44B005E5691 /* FireValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,9 +12,11 @@ open class FireAPI: CustomStringConvertible {
     open static var baseURL: String?
     open var fullURL: String?
     open var method: HTTPMethod = .GET
+    open var successCode: FireResponseStatus = .success
     
-    public init(appending url: String, HTTPMethod method: HTTPMethod = .GET) {
+    public init(appending url: String, HTTPMethod method: HTTPMethod = .GET, successCode: FireResponseStatus = .success) {
         self.method = method
+        self.successCode = successCode
         if FireAPI.baseURL == nil {
             self.fullURL = url
         } else {

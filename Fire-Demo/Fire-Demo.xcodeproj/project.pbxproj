@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C5D4C1B1EA7A792005E5691 /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C0E1EA7A792005E5691 /* FileManager-SessionDelegate.swift */; };
+		5C5D4C1C1EA7A792005E5691 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C0F1EA7A792005E5691 /* Fire.swift */; };
+		5C5D4C1D1EA7A792005E5691 /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C101EA7A792005E5691 /* FireAPI.swift */; };
+		5C5D4C1E1EA7A792005E5691 /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C111EA7A792005E5691 /* FireHelper.swift */; };
+		5C5D4C1F1EA7A792005E5691 /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C131EA7A792005E5691 /* FireJSON+ArrayLiteralConvertible.swift */; };
+		5C5D4C201EA7A792005E5691 /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C141EA7A792005E5691 /* FireJSON+DictionaryLiteralConvertible.swift */; };
+		5C5D4C211EA7A792005E5691 /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C151EA7A792005E5691 /* FireJSON.swift */; };
+		5C5D4C221EA7A792005E5691 /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C161EA7A792005E5691 /* FireJSONModel.swift */; };
+		5C5D4C231EA7A792005E5691 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C171EA7A792005E5691 /* FireManager.swift */; };
+		5C5D4C241EA7A792005E5691 /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C181EA7A792005E5691 /* FireValues.swift */; };
+		5C5D4C251EA7A792005E5691 /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C191EA7A792005E5691 /* String+Fire.swift */; };
+		5C5D4C261EA7A792005E5691 /* UploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D4C1A1EA7A792005E5691 /* UploadFile.swift */; };
 		5CD2DAF61EA78EC3008B3C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2DAF51EA78EC3008B3C8A /* AppDelegate.swift */; };
 		5CD2DAF81EA78EC3008B3C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2DAF71EA78EC3008B3C8A /* ViewController.swift */; };
 		5CD2DAFB1EA78EC3008B3C8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD2DAF91EA78EC3008B3C8A /* Main.storyboard */; };
@@ -14,24 +26,19 @@
 		5CD2DB001EA78EC3008B3C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD2DAFE1EA78EC3008B3C8A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5CD2DB201EA78F2A008B3C8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5CD2DB1B1EA78F2A008B3C8A /* Fire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 463712051B04C2050019E1AB;
-			remoteInfo = Fire;
-		};
-		5CD2DB221EA78F2A008B3C8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5CD2DB1B1EA78F2A008B3C8A /* Fire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5C2D1C981EA77F7A0096A4AD;
-			remoteInfo = FireTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		5C5D4C0E1EA7A792005E5691 /* FileManager-SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-SessionDelegate.swift"; sourceTree = "<group>"; };
+		5C5D4C0F1EA7A792005E5691 /* Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
+		5C5D4C101EA7A792005E5691 /* FireAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireAPI.swift; sourceTree = "<group>"; };
+		5C5D4C111EA7A792005E5691 /* FireHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireHelper.swift; sourceTree = "<group>"; };
+		5C5D4C131EA7A792005E5691 /* FireJSON+ArrayLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FireJSON+ArrayLiteralConvertible.swift"; sourceTree = "<group>"; };
+		5C5D4C141EA7A792005E5691 /* FireJSON+DictionaryLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FireJSON+DictionaryLiteralConvertible.swift"; sourceTree = "<group>"; };
+		5C5D4C151EA7A792005E5691 /* FireJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireJSON.swift; sourceTree = "<group>"; };
+		5C5D4C161EA7A792005E5691 /* FireJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireJSONModel.swift; sourceTree = "<group>"; };
+		5C5D4C171EA7A792005E5691 /* FireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireManager.swift; sourceTree = "<group>"; };
+		5C5D4C181EA7A792005E5691 /* FireValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireValues.swift; sourceTree = "<group>"; };
+		5C5D4C191EA7A792005E5691 /* String+Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Fire.swift"; sourceTree = "<group>"; };
+		5C5D4C1A1EA7A792005E5691 /* UploadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFile.swift; sourceTree = "<group>"; };
 		5CD2DAF21EA78EC3008B3C8A /* Fire-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fire-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD2DAF51EA78EC3008B3C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CD2DAF71EA78EC3008B3C8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +46,6 @@
 		5CD2DAFC1EA78EC3008B3C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CD2DAFF1EA78EC3008B3C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CD2DB011EA78EC3008B3C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5CD2DB1B1EA78F2A008B3C8A /* Fire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fire.xcodeproj; path = ../../Fire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C5D4C0D1EA7A792005E5691 /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D4C0E1EA7A792005E5691 /* FileManager-SessionDelegate.swift */,
+				5C5D4C0F1EA7A792005E5691 /* Fire.swift */,
+				5C5D4C101EA7A792005E5691 /* FireAPI.swift */,
+				5C5D4C111EA7A792005E5691 /* FireHelper.swift */,
+				5C5D4C121EA7A792005E5691 /* FireJSON */,
+				5C5D4C171EA7A792005E5691 /* FireManager.swift */,
+				5C5D4C181EA7A792005E5691 /* FireValues.swift */,
+				5C5D4C191EA7A792005E5691 /* String+Fire.swift */,
+				5C5D4C1A1EA7A792005E5691 /* UploadFile.swift */,
+			);
+			name = Fire;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		5C5D4C121EA7A792005E5691 /* FireJSON */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D4C131EA7A792005E5691 /* FireJSON+ArrayLiteralConvertible.swift */,
+				5C5D4C141EA7A792005E5691 /* FireJSON+DictionaryLiteralConvertible.swift */,
+				5C5D4C151EA7A792005E5691 /* FireJSON.swift */,
+				5C5D4C161EA7A792005E5691 /* FireJSONModel.swift */,
+			);
+			path = FireJSON;
+			sourceTree = "<group>";
+		};
 		5CD2DAE91EA78EC3008B3C8A = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +106,7 @@
 		5CD2DAF41EA78EC3008B3C8A /* Fire-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				5CD2DB1B1EA78F2A008B3C8A /* Fire.xcodeproj */,
+				5C5D4C0D1EA7A792005E5691 /* Fire */,
 				5CD2DAF51EA78EC3008B3C8A /* AppDelegate.swift */,
 				5CD2DAF71EA78EC3008B3C8A /* ViewController.swift */,
 				5CD2DAF91EA78EC3008B3C8A /* Main.storyboard */,
@@ -81,15 +115,6 @@
 				5CD2DB011EA78EC3008B3C8A /* Info.plist */,
 			);
 			path = "Fire-Demo";
-			sourceTree = "<group>";
-		};
-		5CD2DB1C1EA78F2A008B3C8A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5CD2DB211EA78F2A008B3C8A /* Fire.framework */,
-				5CD2DB231EA78F2A008B3C8A /* FireTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,35 +165,12 @@
 			mainGroup = 5CD2DAE91EA78EC3008B3C8A;
 			productRefGroup = 5CD2DAF31EA78EC3008B3C8A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 5CD2DB1C1EA78F2A008B3C8A /* Products */;
-					ProjectRef = 5CD2DB1B1EA78F2A008B3C8A /* Fire.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				5CD2DAF11EA78EC3008B3C8A /* Fire-Demo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		5CD2DB211EA78F2A008B3C8A /* Fire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Fire.framework;
-			remoteRef = 5CD2DB201EA78F2A008B3C8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5CD2DB231EA78F2A008B3C8A /* FireTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = FireTests.xctest;
-			remoteRef = 5CD2DB221EA78F2A008B3C8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5CD2DAF01EA78EC3008B3C8A /* Resources */ = {
@@ -189,7 +191,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CD2DAF81EA78EC3008B3C8A /* ViewController.swift in Sources */,
+				5C5D4C201EA7A792005E5691 /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
+				5C5D4C1E1EA7A792005E5691 /* FireHelper.swift in Sources */,
+				5C5D4C251EA7A792005E5691 /* String+Fire.swift in Sources */,
+				5C5D4C261EA7A792005E5691 /* UploadFile.swift in Sources */,
+				5C5D4C221EA7A792005E5691 /* FireJSONModel.swift in Sources */,
 				5CD2DAF61EA78EC3008B3C8A /* AppDelegate.swift in Sources */,
+				5C5D4C241EA7A792005E5691 /* FireValues.swift in Sources */,
+				5C5D4C231EA7A792005E5691 /* FireManager.swift in Sources */,
+				5C5D4C1F1EA7A792005E5691 /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
+				5C5D4C1B1EA7A792005E5691 /* FileManager-SessionDelegate.swift in Sources */,
+				5C5D4C1D1EA7A792005E5691 /* FireAPI.swift in Sources */,
+				5C5D4C211EA7A792005E5691 /* FireJSON.swift in Sources */,
+				5C5D4C1C1EA7A792005E5691 /* Fire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

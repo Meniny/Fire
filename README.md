@@ -72,9 +72,13 @@ class ViewController: UIViewController {
 
     func fireAPI() {
         FireAPI.baseURL = BASEURL
-        let api = FireAPI(appending: "get.php", HTTPMethod: .GET)
-        Fire.requestAPI(api, params: ["l": "zh"]) { (json, resp) in
-            print(json.RAWValue)
+        let api = FireAPI(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+        Fire.requestAPI(api, params: [:], timeout: 0, callback: { (json, resp) in
+            if resp != nil && resp?.statusCode == api.successCode.rawValue {
+                print(json.RAWValue)
+            }
+        }) { (error) in
+            print(error.localizedDescription)
         }
     }
 

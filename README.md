@@ -2,14 +2,14 @@
 ## Requirements
 
 * iOS 7.0+
-* Xcode 8 (Swift 3) (v2.x) in current swift3 branch.
+* Xcode 8 with Swift 3 [v2.x]
 
 ## Installation
 
-### CocoaPods
+#### CocoaPods
 
 ```ruby
-pod Fire
+pod 'Fire'
 ```
 
 ## Basic Usage Sample

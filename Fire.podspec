@@ -18,23 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                        Pitaya is a Swift HTTP / HTTPS networking framework.
+                        Fire is a Swift HTTP / HTTPS networking framework.
                         DESC
 
-  s.homepage         = "https://github.com/Meniny/Fire"
+  s.homepage         = "https://github.com/Meniny/Fire-in-Swift"
 
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Meniny" => "Meniny@qq.com" }
-  s.source           = { :git => "https://github.com/Meniny/Fire.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Meniny/Fire-in-Swift.git", :tag => s.version.to_s }
   s.social_media_url = 'http://meniny.cn'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Fire/**/*','Source/**/*'
-
   s.public_header_files = 'Fire/*.h'
-  #s.frameworks = 'UIKit', 'AVFoundation'
-  #s.dependency 'SnapKit'
-  # s.dependency 'NVActivityIndicatorView', '~> 2.6'
+  s.frameworks = 'UIKit', 'AVFoundation'
 end

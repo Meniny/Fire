@@ -82,6 +82,13 @@ class ViewController: UIViewController {
         Fire.requestAPI(api, params: [:], timeout: 0, callback: { (json, resp) in
             if resp != nil && resp?.statusCode == api.successCode.rawValue {
                 print(json.RAWValue)
+                _ = json["name"].stringValue
+                _ = json["gender"].stringValue
+                _ = json["married"].boolValue
+                let photos = json["album"]
+                for img in photos {
+                    print(img["url"].stringValue)
+                }
             }
         }) { (error) in
             print(error.localizedDescription)

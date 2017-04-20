@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 Meniny. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Fire.
 FOUNDATION_EXPORT double FireVersionNumber;

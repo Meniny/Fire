@@ -1,8 +1,14 @@
 
+<center>
+<img src="https://ooo.0o0.ooo/2017/04/20/58f8c55fe196b.png" alt="Fire">
+</center>
+
+
 ## Requirements
 
-* iOS 7.0+
-* Xcode 8 with Swift 3 [v2.x]
+* iOS 8.0+
+* macOS 10.10+ (v1.1.2+)
+* Xcode 8 with Swift 3
 
 ## Installation
 

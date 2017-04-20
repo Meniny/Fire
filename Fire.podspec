@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Fire"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "A Swift HTTP / HTTPS networking framework"
 
 # This description is used to generate tags and improve search results.
@@ -28,8 +28,11 @@ Pod::Spec.new do |s|
   s.social_media_url = 'http://meniny.cn'
 
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
+  s.tvos.deployment_target = '9.0'
+  s.watchos.deployment_target = '2.0'
 
   s.source_files = 'Fire/**/*{.h}','Source/**/*'
   s.public_header_files = 'Fire/*.h'
-  s.frameworks = 'UIKit', 'AVFoundation'
+  s.frameworks = 'Foundation'
 end

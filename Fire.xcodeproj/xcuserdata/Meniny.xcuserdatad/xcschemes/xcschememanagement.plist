@@ -9,6 +9,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FireOSX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FireTV.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>FireWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +38,21 @@
 			<true/>
 		</dict>
 		<key>5C2D1C971EA77F7A0096A4AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C77E2ED1EA8AB69005668B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C77E3291EA8ABFC005668B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C77E3361EA8AC1E005668B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

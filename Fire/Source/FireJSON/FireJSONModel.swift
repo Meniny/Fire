@@ -70,15 +70,15 @@ open class FireJSONModel: NSObject {
         }
     }
     
-    open var RAW: String? {
+    open var raw: String? {
         get {
-            return self.FireJSONObject?.RAW
+            return self.FireJSONObject?.raw
         }
     }
 
-    open var RAWValue: String {
+    open var rawValue: String {
         get {
-            return self.RAW ?? ""
+            return self.raw ?? ""
         }
     }
 }

@@ -31,7 +31,7 @@ import Foundation
 public typealias FireJOSNResponseCallback = ((_ json: FireJSON, _ response: HTTPURLResponse?) -> Void)
 public typealias FireDataResponseCallback = ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)
 public typealias FireStringResponseCallback = ((_ string: String?, _ response: HTTPURLResponse?) -> Void)
-
+public typealias FireVoidCallback = (() -> Void)
 public typealias FireErrorCallback = ((_ error: Error) -> Void)
 
 open class Fire {
@@ -74,14 +74,14 @@ open class Fire {
 
 
     /**
-    add params to self (Fire object)
+    set parameters of self (Fire object)
     
-    - parameter params: what params you want to add in the request. Fire will do things right whether methed is GET or POST.
+    - parameter params: what parameters you want to add in the request. Fire will do things right whether methed is GET or POST.
     
     - returns: self (Fire object)
     */
-    open func addParams(_ params: [String: Any]) -> Fire {
-        self.fireManager.addParams(params)
+    open func setParams(_ params: [String: Any]) -> Fire {
+        self.fireManager.setParams(params)
         return self
     }
     
@@ -99,14 +99,50 @@ open class Fire {
     }
     
     /**
-    add files to self (Fire object), POST only
+     add parameters to self (Fire object), Fire will do things right whether methed is GET or POST.
+     
+     - parameter params: what parameters you want to add in the request.
+     
+     - returns: self (Fire object)
+     */
+    open func addParams(_ params: [String: Any]) -> Fire {
+        self.fireManager.addParams(params)
+        return self
+    }
     
-    - parameter params: add some files to request
+    /**
+     add a file to self (Fire object), POST only
+     
+     - parameter file: add a file to request
+     
+     - returns: self (Fire object)
+     */
+    open func addFile(_ file: UploadFile) -> Fire {
+        self.fireManager.addFile(file)
+        return self
+    }
+    
+    /**
+     add files to self (Fire object), POST only
+     
+     - parameter files: add some files to request
+     
+     - returns: self (Fire object)
+     */
+    open func addFiles(_ files: [UploadFile]) -> Fire {
+        self.fireManager.addFiles(files)
+        return self
+    }
+    
+    /**
+    set files of self (Fire object), POST only
+    
+    - parameter files: add some files to request
     
     - returns: self (Fire object)
     */
-    open func addFiles(_ files: [UploadFile]) -> Fire {
-        self.fireManager.addFiles(files)
+    open func setFiles(_ files: [UploadFile]) -> Fire {
+        self.fireManager.setFiles(files)
         return self
     }
     
@@ -118,8 +154,8 @@ open class Fire {
     
     - returns: self (Fire object)
     */
-    open func addSSLPinning(LocalCertData data: Data, SSLValidateErrorCallBack: (()->Void)? = nil) -> Fire {
-        self.fireManager.addSSLPinning(LocalCertData: [data], SSLValidateErrorCallBack: SSLValidateErrorCallBack)
+    open func setSSLPinning(localCertData data: Data, SSLValidateErrorCallBack: (()->Void)? = nil) -> Fire {
+        self.fireManager.setSSLPinning(localCertData: [data], SSLValidateErrorCallBack: SSLValidateErrorCallBack)
         return self
     }
     
@@ -131,21 +167,55 @@ open class Fire {
      
      - returns: self (Fire object)
      */
-    open func addSSLPinning(LocalCertDataArray dataArray: [Data], SSLValidateErrorCallBack: (()->Void)? = nil) -> Fire {
-        self.fireManager.addSSLPinning(LocalCertData: dataArray, SSLValidateErrorCallBack: SSLValidateErrorCallBack)
+    open func setSSLPinning(localCertDataArray dataArray: [Data], SSLValidateErrorCallBack: (()->Void)? = nil) -> Fire {
+        self.fireManager.setSSLPinning(localCertData: dataArray, SSLValidateErrorCallBack: SSLValidateErrorCallBack)
         return self
     }
     
     /**
-    set a custom HTTP header
+    add a custom HTTP header to current hedaers
     
     - parameter key:   HTTP header key
     - parameter value: HTTP header value
     
     - returns: self (Fire object)
     */
-    open func setHTTPHeader(Name key: String, Value value: String) -> Fire {
-        self.fireManager.setHTTPHeader(Name: key, Value: value)
+    open func addHTTPHeader(name key: String, value: String) -> Fire {
+        self.fireManager.addHTTPHeader(name: key, value: value)
+        return self
+    }
+    
+    /**
+     add custom HTTP headers to current hedaers
+     
+     - parameter headers: HTTP header [key: value]
+     
+     - returns: self (Fire object)
+     */
+    open func addHTTPHeaders(_ headers: [String: String]) -> Fire {
+        self.fireManager.addHTTPHeaders(headers)
+        return self
+    }
+    
+    /**
+     set custom HTTP headers to replace current headers
+     
+     - parameter headers: HTTP header [key: value]
+     
+     - returns: self (Fire object)
+     */
+    open func setHTTPHeaders(_ headers: [String: String]) -> Fire {
+        self.fireManager.setHTTPHeaders(headers)
+        return self
+    }
+    
+    /**
+     clean all the HTTP headers
+     
+     - returns: self (Fire object)
+     */
+    open func cleanHTTPHeaders() -> Fire {
+        self.fireManager.cleanHTTPHeaders()
         return self
     }
 
@@ -183,8 +253,8 @@ open class Fire {
     
     - returns: self (Fire object)
     */
-    open func onNetworkError(_ errorCallback: @escaping FireErrorCallback) -> Fire {
-        self.fireManager.addErrorCallback(errorCallback)
+    open func onError(_ errorCallback: @escaping FireErrorCallback) -> Fire {
+        self.fireManager.onError(errorCallback)
         return self
     }
     
@@ -194,7 +264,7 @@ open class Fire {
     - parameter callback: callback Closure
     - parameter response: void
     */
-    open func responseData(_ callback: FireDataResponseCallback?) {
+    open func fireForData(_ callback: FireDataResponseCallback?) {
         self.fireManager?.fire(callback)
     }
     
@@ -204,8 +274,8 @@ open class Fire {
     - parameter callback: callback Closure
     - parameter response: void
     */
-    open func responseString(_ callback: FireStringResponseCallback?) {
-        self.responseData { (data, response) -> Void in
+    open func fireForString(_ callback: FireStringResponseCallback?) {
+        self.fireForData { (data, response) -> Void in
             var string = ""
             if let d = data,
                 let s = NSString(data: d, encoding: String.Encoding.utf8.rawValue) as String? {
@@ -221,8 +291,8 @@ open class Fire {
     - parameter callback: callback Closure
     - parameter response: void
     */
-    open func responseJSON(_ callback: FireJOSNResponseCallback?) {//((_ json: FireJSON, _ response: HTTPURLResponse?) -> Void)?) {
-        self.responseString { (string, response) in
+    open func fireForJSON(_ callback: FireJOSNResponseCallback?) {
+        self.fireForString { (string, response) in
             var json = FireJSON()
             if let s = string {
                 json = FireJSON(string: s)
@@ -232,21 +302,30 @@ open class Fire {
     }
     
     /**
+     async response the http body in JSON type use FireJSON
+     
+     - parameter callback: callback Closure
+     - parameter response: void
+     */
+    open func fire(_ callback: FireJOSNResponseCallback?) {
+        self.fireForJSON(callback)
+    }
+    
+    /**
     cancel the request.
      
      - parameter callback: callback Closure
      */
-    open func cancel(_ callback: (() -> Void)?) {
+    open func cancel(_ callback: FireVoidCallback?) {
         self.fireManager.cancelCallback = callback
         self.fireManager.task.cancel()
     }
 }
 
-// MARK: - Simple
+// MARK: - Simple Usage
 extension Fire {
 
     open static var FireEmptyErrorCallback: FireErrorCallback = { (error) in }
-    
     
     // MARK: Builder
     
@@ -255,65 +334,58 @@ extension Fire {
     }
     
     open static func build(HTTPMethod method: HTTPMethod, url: String, params: [String: Any], timeout: Double = FireManager.oneMinute) -> Fire {
-        return Fire.build(HTTPMethod: .GET, url: url, timeout: timeout).addParams(params)
+        return Fire.build(HTTPMethod: .GET, url: url, timeout: timeout).setParams(params)
     }
     
     open static func build(uploadFile fileURL: URL, name: String, toURL: String, params: [String: Any] = [:], timeout: Double = FireManager.oneMinute) -> Fire {
         let file = UploadFile(name: name, url: fileURL)
-        return Fire.build(HTTPMethod: .POST, url: toURL).addParams(params).addFiles([file])
+        return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles([file])
     }
     
     open static func build(uploadData data: Data, name: String, type: String, toURL: String, params: [String: Any] = [:], timeout: Double = FireManager.oneMinute) -> Fire {
         let file = UploadFile(name: name, data: data, type: type)
-        return Fire.build(HTTPMethod: .POST, url: toURL).addParams(params).addFiles([file])
+        return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles([file])
     }
     
     open static func build(uploadFiles files: [UploadFile], toURL: String, params: [String: Any] = [:], timeout: Double = FireManager.oneMinute) -> Fire {
-        return Fire.build(HTTPMethod: .POST, url: toURL).addParams(params).addFiles(files)
-    }
-    
-    open func setHTTPHeaders(_ headers: [String: String]) -> Fire {
-        for (key, value) in headers {
-            self.fireManager.setHTTPHeader(Name: key, Value: value)
-        }
-        return self
+        return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles(files)
     }
     
     // MARK: - Callback
     
-    open static func request(HTTPMethod method: HTTPMethod, url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+    open static func request(HTTPMethod method: HTTPMethod, url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: method, url: url, params: params, timeout: timeout)
-            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
-            .responseJSON(callback)
+            .onError(onError == nil ? FireEmptyErrorCallback : onError!)
+            .fire(callback)
     }
     
-    open static func requestAPI(_ api: FireAPI, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+    open static func requestAPI(_ api: FireAPI, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: api.method, url: api.stringValue, params: params, timeout: timeout)
-            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
-            .responseJSON(callback)
+            .onError(onError == nil ? FireEmptyErrorCallback : onError!)
+            .fire(callback)
     }
     
-    open static func get(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+    open static func get(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: .GET, url: url, params: params, timeout: timeout)
-            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
-            .responseJSON(callback)
+            .onError(onError == nil ? FireEmptyErrorCallback : onError!)
+            .fire(callback)
     }
     
-    open static func post(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+    open static func post(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: .POST, url: url, params: params, timeout: timeout)
-            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
-            .responseJSON(callback)
+            .onError(onError == nil ? FireEmptyErrorCallback : onError!)
+            .fire(callback)
     }
     
-    open static func put(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+    open static func put(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: .PUT, url: url, params: params, timeout: timeout)
-            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
-            .responseJSON(callback)
+            .onError(onError == nil ? FireEmptyErrorCallback : onError!)
+            .fire(callback)
     }
     
-    open static func delete(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onNetworkError: FireErrorCallback?) {
+    open static func delete(_ url: String, params: [String: Any], timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: .DELETE, url: url, params: params, timeout: timeout)
-            .onNetworkError(onNetworkError == nil ? FireEmptyErrorCallback : onNetworkError!)
-            .responseJSON(callback)
+            .onError(onError == nil ? FireEmptyErrorCallback : onError!)
+            .fire(callback)
     }
 }

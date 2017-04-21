@@ -75,7 +75,7 @@ public struct FireJSON {
         return FireJSON(JSONdata: nil)
     }
 
-    public var RAW: String? {
+    public var raw: String? {
         get {
             if let _ = self.data {
                 do {
@@ -89,9 +89,9 @@ public struct FireJSON {
         }
     }
 
-    public var RAWValue: String {
+    public var rawValue: String {
         get {
-            return self.RAW ?? ""
+            return self.raw ?? ""
         }
     }
     public var int: Int? {

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Fire"
-  s.version          = "1.1.2"
+  s.version          = "2.0.0"
   s.summary          = "A Swift HTTP / HTTPS networking framework"
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                        Fire is a Swift HTTP / HTTPS networking framework.
+                        Redesigned API.
                         DESC
 
   s.homepage         = "https://github.com/Meniny/Fire-in-Swift"
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   # s.tvos.deployment_target = '9.0'
   # s.watchos.deployment_target = '2.0'
 
-  s.source_files = 'Fire/**/*{.h}','FireOSX/**/*{.h}','Source/**/*'
-  s.public_header_files = 'Fire/*.h'
+  s.source_files = 'Fire/**/*{.h}','Fire/Source/**/*'
+  s.public_header_files = 'Fire/**/*.h'
   s.frameworks = 'Foundation'
 end

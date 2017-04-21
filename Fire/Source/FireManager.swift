@@ -28,6 +28,8 @@
 
 import Foundation
 
+// MARK: - Operators
+
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
   switch (lhs, rhs) {
   case let (l?, r?):
@@ -48,6 +50,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
   }
 }
 
+// MARK: - Class
 
 class FireManager: NSObject, URLSessionDelegate {
     static var oneMinute: Double = 60.0
@@ -59,10 +62,10 @@ class FireManager: NSObject, URLSessionDelegate {
     var HTTPBodyRawIsJSON = false
     
     let method: String!
-    var params: [String: Any]?
-    var files: [UploadFile]?
-    var cancelCallback: (() -> Void)?
-    var errorCallback: ((_ error: NSError) -> Void)?
+    var parameters: [String: Any]?
+    var uploadFiles: [UploadFile]?
+    var cancelCallback: FireVoidCallback?
+    var errorCallback: FireErrorCallback?
     var callback: FireDataResponseCallback?
     
     var session: URLSession!
@@ -71,10 +74,10 @@ class FireManager: NSObject, URLSessionDelegate {
     var task: URLSessionTask!
     var basicAuth: (String, String)!
     
-    var localCertDataArray = [Data]()
-    var sSLValidateErrorCallBack: (() -> Void)?
+    var localCertDataArray: [Data] = []
+    var sSLValidateErrorCallBack: FireVoidCallback?
     
-    var extraHTTPHeaders = [(String, String)]()
+    var extraHTTPHeaders: [(String, String)] = []
     
     // User-Agent Header; see http://tools.ietf.org/html/rfc7231#section-5.5.3
     let userAgent: String = {
@@ -108,25 +111,92 @@ class FireManager: NSObject, URLSessionDelegate {
         self.session = Foundation.URLSession(configuration: sessionConfiguration, delegate: self, delegateQueue: Foundation.URLSession.shared.delegateQueue)
     }
     
-    func addSSLPinning(LocalCertData dataArray: [Data], SSLValidateErrorCallBack: (()->Void)? = nil) {
+    func setSSLPinning(localCertData dataArray: [Data], SSLValidateErrorCallBack: FireVoidCallback? = nil) {
         self.localCertDataArray = dataArray
         self.sSLValidateErrorCallBack = SSLValidateErrorCallBack
     }
     
-    func addParams(_ params: [String: Any]?) {
-        self.params = params
+    func addParam(_ key: String, value: Any) {
+        if self.parameters == nil {
+            self.parameters = [:]
+        }
+        self.parameters![key] = value
     }
     
-    func addFiles(_ files: [UploadFile]?) {
-        self.files = files
+    func addParams(_ params: [String: Any]) {
+        if self.parameters != nil {
+            self.parameters = [:]
+        }
+        for (key, value) in params {
+            self.parameters![key] = value
+        }
     }
     
-    func addErrorCallback(_ errorCallback: FireErrorCallback?) {
+    func setParams(_ params: [String: Any]?) {
+        self.parameters = params
+    }
+    
+    func addFile(_ file: UploadFile) {
+        if self.uploadFiles == nil {
+            self.uploadFiles = []
+        }
+        self.uploadFiles!.append(file)
+    }
+    
+    func addFiles(_ files: [UploadFile]) {
+        if self.uploadFiles == nil {
+            self.uploadFiles = []
+        }
+        self.uploadFiles! += files
+    }
+    
+    func setFiles(_ files: [UploadFile]?) {
+        self.uploadFiles = files
+    }
+    
+    func onError(_ errorCallback: FireErrorCallback?) {
         self.errorCallback = errorCallback
     }
     
-    func setHTTPHeader(Name key: String, Value value: String) {
+    /**
+     add a custom HTTP header to current hedaers
+     
+     - parameter key:   HTTP header key
+     - parameter value: HTTP header value
+     
+     - returns: self (Fire object)
+     */
+    func addHTTPHeader(name key: String, value: String) {
         self.extraHTTPHeaders.append((key, value))
+    }
+    
+    /**
+     add custom HTTP headers to current hedaers
+     
+     - parameter headers: HTTP header [key: value]
+     
+     - returns: self (Fire object)
+     */
+    func addHTTPHeaders(_ headers: [String: String]) {
+        for (key, value) in headers {
+            self.extraHTTPHeaders.append((key, value))
+        }
+    }
+    
+    /**
+     set custom HTTP headers to replace current headers
+     
+     - parameter headers: HTTP header [key: value]
+     
+     - returns: self (Fire object)
+     */
+    func setHTTPHeaders(_ headers: [String: String]) {
+        self.cleanHTTPHeaders()
+        self.addHTTPHeaders(headers)
+    }
+    
+    func cleanHTTPHeaders() {
+        self.extraHTTPHeaders.removeAll()
     }
     
     func sethttpBodyRaw(_ rawString: String, isJSON: Bool = false) {
@@ -148,8 +218,8 @@ class FireManager: NSObject, URLSessionDelegate {
     }
     
     fileprivate func buildRequest() {
-        if self.method == "GET" && self.params?.count > 0 {
-            self.request = URLRequest(url: URL(string: url + "?" + FireHelper.buildParams(self.params!))!)
+        if self.method == "GET" && self.parameters?.count > 0 {
+            self.request = URLRequest(url: URL(string: url + "?" + FireHelper.buildParams(self.parameters!))!)
         }
         self.request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
         self.request.httpMethod = self.method
@@ -157,10 +227,10 @@ class FireManager: NSObject, URLSessionDelegate {
     
     fileprivate func buildHeader() {
         // multipart Content-Type; see http://www.rfc-editor.org/rfc/rfc2046.txt
-        if self.params?.count > 0 {
+        if self.parameters?.count > 0 {
             self.request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         }
-        if self.files?.count > 0 && self.method != "GET" {
+        if self.uploadFiles?.count > 0 && self.method != "GET" {
             self.request.setValue("multipart/form-data; boundary=" + self.boundary, forHTTPHeaderField: "Content-Type")
         }
         if self.HTTPBodyRaw != "" {
@@ -180,18 +250,18 @@ class FireManager: NSObject, URLSessionDelegate {
         let data = NSMutableData()
         if self.HTTPBodyRaw != "" {
             data.append(self.HTTPBodyRaw.nsdata as Data)
-        } else if self.files?.count > 0 {
+        } else if self.uploadFiles?.count > 0 {
             if self.method == "GET" {
                 print("\n\n------------------------\nThe remote server may not accept GET method with HTTP body. But Fire will send it anyway.\nIt looks like iOS 9 SDK has prevented sending http body in GET method.\n------------------------\n\n")
             } else {
-                if let ps = self.params {
+                if let ps = self.parameters {
                     for (key, value) in ps {
                         data.append("--\(self.boundary)\r\n".nsdata as Data)
                         data.append("Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n".nsdata as Data)
                         data.append("\(value)\r\n".nsdata as Data)
                     }
                 }
-                if let fs = self.files {
+                if let fs = self.uploadFiles {
                     for file in fs {
                         data.append("--\(self.boundary)\r\n".nsdata as Data)
                         data.append("Content-Disposition: form-data; name=\"\(file.name)\"; filename=\"\(file.nameWithType)\"\r\n\r\n".nsdata as Data)
@@ -208,8 +278,8 @@ class FireManager: NSObject, URLSessionDelegate {
                 }
                 data.append("--\(self.boundary)--\r\n".nsdata as Data)
             }
-        } else if self.params?.count > 0 && self.method != "GET" {
-            data.append(FireHelper.buildParams(self.params!).nsdata)
+        } else if self.parameters?.count > 0 && self.method != "GET" {
+            data.append(FireHelper.buildParams(self.parameters!).nsdata)
         }
         self.request.httpBody = data as Data
     }

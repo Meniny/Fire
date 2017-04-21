@@ -40,6 +40,14 @@ then:
 
 Copy all files in the `Fire/Source` directory into your project.
 
+## Contribution
+
+You are welcome to fork and submit pull requests.
+
+## License
+
+Fire is open-sourced software, licensed under the `MIT` license.
+
 ## Usage (v2.0.0+)
 
 To send a request with Fire, you need to do 3 steps.

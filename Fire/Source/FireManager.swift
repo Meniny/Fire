@@ -166,7 +166,7 @@ class FireManager: NSObject, URLSessionDelegate {
      
      - returns: self (Fire object)
      */
-    func addHTTPHeader(name key: String, value: String) {
+    func addHTTPHeader(_ value: String, forKey key: String) {
         self.extraHTTPHeaders.append((key, value))
     }
     

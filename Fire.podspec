@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                        Version 2.0.0: Redesigned API.
+                        Fire is a HTTP/HTTPS networking framework written in Swift for people to read, and incidentally for machines to execute :).
                         DESC
 
   s.homepage         = "https://github.com/Meniny/Fire-in-Swift"

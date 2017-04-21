@@ -176,13 +176,13 @@ open class Fire {
     /**
     add a custom HTTP header to current hedaers
     
-    - parameter key:   HTTP header key
     - parameter value: HTTP header value
+    - parameter key:   HTTP header key
     
     - returns: self (Fire object)
     */
-    open func addHTTPHeader(name key: String, value: String) -> Fire {
-        self.fireManager.addHTTPHeader(name: key, value: value)
+    open func addHTTPHeader(_ value: String, forKey key: String) -> Fire {
+        self.fireManager.addHTTPHeader(value, forKey: key)
         return self
     }
     

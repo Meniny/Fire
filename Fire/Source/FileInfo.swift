@@ -32,8 +32,8 @@ import Foundation
 *  the file struct for Fire to upload
 */
 public struct FileInfo {
-    public let name: String?
-    public let nameWithType: String?
+    public let name: String
+    public let nameWithType: String
     public let url: URL?
     public let data: Data?
     
@@ -44,7 +44,7 @@ public struct FileInfo {
         if self.url != nil {
             self.nameWithType = NSString(string: (url?.description)!).lastPathComponent
         } else {
-            self.nameWithType = nil
+            self.nameWithType = name
         }
     }
     

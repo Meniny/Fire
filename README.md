@@ -48,7 +48,7 @@ You are welcome to fork and submit pull requests.
 
 Fire is open-sourced software, licensed under the `MIT` license.
 
-## Usage (v2.1.0+)
+## Usage
 
 To send a request with Fire, you need to do 3 steps.
 
@@ -109,7 +109,7 @@ f.cancel {
 }
 ```
 
-## Samples (v2.1.0+)
+## Samples
 
 ```swift
 //

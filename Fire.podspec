@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                        Redesigned API.
+                        Version 2.0.0: Redesigned API.
                         DESC
 
   s.homepage         = "https://github.com/Meniny/Fire-in-Swift"

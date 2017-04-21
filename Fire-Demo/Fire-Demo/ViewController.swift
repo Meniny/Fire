@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Fire
+//import Fire
 
 class ViewController: UIViewController {
     
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
     func fireAPI() {
         FireAPI.baseURL = BASEURL
         let api = FireAPI(appending: "get.php", HTTPMethod: .GET, successCode: .success)
-        Fire.requestAPI(api, params: [:], timeout: 0, callback: { (json, resp) in
+        Fire.requestFor(api, params: [:], timeout: 0, callback: { (json, resp) in
             if resp != nil && resp?.statusCode == api.successCode.rawValue {
                 print(json.rawValue)
             }
@@ -88,6 +88,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }

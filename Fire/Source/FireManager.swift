@@ -190,9 +190,11 @@ class FireManager: NSObject, URLSessionDelegate {
      
      - returns: self (Fire object)
      */
-    func setHTTPHeaders(_ headers: [String: String]) {
+    func setHTTPHeaders(_ headers: [String: String]?) {
         self.cleanHTTPHeaders()
-        self.addHTTPHeaders(headers)
+        if headers != nil {
+            self.addHTTPHeaders(headers!)
+        }
     }
     
     func cleanHTTPHeaders() {

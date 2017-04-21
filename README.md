@@ -53,15 +53,16 @@ let f = Fire.build(HTTPMethod: .GET, url: "https://yourdomain.com/get?l=zh")
 Then, config the Fire object:
 
 ```swift
-Fire.setParams(["key": "value"])
-Fire.setFiles([file])
-Fire.setHTTPHeader(name: "Accept", value: "application/json")
-Fire.setBasicAuth("user", password: "pwd!@#")
-Fire.setHTTPBodyRaw(json.rawValue)
-Fire.setSSLPinning(localCertData: certData) {
+f.setParams(["key": "value"])
+f.setFiles([file])
+f.setHTTPHeader(name: "Accept", value: "application/json")
+f.setBasicAuth("user", password: "pwd!@#")
+f.setHTTPBodyRaw(json.rawValue)
+let certData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("FireDemo", ofType: "cer")!)!
+f.setSSLPinning(localCertData: certData) {
     print("Warning: Under Man-in-the-middle attack!!")
 }
-Fire.onError({ (error) -> Void in
+f.onError({ (error) -> Void in
     print("Error: Network offline!")
 })
 ```
@@ -112,7 +113,7 @@ f.cancel {
 //
 
 import UIKit
-import Fire
+//import Fire
 
 class ViewController: UIViewController {
 
@@ -180,7 +181,7 @@ class ViewController: UIViewController {
     func fireAPI() {
         FireAPI.baseURL = BASEURL
         let api = FireAPI(appending: "get.php", HTTPMethod: .GET, successCode: .success)
-        Fire.requestAPI(api, params: [:], timeout: 0, callback: { (json, resp) in
+        Fire.requestFor(api, params: [:], timeout: 0, callback: { (json, resp) in
             if resp != nil && resp?.statusCode == api.successCode.rawValue {
                 print(json.rawValue)
             }
@@ -193,6 +194,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 ```

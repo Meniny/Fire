@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-//  File.swift
+//  FileInfo.swift
 //  Fire
 //
 //  Created by Meniny on 15/10/7.
@@ -31,11 +31,22 @@ import Foundation
 /**
 *  the file struct for Fire to upload
 */
-public struct UploadFile {
-    public let name: String
-    public let nameWithType: String
+public struct FileInfo {
+    public let name: String?
+    public let nameWithType: String?
     public let url: URL?
     public let data: Data?
+    
+    public init(name: String, path: String) {
+        self.name = name
+        self.url = URL(fileURLWithPath: path)
+        self.data = nil
+        if self.url != nil {
+            self.nameWithType = NSString(string: (url?.description)!).lastPathComponent
+        } else {
+            self.nameWithType = nil
+        }
+    }
     
     public init(name: String, url: URL) {
         self.name = name

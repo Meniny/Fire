@@ -118,7 +118,7 @@ open class Fire {
      
      - returns: self (Fire object)
      */
-    open func addFile(_ file: UploadFile) -> Fire {
+    open func addFile(_ file: FileInfo) -> Fire {
         self.fireManager.addFile(file)
         return self
     }
@@ -130,7 +130,7 @@ open class Fire {
      
      - returns: self (Fire object)
      */
-    open func addFiles(_ files: [UploadFile]) -> Fire {
+    open func addFiles(_ files: [FileInfo]) -> Fire {
         self.fireManager.addFiles(files)
         return self
     }
@@ -142,7 +142,7 @@ open class Fire {
     
     - returns: self (Fire object)
     */
-    open func setFiles(_ files: [UploadFile]?) -> Fire {
+    open func setFiles(_ files: [FileInfo]?) -> Fire {
         self.fireManager.setFiles(files)
         return self
     }
@@ -335,16 +335,16 @@ extension Fire {
     }
     
     open static func build(fileURL: URL, name: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
-        let file = UploadFile(name: name, url: fileURL)
+        let file = FileInfo(name: name, url: fileURL)
         return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles([file])
     }
     
     open static func build(data: Data, name: String, type: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
-        let file = UploadFile(name: name, data: data, type: type)
+        let file = FileInfo(name: name, data: data, type: type)
         return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles([file])
     }
     
-    open static func build(files: [UploadFile], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
+    open static func build(files: [FileInfo], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
         return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles(files)
     }
     
@@ -363,7 +363,7 @@ extension Fire {
     }
     
     open static func upload(fileURL: URL, name: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        let file = UploadFile(name: name, url: fileURL)
+        let file = FileInfo(name: name, url: fileURL)
         Fire.build(HTTPMethod: .POST, url: toURL)
             .setParams(params)
             .setFiles([file])
@@ -372,7 +372,7 @@ extension Fire {
     }
     
     open static func upload(data: Data, name: String, type: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        let file = UploadFile(name: name, data: data, type: type)
+        let file = FileInfo(name: name, data: data, type: type)
         Fire.build(HTTPMethod: .POST, url: toURL)
             .setParams(params)
             .setFiles([file])
@@ -380,7 +380,7 @@ extension Fire {
             .fire(callback)
     }
     
-    open static func upload(files: [UploadFile], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+    open static func upload(files: [FileInfo], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: .POST, url: toURL)
             .setParams(params)
             .setFiles(files)

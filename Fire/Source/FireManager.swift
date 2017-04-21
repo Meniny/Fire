@@ -63,7 +63,7 @@ class FireManager: NSObject, URLSessionDelegate {
     
     let method: String!
     var parameters: [String: Any]?
-    var uploadFiles: [UploadFile]?
+    var uploadFiles: [FileInfo]?
     var cancelCallback: FireVoidCallback?
     var errorCallback: FireErrorCallback?
     var callback: FireDataResponseCallback?
@@ -136,21 +136,21 @@ class FireManager: NSObject, URLSessionDelegate {
         self.parameters = params
     }
     
-    func addFile(_ file: UploadFile) {
+    func addFile(_ file: FileInfo) {
         if self.uploadFiles == nil {
             self.uploadFiles = []
         }
         self.uploadFiles!.append(file)
     }
     
-    func addFiles(_ files: [UploadFile]) {
+    func addFiles(_ files: [FileInfo]) {
         if self.uploadFiles == nil {
             self.uploadFiles = []
         }
         self.uploadFiles! += files
     }
     
-    func setFiles(_ files: [UploadFile]?) {
+    func setFiles(_ files: [FileInfo]?) {
         self.uploadFiles = files
     }
     

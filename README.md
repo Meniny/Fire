@@ -121,7 +121,7 @@ f.cancel {
 //
 
 import UIKit
-//import Fire
+import Fire
 
 class ViewController: UIViewController {
 

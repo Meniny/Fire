@@ -55,7 +55,7 @@ Then, config the Fire object:
 ```swift
 f.setParams(["key": "value"])
 f.setFiles([file])
-f.setHTTPHeaders(["Accept": "application/json")
+f.setHTTPHeaders(["Accept": "application/json"])
 f.setBasicAuth("user", password: "pwd!@#")
 f.setHTTPBodyRaw(json.rawValue)
 let certData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("FireDemo", ofType: "cer")!)!

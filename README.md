@@ -3,6 +3,11 @@
   <img src="https://ooo.0o0.ooo/2017/04/20/58f8c55fe196b.png" alt="Fire">
 </p>
 
+* [English Introduction](#Introduction)
+* [中文介绍](#中文介绍)
+
+# Introduction
+
 ## What's this?
 
 Fire is a HTTP/HTTPS networking framework written in Swift for people to read, and incidentally for machines to execute :).
@@ -36,7 +41,7 @@ then:
 * Click `＋`
 * Select `Fire.frameWork`, click `Add`
 
-![Manaually])(https://ooo.0o0.ooo/2017/04/22/58fabbe9abe44.jpg)
+![Manaually](https://ooo.0o0.ooo/2017/04/22/58fabbe9abe44.jpg)
 
 #### Manually: Source Files
 
@@ -207,7 +212,7 @@ class ViewController: UIViewController {
 }
 ```
 
-***
+# 中文介绍
 
 ## 这是什么?
 
@@ -242,7 +247,7 @@ git submodule add https://github.com/Meniny/Fire-in-Swift.git
 * 点击 `＋`
 * 选择 `Fire.frameWork`/`FireOSX.frameWork` 后点击 `Add`
 
-![Manaually])(https://ooo.0o0.ooo/2017/04/22/58fabbe9abe44.jpg)
+![Manaually](https://ooo.0o0.ooo/2017/04/22/58fabbe9abe44.jpg)
 
 #### 手动安装: 源文件
 

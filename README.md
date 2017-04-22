@@ -31,7 +31,7 @@ git submodule add https://github.com/Meniny/Fire-in-Swift.git
 
 then:
 
-* Drag `Fire/Fire.xcodeproj` into your project
+* Drag `Fire-in-Swift/Fire/Fire.xcodeproj` into your project
 * Go to `PROJECT`->`TARGETS`->[YOUR_TARGET_NAME]->`General`->`Embedded Binaries`
 * Click `＋`
 * Select `Fire.frameWork`, click `Add`.

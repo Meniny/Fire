@@ -33,32 +33,36 @@ import Foundation
 */
 public struct FileInfo {
     public let name: String
-    public let nameWithType: String
+    public let nameWithExt: String
     public let url: URL?
     public let data: Data?
+    public let mimeType: String
     
-    public init(name: String, path: String) {
+    public init(name: String, path: String, mimeType: String) {
         self.name = name
         self.url = URL(fileURLWithPath: path)
         self.data = nil
+        self.mimeType = mimeType
         if self.url != nil {
-            self.nameWithType = NSString(string: (url?.description)!).lastPathComponent
+            self.nameWithExt = NSString(string: (url?.description)!).lastPathComponent
         } else {
-            self.nameWithType = name
+            self.nameWithExt = name
         }
     }
     
-    public init(name: String, url: URL) {
+    public init(name: String, url: URL, mimeType: String) {
         self.name = name
         self.url = url
         self.data = nil
-        self.nameWithType = NSString(string: url.description).lastPathComponent
+        self.mimeType = mimeType
+        self.nameWithExt = NSString(string: url.description).lastPathComponent
     }
     
-    public init(name:String, data: Data, type: String) {
+    public init(name:String, data: Data, ext: String, mimeType: String) {
         self.name = name
         self.data = data
         self.url  = nil
-        self.nameWithType = name + "." + type
+        self.mimeType = mimeType
+        self.nameWithExt = name + "." + ext
     }
 }

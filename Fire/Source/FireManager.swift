@@ -281,11 +281,13 @@ class FireManager: NSObject, URLSessionDelegate {
                 if let fs = self.uploadFiles {
                     for file in fs {
                         let d1 = "--\(self.boundary)\r\n"
-                        let d2 = "Content-Disposition: form-data; name=\"\(file.name)\"; filename=\"\(file.nameWithType)\"\r\n\r\n"
+                        let d2 = "Content-Disposition: form-data; name=\"\(file.name)\"; filename=\"\(file.nameWithExt)\"\r\n"
                         data.append(d1.nsdata as Data)
                         data.append(d2.nsdata as Data)
+                        let d3 = "Content-Type: \(file.mimeType)\r\n\r\n"
+                        data.append(d3.nsdata as Data)
                         if Fire.DEBUG {
-                            self.debugBody.append(d1 + d2)
+                            self.debugBody.append(d1 + d2 + d3)
                         }
                         if let fileurl = file.url {
                             if let a = try? Data(contentsOf: fileurl as URL) {
@@ -322,6 +324,7 @@ class FireManager: NSObject, URLSessionDelegate {
             }
         }
         self.request.httpBody = data as Data
+        self.request.setValue("\(data.length)", forHTTPHeaderField: "Content-Length")
     }
     
     fileprivate func fireTask() {

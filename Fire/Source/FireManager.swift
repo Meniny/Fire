@@ -55,13 +55,15 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 class FireManager: NSObject, URLSessionDelegate {
     static var oneMinute: Double = 60.0
     
+    var debugBody: String = ""
+    
     let boundary = "FireUGl0YXlh"
     let errorDomain = "cn.meniny.Fire"
     
     var HTTPBodyRaw = ""
     var HTTPBodyRawIsJSON = false
     
-    let method: String!
+    let method: HTTPMethod!
     var parameters: [String: Any]?
     var uploadFiles: [FileInfo]?
     var cancelCallback: FireVoidCallback?
@@ -102,7 +104,7 @@ class FireManager: NSObject, URLSessionDelegate {
     init(url: String, method: HTTPMethod!, timeout: Double = FireManager.oneMinute) {
         self.url = url
         self.request = URLRequest(url: URL(string: url)!)
-        self.method = method.rawValue
+        self.method = method
         
         super.init()
         // setup a session with delegate to self
@@ -220,23 +222,26 @@ class FireManager: NSObject, URLSessionDelegate {
     }
     
     fileprivate func buildRequest() {
-        if self.method == "GET" && self.parameters?.count > 0 {
+        if self.method == .GET && self.parameters?.count > 0 {
             self.request = URLRequest(url: URL(string: url + "?" + FireHelper.buildParams(self.parameters!))!)
         }
         self.request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
-        self.request.httpMethod = self.method
+        self.request.httpMethod = self.method.rawValue
     }
     
     fileprivate func buildHeader() {
         // multipart Content-Type; see http://www.rfc-editor.org/rfc/rfc2046.txt
         if self.parameters?.count > 0 {
-            self.request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+            let f = ("Content-Type", "application/x-www-form-urlencoded")
+            self.request.setValue(f.1, forHTTPHeaderField: f.0)
         }
-        if self.uploadFiles?.count > 0 && self.method != "GET" {
-            self.request.setValue("multipart/form-data; boundary=" + self.boundary, forHTTPHeaderField: "Content-Type")
+        if self.uploadFiles?.count > 0 && self.method != .GET {
+            let f = ("Content-Type", "multipart/form-data; boundary=" + self.boundary)
+            self.request.setValue(f.1, forHTTPHeaderField: f.0)
         }
         if self.HTTPBodyRaw != "" {
-            self.request.setValue(self.HTTPBodyRawIsJSON ? "application/json" : "text/plain;charset=UTF-8", forHTTPHeaderField: "Content-Type")
+            let f = ("Content-Type", self.HTTPBodyRawIsJSON ? "application/json" : "text/plain;charset=UTF-8")
+            self.request.setValue(f.0, forHTTPHeaderField: f.1)
         }
         self.request.addValue(self.userAgent, forHTTPHeaderField: "User-Agent")
         if let auth = self.basicAuth {
@@ -251,45 +256,102 @@ class FireManager: NSObject, URLSessionDelegate {
     fileprivate func buildBody() {
         let data = NSMutableData()
         if self.HTTPBodyRaw != "" {
-            data.append(self.HTTPBodyRaw.nsdata as Data)
+            let d1 = self.HTTPBodyRaw
+            data.append(d1.nsdata as Data)
+            if Fire.DEBUG {
+                self.debugBody.append(d1)
+            }
         } else if self.uploadFiles?.count > 0 {
-            if self.method == "GET" {
+            if self.method == .GET {
                 print("\n\n------------------------\nThe remote server may not accept GET method with HTTP body. But Fire will send it anyway.\nIt looks like iOS 9 SDK has prevented sending http body in GET method.\n------------------------\n\n")
             } else {
                 if let ps = self.parameters {
                     for (key, value) in ps {
-                        data.append("--\(self.boundary)\r\n".nsdata as Data)
-                        data.append("Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n".nsdata as Data)
-                        data.append("\(value)\r\n".nsdata as Data)
+                        let d1 = "--\(self.boundary)\r\n"
+                        let d2 = "Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n"
+                        let d3 = "\(value)\r\n"
+                        data.append(d1.nsdata as Data)
+                        data.append(d2.nsdata as Data)
+                        data.append(d3.nsdata as Data)
+                        if Fire.DEBUG {
+                            self.debugBody.append(d1 + d2 + d3)
+                        }
                     }
                 }
                 if let fs = self.uploadFiles {
                     for file in fs {
-                        data.append("--\(self.boundary)\r\n".nsdata as Data)
-                        data.append("Content-Disposition: form-data; name=\"\(file.name)\"; filename=\"\(file.nameWithType)\"\r\n\r\n".nsdata as Data)
+                        let d1 = "--\(self.boundary)\r\n"
+                        let d2 = "Content-Disposition: form-data; name=\"\(file.name)\"; filename=\"\(file.nameWithType)\"\r\n\r\n"
+                        data.append(d1.nsdata as Data)
+                        data.append(d2.nsdata as Data)
+                        if Fire.DEBUG {
+                            self.debugBody.append(d1 + d2)
+                        }
                         if let fileurl = file.url {
                             if let a = try? Data(contentsOf: fileurl as URL) {
+                                let d4 = "Data(" + fileurl.absoluteString + ")"
                                 data.append(a)
-                                data.append("\r\n".nsdata as Data)
+                                let d5 = "\r\n"
+                                data.append(d5.nsdata as Data)
+                                if Fire.DEBUG {
+                                    self.debugBody.append(d4 + d5)
+                                }
                             }
                         } else if let filedata = file.data {
+                            let d4 = "Data(file.data)"
                             data.append(filedata)
-                            data.append("\r\n".nsdata as Data)
+                            let d5 = "\r\n"
+                            data.append(d5.nsdata as Data)
+                            if Fire.DEBUG {
+                                self.debugBody.append(d4 + d5)
+                            }
                         }
                     }
                 }
-                data.append("--\(self.boundary)--\r\n".nsdata as Data)
+                let d6 = "--\(self.boundary)--\r\n"
+                data.append(d6.nsdata as Data)
+                if Fire.DEBUG {
+                    self.debugBody.append(d6)
+                }
             }
-        } else if self.parameters?.count > 0 && self.method != "GET" {
-            data.append(FireHelper.buildParams(self.parameters!).nsdata)
+        } else if self.parameters?.count > 0 && self.method != .GET {
+            let d7 = FireHelper.buildParams(self.parameters!)
+            data.append(d7.nsdata)
+            if Fire.DEBUG {
+                self.debugBody.append(d7)
+            }
         }
         self.request.httpBody = data as Data
     }
     
     fileprivate func fireTask() {
-        if Fire.DEBUG { if let a = self.request.allHTTPHeaderFields { print("Fire Request HEADERS: ", a.description); }; }
+        if Fire.DEBUG {
+            let sep = "-----------------"
+            var output: String = sep + "\n"
+            output.append("[Fire] URL: " + self.url + "\n")
+            output.append("[Fire] HTTP Method: " + self.method.rawValue + "\n")
+            if let p = self.parameters {
+                output.append("[Fire] Parameters:\n" + p.description + "\n")
+            }
+            if let a = self.request.allHTTPHeaderFields {
+                output.append("[Fire] Request HEADERS:\n" + a.description + "\n")
+            }
+            if let data = self.request.httpBody {
+                let s = "[Fire] Request Body:\n"
+                if let d = String(data: data, encoding: String.Encoding.utf8) {
+                    output.append(s + d)
+                } else {
+                    output.append(s + self.debugBody)
+                }
+            }
+            print(output + "\n" + sep)
+        }
         self.task = self.session.dataTask(with: self.request) { [weak self] (data, response, error) -> Void in
-            if Fire.DEBUG { if let a = response { print("Fire Response: ", a.description); }}
+            if Fire.DEBUG {
+                if let a = response {
+                    print("[Fire] Response:\n", a.description)
+                }
+            }
             if let error = error as NSError? {
                 if error.code == -999 {
                     DispatchQueue.main.async {
@@ -297,7 +359,7 @@ class FireManager: NSObject, URLSessionDelegate {
                     }
                 } else {
                     let e = NSError(domain: self?.errorDomain ?? "Fire", code: error.code, userInfo: error.userInfo)
-                    print("Fire Error: ", e.localizedDescription)
+                    print("[Fire] Error:\n", e.localizedDescription)
                     DispatchQueue.main.async {
                         self?.errorCallback?(e)
                         self?.session.finishTasksAndInvalidate()

@@ -229,7 +229,7 @@ Fire 一个轻量级的 HTTP/HTTPS 网络框架。用 Swift 书写，碰巧可�
 
 ## 特性
 
-- [x] 链式调用的请求和相应方法
+- [x] 链式调用的请求和响应方法
 - [x] 上传文件和数据
 - [x] 支持 HTTP Basic 认证
 - [x] 支持 SSL Pinning

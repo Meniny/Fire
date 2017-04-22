@@ -15,7 +15,7 @@ Fire is a HTTP/HTTPS networking framework written in Swift for people to read, a
 ## Requirements
 
 * iOS 8.0+
-* macOS 10.10+ (v1.1.2+)
+* macOS 10.10+ (Fire 1.1.2+)
 * Xcode 8 with Swift 3
 
 ## Installation
@@ -39,7 +39,7 @@ then:
 * Drag `Fire-in-Swift/Fire/Fire.xcodeproj` into your project
 * Go to `PROJECT`->`TARGETS`->[YOUR_TARGET_NAME]->`General`->`Embedded Binaries`
 * Click `＋`
-* Select `Fire.frameWork`, click `Add`
+* Select `Fire.frameWork`/`FireOSX.frameWork`, click `Add`
 
 ![Manaually](https://ooo.0o0.ooo/2017/04/22/58fabbe9abe44.jpg)
 
@@ -221,7 +221,7 @@ Fire 一个轻量级的 HTTP/HTTPS 网络框架。用 Swift 书写，碰巧可�
 ## 环境
 
 * iOS 8.0+
-* macOS 10.10+ (v1.1.2+)
+* macOS 10.10+ (Fire 1.1.2+)
 * Xcode 8 及 Swift 3
 
 ## 安装

@@ -3,7 +3,7 @@
   <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire">
 </p>
 
-* [English Introduction](#Introduction)
+* [Introduction in English](#Introduction)
 * [中文介绍](#中文介绍)
 
 # Introduction

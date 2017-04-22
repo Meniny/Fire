@@ -26,13 +26,13 @@ class AddSSLPinning: BaseTestCase {
         let expectation = self.expectation(description: "testSSLPiningPassed")
         
         Fire.build(HTTPMethod: .GET, url: "https://meniny.cn/")
-            .addSSLPinning(LocalCertData: self.certData, SSLValidateErrorCallBack: { () -> Void in
+            .setSSLPinning(localCertData: self.certData, SSLValidateErrorCallBack: { () -> Void in
                 XCTFail("Under the Man-in-the-middle attack!")
             })
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTAssert((string?.lengthOfBytes(using: String.Encoding.utf8))! > 0)
                 
                 expectation.fulfill()
@@ -44,13 +44,13 @@ class AddSSLPinning: BaseTestCase {
         let expectation = self.expectation(description: "testSSLPiningArrayPassed")
         
         Fire.build(HTTPMethod: .GET, url: "https://meniny.cn/")
-            .addSSLPinning(LocalCertDataArray: [self.certData1, self.certData2, self.certData], SSLValidateErrorCallBack: { () -> Void in
+            .setSSLPinning(localCertDataArray: [self.certData1, self.certData2, self.certData], SSLValidateErrorCallBack: { () -> Void in
                 XCTFail("Under the Man-in-the-middle attack!")
             })
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTAssert((string?.lengthOfBytes(using: String.Encoding.utf8))! > 0)
                 
                 expectation.fulfill()
@@ -63,16 +63,16 @@ class AddSSLPinning: BaseTestCase {
         var errorPinning = 0
         
         Fire.build(HTTPMethod: .GET, url: "https://meniny.cn/")
-            .addSSLPinning(LocalCertDataArray: [self.certData1, self.certData2], SSLValidateErrorCallBack: { () -> Void in
+            .setSSLPinning(localCertDataArray: [self.certData1, self.certData2], SSLValidateErrorCallBack: { () -> Void in
                 print("Under the Man-in-the-middle attack!")
                 errorPinning = 1
                 expectation.fulfill()
             })
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssertNotNil(error)
                 XCTAssert(errorPinning == 1, "Under the Man-in-the-middle attack")
             })
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTFail("shoud not run callback() after a Man-in-the-middle attack.")
         }
         waitForExpectations(timeout: self.defaultTimeout, handler: nil)
@@ -83,16 +83,16 @@ class AddSSLPinning: BaseTestCase {
         var errorPinning = 0
         
         Fire.build(HTTPMethod: .GET, url: "https://autolayout.club/")
-            .addSSLPinning(LocalCertData: self.certData, SSLValidateErrorCallBack: { () -> Void in
+            .setSSLPinning(localCertData: self.certData, SSLValidateErrorCallBack: { () -> Void in
                 print("Under the Man-in-the-middle attack!")
                 errorPinning = 1
                 expectation.fulfill()
             })
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssertNotNil(error)
                 XCTAssert(errorPinning == 1, "Under the Man-in-the-middle attack")
             })
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTFail("shoud not run callback() after a Man-in-the-middle attack.")
         }
         
@@ -103,10 +103,10 @@ class AddSSLPinning: BaseTestCase {
         let expectation = self.expectation(description: "testSSLPiningPassed")
         
         Fire.build(HTTPMethod: .GET, url: "https://meniny.cn/")
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTAssert((string?.lengthOfBytes(using: String.Encoding.utf8))! > 0)
                 
                 expectation.fulfill()

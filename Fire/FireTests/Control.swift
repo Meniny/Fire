@@ -15,10 +15,10 @@ class Control: BaseTestCase {
         let expectation = self.expectation(description: "testCancel")
         
         let fire = Fire.build(HTTPMethod: .GET, url: "http://httpbin.org/")
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-        fire.responseString { (string, response) -> Void in
+        fire.fireForString { (string, response) -> Void in
             XCTFail("the request should be cancelled")
             
             expectation.fulfill()

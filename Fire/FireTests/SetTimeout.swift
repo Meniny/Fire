@@ -15,10 +15,10 @@ class SetTimeout: BaseTestCase {
         let expectation = self.expectation(description: "testSetTimeoutSuccess")
 
         Fire.build(HTTPMethod: .GET, url: "http://httpbin.org/delay/5", timeout: 8)
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseJSON { (json, response) -> Void in
+            .fireForJSON { (json, response) -> Void in
                 XCTAssertEqual(json["url"].stringValue, "http://httpbin.org/delay/5")
                 expectation.fulfill()
         }
@@ -29,10 +29,10 @@ class SetTimeout: BaseTestCase {
         let expectation = self.expectation(description: "testSetTimeoutFail")
         
         Fire.build(HTTPMethod: .GET, url: "http://httpbin.org/delay/5", timeout: 2)
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 expectation.fulfill()
             })
-            .responseJSON { (json, response) -> Void in
+            .fireForJSON { (json, response) -> Void in
                 XCTAssertEqual(json["url"].stringValue, "http://httpbin.org/delay/5")
         }
         waitForExpectations(timeout: self.defaultTimeout, handler: nil)

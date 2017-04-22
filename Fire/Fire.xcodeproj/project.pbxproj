@@ -21,6 +21,8 @@
 		5C2D1CB91EA77FB90096A4AD /* SetTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAD1EA77FB90096A4AD /* SetTimeout.swift */; };
 		5C2D1CBA1EA77FB90096A4AD /* WithOtherTypeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAE1EA77FB90096A4AD /* WithOtherTypeParams.swift */; };
 		5C2D1CBB1EA77FB90096A4AD /* WithStringParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAF1EA77FB90096A4AD /* WithStringParams.swift */; };
+		5C9D23201EAAECE9008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
+		5C9D23211EAAEE28008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5CC5E2081EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
 		5CC5E2091EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
 		5CC5E20A1EA8B01D0090435E /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
@@ -43,8 +45,6 @@
 		5CC5E21B1EA8B01D0090435E /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
 		5CC5E21C1EA8B01D0090435E /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
 		5CC5E21D1EA8B01D0090435E /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
-		5CC5E21E1EA8B01D0090435E /* UploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2071EA8B01D0090435E /* UploadFile.swift */; };
-		5CC5E21F1EA8B01D0090435E /* UploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2071EA8B01D0090435E /* UploadFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +77,7 @@
 		5C2D1CAF1EA77FB90096A4AD /* WithStringParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithStringParams.swift; sourceTree = "<group>"; };
 		5C77E2EE1EA8AB69005668B9 /* FireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FireOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C77E2F11EA8AB69005668B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C9D231F1EAAECE9008CA64A /* FileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
 		5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-SessionDelegate.swift"; sourceTree = "<group>"; };
 		5CC5E1FC1EA8B01D0090435E /* Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
 		5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireAPI.swift; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		5CC5E2041EA8B01D0090435E /* FireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireManager.swift; sourceTree = "<group>"; };
 		5CC5E2051EA8B01D0090435E /* FireValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireValues.swift; sourceTree = "<group>"; };
 		5CC5E2061EA8B01D0090435E /* String+Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Fire.swift"; sourceTree = "<group>"; };
-		5CC5E2071EA8B01D0090435E /* UploadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +195,7 @@
 				5CC5E2041EA8B01D0090435E /* FireManager.swift */,
 				5CC5E2051EA8B01D0090435E /* FireValues.swift */,
 				5CC5E2061EA8B01D0090435E /* String+Fire.swift */,
-				5CC5E2071EA8B01D0090435E /* UploadFile.swift */,
+				5C9D231F1EAAECE9008CA64A /* FileInfo.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -364,7 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC5E21E1EA8B01D0090435E /* UploadFile.swift in Sources */,
 				5CC5E20C1EA8B01D0090435E /* FireAPI.swift in Sources */,
 				5CC5E2141EA8B01D0090435E /* FireJSON.swift in Sources */,
 				5CC5E2121EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
@@ -374,6 +373,7 @@
 				5CC5E20E1EA8B01D0090435E /* FireHelper.swift in Sources */,
 				5CC5E2081EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */,
 				5CC5E20A1EA8B01D0090435E /* Fire.swift in Sources */,
+				5C9D23201EAAECE9008CA64A /* FileInfo.swift in Sources */,
 				5CC5E2161EA8B01D0090435E /* FireJSONModel.swift in Sources */,
 				5CC5E21A1EA8B01D0090435E /* FireValues.swift in Sources */,
 			);
@@ -402,7 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC5E21F1EA8B01D0090435E /* UploadFile.swift in Sources */,
+				5C9D23211EAAEE28008CA64A /* FileInfo.swift in Sources */,
 				5CC5E20D1EA8B01D0090435E /* FireAPI.swift in Sources */,
 				5CC5E2151EA8B01D0090435E /* FireJSON.swift in Sources */,
 				5CC5E2131EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,

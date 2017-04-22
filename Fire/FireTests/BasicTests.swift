@@ -15,10 +15,10 @@ class BasicTests: BaseTestCase {
         let expectation = self.expectation(description: "testGET")
         
         Fire.build(HTTPMethod: .GET, url: "http://staticonsae.sinaapp.com/Fire.php")
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTAssert(string == "", "GET should success and return empty string with no params")
                 
                 expectation.fulfill()
@@ -30,10 +30,10 @@ class BasicTests: BaseTestCase {
         let expectation = self.expectation(description: "testPOST")
         
         Fire.build(HTTPMethod: .POST, url: "http://staticonsae.sinaapp.com/Fire.php")
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTAssert(string == "", "POST should success and return empty string with no params")
                 
                 expectation.fulfill()
@@ -47,7 +47,7 @@ class BasicTests: BaseTestCase {
         let expectation = self.expectation(description: "testOneMoreThing")
         Fire.DEBUG = true
         Fire.build(HTTPMethod: .GET, url: "http://staticonsae.sinaapp.com/Fire.php")
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTAssert(string == "", "GET should success and return empty string with no params")
                 
                 expectation.fulfill()

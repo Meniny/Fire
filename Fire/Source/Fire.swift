@@ -248,7 +248,7 @@ open class Fire {
     
     /**
     add error callback to self (Fire object).
-    this will called only when network error, if we can receive any data from server, responseData() will be fired.
+    this will called only when network error, if we can receive any data from server, fireForData() will be fired.
     
     - parameter errorCallback: errorCallback Closure
     

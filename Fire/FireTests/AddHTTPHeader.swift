@@ -18,11 +18,11 @@ class AddHTTPHeader: BaseTestCase {
         let value = "application/json"
 
         Fire.build(HTTPMethod: .GET, url: "http://httpbin.org/headers")
-            .setHTTPHeader(Name: name, Value: value)
-            .onNetworkError({ (error) -> Void in
+            .addHTTPHeader(value, forKey: name)
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseJSON { (json, response) -> Void in
+            .fireForJSON { (json, response) -> Void in
                 XCTAssertEqual(json["headers"][name].stringValue, value)
                 expectation.fulfill()
         }

@@ -12,16 +12,16 @@ import Fire
 class AddFiles: BaseTestCase {
     
     func testAddOneFile() {
-        let file = UploadFile(name: "file", url: self.URLForResource("logo@2x", withExtension: "jpg"))
+        let file = FileInfo(name: "file", url: self.URLForResource("logo@2x", withExtension: "jpg"))
         
         let expectation = self.expectation(description: "testAddOneFile")
         Fire.build(HTTPMethod: .POST, url: "http://staticonsae.sinaapp.com/Fire.php")
             .addParams(["param": "test"])
             .addFiles([file])
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString({ (string, response) -> Void in
+            .fireForString({ (string, response) -> Void in
                 XCTAssert(string == "1", "file uploaded error!")
                 
                 expectation.fulfill()
@@ -32,16 +32,16 @@ class AddFiles: BaseTestCase {
     
     func testAddOneFileInData() {
         let data = try! Data(contentsOf: self.URLForResource("logo@2x", withExtension: "jpg"))
-        let file = UploadFile(name: "file", data: data, type: "jpg")
+        let file = FileInfo(name: "file", data: data, type: "jpg")
         
         let expectation = self.expectation(description: "testAddOneFileInData")
         Fire.build(HTTPMethod: .POST, url: "http://staticonsae.sinaapp.com/Fire.php")
             .addParams(["param": "test"])
             .addFiles([file])
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString({ (string, response) -> Void in
+            .fireForString({ (string, response) -> Void in
                 XCTAssert(string == "1", "file uploaded error!")
                 
                 expectation.fulfill()
@@ -53,15 +53,15 @@ class AddFiles: BaseTestCase {
     func testOneMoreThing() {
         // code here will not be used in reality forever, just for increasing testing coverage
         
-        let file = UploadFile(name: "file", url: self.URLForResource("logo@2x", withExtension: "jpg"))
+        let file = FileInfo(name: "file", url: self.URLForResource("logo@2x", withExtension: "jpg"))
         
         let expectation = self.expectation(description: "testOneMoreThing")
         Fire.build(HTTPMethod: .GET, url: "http://staticonsae.sinaapp.com/Fire.php")
             .addFiles([file])
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseData { (data, response) -> Void in
+            .fireForData { (data, response) -> Void in
                 expectation.fulfill()
         }
         
@@ -72,15 +72,15 @@ class AddFiles: BaseTestCase {
         // code here will not be used in reality forever, just for increasing testing coverage
         
         let data = try! Data(contentsOf: self.URLForResource("logo@2x", withExtension: "jpg"))
-        let file = UploadFile(name: "file", data: data, type: "jpg")
+        let file = FileInfo(name: "file", data: data, type: "jpg")
         
         let expectation = self.expectation(description: "testOneMoreThingInData")
         Fire.build(HTTPMethod: .GET, url: "http://staticonsae.sinaapp.com/Fire.php")
             .addFiles([file])
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseData { (data, response) -> Void in
+            .fireForData { (data, response) -> Void in
                 expectation.fulfill()
         }
         

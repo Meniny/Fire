@@ -16,10 +16,10 @@ class SetHTTPBodyRawTests: BaseTestCase {
         let rawString = self.randomStringWithLength(20)
         Fire.build(HTTPMethod: .POST, url: "http://httpbin.org/post")
             .setHTTPBodyRaw(rawString)
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseJSON { (json, response) -> Void in
+            .fireForJSON { (json, response) -> Void in
                 XCTAssertEqual(json["data"].stringValue, rawString)
                 expectation.fulfill()
         }
@@ -34,12 +34,12 @@ class SetHTTPBodyRawTests: BaseTestCase {
         let j = FireJSON(dictionary: ["string1": string1, "string2": string2])
 
         Fire.build(HTTPMethod: .POST, url: "http://httpbin.org/post")
-            .setHTTPBodyRaw(j.RAWValue, isJSON: true)
-            .onNetworkError({ (error) -> Void in
+            .setHTTPBodyRaw(j.rawValue, isJSON: true)
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseJSON { (json, response) -> Void in
-                XCTAssertEqual(json["data"].stringValue, j.RAWValue)
+            .fireForJSON { (json, response) -> Void in
+                XCTAssertEqual(json["data"].stringValue, j.rawValue)
                 XCTAssertEqual(json["json"]["string1"].stringValue, string1)
                 XCTAssertEqual(json["json"]["string2"].stringValue, string2)
                 expectation.fulfill()

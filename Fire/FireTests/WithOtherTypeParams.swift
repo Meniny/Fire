@@ -23,10 +23,10 @@ class WithOtherTypeParams: BaseTestCase {
         
         Fire.build(HTTPMethod: .GET, url: "http://httpbin.org/get")
             .addParams(["a": self.intParam, "b": self.doubleParam, "c": self.boolParam])
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseJSON { (json, nil) in
+            .fireForJSON { (json, nil) in
                 XCTAssert(json["args"]["a"].intValue == self.intParam, "GET should success and return intParam")
                 XCTAssert(json["args"]["b"].doubleValue == self.doubleParam, "GET should success and return doubleParam")
                 
@@ -44,10 +44,10 @@ class WithOtherTypeParams: BaseTestCase {
         
         Fire.build(HTTPMethod: .POST, url: "http://httpbin.org/post")
             .addParams(["a": self.intParam, "b": self.doubleParam, "c": self.boolParam])
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseJSON { (json, nil) in
+            .fireForJSON { (json, nil) in
                 XCTAssert(json["form"]["a"].intValue == self.intParam, "GET should success and return intParam")
                 XCTAssert(json["form"]["b"].doubleValue == self.doubleParam, "GET should success and return doubleParam")
                 

@@ -26,10 +26,10 @@ class WithStringParams: BaseTestCase {
         
         Fire.build(HTTPMethod: .GET, url: "http://staticonsae.sinaapp.com/Fire.php")
             .addParams(["get": param1, "get2": param2])
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString { (string, response) -> Void in
+            .fireForString { (string, response) -> Void in
                 XCTAssert(string == self.param1 + self.param2, "GET should success and return the strings together")
                 
                 expectation.fulfill()
@@ -43,10 +43,10 @@ class WithStringParams: BaseTestCase {
         
         Fire.build(HTTPMethod: .POST, url: "http://staticonsae.sinaapp.com/Fire.php")
             .addParams(["post": param1, "post2": param2])
-            .onNetworkError({ (error) -> Void in
+            .onError({ (error) -> Void in
                 XCTAssert(false, error.localizedDescription)
             })
-            .responseString({ (string, response) -> Void in
+            .fireForString({ (string, response) -> Void in
                 XCTAssert(string == self.param1 + self.param2, "GET should success and return the strings together")
                 
                 expectation.fulfill()

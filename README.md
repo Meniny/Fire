@@ -12,6 +12,15 @@
 
 Fire is a delightful HTTP/HTTPS networking framework for iOS/macOS platform written in Swift for humans to read, and incidentally for machines to execute :).
 
+## Features
+
+- [x] Chainable Request / Response Methods
+- [x] Upload File / Data / MultipartFormData
+- [x] HTTP Basic Authorization
+- [x] TLS Certificate and Public Key Pinning
+- [x] Comprehensive Unit and Integration Test Coverage
+- [x] Asynchronous Request
+
 ## Requirements
 
 * iOS 8.0+
@@ -217,6 +226,15 @@ class ViewController: UIViewController {
 ## 这是什么?
 
 Fire 一个轻量级的 HTTP/HTTPS 网络框架。用 Swift 书写，碰巧可以运行 :)
+
+## 特性
+
+- [x] 链式调用的请求和相应方法
+- [x] 上传文件和数据
+- [x] 支持 HTTP Basic 认证
+- [x] 支持 SSL Pinning
+- [x] 全面的单元和集成测试覆盖
+- [x] 异步请求
 
 ## 环境
 

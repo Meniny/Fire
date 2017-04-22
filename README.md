@@ -54,7 +54,7 @@ then:
 * Drag `Fire-in-Swift/Fire/Fire.xcodeproj` into your project
 * Go to `PROJECT`->`TARGETS`->[YOUR_TARGET_NAME]->`General`->`Embedded Binaries`
 * Click `＋`
-* Select `Fire.frameWork`/`FireOSX.frameWork`, click `Add`
+* Select `Fire.frameWork`/`FireOSX.frameWork`/`FireWatchOS.frameWork`/`FireTVOS.frameWork`, click `Add`
 
 ![Manaually](https://ooo.0o0.ooo/2017/04/22/58fabbe9abe44.jpg)
 
@@ -275,7 +275,7 @@ git submodule add https://github.com/Meniny/Fire-in-Swift.git
 * 将 `Fire-in-Swift/Fire/Fire.xcodeproj` 拖入你的项目
 * 定位到 `PROJECT`->`TARGETS`->[YOUR_TARGET_NAME]->`General`->`Embedded Binaries`
 * 点击 `＋`
-* 选择 `Fire.frameWork`/`FireOSX.frameWork` 后点击 `Add`
+* 选择 `Fire.frameWork`/`FireOSX.frameWork`/`FireWatchOS.frameWork`/`FireTVOS.frameWork` 后点击 `Add`
 
 ![Manaually](https://ooo.0o0.ooo/2017/04/22/58fabbe9abe44.jpg)
 

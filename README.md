@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://ooo.0o0.ooo/2017/04/20/58f8c55fe196b.png" alt="Fire">
+  <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire">
 </p>
 
 * [English Introduction](#Introduction)
@@ -10,7 +10,7 @@
 
 ## What's this?
 
-Fire is a HTTP/HTTPS networking framework written in Swift for people to read, and incidentally for machines to execute :).
+Fire is a delightful HTTP/HTTPS networking framework for iOS/macOS platform written in Swift for humans to read, and incidentally for machines to execute :).
 
 ## Requirements
 

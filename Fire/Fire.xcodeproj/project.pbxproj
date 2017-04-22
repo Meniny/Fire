@@ -21,6 +21,33 @@
 		5C2D1CB91EA77FB90096A4AD /* SetTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAD1EA77FB90096A4AD /* SetTimeout.swift */; };
 		5C2D1CBA1EA77FB90096A4AD /* WithOtherTypeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAE1EA77FB90096A4AD /* WithOtherTypeParams.swift */; };
 		5C2D1CBB1EA77FB90096A4AD /* WithStringParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAF1EA77FB90096A4AD /* WithStringParams.swift */; };
+		5C33F0EB1EAB0614001D903D /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C33F0EC1EAB061D001D903D /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C33F0ED1EAB0630001D903D /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
+		5C33F0EE1EAB0630001D903D /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
+		5C33F0EF1EAB0630001D903D /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
+		5C33F0F01EAB0630001D903D /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
+		5C33F0F11EAB0630001D903D /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2001EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift */; };
+		5C33F0F21EAB0630001D903D /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2011EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift */; };
+		5C33F0F31EAB0630001D903D /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2021EA8B01D0090435E /* FireJSON.swift */; };
+		5C33F0F41EAB0630001D903D /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2031EA8B01D0090435E /* FireJSONModel.swift */; };
+		5C33F0F51EAB0630001D903D /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
+		5C33F0F61EAB0630001D903D /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
+		5C33F0F71EAB0630001D903D /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
+		5C33F0F81EAB0630001D903D /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
+		5C378A921EAB068C00674D0F /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C378A931EAB069500674D0F /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
+		5C378A941EAB069500674D0F /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
+		5C378A951EAB069500674D0F /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
+		5C378A961EAB069500674D0F /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
+		5C378A971EAB069500674D0F /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2001EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift */; };
+		5C378A981EAB069500674D0F /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2011EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift */; };
+		5C378A991EAB069500674D0F /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2021EA8B01D0090435E /* FireJSON.swift */; };
+		5C378A9A1EAB069500674D0F /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2031EA8B01D0090435E /* FireJSONModel.swift */; };
+		5C378A9B1EAB069500674D0F /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
+		5C378A9C1EAB069500674D0F /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
+		5C378A9D1EAB069500674D0F /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
+		5C378A9E1EAB069500674D0F /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5C9D23201EAAECE9008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5C9D23211EAAEE28008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5CC5E2081EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
@@ -75,6 +102,10 @@
 		5C2D1CAD1EA77FB90096A4AD /* SetTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeout.swift; sourceTree = "<group>"; };
 		5C2D1CAE1EA77FB90096A4AD /* WithOtherTypeParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithOtherTypeParams.swift; sourceTree = "<group>"; };
 		5C2D1CAF1EA77FB90096A4AD /* WithStringParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithStringParams.swift; sourceTree = "<group>"; };
+		5C33F0E31EAB05EB001D903D /* FireWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FireWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C33F0E61EAB05EB001D903D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C378A8A1EAB067F00674D0F /* FireTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FireTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C378A8D1EAB067F00674D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C77E2EE1EA8AB69005668B9 /* FireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FireOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C77E2F11EA8AB69005668B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C9D231F1EAAECE9008CA64A /* FileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
@@ -107,6 +138,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5C33F0DF1EAB05EB001D903D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C378A861EAB067F00674D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C77E2EA1EA8AB69005668B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,6 +169,8 @@
 				5CC5E1FA1EA8B01D0090435E /* Source */,
 				5C77E30F1EA8ABA5005668B9 /* FireIOS */,
 				5C77E2EF1EA8AB69005668B9 /* FireOSX */,
+				5C33F0E41EAB05EB001D903D /* FireWatchOS */,
+				5C378A8B1EAB067F00674D0F /* FireTVOS */,
 				463712061B04C2050019E1AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +181,8 @@
 				463712051B04C2050019E1AB /* Fire.framework */,
 				5C2D1C981EA77F7A0096A4AD /* FireTests.xctest */,
 				5C77E2EE1EA8AB69005668B9 /* FireOSX.framework */,
+				5C33F0E31EAB05EB001D903D /* FireWatchOS.framework */,
+				5C378A8A1EAB067F00674D0F /* FireTVOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +214,22 @@
 				5C2D1C9C1EA77F7A0096A4AD /* Info.plist */,
 			);
 			path = FireTests;
+			sourceTree = "<group>";
+		};
+		5C33F0E41EAB05EB001D903D /* FireWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				5C33F0E61EAB05EB001D903D /* Info.plist */,
+			);
+			path = FireWatchOS;
+			sourceTree = "<group>";
+		};
+		5C378A8B1EAB067F00674D0F /* FireTVOS */ = {
+			isa = PBXGroup;
+			children = (
+				5C378A8D1EAB067F00674D0F /* Info.plist */,
+			);
+			path = FireTVOS;
 			sourceTree = "<group>";
 		};
 		5C77E2EF1EA8AB69005668B9 /* FireOSX */ = {
@@ -222,10 +287,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5C33F0E01EAB05EB001D903D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C33F0EC1EAB061D001D903D /* Fire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C378A871EAB067F00674D0F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C378A921EAB068C00674D0F /* Fire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C77E2EB1EA8AB69005668B9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C33F0EB1EAB0614001D903D /* Fire.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +350,42 @@
 			productReference = 5C2D1C981EA77F7A0096A4AD /* FireTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5C33F0E21EAB05EB001D903D /* FireWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C33F0EA1EAB05EB001D903D /* Build configuration list for PBXNativeTarget "FireWatchOS" */;
+			buildPhases = (
+				5C33F0DE1EAB05EB001D903D /* Sources */,
+				5C33F0DF1EAB05EB001D903D /* Frameworks */,
+				5C33F0E01EAB05EB001D903D /* Headers */,
+				5C33F0E11EAB05EB001D903D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FireWatchOS;
+			productName = FireWatchOS;
+			productReference = 5C33F0E31EAB05EB001D903D /* FireWatchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C378A891EAB067F00674D0F /* FireTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C378A911EAB067F00674D0F /* Build configuration list for PBXNativeTarget "FireTVOS" */;
+			buildPhases = (
+				5C378A851EAB067F00674D0F /* Sources */,
+				5C378A861EAB067F00674D0F /* Frameworks */,
+				5C378A871EAB067F00674D0F /* Headers */,
+				5C378A881EAB067F00674D0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FireTVOS;
+			productName = FireTVOS;
+			productReference = 5C378A8A1EAB067F00674D0F /* FireTVOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5C77E2ED1EA8AB69005668B9 /* FireOSX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C77E2F51EA8AB69005668B9 /* Build configuration list for PBXNativeTarget "FireOSX" */;
@@ -308,6 +426,16 @@
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
+					5C33F0E21EAB05EB001D903D = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 63YL5QDMNS;
+						ProvisioningStyle = Automatic;
+					};
+					5C378A891EAB067F00674D0F = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 63YL5QDMNS;
+						ProvisioningStyle = Automatic;
+					};
 					5C77E2ED1EA8AB69005668B9 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 63YL5QDMNS;
@@ -331,6 +459,8 @@
 				463712041B04C2050019E1AB /* Fire */,
 				5C2D1C971EA77F7A0096A4AD /* FireTests */,
 				5C77E2ED1EA8AB69005668B9 /* FireOSX */,
+				5C33F0E21EAB05EB001D903D /* FireWatchOS */,
+				5C378A891EAB067F00674D0F /* FireTVOS */,
 			);
 		};
 /* End PBXProject section */
@@ -344,6 +474,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5C2D1C961EA77F7A0096A4AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C33F0E11EAB05EB001D903D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C378A881EAB067F00674D0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,6 +539,44 @@
 				5C2D1CB01EA77FB90096A4AD /* AddFiles.swift in Sources */,
 				5C2D1CB71EA77FB90096A4AD /* ResponseJSON.swift in Sources */,
 				5C2D1CB21EA77FB90096A4AD /* AddSSLPinning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C33F0DE1EAB05EB001D903D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C33F0ED1EAB0630001D903D /* FileManager-SessionDelegate.swift in Sources */,
+				5C33F0EE1EAB0630001D903D /* Fire.swift in Sources */,
+				5C33F0EF1EAB0630001D903D /* FireAPI.swift in Sources */,
+				5C33F0F01EAB0630001D903D /* FireHelper.swift in Sources */,
+				5C33F0F11EAB0630001D903D /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
+				5C33F0F21EAB0630001D903D /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
+				5C33F0F31EAB0630001D903D /* FireJSON.swift in Sources */,
+				5C33F0F41EAB0630001D903D /* FireJSONModel.swift in Sources */,
+				5C33F0F51EAB0630001D903D /* FireManager.swift in Sources */,
+				5C33F0F61EAB0630001D903D /* FireValues.swift in Sources */,
+				5C33F0F71EAB0630001D903D /* String+Fire.swift in Sources */,
+				5C33F0F81EAB0630001D903D /* FileInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C378A851EAB067F00674D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C378A931EAB069500674D0F /* FileManager-SessionDelegate.swift in Sources */,
+				5C378A941EAB069500674D0F /* Fire.swift in Sources */,
+				5C378A951EAB069500674D0F /* FireAPI.swift in Sources */,
+				5C378A961EAB069500674D0F /* FireHelper.swift in Sources */,
+				5C378A971EAB069500674D0F /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
+				5C378A981EAB069500674D0F /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
+				5C378A991EAB069500674D0F /* FireJSON.swift in Sources */,
+				5C378A9A1EAB069500674D0F /* FireJSONModel.swift in Sources */,
+				5C378A9B1EAB069500674D0F /* FireManager.swift in Sources */,
+				5C378A9C1EAB069500674D0F /* FireValues.swift in Sources */,
+				5C378A9D1EAB069500674D0F /* String+Fire.swift in Sources */,
+				5C378A9E1EAB069500674D0F /* FileInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +785,114 @@
 			};
 			name = Release;
 		};
+		5C33F0E81EAB05EB001D903D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 63YL5QDMNS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FireWatchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.FireWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		5C33F0E91EAB05EB001D903D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 63YL5QDMNS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FireWatchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.FireWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		5C378A8F1EAB067F00674D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 63YL5QDMNS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FireTVOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.FireTVOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		5C378A901EAB067F00674D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 63YL5QDMNS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FireTVOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.FireTVOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 		5C77E2F31EA8AB69005668B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -690,6 +980,23 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5C33F0EA1EAB05EB001D903D /* Build configuration list for PBXNativeTarget "FireWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C33F0E81EAB05EB001D903D /* Debug */,
+				5C33F0E91EAB05EB001D903D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C378A911EAB067F00674D0F /* Build configuration list for PBXNativeTarget "FireTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C378A8F1EAB067F00674D0F /* Debug */,
+				5C378A901EAB067F00674D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		5C77E2F51EA8AB69005668B9 /* Build configuration list for PBXNativeTarget "FireOSX" */ = {
 			isa = XCConfigurationList;

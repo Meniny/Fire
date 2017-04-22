@@ -10,7 +10,7 @@
 
 ## What's this?
 
-Fire is a delightful HTTP/HTTPS networking framework for iOS/macOS platform written in Swift and inspired by [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/).
+Fire is a delightful HTTP/HTTPS networking framework for iOS/macOS/watchOS/tvOS platform written in Swift and inspired by [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/).
 
 Fire is written for humans to read, and incidentally, for machines to execute :)
 
@@ -28,7 +28,9 @@ Fire is written for humans to read, and incidentally, for machines to execute :)
 ## Requirements
 
 * iOS 8.0+
-* macOS 10.10+ (Fire 1.1.2+)
+* macOS 10.10+
+* watchOS 2.0+
+* tvOS 9.0+
 * Xcode 8 with Swift 3
 
 ## Installation
@@ -229,7 +231,7 @@ class ViewController: UIViewController {
 
 ## 这是什么?
 
-Fire 一个使用 Swift 书写的轻量级 HTTP/HTTPS 网络框架，深受 [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/) 启发。
+Fire 一个使用 Swift 书写的轻量级 iOS/macOS/watchOS/tvOS 平台 HTTP/HTTPS 网络框架，深受 [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/) 启发。
 
 Fire 为了更好的可读性而生，碰巧还可以运行 :)
 
@@ -247,7 +249,9 @@ Fire 为了更好的可读性而生，碰巧还可以运行 :)
 ## 环境
 
 * iOS 8.0+
-* macOS 10.10+ (Fire 1.1.2+)
+* macOS 10.10+
+* watchOS 2.0+
+* tvOS 9.0+
 * Xcode 8 及 Swift 3
 
 ## 安装

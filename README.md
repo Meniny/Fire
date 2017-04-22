@@ -20,6 +20,8 @@ Fire is a delightful HTTP/HTTPS networking framework for iOS/macOS platform writ
 - [x] TLS Certificate and Public Key Pinning
 - [x] Comprehensive Unit and Integration Test Coverage
 - [x] Asynchronous Request
+- [x] Timeouts
+- [x] form (`x-www-form-encoded`)/JSON HTTP body
 
 ## Requirements
 
@@ -235,6 +237,8 @@ Fire 一个轻量级的 HTTP/HTTPS 网络框架。用 Swift 书写，碰巧可�
 - [x] 支持 SSL Pinning
 - [x] 全面的单元和集成测试覆盖
 - [x] 异步请求
+- [x] 超时
+- [x] 支持 form (`x-www-form-encoded`)/JSON HTTP 请求体
 
 ## 环境
 

@@ -3,6 +3,8 @@
   <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire">
 </p>
 
+![Cocoapods](./README/cocoapods.svg) ![Swift3](./README/swift3.svg) ![Platforms](./README/platform.svg) ![MIT](./README/MIT.svg)
+
 * [Introduction in English](#Introduction)
 * [中文介绍](#中文介绍)
 

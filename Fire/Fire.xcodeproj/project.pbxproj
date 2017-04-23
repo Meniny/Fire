@@ -30,10 +30,6 @@
 		5C378A9C1EAB069500674D0F /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
 		5C378A9D1EAB069500674D0F /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
 		5C378A9E1EAB069500674D0F /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
-		5C984FF31EACA05300100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FF21EACA05300100B13 /* Jsonify.framework */; };
-		5C984FF51EACA08000100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FF41EACA08000100B13 /* Jsonify.framework */; };
-		5C984FF71EACA08700100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FF61EACA08700100B13 /* Jsonify.framework */; };
-		5C984FF91EACA08F00100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FF81EACA08F00100B13 /* Jsonify.framework */; };
 		5C9D23201EAAECE9008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5C9D23211EAAEE28008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5CC5E2081EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
@@ -92,6 +88,9 @@
 		5C984FF41EACA08000100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-watchos/Jsonify-watchOS/Jsonify.framework"; sourceTree = "<group>"; };
 		5C984FF61EACA08700100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-appletvos/Jsonify-tvOS/Jsonify.framework"; sourceTree = "<group>"; };
 		5C984FF81EACA08F00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-iphoneos/Jsonify-iOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FFA1EACA38D00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-arqiehcyryjbxaftyomcwaaobljm/Build/Products/Debug-iphoneos/Jsonify-iOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FFC1EACA39700100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-arqiehcyryjbxaftyomcwaaobljm/Build/Products/Debug-appletvos/Jsonify-tvOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FFE1EACA39F00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-arqiehcyryjbxaftyomcwaaobljm/Build/Products/Debug-watchos/Jsonify-watchOS/Jsonify.framework"; sourceTree = "<group>"; };
 		5C9D231F1EAAECE9008CA64A /* FileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
 		5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-SessionDelegate.swift"; sourceTree = "<group>"; };
 		5CC5E1FC1EA8B01D0090435E /* Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
@@ -118,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C984FF91EACA08F00100B13 /* Jsonify.framework in Frameworks */,
 				89D3521188BB4ED50A5AC9F6 /* Pods_FireIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,7 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C984FF51EACA08000100B13 /* Jsonify.framework in Frameworks */,
 				4E619EC8883851D4F43ACF69 /* Pods_FireWatchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +133,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C984FF71EACA08700100B13 /* Jsonify.framework in Frameworks */,
 				4D3D0BAE3E7672929E21F6E4 /* Pods_FireTVOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C984FF31EACA05300100B13 /* Jsonify.framework in Frameworks */,
 				1042291E48B529DAD4C4B382 /* Pods_FireOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +264,9 @@
 		ED23D55D358FA0FF2DDD9E8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C984FFE1EACA39F00100B13 /* Jsonify.framework */,
+				5C984FFC1EACA39700100B13 /* Jsonify.framework */,
+				5C984FFA1EACA38D00100B13 /* Jsonify.framework */,
 				5C984FF81EACA08F00100B13 /* Jsonify.framework */,
 				5C984FF61EACA08700100B13 /* Jsonify.framework */,
 				5C984FF41EACA08000100B13 /* Jsonify.framework */,

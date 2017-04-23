@@ -1,9 +1,8 @@
 
 <p align="center">
-  <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire">
+  <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire"><br/>
+  <img alt="Cocoapods" src="./README/cocoapods.svg"> <img alt="Swift3" src="./README/swift3.svg"> <img alt="Platforms" src="./README/platform.svg"> <img alt="MIT" src="./README/MIT.svg">
 </p>
-
-![Cocoapods](./README/cocoapods.png) ![Swift3](./README/swift3.png) ![Platforms](./README/platform.png) ![MIT](./README/MIT.png)
 
 * [Introduction in English](#Introduction)
 * [中文介绍](#中文介绍)

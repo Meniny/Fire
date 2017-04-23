@@ -12,7 +12,7 @@
 
 Fire is a delightful HTTP/HTTPS networking framework for iOS/macOS/watchOS/tvOS platform written in Swift and inspired by [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/).
 
-Fire is written for humans to read, and incidentally, for machines to execute :)
+Fire was written for humans to read, and incidentally, for machines to execute :)
 
 ## Features
 

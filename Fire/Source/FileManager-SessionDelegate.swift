@@ -18,7 +18,7 @@ extension URLSessionDelegate {
      - parameter challenge:         NSURLAuthenticationChallenge
      - parameter completionHandler: the completionHandler closure
      */
-    @objc(URLSession:didReceiveChallenge:completionHandler:) func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    @objc(URLSession:didReceiveChallenge:completionHandler:) public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         if self.localCertDataArray.count == 0 {
             completionHandler(Foundation.URLSession.AuthChallengeDisposition.useCredential, nil)
             return

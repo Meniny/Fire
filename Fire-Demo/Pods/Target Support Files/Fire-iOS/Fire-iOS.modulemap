@@ -1,0 +1,6 @@
+framework module Fire {
+  umbrella header "Fire-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

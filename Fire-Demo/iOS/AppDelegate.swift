@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Fire-Demo
+//  iOS
 //
-//  Created by Meniny on 2016-04-19.
-//  Copyright © 2016 Meniny. All rights reserved.
+//  Created by Meniny on 2017-04-23.
+//  Copyright © 2017年 Meniny. All rights reserved.
 //
 
 import UIKit

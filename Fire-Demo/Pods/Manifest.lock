@@ -1,0 +1,16 @@
+PODS:
+  - Fire (2.3.5)
+
+DEPENDENCIES:
+  - Fire (from `../`)
+
+EXTERNAL SOURCES:
+  Fire:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Fire: 1a7e1028e9b223cec10b261d3f146570c7b4dc7f
+
+PODFILE CHECKSUM: 49cbe39de3ec27106cf4a484ace340b61ec0a024
+
+COCOAPODS: 1.2.0.beta.1

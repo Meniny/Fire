@@ -4,15 +4,55 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Fire-Demo.xcscheme</key>
+		<key>iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>macOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>tvOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>5CD2DAF11EA78EC3008B3C8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CFBF5671EAC29DA0013DEC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CFBF57B1EAC29EF0013DEC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CFBF5A61EAC2A000013DEC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CFBF5B91EAC2A0B0013DEC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CFBF5E61EAC2D770013DEC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

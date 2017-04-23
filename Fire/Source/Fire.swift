@@ -40,7 +40,7 @@ open class Fire {
     open static var DEBUG = false
     open static var baseURL: String?
     
-    var fireManager: FireManager!
+    open var fireManager: FireManager!
 
     /**
     the only init method to fire a HTTP / HTTPS request
@@ -67,7 +67,7 @@ open class Fire {
      
      - returns: a Fire object
      */
-    init(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double) {
+    public init(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double) {
         let fullURL = (Fire.baseURL == nil ? url : (Fire.baseURL! + url))
         self.fireManager = FireManager.build(method, url: fullURL, timeout: timeout)
         self.fireManager.setParams(params)
@@ -228,8 +228,8 @@ open class Fire {
     
     - returns: self (Fire object)
     */
-    open func setHTTPBodyRaw(_ string: String, isJSON: Bool = false) -> Fire {
-        self.fireManager.sethttpBodyRaw(string, isJSON: isJSON)
+    open func setHTTPBody(raw: String, isJSON: Bool = false) -> Fire {
+        self.fireManager.sethttpBody(raw: raw, isJSON: isJSON)
         return self
     }
     

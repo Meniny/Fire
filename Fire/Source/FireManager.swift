@@ -52,7 +52,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 // MARK: - Class
 
-class FireManager: NSObject, URLSessionDelegate {
+open class FireManager: NSObject, URLSessionDelegate {
     static var oneMinute: Double = 60.0
     
     var debugBody: String = ""
@@ -63,26 +63,26 @@ class FireManager: NSObject, URLSessionDelegate {
     var HTTPBodyRaw = ""
     var HTTPBodyRawIsJSON = false
     
-    let method: HTTPMethod!
-    var parameters: [String: Any]?
-    var uploadFiles: [FileInfo]?
+    open let method: HTTPMethod!
+    open var parameters: [String: Any]?
+    open var uploadFiles: [FileInfo]?
     var cancelCallback: FireVoidCallback?
     var errorCallback: FireErrorCallback?
     var callback: FireDataResponseCallback?
     
-    var session: URLSession!
-    let url: String!
-    var request: URLRequest!
-    var task: URLSessionTask!
-    var basicAuth: (String, String)!
+    open var session: URLSession!
+    open let url: String!
+    open var request: URLRequest!
+    open var task: URLSessionTask!
+    open var basicAuth: (String, String)!
     
-    var localCertDataArray: [Data] = []
+    open var localCertDataArray: [Data] = []
     var sSLValidateErrorCallBack: FireVoidCallback?
     
-    var extraHTTPHeaders: [(String, String)] = []
+    open var extraHTTPHeaders: [(String, String)] = []
     
     // User-Agent Header; see http://tools.ietf.org/html/rfc7231#section-5.5.3
-    let userAgent: String = {
+    open let userAgent: String = {
         if let info = Bundle.main.infoDictionary {
             let executable: Any = info[kCFBundleExecutableKey as String] ?? "Unknown"
             let bundle: Any = info[kCFBundleIdentifierKey as String] ?? "Unknown"
@@ -101,7 +101,7 @@ class FireManager: NSObject, URLSessionDelegate {
         return "Fire"
         }()
 
-    init(url: String, method: HTTPMethod!, timeout: Double = FireManager.oneMinute) {
+    public init(url: String, method: HTTPMethod!, timeout: Double = FireManager.oneMinute) {
         self.url = url
         self.request = URLRequest(url: URL(string: url)!)
         self.method = method
@@ -113,19 +113,19 @@ class FireManager: NSObject, URLSessionDelegate {
         self.session = Foundation.URLSession(configuration: sessionConfiguration, delegate: self, delegateQueue: Foundation.URLSession.shared.delegateQueue)
     }
     
-    func setSSLPinning(localCertData dataArray: [Data], SSLValidateErrorCallBack: FireVoidCallback? = nil) {
+    open func setSSLPinning(localCertData dataArray: [Data], SSLValidateErrorCallBack: FireVoidCallback? = nil) {
         self.localCertDataArray = dataArray
         self.sSLValidateErrorCallBack = SSLValidateErrorCallBack
     }
     
-    func addParam(_ key: String, value: Any) {
+    open func addParam(_ key: String, value: Any) {
         if self.parameters == nil {
             self.parameters = [:]
         }
         self.parameters![key] = value
     }
     
-    func addParams(_ params: [String: Any]) {
+    open func addParams(_ params: [String: Any]) {
         if self.parameters != nil {
             self.parameters = [:]
         }
@@ -134,29 +134,29 @@ class FireManager: NSObject, URLSessionDelegate {
         }
     }
     
-    func setParams(_ params: [String: Any]?) {
+    open func setParams(_ params: [String: Any]?) {
         self.parameters = params
     }
     
-    func addFile(_ file: FileInfo) {
+    open func addFile(_ file: FileInfo) {
         if self.uploadFiles == nil {
             self.uploadFiles = []
         }
         self.uploadFiles!.append(file)
     }
     
-    func addFiles(_ files: [FileInfo]) {
+    open func addFiles(_ files: [FileInfo]) {
         if self.uploadFiles == nil {
             self.uploadFiles = []
         }
         self.uploadFiles! += files
     }
     
-    func setFiles(_ files: [FileInfo]?) {
+    open func setFiles(_ files: [FileInfo]?) {
         self.uploadFiles = files
     }
     
-    func onError(_ errorCallback: FireErrorCallback?) {
+    open func onError(_ errorCallback: FireErrorCallback?) {
         self.errorCallback = errorCallback
     }
     
@@ -168,7 +168,7 @@ class FireManager: NSObject, URLSessionDelegate {
      
      - returns: self (Fire object)
      */
-    func addHTTPHeader(_ value: String, forKey key: String) {
+    open func addHTTPHeader(_ value: String, forKey key: String) {
         self.extraHTTPHeaders.append((key, value))
     }
     
@@ -179,7 +179,7 @@ class FireManager: NSObject, URLSessionDelegate {
      
      - returns: self (Fire object)
      */
-    func addHTTPHeaders(_ headers: [String: String]) {
+    open func addHTTPHeaders(_ headers: [String: String]) {
         for (key, value) in headers {
             self.extraHTTPHeaders.append((key, value))
         }
@@ -192,27 +192,27 @@ class FireManager: NSObject, URLSessionDelegate {
      
      - returns: self (Fire object)
      */
-    func setHTTPHeaders(_ headers: [String: String]?) {
+    open func setHTTPHeaders(_ headers: [String: String]?) {
         self.cleanHTTPHeaders()
         if headers != nil {
             self.addHTTPHeaders(headers!)
         }
     }
     
-    func cleanHTTPHeaders() {
+    open func cleanHTTPHeaders() {
         self.extraHTTPHeaders.removeAll()
     }
     
-    func sethttpBodyRaw(_ rawString: String, isJSON: Bool = false) {
-        self.HTTPBodyRaw = rawString
+    open func sethttpBody(raw: String, isJSON: Bool = false) {
+        self.HTTPBodyRaw = raw
         self.HTTPBodyRawIsJSON = isJSON
     }
     
-    func setBasicAuth(_ auth: (String, String)) {
+    open func setBasicAuth(_ auth: (String, String)) {
         self.basicAuth = auth
     }
     
-    func fire(_ callback: FireDataResponseCallback? = nil) {
+    open func fire(_ callback: FireDataResponseCallback? = nil) {
         self.callback = callback
         
         self.buildRequest()

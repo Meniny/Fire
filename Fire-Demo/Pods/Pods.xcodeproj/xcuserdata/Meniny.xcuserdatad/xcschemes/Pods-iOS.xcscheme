@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5CD2DAF11EA78EC3008B3C8A"
-               BuildableName = "Fire-Demo.app"
-               BlueprintName = "Fire-Demo"
-               ReferencedContainer = "container:Fire-Demo.xcodeproj">
+               BlueprintIdentifier = "6037504CAE9A9AEFBE11998CEF70FB63"
+               BuildableName = "Pods_iOS.framework"
+               BlueprintName = "Pods-iOS"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5CD2DAF11EA78EC3008B3C8A"
-            BuildableName = "Fire-Demo.app"
-            BlueprintName = "Fire-Demo"
-            ReferencedContainer = "container:Fire-Demo.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5CD2DAF11EA78EC3008B3C8A"
-            BuildableName = "Fire-Demo.app"
-            BlueprintName = "Fire-Demo"
-            ReferencedContainer = "container:Fire-Demo.xcodeproj">
+            BlueprintIdentifier = "6037504CAE9A9AEFBE11998CEF70FB63"
+            BuildableName = "Pods_iOS.framework"
+            BlueprintName = "Pods-iOS"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5CD2DAF11EA78EC3008B3C8A"
-            BuildableName = "Fire-Demo.app"
-            BlueprintName = "Fire-Demo"
-            ReferencedContainer = "container:Fire-Demo.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -1,0 +1,1657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0127F263F21352B10CBAFE8E5D9A5F47 /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD294B99E9EB02F7C58B85ECEC0D186 /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01A11678CBD0ACBDC0A24D9521CCE23A /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68475065DFE8F9DC45FBEEA91CA4434 /* FireValues.swift */; };
+		01E9CAC8FA4FB05496493F9186E881D4 /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE3A8CFC46B856447D850DE83492C3 /* FireHelper.swift */; };
+		04F3BBB0DBC8133EBBE403DFFCB04E55 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762817129FBFD6AE8E2DBDD38A7F8B80 /* FireManager.swift */; };
+		0DFAECA222B517BC3222945E51F7DD04 /* Pods-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC23DAB541DBD4F082F70E71A689315 /* Pods-macOS-dummy.m */; };
+		12970C3FC910A4430BFA0FC01CA7D3D0 /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B6C1B63731C037E781C16E76C08 /* FireAPI.swift */; };
+		1808B4D41D2A742D4682854812B2A9E1 /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75817C9F28CBA5080F74047F563EBA32 /* String+Fire.swift */; };
+		19C692B74298FC677F189AE91E3831D2 /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499F755D496D07B83E747F6324CFD9B /* FireJSON+ArrayLiteralConvertible.swift */; };
+		1AA14CD836760DBF0FEAA532D0758F48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */; };
+		1DB38ACF21C07F4D6548E1603EB129AE /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD294B99E9EB02F7C58B85ECEC0D186 /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E13FBB10E46602439E109DA63920DE4 /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77CA599B74483ECAFAD630878E94F9 /* FireJSONModel.swift */; };
+		1EC4721A6CBA4D3FEC8F8BF81C62A203 /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B6C1B63731C037E781C16E76C08 /* FireAPI.swift */; };
+		1EFF602CB83085E71E4BDC0CFABE2A24 /* Pods-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A52B12FEED12174D9FF5FC597A706015 /* Pods-watchOS-dummy.m */; };
+		20D5CB14E02443CE66B057FA240D3DE6 /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE3A8CFC46B856447D850DE83492C3 /* FireHelper.swift */; };
+		2193C73CF927E4502C307E844AB23C51 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C897D47E838F57A812CD09CFB9AD59E /* Fire.swift */; };
+		2A55CFD8B76275830223053181300C06 /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A85FBC0BCB7F75D76E6761D45F701C /* FireJSON+DictionaryLiteralConvertible.swift */; };
+		2DE83ABFB7845E62C2555937936426AD /* Pods-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 014B4EBD41DCE30382A1E8AD04A360B5 /* Pods-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3115C4A7317C15153690BB59795F0EAA /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68475065DFE8F9DC45FBEEA91CA4434 /* FireValues.swift */; };
+		31FF21ABE43CB03CEB7E505CE7792B20 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762817129FBFD6AE8E2DBDD38A7F8B80 /* FireManager.swift */; };
+		3B506A085A0B49D22216A1F8ADC734A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */; };
+		3E507C9873B31C3FAAAA100CA13CCAFC /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499F755D496D07B83E747F6324CFD9B /* FireJSON+ArrayLiteralConvertible.swift */; };
+		402A16EEDEF40D8C52783F17F23C6BF8 /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE3A8CFC46B856447D850DE83492C3 /* FireHelper.swift */; };
+		42145FFF9FE9BF92E2EBA45149E965A2 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C897D47E838F57A812CD09CFB9AD59E /* Fire.swift */; };
+		460A84B9783D9BA0D17736D313807411 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */; };
+		4795FDCFBC0FFEBF96951CBFB0297F3F /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD294B99E9EB02F7C58B85ECEC0D186 /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48140950A020E0630CCED63018D5564A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215C1F74F52D4FB93EDD9E39A645EE09 /* Foundation.framework */; };
+		4C6A62E821722AF870BD386C2ED3B9E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */; };
+		5296569878D00676E4215D367D68761A /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499F755D496D07B83E747F6324CFD9B /* FireJSON+ArrayLiteralConvertible.swift */; };
+		66513DAC222A70FCCD45AAB6FBAB098C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */; };
+		6B64B246EBB3D2D324594CB5712AA65A /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B6C1B63731C037E781C16E76C08 /* FireAPI.swift */; };
+		6D7CA334E247F8CA8EF99EF966DA643E /* Fire-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DAE6E9EA731D569689FA2F7A175D4D /* Fire-watchOS-dummy.m */; };
+		77F8A8E76F2FF4661494C0E481EAD154 /* Fire-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 385447F4B60C81FCC9B5649E683DBC16 /* Fire-tvOS-dummy.m */; };
+		78E78FEDCC53E2220CCBE8DBCB018994 /* Pods-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6737557FF2547527F01091708CAE81FC /* Pods-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7943A7B33C6FBBFD3CDB3F8D9E392B3F /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75817C9F28CBA5080F74047F563EBA32 /* String+Fire.swift */; };
+		82A30E04E6702DAB79775C8329EB9059 /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77CA599B74483ECAFAD630878E94F9 /* FireJSONModel.swift */; };
+		85BE0C7156AC0A93F83184BDFD48FC84 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762817129FBFD6AE8E2DBDD38A7F8B80 /* FireManager.swift */; };
+		8B6B945AC639F5BCCFC81560E6BFC310 /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68475065DFE8F9DC45FBEEA91CA4434 /* FireValues.swift */; };
+		8BB6933263511FC4105B0A854F442C28 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C897D47E838F57A812CD09CFB9AD59E /* Fire.swift */; };
+		8DE31D3CB489C6DC95523BE78A18C5B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */; };
+		8EA487BB7C3DFE92D2BDC7A4FF83D8C1 /* Fire-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44445C3D8188649FC312FE646038EAB3 /* Fire-iOS-dummy.m */; };
+		8EB15B632C2CB5DB46F94338BE166516 /* Fire-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B18FAE5AEE0AB57BA674B2DA15491177 /* Fire-OSX-dummy.m */; };
+		9DE97C65965C19C2866779E79432B9A3 /* Pods-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 056A891FBDD267FEC24E2FABA1E481C6 /* Pods-iOS-dummy.m */; };
+		9F0C19A02F5A8A72F805DBB4B5C9918B /* Fire-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1232675126458E7FE54E513DD2BE8BB /* Fire-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A054B617225FE8D5B44791A3E5D67CDE /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C897D47E838F57A812CD09CFB9AD59E /* Fire.swift */; };
+		A268C8A3B25405EEAAC1F0157A767038 /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4FE4095689DD5926B5F13856810949 /* FileInfo.swift */; };
+		A425D8567A03ACED0092BDAA6592DFA9 /* Fire-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D7D304E7AD1018A7B39C59C8C9EB45 /* Fire-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4CFBD1950727274541EC97CAC07906A /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B57859FFE4F1D9CC1B7DA46222BBB /* FileManager-SessionDelegate.swift */; };
+		A61626C97E94FB8BF1E1EB1E6224C996 /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE550676B6C49509B0ED77A378D605 /* FireJSON.swift */; };
+		A8A7E5C9D15A2BC7A30C6B9D146F3501 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762817129FBFD6AE8E2DBDD38A7F8B80 /* FireManager.swift */; };
+		AE45FB797179BB21E85A39C7C36E55D9 /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77CA599B74483ECAFAD630878E94F9 /* FireJSONModel.swift */; };
+		B2FBCF36869B58B2DAB587835367380F /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B57859FFE4F1D9CC1B7DA46222BBB /* FileManager-SessionDelegate.swift */; };
+		B7C66A5D5F495FB92BCC609647961C69 /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77CA599B74483ECAFAD630878E94F9 /* FireJSONModel.swift */; };
+		BB7676AAF6CC51DBF482B1F92FE53641 /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75817C9F28CBA5080F74047F563EBA32 /* String+Fire.swift */; };
+		C0A2C021B70DDFE4CEC7C1149A278898 /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499F755D496D07B83E747F6324CFD9B /* FireJSON+ArrayLiteralConvertible.swift */; };
+		C4362C06179004C077AF9B74543FEBBF /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE3A8CFC46B856447D850DE83492C3 /* FireHelper.swift */; };
+		C4834222C9D88E980AE01A15B16621F2 /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A85FBC0BCB7F75D76E6761D45F701C /* FireJSON+DictionaryLiteralConvertible.swift */; };
+		C51485A4460E6F936AD1DD4B94EE48AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */; };
+		C6DCA84ACAF502B5C797934CB6B37CFE /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A85FBC0BCB7F75D76E6761D45F701C /* FireJSON+DictionaryLiteralConvertible.swift */; };
+		D0E5982E810519D978849EF1319012C1 /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A85FBC0BCB7F75D76E6761D45F701C /* FireJSON+DictionaryLiteralConvertible.swift */; };
+		D29EECD5284B9AADBC3DC8D18C0F4E64 /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE550676B6C49509B0ED77A378D605 /* FireJSON.swift */; };
+		D31F15E39FDDBBF5A867A67D819EAC4B /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD294B99E9EB02F7C58B85ECEC0D186 /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D459D001FCD79E7154C870CDD9F612EB /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B6C1B63731C037E781C16E76C08 /* FireAPI.swift */; };
+		D6A91BD38C759986945D26C6DF665015 /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4FE4095689DD5926B5F13856810949 /* FileInfo.swift */; };
+		D6C0E2CE5811F893A2B589083C9F1A41 /* Fire-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7FB07F751D5E1FE062E9102A6D8134 /* Fire-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA6AB475B9EB4F7752A465F14169A867 /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4FE4095689DD5926B5F13856810949 /* FileInfo.swift */; };
+		DB50B10387951B00642ED2B3146398B2 /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75817C9F28CBA5080F74047F563EBA32 /* String+Fire.swift */; };
+		DE6E85D0ED5A2C86AC85B2FCD1BE7969 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */; };
+		E336F4AEEE223DB233DDEF1BEE959A1F /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68475065DFE8F9DC45FBEEA91CA4434 /* FireValues.swift */; };
+		E604F4D1B12D2FE72E3B57EFFBF70F50 /* Pods-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B67B850EEB122EA21F2FB2CA896760D /* Pods-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECEE9B287F677E3CF5163534C2010535 /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4FE4095689DD5926B5F13856810949 /* FileInfo.swift */; };
+		EE5DD93F2A4272BA58E059126EEEF31E /* Pods-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BDED92FBBC944DF5C0301F64EF6E0F /* Pods-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F723D78AF4F7BFF73CDB9EBAA0D546F4 /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE550676B6C49509B0ED77A378D605 /* FireJSON.swift */; };
+		FB35272CF9819A86C41F68879B542E0D /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE550676B6C49509B0ED77A378D605 /* FireJSON.swift */; };
+		FB44FEF5C6261BFB52781EBD81DC15E7 /* Pods-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC53D57FBC6FF65DC7F766E9B39805 /* Pods-tvOS-dummy.m */; };
+		FBA823FFE1606E9E2BE935DE83C600A3 /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B57859FFE4F1D9CC1B7DA46222BBB /* FileManager-SessionDelegate.swift */; };
+		FCA16ED95AABC908AC89913A4F719864 /* Fire-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B17DC25AB6C4E67E96D05EF7D869567E /* Fire-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF733E7549766C6FD2732377D1F7A3BD /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B57859FFE4F1D9CC1B7DA46222BBB /* FileManager-SessionDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		925C205C53C661F710BD7C09F8E35C56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF80B79CA5441922ACC323B71AF895D;
+			remoteInfo = "Fire-iOS";
+		};
+		B0704DC2962C1720E69A49B7DA24600D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC9DFBC0562EC993E117B312BD541A7F;
+			remoteInfo = "Fire-tvOS";
+		};
+		B6B7D26EAFAFB036B547B7C54567D619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E5BC5DCCAA3A8DF70306451C0E7F390;
+			remoteInfo = "Fire-watchOS";
+		};
+		E536E899618735E7B8A0933F2C917AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9FE6BCCB61943C16413A875D906F7E;
+			remoteInfo = "Fire-OSX";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0072C3E2BAD8F1BFBAF084248629D334 /* Pods-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		014B4EBD41DCE30382A1E8AD04A360B5 /* Pods-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		053DED7D76EF4128EFD6F665921BEF20 /* Fire-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fire-iOS-prefix.pch"; path = "../Fire-iOS/Fire-iOS-prefix.pch"; sourceTree = "<group>"; };
+		056A891FBDD267FEC24E2FABA1E481C6 /* Pods-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS-dummy.m"; sourceTree = "<group>"; };
+		0970B1601F4A79E7A82AB3F1EBEDD7EF /* Fire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fire.framework; path = "Fire-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C897D47E838F57A812CD09CFB9AD59E /* Fire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
+		0D7FB07F751D5E1FE062E9102A6D8134 /* Fire-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fire-tvOS-umbrella.h"; path = "../Fire-tvOS/Fire-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		0EBF5AEB4506843D5DC4D8C15860E278 /* Pods_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_watchOS.framework; path = "Pods-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		137AE203BE5A817308F96ABD21F86296 /* Pods-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		1725ED528340AA53E3108BC32EACC9CF /* Pods-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		1F2C03E64A9710C8591CD1C6A47E3945 /* Pods-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tvOS-resources.sh"; sourceTree = "<group>"; };
+		215C1F74F52D4FB93EDD9E39A645EE09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		21AC53D57FBC6FF65DC7F766E9B39805 /* Pods-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tvOS-dummy.m"; sourceTree = "<group>"; };
+		21D643FD02A6CF523D6DEA5C53024071 /* Pods-watchOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-watchOS-resources.sh"; sourceTree = "<group>"; };
+		22A762BECC111131F0EF25856D5A2025 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235CC6CEDF5C4668FD3F4BB74F24BC4D /* Fire-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fire-OSX-prefix.pch"; sourceTree = "<group>"; };
+		24411803B57DCD4B06E09158833DC24B /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		279D9A62489860EA7AAFED06BA6457C6 /* Pods-macOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-macOS-frameworks.sh"; sourceTree = "<group>"; };
+		2B67B850EEB122EA21F2FB2CA896760D /* Pods-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-macOS-umbrella.h"; sourceTree = "<group>"; };
+		2B89A535DBF8CD013D24061233F5A342 /* Pods-watchOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-watchOS-frameworks.sh"; sourceTree = "<group>"; };
+		2CC23DAB541DBD4F082F70E71A689315 /* Pods-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-macOS-dummy.m"; sourceTree = "<group>"; };
+		2F4FE4095689DD5926B5F13856810949 /* FileInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
+		301BF7229C2B0211EB184FD5D282AC85 /* Fire-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Fire-OSX.modulemap"; sourceTree = "<group>"; };
+		33245ECEF983CD115D0841F7291FB64A /* Pods-watchOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-watchOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36D7D304E7AD1018A7B39C59C8C9EB45 /* Fire-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fire-iOS-umbrella.h"; path = "../Fire-iOS/Fire-iOS-umbrella.h"; sourceTree = "<group>"; };
+		376F2B6C1B63731C037E781C16E76C08 /* FireAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FireAPI.swift; sourceTree = "<group>"; };
+		385447F4B60C81FCC9B5649E683DBC16 /* Fire-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Fire-tvOS-dummy.m"; path = "../Fire-tvOS/Fire-tvOS-dummy.m"; sourceTree = "<group>"; };
+		39A5CFA3018A3EB34AA9BF76EC2B3D5B /* Pods-macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-macOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		3BB22095A6D39398BCA109A7DC2619C6 /* Pods-macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CEE550676B6C49509B0ED77A378D605 /* FireJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FireJSON.swift; sourceTree = "<group>"; };
+		44098E1D85506B5E3982FD4010888CC3 /* Pods-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		44445C3D8188649FC312FE646038EAB3 /* Fire-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Fire-iOS-dummy.m"; path = "../Fire-iOS/Fire-iOS-dummy.m"; sourceTree = "<group>"; };
+		4B50DB10A1678A17A5FF14DF88D0CD0D /* Fire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fire.framework; path = "Fire-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED3604F59F55485B920C0E5D56B9624 /* Pods-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FE16C114704E21A17CDA7BF124941D0 /* Fire-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Fire-tvOS.xcconfig"; path = "../Fire-tvOS/Fire-tvOS.xcconfig"; sourceTree = "<group>"; };
+		5CB7865D2D6FBB3C127FADE11F10FEFF /* Fire-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fire-watchOS-prefix.pch"; path = "../Fire-watchOS/Fire-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		5CCE3A8CFC46B856447D850DE83492C3 /* FireHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FireHelper.swift; sourceTree = "<group>"; };
+		5FD294B99E9EB02F7C58B85ECEC0D186 /* Fire.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Fire.h; sourceTree = "<group>"; };
+		642B57859FFE4F1D9CC1B7DA46222BBB /* FileManager-SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileManager-SessionDelegate.swift"; sourceTree = "<group>"; };
+		647FF0B40CB5964B524CD63A67CDA532 /* Pods-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		6599D3ED9E4E07202C11177870B1B4EB /* Pods-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		6737557FF2547527F01091708CAE81FC /* Pods-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		6F44F491665A2A604A34865C31648360 /* Pods-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-macOS.modulemap"; sourceTree = "<group>"; };
+		74352F22BDA9FCCD688ABE27328C7629 /* Fire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fire.framework; path = "Fire-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75817C9F28CBA5080F74047F563EBA32 /* String+Fire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Fire.swift"; sourceTree = "<group>"; };
+		762817129FBFD6AE8E2DBDD38A7F8B80 /* FireManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FireManager.swift; sourceTree = "<group>"; };
+		7C347AD8809B00144650A8150E03ED6C /* Fire-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Fire-OSX.xcconfig"; sourceTree = "<group>"; };
+		81DAE6E9EA731D569689FA2F7A175D4D /* Fire-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Fire-watchOS-dummy.m"; path = "../Fire-watchOS/Fire-watchOS-dummy.m"; sourceTree = "<group>"; };
+		8BE3B83AF022F5BFEDBBD358A390C786 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A63D8334089941532D318BD75A8959 /* Fire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fire.framework; path = "Fire-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		980E8C5900D4A290026133916B7EAF4A /* Pods-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9C4E45F1B1910FF8557E911DFCDAB210 /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOS.framework; path = "Pods-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DAA3EF388F6EAEE276DBE82196BD280 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A103732776DBEFB5F6D9BDEAC08E6255 /* Pods-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A1232675126458E7FE54E513DD2BE8BB /* Fire-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fire-watchOS-umbrella.h"; path = "../Fire-watchOS/Fire-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		A14ACE9B1599146A1C1717076FB82C8E /* Pods-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-tvOS.modulemap"; sourceTree = "<group>"; };
+		A52B12FEED12174D9FF5FC597A706015 /* Pods-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-watchOS-dummy.m"; sourceTree = "<group>"; };
+		A9343126E58FFC2E7E550B6BBD451297 /* Pods_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_tvOS.framework; path = "Pods-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2B92707DFABCCA48FF47331D305696 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Fire-watchOS/Info.plist"; sourceTree = "<group>"; };
+		AABA125BA3DA8B617FC959C4A40EB9B6 /* Pods-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		B0384963B126B156C6D7D4A92F13C84E /* Fire-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Fire-watchOS.modulemap"; path = "../Fire-watchOS/Fire-watchOS.modulemap"; sourceTree = "<group>"; };
+		B17DC25AB6C4E67E96D05EF7D869567E /* Fire-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fire-OSX-umbrella.h"; sourceTree = "<group>"; };
+		B18FAE5AEE0AB57BA674B2DA15491177 /* Fire-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fire-OSX-dummy.m"; sourceTree = "<group>"; };
+		B968F2E93A3B15896D3C4C973315EA7E /* Pods_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_macOS.framework; path = "Pods-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9720C7FEB80905AC193BC8818D1C49E /* Pods-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-watchOS.modulemap"; sourceTree = "<group>"; };
+		C185DEBA8455AB3E9CF04BB961C2D51F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Fire-tvOS/Info.plist"; sourceTree = "<group>"; };
+		C3BDED92FBBC944DF5C0301F64EF6E0F /* Pods-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOS-umbrella.h"; sourceTree = "<group>"; };
+		C499F755D496D07B83E747F6324CFD9B /* FireJSON+ArrayLiteralConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FireJSON+ArrayLiteralConvertible.swift"; sourceTree = "<group>"; };
+		C5D6CE02021FF73ECBCFC7A9E7111198 /* Fire-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Fire-iOS.modulemap"; path = "../Fire-iOS/Fire-iOS.modulemap"; sourceTree = "<group>"; };
+		C68475065DFE8F9DC45FBEEA91CA4434 /* FireValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FireValues.swift; sourceTree = "<group>"; };
+		D2B5AE17E9AD451D190A52793354DEB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Fire-iOS/Info.plist"; sourceTree = "<group>"; };
+		D612AC3F5EB4C3F9116992F7B12B9F83 /* Pods-watchOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-watchOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA8416EE408A1B98CC0E89EA23943EAA /* Fire-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Fire-watchOS.xcconfig"; path = "../Fire-watchOS/Fire-watchOS.xcconfig"; sourceTree = "<group>"; };
+		DC511903452B199B47A733F7E21E9728 /* Fire-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Fire-iOS.xcconfig"; path = "../Fire-iOS/Fire-iOS.xcconfig"; sourceTree = "<group>"; };
+		E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E1ED04F08037F60F65C8CF4FE382B2BD /* Pods-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iOS.modulemap"; sourceTree = "<group>"; };
+		E83E3DF9863E6A0DEE1B6315DBC938BC /* Pods-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS-resources.sh"; sourceTree = "<group>"; };
+		EB330D052F7BFE5516F60241782837FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE204B688C81808EFB6CB80C4DC4F38E /* Pods-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tvOS-frameworks.sh"; sourceTree = "<group>"; };
+		EE77CA599B74483ECAFAD630878E94F9 /* FireJSONModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FireJSONModel.swift; sourceTree = "<group>"; };
+		EF96E983CF5AD7CE90A615C1F18E38EF /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		F0375F990F7BAB56345B517F4630A3D6 /* Fire-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Fire-tvOS.modulemap"; path = "../Fire-tvOS/Fire-tvOS.modulemap"; sourceTree = "<group>"; };
+		F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F12161C90F399982B665B1C4B18CEE5A /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F6A85FBC0BCB7F75D76E6761D45F701C /* FireJSON+DictionaryLiteralConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FireJSON+DictionaryLiteralConvertible.swift"; sourceTree = "<group>"; };
+		F9544D144E96BBC4DF70FE4F2353D896 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3611F941213224D62CF993995ACD01 /* Fire-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fire-tvOS-prefix.pch"; path = "../Fire-tvOS/Fire-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		FFC5AC6FA66C6A69A804DA4ED6CDC7CE /* Pods-macOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-macOS-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040DC754B0DDA9743FF90CA9F1FED6B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460A84B9783D9BA0D17736D313807411 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21A3F050E30A50D4732076E2CB6618DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA14CD836760DBF0FEAA532D0758F48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6098EBA379E6F1283EDD0B67E44D0682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66513DAC222A70FCCD45AAB6FBAB098C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE3801F636B707B55DDADDC19E5A598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51485A4460E6F936AD1DD4B94EE48AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911F39600A06FAF615A5C86C81F0E0B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6A62E821722AF870BD386C2ED3B9E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B9278B872BE7FD4FF849E36EA41D7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B506A085A0B49D22216A1F8ADC734A5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEFA1872A78DAD7B431F4852E29A6B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE31D3CB489C6DC95523BE78A18C5B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8D4BBB1A982782508899F5FB3C8A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6E85D0ED5A2C86AC85B2FCD1BE7969 /* Cocoa.framework in Frameworks */,
+				48140950A020E0630CCED63018D5564A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090BC3AE2E51F2C97DFAE942A42D676C /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		157C3980CA1440B78D7260A1F6AF374D /* Pods-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB330D052F7BFE5516F60241782837FD /* Info.plist */,
+				E1ED04F08037F60F65C8CF4FE382B2BD /* Pods-iOS.modulemap */,
+				4ED3604F59F55485B920C0E5D56B9624 /* Pods-iOS-acknowledgements.markdown */,
+				137AE203BE5A817308F96ABD21F86296 /* Pods-iOS-acknowledgements.plist */,
+				056A891FBDD267FEC24E2FABA1E481C6 /* Pods-iOS-dummy.m */,
+				6599D3ED9E4E07202C11177870B1B4EB /* Pods-iOS-frameworks.sh */,
+				E83E3DF9863E6A0DEE1B6315DBC938BC /* Pods-iOS-resources.sh */,
+				C3BDED92FBBC944DF5C0301F64EF6E0F /* Pods-iOS-umbrella.h */,
+				F12161C90F399982B665B1C4B18CEE5A /* Pods-iOS.debug.xcconfig */,
+				24411803B57DCD4B06E09158833DC24B /* Pods-iOS.release.xcconfig */,
+			);
+			name = "Pods-iOS";
+			path = "Target Support Files/Pods-iOS";
+			sourceTree = "<group>";
+		};
+		1CC9F983D06FE962DB2E122E0ADCB7B4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2F4FE4095689DD5926B5F13856810949 /* FileInfo.swift */,
+				642B57859FFE4F1D9CC1B7DA46222BBB /* FileManager-SessionDelegate.swift */,
+				0C897D47E838F57A812CD09CFB9AD59E /* Fire.swift */,
+				376F2B6C1B63731C037E781C16E76C08 /* FireAPI.swift */,
+				5CCE3A8CFC46B856447D850DE83492C3 /* FireHelper.swift */,
+				762817129FBFD6AE8E2DBDD38A7F8B80 /* FireManager.swift */,
+				C68475065DFE8F9DC45FBEEA91CA4434 /* FireValues.swift */,
+				75817C9F28CBA5080F74047F563EBA32 /* String+Fire.swift */,
+				25C0C9DF48A3815508DB668F0993813C /* FireJSON */,
+			);
+			name = Source;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		25C0C9DF48A3815508DB668F0993813C /* FireJSON */ = {
+			isa = PBXGroup;
+			children = (
+				3CEE550676B6C49509B0ED77A378D605 /* FireJSON.swift */,
+				C499F755D496D07B83E747F6324CFD9B /* FireJSON+ArrayLiteralConvertible.swift */,
+				F6A85FBC0BCB7F75D76E6761D45F701C /* FireJSON+DictionaryLiteralConvertible.swift */,
+				EE77CA599B74483ECAFAD630878E94F9 /* FireJSONModel.swift */,
+			);
+			name = FireJSON;
+			path = FireJSON;
+			sourceTree = "<group>";
+		};
+		4BD442A0B1425AFA1A7243BE01D7A220 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0970B1601F4A79E7A82AB3F1EBEDD7EF /* Fire.framework */,
+				4B50DB10A1678A17A5FF14DF88D0CD0D /* Fire.framework */,
+				74352F22BDA9FCCD688ABE27328C7629 /* Fire.framework */,
+				95A63D8334089941532D318BD75A8959 /* Fire.framework */,
+				9C4E45F1B1910FF8557E911DFCDAB210 /* Pods_iOS.framework */,
+				B968F2E93A3B15896D3C4C973315EA7E /* Pods_macOS.framework */,
+				A9343126E58FFC2E7E550B6BBD451297 /* Pods_tvOS.framework */,
+				0EBF5AEB4506843D5DC4D8C15860E278 /* Pods_watchOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		710FE4461AA569481BFE818F5ABEDA55 /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				F01227D0E38A375C2C3EC295F9BCEB3A /* Fire */,
+				A10280F1BB4083C5511602920D7133C9 /* Support Files */,
+			);
+			name = Fire;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		71877252CC47AB1885A21D2F65DFDD8A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				EE98F5920F1B628D01647EC07901A0D1 /* Development Pods */,
+				9CE66CDE1AE81A05FA082983A88A0B51 /* Frameworks */,
+				4BD442A0B1425AFA1A7243BE01D7A220 /* Products */,
+				F2C0DED6BF0C02C03CDC9E9C8A4088A9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		924E5F0B6AF3C7A30DF8AE07EBD7A516 /* Pods-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				22A762BECC111131F0EF25856D5A2025 /* Info.plist */,
+				6F44F491665A2A604A34865C31648360 /* Pods-macOS.modulemap */,
+				3BB22095A6D39398BCA109A7DC2619C6 /* Pods-macOS-acknowledgements.markdown */,
+				39A5CFA3018A3EB34AA9BF76EC2B3D5B /* Pods-macOS-acknowledgements.plist */,
+				2CC23DAB541DBD4F082F70E71A689315 /* Pods-macOS-dummy.m */,
+				279D9A62489860EA7AAFED06BA6457C6 /* Pods-macOS-frameworks.sh */,
+				FFC5AC6FA66C6A69A804DA4ED6CDC7CE /* Pods-macOS-resources.sh */,
+				2B67B850EEB122EA21F2FB2CA896760D /* Pods-macOS-umbrella.h */,
+				980E8C5900D4A290026133916B7EAF4A /* Pods-macOS.debug.xcconfig */,
+				EF96E983CF5AD7CE90A615C1F18E38EF /* Pods-macOS.release.xcconfig */,
+			);
+			name = "Pods-macOS";
+			path = "Target Support Files/Pods-macOS";
+			sourceTree = "<group>";
+		};
+		9A0721C4C99C29967A3F531ECAE1EA12 /* Pods-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				9DAA3EF388F6EAEE276DBE82196BD280 /* Info.plist */,
+				A14ACE9B1599146A1C1717076FB82C8E /* Pods-tvOS.modulemap */,
+				0072C3E2BAD8F1BFBAF084248629D334 /* Pods-tvOS-acknowledgements.markdown */,
+				1725ED528340AA53E3108BC32EACC9CF /* Pods-tvOS-acknowledgements.plist */,
+				21AC53D57FBC6FF65DC7F766E9B39805 /* Pods-tvOS-dummy.m */,
+				EE204B688C81808EFB6CB80C4DC4F38E /* Pods-tvOS-frameworks.sh */,
+				1F2C03E64A9710C8591CD1C6A47E3945 /* Pods-tvOS-resources.sh */,
+				014B4EBD41DCE30382A1E8AD04A360B5 /* Pods-tvOS-umbrella.h */,
+				A103732776DBEFB5F6D9BDEAC08E6255 /* Pods-tvOS.debug.xcconfig */,
+				647FF0B40CB5964B524CD63A67CDA532 /* Pods-tvOS.release.xcconfig */,
+			);
+			name = "Pods-tvOS";
+			path = "Target Support Files/Pods-tvOS";
+			sourceTree = "<group>";
+		};
+		9CE66CDE1AE81A05FA082983A88A0B51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71877252CC47AB1885A21D2F65DFDD8A /* iOS */,
+				B32A65AA48AEE3BCDABA0EDC6DC51248 /* OS X */,
+				090BC3AE2E51F2C97DFAE942A42D676C /* tvOS */,
+				AF0110E626B7D115952F313DCAC8692F /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A10280F1BB4083C5511602920D7133C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5D6CE02021FF73ECBCFC7A9E7111198 /* Fire-iOS.modulemap */,
+				DC511903452B199B47A733F7E21E9728 /* Fire-iOS.xcconfig */,
+				44445C3D8188649FC312FE646038EAB3 /* Fire-iOS-dummy.m */,
+				053DED7D76EF4128EFD6F665921BEF20 /* Fire-iOS-prefix.pch */,
+				36D7D304E7AD1018A7B39C59C8C9EB45 /* Fire-iOS-umbrella.h */,
+				301BF7229C2B0211EB184FD5D282AC85 /* Fire-OSX.modulemap */,
+				7C347AD8809B00144650A8150E03ED6C /* Fire-OSX.xcconfig */,
+				B18FAE5AEE0AB57BA674B2DA15491177 /* Fire-OSX-dummy.m */,
+				235CC6CEDF5C4668FD3F4BB74F24BC4D /* Fire-OSX-prefix.pch */,
+				B17DC25AB6C4E67E96D05EF7D869567E /* Fire-OSX-umbrella.h */,
+				F0375F990F7BAB56345B517F4630A3D6 /* Fire-tvOS.modulemap */,
+				4FE16C114704E21A17CDA7BF124941D0 /* Fire-tvOS.xcconfig */,
+				385447F4B60C81FCC9B5649E683DBC16 /* Fire-tvOS-dummy.m */,
+				FC3611F941213224D62CF993995ACD01 /* Fire-tvOS-prefix.pch */,
+				0D7FB07F751D5E1FE062E9102A6D8134 /* Fire-tvOS-umbrella.h */,
+				B0384963B126B156C6D7D4A92F13C84E /* Fire-watchOS.modulemap */,
+				DA8416EE408A1B98CC0E89EA23943EAA /* Fire-watchOS.xcconfig */,
+				81DAE6E9EA731D569689FA2F7A175D4D /* Fire-watchOS-dummy.m */,
+				5CB7865D2D6FBB3C127FADE11F10FEFF /* Fire-watchOS-prefix.pch */,
+				A1232675126458E7FE54E513DD2BE8BB /* Fire-watchOS-umbrella.h */,
+				F9544D144E96BBC4DF70FE4F2353D896 /* Info.plist */,
+				C185DEBA8455AB3E9CF04BB961C2D51F /* Info.plist */,
+				AA2B92707DFABCCA48FF47331D305696 /* Info.plist */,
+				D2B5AE17E9AD451D190A52793354DEB2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Fire-Demo/Pods/Target Support Files/Fire-OSX";
+			sourceTree = "<group>";
+		};
+		A28ADD3BDA24AE084E2222086C36750D /* Pods-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				8BE3B83AF022F5BFEDBBD358A390C786 /* Info.plist */,
+				B9720C7FEB80905AC193BC8818D1C49E /* Pods-watchOS.modulemap */,
+				33245ECEF983CD115D0841F7291FB64A /* Pods-watchOS-acknowledgements.markdown */,
+				D612AC3F5EB4C3F9116992F7B12B9F83 /* Pods-watchOS-acknowledgements.plist */,
+				A52B12FEED12174D9FF5FC597A706015 /* Pods-watchOS-dummy.m */,
+				2B89A535DBF8CD013D24061233F5A342 /* Pods-watchOS-frameworks.sh */,
+				21D643FD02A6CF523D6DEA5C53024071 /* Pods-watchOS-resources.sh */,
+				6737557FF2547527F01091708CAE81FC /* Pods-watchOS-umbrella.h */,
+				44098E1D85506B5E3982FD4010888CC3 /* Pods-watchOS.debug.xcconfig */,
+				AABA125BA3DA8B617FC959C4A40EB9B6 /* Pods-watchOS.release.xcconfig */,
+			);
+			name = "Pods-watchOS";
+			path = "Target Support Files/Pods-watchOS";
+			sourceTree = "<group>";
+		};
+		AF0110E626B7D115952F313DCAC8692F /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		B32A65AA48AEE3BCDABA0EDC6DC51248 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */,
+				215C1F74F52D4FB93EDD9E39A645EE09 /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		EE98F5920F1B628D01647EC07901A0D1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				710FE4461AA569481BFE818F5ABEDA55 /* Fire */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F01227D0E38A375C2C3EC295F9BCEB3A /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				F7571FBB2EF00D5A7F6220FF11E784B8 /* Fire */,
+				1CC9F983D06FE962DB2E122E0ADCB7B4 /* Source */,
+			);
+			name = Fire;
+			path = Fire;
+			sourceTree = "<group>";
+		};
+		F2C0DED6BF0C02C03CDC9E9C8A4088A9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				157C3980CA1440B78D7260A1F6AF374D /* Pods-iOS */,
+				924E5F0B6AF3C7A30DF8AE07EBD7A516 /* Pods-macOS */,
+				9A0721C4C99C29967A3F531ECAE1EA12 /* Pods-tvOS */,
+				A28ADD3BDA24AE084E2222086C36750D /* Pods-watchOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F7571FBB2EF00D5A7F6220FF11E784B8 /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				5FD294B99E9EB02F7C58B85ECEC0D186 /* Fire.h */,
+			);
+			name = Fire;
+			path = Fire;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AC21D530F46700A63D6CED1F186A547 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0C19A02F5A8A72F805DBB4B5C9918B /* Fire-watchOS-umbrella.h in Headers */,
+				4795FDCFBC0FFEBF96951CBFB0297F3F /* Fire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		121FD8CA075B7D07734D4AC60CD305F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E604F4D1B12D2FE72E3B57EFFBF70F50 /* Pods-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CCBE1266D0F08C9D72585696D4BCC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E78FEDCC53E2220CCBE8DBCB018994 /* Pods-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C73F06E436AE41D9056EEFDD6AD495E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C0E2CE5811F893A2B589083C9F1A41 /* Fire-tvOS-umbrella.h in Headers */,
+				1DB38ACF21C07F4D6548E1603EB129AE /* Fire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4411E09C87FC2D243C0CF246EA02EB10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A425D8567A03ACED0092BDAA6592DFA9 /* Fire-iOS-umbrella.h in Headers */,
+				D31F15E39FDDBBF5A867A67D819EAC4B /* Fire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA0710BEC6D9B7E00F793AB0C688C14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE83ABFB7845E62C2555937936426AD /* Pods-tvOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1AAED337EB213B7434DC3902879203 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA16ED95AABC908AC89913A4F719864 /* Fire-OSX-umbrella.h in Headers */,
+				0127F263F21352B10CBAFE8E5D9A5F47 /* Fire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3A12C1305F1D0390B0B4BF412C27AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5DD93F2A4272BA58E059126EEEF31E /* Pods-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C9FE6BCCB61943C16413A875D906F7E /* Fire-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24EB9F8AE4AA3D0534EFFCD3CABC92E /* Build configuration list for PBXNativeTarget "Fire-OSX" */;
+			buildPhases = (
+				C83F058E4AFE19B969E3A1C73ABD3F36 /* Sources */,
+				ED8D4BBB1A982782508899F5FB3C8A17 /* Frameworks */,
+				9A1AAED337EB213B7434DC3902879203 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fire-OSX";
+			productName = "Fire-OSX";
+			productReference = 0970B1601F4A79E7A82AB3F1EBEDD7EF /* Fire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3AF80B79CA5441922ACC323B71AF895D /* Fire-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CAA2CE914E7F979888C24FDDEF7A655 /* Build configuration list for PBXNativeTarget "Fire-iOS" */;
+			buildPhases = (
+				FFE69B4B9763E18DCBA680D5D214CB6E /* Sources */,
+				AAEFA1872A78DAD7B431F4852E29A6B1 /* Frameworks */,
+				4411E09C87FC2D243C0CF246EA02EB10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fire-iOS";
+			productName = "Fire-iOS";
+			productReference = 4B50DB10A1678A17A5FF14DF88D0CD0D /* Fire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6037504CAE9A9AEFBE11998CEF70FB63 /* Pods-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77982E4519804D91C653C8F475D79BEB /* Build configuration list for PBXNativeTarget "Pods-iOS" */;
+			buildPhases = (
+				F35FBC67C44A122AC17F6AD3D03CADE7 /* Sources */,
+				7DE3801F636B707B55DDADDC19E5A598 /* Frameworks */,
+				CE3A12C1305F1D0390B0B4BF412C27AF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				394A12A73DC4EB15D17E7AF3C81FC2B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-iOS";
+			productName = "Pods-iOS";
+			productReference = 9C4E45F1B1910FF8557E911DFCDAB210 /* Pods_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6287E7C992ABF8F11FFD3A9B0A90043D /* Pods-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 825E737DB53027606D373A6720FAB427 /* Build configuration list for PBXNativeTarget "Pods-tvOS" */;
+			buildPhases = (
+				67717E19FA0A3D1BE1DDD29DE98C06F2 /* Sources */,
+				21A3F050E30A50D4732076E2CB6618DA /* Frameworks */,
+				4DA0710BEC6D9B7E00F793AB0C688C14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CA6591FD396B66402DFB3D016B4488 /* PBXTargetDependency */,
+			);
+			name = "Pods-tvOS";
+			productName = "Pods-tvOS";
+			productReference = A9343126E58FFC2E7E550B6BBD451297 /* Pods_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8764E2EB829090724CE378A059D26C89 /* Pods-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9582FC4D837D3A2C144D56BE523A392B /* Build configuration list for PBXNativeTarget "Pods-macOS" */;
+			buildPhases = (
+				DA10CA00B73A8A311D2C17548C94F1DD /* Sources */,
+				A2B9278B872BE7FD4FF849E36EA41D7F /* Frameworks */,
+				121FD8CA075B7D07734D4AC60CD305F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C036C858092F90199550CB018A8A7010 /* PBXTargetDependency */,
+			);
+			name = "Pods-macOS";
+			productName = "Pods-macOS";
+			productReference = B968F2E93A3B15896D3C4C973315EA7E /* Pods_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E5BC5DCCAA3A8DF70306451C0E7F390 /* Fire-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 611049DC893D0611885FDB8F5476C467 /* Build configuration list for PBXNativeTarget "Fire-watchOS" */;
+			buildPhases = (
+				A2F73DAB59A5661C58F6A24CF644CBA8 /* Sources */,
+				911F39600A06FAF615A5C86C81F0E0B3 /* Frameworks */,
+				0AC21D530F46700A63D6CED1F186A547 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fire-watchOS";
+			productName = "Fire-watchOS";
+			productReference = 95A63D8334089941532D318BD75A8959 /* Fire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC9DFBC0562EC993E117B312BD541A7F /* Fire-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08D6A1D14F83DD83D9805B0D18B25F95 /* Build configuration list for PBXNativeTarget "Fire-tvOS" */;
+			buildPhases = (
+				8395AAE51702934CC5D60D045A0EEE0F /* Sources */,
+				6098EBA379E6F1283EDD0B67E44D0682 /* Frameworks */,
+				3C73F06E436AE41D9056EEFDD6AD495E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fire-tvOS";
+			productName = "Fire-tvOS";
+			productReference = 74352F22BDA9FCCD688ABE27328C7629 /* Fire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC9E72717F511778086534125F9B058C /* Pods-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650F06825CDB29BB2B8A5E2AC5599B9E /* Build configuration list for PBXNativeTarget "Pods-watchOS" */;
+			buildPhases = (
+				E19554AFCC17EC7B3B8EFADC6D71A5E3 /* Sources */,
+				040DC754B0DDA9743FF90CA9F1FED6B5 /* Frameworks */,
+				22CCBE1266D0F08C9D72585696D4BCC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65DCEB7D130BA8CD35EC0B1354B576EC /* PBXTargetDependency */,
+			);
+			name = "Pods-watchOS";
+			productName = "Pods-watchOS";
+			productReference = 0EBF5AEB4506843D5DC4D8C15860E278 /* Pods_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4BD442A0B1425AFA1A7243BE01D7A220 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AF80B79CA5441922ACC323B71AF895D /* Fire-iOS */,
+				2C9FE6BCCB61943C16413A875D906F7E /* Fire-OSX */,
+				AC9DFBC0562EC993E117B312BD541A7F /* Fire-tvOS */,
+				8E5BC5DCCAA3A8DF70306451C0E7F390 /* Fire-watchOS */,
+				6037504CAE9A9AEFBE11998CEF70FB63 /* Pods-iOS */,
+				8764E2EB829090724CE378A059D26C89 /* Pods-macOS */,
+				6287E7C992ABF8F11FFD3A9B0A90043D /* Pods-tvOS */,
+				CC9E72717F511778086534125F9B058C /* Pods-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67717E19FA0A3D1BE1DDD29DE98C06F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB44FEF5C6261BFB52781EBD81DC15E7 /* Pods-tvOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8395AAE51702934CC5D60D045A0EEE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A268C8A3B25405EEAAC1F0157A767038 /* FileInfo.swift in Sources */,
+				FF733E7549766C6FD2732377D1F7A3BD /* FileManager-SessionDelegate.swift in Sources */,
+				77F8A8E76F2FF4661494C0E481EAD154 /* Fire-tvOS-dummy.m in Sources */,
+				2193C73CF927E4502C307E844AB23C51 /* Fire.swift in Sources */,
+				D459D001FCD79E7154C870CDD9F612EB /* FireAPI.swift in Sources */,
+				01E9CAC8FA4FB05496493F9186E881D4 /* FireHelper.swift in Sources */,
+				C0A2C021B70DDFE4CEC7C1149A278898 /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
+				D0E5982E810519D978849EF1319012C1 /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
+				F723D78AF4F7BFF73CDB9EBAA0D546F4 /* FireJSON.swift in Sources */,
+				82A30E04E6702DAB79775C8329EB9059 /* FireJSONModel.swift in Sources */,
+				85BE0C7156AC0A93F83184BDFD48FC84 /* FireManager.swift in Sources */,
+				E336F4AEEE223DB233DDEF1BEE959A1F /* FireValues.swift in Sources */,
+				7943A7B33C6FBBFD3CDB3F8D9E392B3F /* String+Fire.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2F73DAB59A5661C58F6A24CF644CBA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6AB475B9EB4F7752A465F14169A867 /* FileInfo.swift in Sources */,
+				FBA823FFE1606E9E2BE935DE83C600A3 /* FileManager-SessionDelegate.swift in Sources */,
+				6D7CA334E247F8CA8EF99EF966DA643E /* Fire-watchOS-dummy.m in Sources */,
+				A054B617225FE8D5B44791A3E5D67CDE /* Fire.swift in Sources */,
+				6B64B246EBB3D2D324594CB5712AA65A /* FireAPI.swift in Sources */,
+				C4362C06179004C077AF9B74543FEBBF /* FireHelper.swift in Sources */,
+				3E507C9873B31C3FAAAA100CA13CCAFC /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
+				C6DCA84ACAF502B5C797934CB6B37CFE /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
+				FB35272CF9819A86C41F68879B542E0D /* FireJSON.swift in Sources */,
+				B7C66A5D5F495FB92BCC609647961C69 /* FireJSONModel.swift in Sources */,
+				04F3BBB0DBC8133EBBE403DFFCB04E55 /* FireManager.swift in Sources */,
+				8B6B945AC639F5BCCFC81560E6BFC310 /* FireValues.swift in Sources */,
+				BB7676AAF6CC51DBF482B1F92FE53641 /* String+Fire.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83F058E4AFE19B969E3A1C73ABD3F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A91BD38C759986945D26C6DF665015 /* FileInfo.swift in Sources */,
+				B2FBCF36869B58B2DAB587835367380F /* FileManager-SessionDelegate.swift in Sources */,
+				8EB15B632C2CB5DB46F94338BE166516 /* Fire-OSX-dummy.m in Sources */,
+				8BB6933263511FC4105B0A854F442C28 /* Fire.swift in Sources */,
+				12970C3FC910A4430BFA0FC01CA7D3D0 /* FireAPI.swift in Sources */,
+				20D5CB14E02443CE66B057FA240D3DE6 /* FireHelper.swift in Sources */,
+				5296569878D00676E4215D367D68761A /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
+				2A55CFD8B76275830223053181300C06 /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
+				A61626C97E94FB8BF1E1EB1E6224C996 /* FireJSON.swift in Sources */,
+				1E13FBB10E46602439E109DA63920DE4 /* FireJSONModel.swift in Sources */,
+				A8A7E5C9D15A2BC7A30C6B9D146F3501 /* FireManager.swift in Sources */,
+				3115C4A7317C15153690BB59795F0EAA /* FireValues.swift in Sources */,
+				1808B4D41D2A742D4682854812B2A9E1 /* String+Fire.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA10CA00B73A8A311D2C17548C94F1DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFAECA222B517BC3222945E51F7DD04 /* Pods-macOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19554AFCC17EC7B3B8EFADC6D71A5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFF602CB83085E71E4BDC0CFABE2A24 /* Pods-watchOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35FBC67C44A122AC17F6AD3D03CADE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE97C65965C19C2866779E79432B9A3 /* Pods-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE69B4B9763E18DCBA680D5D214CB6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECEE9B287F677E3CF5163534C2010535 /* FileInfo.swift in Sources */,
+				A4CFBD1950727274541EC97CAC07906A /* FileManager-SessionDelegate.swift in Sources */,
+				8EA487BB7C3DFE92D2BDC7A4FF83D8C1 /* Fire-iOS-dummy.m in Sources */,
+				42145FFF9FE9BF92E2EBA45149E965A2 /* Fire.swift in Sources */,
+				1EC4721A6CBA4D3FEC8F8BF81C62A203 /* FireAPI.swift in Sources */,
+				402A16EEDEF40D8C52783F17F23C6BF8 /* FireHelper.swift in Sources */,
+				19C692B74298FC677F189AE91E3831D2 /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
+				C4834222C9D88E980AE01A15B16621F2 /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
+				D29EECD5284B9AADBC3DC8D18C0F4E64 /* FireJSON.swift in Sources */,
+				AE45FB797179BB21E85A39C7C36E55D9 /* FireJSONModel.swift in Sources */,
+				31FF21ABE43CB03CEB7E505CE7792B20 /* FireManager.swift in Sources */,
+				01A11678CBD0ACBDC0A24D9521CCE23A /* FireValues.swift in Sources */,
+				DB50B10387951B00642ED2B3146398B2 /* String+Fire.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		394A12A73DC4EB15D17E7AF3C81FC2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Fire-iOS";
+			target = 3AF80B79CA5441922ACC323B71AF895D /* Fire-iOS */;
+			targetProxy = 925C205C53C661F710BD7C09F8E35C56 /* PBXContainerItemProxy */;
+		};
+		65DCEB7D130BA8CD35EC0B1354B576EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Fire-watchOS";
+			target = 8E5BC5DCCAA3A8DF70306451C0E7F390 /* Fire-watchOS */;
+			targetProxy = B6B7D26EAFAFB036B547B7C54567D619 /* PBXContainerItemProxy */;
+		};
+		C036C858092F90199550CB018A8A7010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Fire-OSX";
+			target = 2C9FE6BCCB61943C16413A875D906F7E /* Fire-OSX */;
+			targetProxy = E536E899618735E7B8A0933F2C917AA7 /* PBXContainerItemProxy */;
+		};
+		E2CA6591FD396B66402DFB3D016B4488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Fire-tvOS";
+			target = AC9DFBC0562EC993E117B312BD541A7F /* Fire-tvOS */;
+			targetProxy = B0704DC2962C1720E69A49B7DA24600D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034B620D64FCADA051147E4F148FF4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F12161C90F399982B665B1C4B18CEE5A /* Pods-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOS/Pods-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		08600F438C4A0A2358C07D25BB8560AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC511903452B199B47A733F7E21E9728 /* Fire-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire-iOS/Fire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Fire-iOS/Fire-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Fire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0B5A986C02F199A028788E67B719F156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF96E983CF5AD7CE90A615C1F18E38EF /* Pods-macOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-macOS/Pods-macOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_macOS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18C9D0B8B07404E8E8D80AE8DCB5ABF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647FF0B40CB5964B524CD63A67CDA532 /* Pods-tvOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tvOS/Pods-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_tvOS;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1DAC417E75723732FE2A863808C5C9DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE16C114704E21A17CDA7BF124941D0 /* Fire-tvOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire-tvOS/Fire-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Fire-tvOS/Fire-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Fire;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		473A3752D7B0F4CACD264830A3DBD0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980E8C5900D4A290026133916B7EAF4A /* Pods-macOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-macOS/Pods-macOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_macOS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		496EC3C8EE054034CD4E755551694560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		79BDB2A7E72B847238D8CF34930DDE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC511903452B199B47A733F7E21E9728 /* Fire-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire-iOS/Fire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Fire-iOS/Fire-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Fire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7BCABB8031F8E7915EF910D7C6E749CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE16C114704E21A17CDA7BF124941D0 /* Fire-tvOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire-tvOS/Fire-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Fire-tvOS/Fire-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Fire;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83E646B217B2ED1F3FD988FD2E805792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8416EE408A1B98CC0E89EA23943EAA /* Fire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire-watchOS/Fire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Fire-watchOS/Fire-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Fire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		882F1BA53244CBAF4FF60D4628553A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44098E1D85506B5E3982FD4010888CC3 /* Pods-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-watchOS/Pods-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_watchOS;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		9069682FB5BE668DF3284092860807C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABA125BA3DA8B617FC959C4A40EB9B6 /* Pods-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-watchOS/Pods-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_watchOS;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		91A8673585421AAA5E4029F4F023EFD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C347AD8809B00144650A8150E03ED6C /* Fire-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire-OSX/Fire-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Fire-OSX/Fire-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Fire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		956CC5E78A03E37EECBDFD1F30BD4844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24411803B57DCD4B06E09158833DC24B /* Pods-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOS/Pods-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A37A60D34A40045AE14745392152B955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8416EE408A1B98CC0E89EA23943EAA /* Fire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire-watchOS/Fire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Fire-watchOS/Fire-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Fire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B427F34503DD64493B911B92AE2C0434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		BB7D18FC56C54857E1F1F847F96B09E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A103732776DBEFB5F6D9BDEAC08E6255 /* Pods-tvOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tvOS/Pods-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_tvOS;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C26999601A5307CC342B28D988404954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C347AD8809B00144650A8150E03ED6C /* Fire-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire-OSX/Fire-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Fire-OSX/Fire-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Fire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08D6A1D14F83DD83D9805B0D18B25F95 /* Build configuration list for PBXNativeTarget "Fire-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCABB8031F8E7915EF910D7C6E749CA /* Debug */,
+				1DAC417E75723732FE2A863808C5C9DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CAA2CE914E7F979888C24FDDEF7A655 /* Build configuration list for PBXNativeTarget "Fire-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BDB2A7E72B847238D8CF34930DDE2D /* Debug */,
+				08600F438C4A0A2358C07D25BB8560AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496EC3C8EE054034CD4E755551694560 /* Debug */,
+				B427F34503DD64493B911B92AE2C0434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		611049DC893D0611885FDB8F5476C467 /* Build configuration list for PBXNativeTarget "Fire-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E646B217B2ED1F3FD988FD2E805792 /* Debug */,
+				A37A60D34A40045AE14745392152B955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650F06825CDB29BB2B8A5E2AC5599B9E /* Build configuration list for PBXNativeTarget "Pods-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				882F1BA53244CBAF4FF60D4628553A96 /* Debug */,
+				9069682FB5BE668DF3284092860807C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77982E4519804D91C653C8F475D79BEB /* Build configuration list for PBXNativeTarget "Pods-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034B620D64FCADA051147E4F148FF4B7 /* Debug */,
+				956CC5E78A03E37EECBDFD1F30BD4844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		825E737DB53027606D373A6720FAB427 /* Build configuration list for PBXNativeTarget "Pods-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7D18FC56C54857E1F1F847F96B09E7 /* Debug */,
+				18C9D0B8B07404E8E8D80AE8DCB5ABF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9582FC4D837D3A2C144D56BE523A392B /* Build configuration list for PBXNativeTarget "Pods-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473A3752D7B0F4CACD264830A3DBD0FD /* Debug */,
+				0B5A986C02F199A028788E67B719F156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24EB9F8AE4AA3D0534EFFCD3CABC92E /* Build configuration list for PBXNativeTarget "Fire-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C26999601A5307CC342B28D988404954 /* Debug */,
+				91A8673585421AAA5E4029F4F023EFD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

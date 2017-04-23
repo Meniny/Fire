@@ -85,7 +85,7 @@ f.setParams(["key": "value"])
 f.setFiles([file])
 f.setHTTPHeaders(["Accept": "application/json"])
 f.setBasicAuth("user", password: "pwd!@#")
-f.setHTTPBodyRaw(json.rawValue)
+f.setHTTPBody(raw: json.rawValue)
 let certData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("FireDemo", ofType: "cer")!)!
 f.setSSLPinning(localCertData: certData) {
     print("Warning: Under Man-in-the-middle attack!!")
@@ -193,7 +193,7 @@ f.setParams(["key": "value"])
 f.setFiles([file])
 f.setHTTPHeaders(["Accept": "application/json"])
 f.setBasicAuth("user", password: "pwd!@#")
-f.setHTTPBodyRaw(json.rawValue)
+f.setHTTPBody(raw: json.rawValue)
 let certData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("FireDemo", ofType: "cer")!)!
 f.setSSLPinning(localCertData: certData) {
     print("Warning: Under Man-in-the-middle attack!!")

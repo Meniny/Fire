@@ -50,12 +50,18 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
   }
 }
 
+//public enum FireTaskType {
+//    case dataTask, uploadDataTask, uploadFileTask, download
+//}
+
 // MARK: - Class
 
 open class FireManager: NSObject, URLSessionDelegate {
     static var oneMinute: Double = 60.0
     
     var debugBody: String = ""
+    
+//    open var taskType: FireTaskType = .dataTask
     
     let boundary = "FireUGl0YXlh"
     let errorDomain = "cn.meniny.Fire"
@@ -327,7 +333,7 @@ open class FireManager: NSObject, URLSessionDelegate {
         self.request.setValue("\(data.length)", forHTTPHeaderField: "Content-Length")
     }
     
-    fileprivate func fireTask() {
+    fileprivate func printReuestDebugInfo() {
         if Fire.DEBUG {
             let sep = "-----------------"
             var output: String = sep + "\n"
@@ -349,33 +355,114 @@ open class FireManager: NSObject, URLSessionDelegate {
             }
             print(output + "\n" + sep)
         }
-        self.task = self.session.dataTask(with: self.request) { [weak self] (data, response, error) -> Void in
-            if Fire.DEBUG {
-                if let a = response {
-                    print("[Fire] Response:\n", a.description)
-                }
+    }
+    
+    fileprivate func printResponseDebugInfo(_ response: URLResponse?) {
+        if Fire.DEBUG {
+            if let a = response {
+                print("[Fire] Response:\n", a.description)
             }
-            if let error = error as NSError? {
-                if error.code == -999 {
-                    DispatchQueue.main.async {
-                        self?.cancelCallback?()
+        }
+    }
+    
+    public typealias URLSesstionDataCompletionHandler = ((Data?, URLResponse?, Error?) -> Swift.Void)
+    public typealias URLSesstionURLCompletionHandler = ((URL?, URLResponse?, Error?) -> Swift.Void)
+    
+    fileprivate func fireTask() {
+        
+        self.printReuestDebugInfo()
+        
+        let dataCompletionHandler: URLSesstionDataCompletionHandler
+//        let urlCompletionHandler: URLSesstionURLCompletionHandler
+//
+//        if self.taskType == .download {
+//            dataCompletionHandler = { (data, response, error) -> Void in }
+//            urlCompletionHandler = { [weak self] (url, response, error) -> Void in
+//                
+//                self?.printResponseDebugInfo(response)
+//                
+//                if let error = error as NSError? {
+//                    if error.code == -999 {
+//                        DispatchQueue.main.async {
+//                            self?.cancelCallback?()
+//                        }
+//                    } else {
+//                        let e = NSError(domain: self?.errorDomain ?? "Fire", code: error.code, userInfo: error.userInfo)
+//                        print("[Fire] Error:\n", e.localizedDescription)
+//                        DispatchQueue.main.async {
+//                            self?.errorCallback?(e)
+//                            self?.session.finishTasksAndInvalidate()
+//                        }
+//                    }
+//                } else {
+//                    DispatchQueue.main.async {
+////                        self?.callback?(url, response as? HTTPURLResponse)
+//                        self?.session.finishTasksAndInvalidate()
+//                    }
+//                }
+//            }
+//            
+//        } else {
+//            urlCompletionHandler = { (url, response, error) -> Void in }
+            dataCompletionHandler = { [weak self] (data, response, error) -> Void in
+                
+                self?.printResponseDebugInfo(response)
+                
+                if let error = error as NSError? {
+                    if error.code == -999 {
+                        DispatchQueue.main.async {
+                            self?.cancelCallback?()
+                        }
+                    } else {
+                        let e = NSError(domain: self?.errorDomain ?? "Fire", code: error.code, userInfo: error.userInfo)
+                        print("[Fire] Error:\n", e.localizedDescription)
+                        DispatchQueue.main.async {
+                            self?.errorCallback?(e)
+                            self?.session.finishTasksAndInvalidate()
+                        }
                     }
                 } else {
-                    let e = NSError(domain: self?.errorDomain ?? "Fire", code: error.code, userInfo: error.userInfo)
-                    print("[Fire] Error:\n", e.localizedDescription)
                     DispatchQueue.main.async {
-                        self?.errorCallback?(e)
+                        self?.callback?(data, response as? HTTPURLResponse)
                         self?.session.finishTasksAndInvalidate()
                     }
                 }
-            } else {
-                DispatchQueue.main.async {
-                    self?.callback?(data, response as? HTTPURLResponse)
-                    self?.session.finishTasksAndInvalidate()
-                }
             }
-        }
+//        }
+//        
+//        switch self.taskType {
+//        case .dataTask:
+            self.task = self.session.dataTask(with: self.request, completionHandler: dataCompletionHandler)
+//        case .uploadDataTask:
+//            self.task = self.session.uploadTask(with: self.request, from: nil, completionHandler: dataCompletionHandler)
+//        case .uploadFileTask:
+//            self.task = self.session.uploadTask(with: self.request, fromFile: URL(string: "")!, completionHandler: dataCompletionHandler)
+//        default:
+//            self.task = self.session.downloadTask(with: self.request, completionHandler: urlCompletionHandler)
+//        }
         self.task.resume()
+    }
+    
+    open var progressCallback: FireProgressCallback?
+}
+
+extension FireManager: URLSessionTaskDelegate, URLSessionDownloadDelegate {
+    public func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        
+    }
+
+    public func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        let progress = Float(totalBytesWritten) / Float(totalBytesExpectedToWrite) * 100
+        if self.progressCallback != nil {
+            self.progressCallback!(totalBytesWritten, totalBytesExpectedToWrite, progress)
+        }
+    }
+    
+    public func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) {
+        let progress = Float(totalBytesSent) / Float(totalBytesExpectedToSend) * 100
+        if self.progressCallback != nil {
+            self.progressCallback!(totalBytesSent, totalBytesExpectedToSend, progress)
+        }
     }
 }
 

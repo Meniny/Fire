@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Fire
 
 class ViewController: NSViewController {
 
@@ -15,7 +16,9 @@ class ViewController: NSViewController {
         
         // Do any additional setup after loading the view.
         
-        FireDemo.get()
+//        FireDemo.get()
+        
+        FireDemo.upload()
     }
     
     override var representedObject: Any? {

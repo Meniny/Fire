@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0023704DA1E27C5AB0C6BEB4A84E74E"
+               BlueprintIdentifier = "F6E770DD64A6785ECDD989BBF6C5AA5F"
                BuildableName = "Jsonify.framework"
                BlueprintName = "Jsonify-watchOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0023704DA1E27C5AB0C6BEB4A84E74E"
+            BlueprintIdentifier = "F6E770DD64A6785ECDD989BBF6C5AA5F"
             BuildableName = "Jsonify.framework"
             BlueprintName = "Jsonify-watchOS"
             ReferencedContainer = "container:Pods.xcodeproj">

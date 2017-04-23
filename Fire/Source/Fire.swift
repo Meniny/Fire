@@ -33,9 +33,11 @@ public typealias FireJSON = Jsonify
 
 public typealias FireJOSNResponseCallback = ((_ json: FireJSON, _ response: HTTPURLResponse?) -> Void)
 public typealias FireDataResponseCallback = ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)
+public typealias FireURLResponseCallback = ((_ url: URL?, _ response: HTTPURLResponse?) -> Void)
 public typealias FireStringResponseCallback = ((_ string: String?, _ response: HTTPURLResponse?) -> Void)
 public typealias FireVoidCallback = (() -> Void)
 public typealias FireErrorCallback = ((_ error: Error) -> Void)
+public typealias FireProgressCallback = ((_ completedBytes: Int64, _ totalBytes: Int64, _ progress: Float) -> Void)
 
 open class Fire {
     
@@ -359,31 +361,34 @@ extension Fire {
             .fire(callback)
     }
     
-    open static func requestFor(_ api: FireAPI, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+    open static func request(api: FireAPI, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: api.method, url: api.stringValue, params: params, timeout: timeout)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }
     
-    open static func upload(fileURL: URL, name: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+    // MARK: - UPLOAD
+    open static func upload(fileURL: URL, name: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         let file = FileInfo(name: name, url: fileURL, mimeType: mimeType)
         Fire.build(HTTPMethod: .POST, url: toURL)
             .setParams(params)
+            .handleProgress(progress)
             .setFiles([file])
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }
     
-    open static func upload(data: Data, name: String, ext: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+    open static func upload(data: Data, name: String, ext: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         let file = FileInfo(name: name, data: data, ext: ext, mimeType: mimeType)
         Fire.build(HTTPMethod: .POST, url: toURL)
             .setParams(params)
+            .handleProgress(progress)
             .setFiles([file])
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }
     
-    open static func upload(files: [FileInfo], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+    open static func upload(files: [FileInfo], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: .POST, url: toURL)
             .setParams(params)
             .setFiles(files)
@@ -391,6 +396,12 @@ extension Fire {
             .fire(callback)
     }
     
+    open func handleProgress(_ handler: FireProgressCallback?) -> Fire {
+        self.fireManager.progressCallback = handler
+        return self
+    }
+    
+    // MARK: - GET POST PUT DELETE
     open static func get(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         Fire.build(HTTPMethod: .GET, url: url, params: params, timeout: timeout)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)

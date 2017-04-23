@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "892DEBC1F06A8109E26CCC6843C00BC9"
+               BlueprintIdentifier = "5D80F2FFE3AAA489A538C1EA2A9B5E17"
                BuildableName = "Fire.framework"
                BlueprintName = "Fire-tvOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "892DEBC1F06A8109E26CCC6843C00BC9"
+            BlueprintIdentifier = "5D80F2FFE3AAA489A538C1EA2A9B5E17"
             BuildableName = "Fire.framework"
             BlueprintName = "Fire-tvOS"
             ReferencedContainer = "container:Pods.xcodeproj">

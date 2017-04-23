@@ -1,7 +1,7 @@
 
 <p align="center">
   <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire">
-  <br/><a href="https://github.com/Meniny/Fire-in-Swift/archive/master.zip">
+  <br/><a href="https://cocoapods.org/pods/Fire">
   <img alt="Version" src="https://img.shields.io/badge/version-2.4.0-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">

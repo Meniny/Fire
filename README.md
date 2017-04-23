@@ -3,7 +3,7 @@
   <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire">
 </p>
 
-![Cocoapods](https://github.com/Meniny/Fire-in-Swift/blob/master/README/cocoapods.svg) ![Swift3](https://github.com/Meniny/Fire-in-Swift/blob/master/README/swift3.svg) ![Platforms](https://github.com/Meniny/Fire-in-Swift/blob/master/README/platform.svg) ![MIT](https://github.com/Meniny/Fire-in-Swift/blob/master/README/MIT.svg)
+![Cocoapods](./README/cocoapods.png) ![Swift3](./README/swift3.png) ![Platforms](./README/platform.png) ![MIT](./README/MIT.png)
 
 * [Introduction in English](#Introduction)
 * [中文介绍](#中文介绍)

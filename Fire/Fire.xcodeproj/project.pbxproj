@@ -7,30 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1042291E48B529DAD4C4B382 /* Pods_FireOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA6C8BF0D1EF5F5EB7B0314 /* Pods_FireOSX.framework */; };
+		4D3D0BAE3E7672929E21F6E4 /* Pods_FireTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3156D78DE5A242FA23C5CF /* Pods_FireTVOS.framework */; };
+		4E619EC8883851D4F43ACF69 /* Pods_FireWatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87A819A17D30182912F70F /* Pods_FireWatchOS.framework */; };
 		5C2D1C931EA77E910096A4AD /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C2D1C9D1EA77F7A0096A4AD /* Fire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463712051B04C2050019E1AB /* Fire.framework */; };
-		5C2D1CB01EA77FB90096A4AD /* AddFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CA41EA77FB90096A4AD /* AddFiles.swift */; };
-		5C2D1CB11EA77FB90096A4AD /* AddHTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CA51EA77FB90096A4AD /* AddHTTPHeader.swift */; };
-		5C2D1CB21EA77FB90096A4AD /* AddSSLPinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CA61EA77FB90096A4AD /* AddSSLPinning.swift */; };
-		5C2D1CB31EA77FB90096A4AD /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CA71EA77FB90096A4AD /* BaseTestCase.swift */; };
-		5C2D1CB41EA77FB90096A4AD /* BasicAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CA81EA77FB90096A4AD /* BasicAuth.swift */; };
-		5C2D1CB51EA77FB90096A4AD /* BasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CA91EA77FB90096A4AD /* BasicTests.swift */; };
-		5C2D1CB61EA77FB90096A4AD /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAA1EA77FB90096A4AD /* Control.swift */; };
-		5C2D1CB71EA77FB90096A4AD /* ResponseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAB1EA77FB90096A4AD /* ResponseJSON.swift */; };
-		5C2D1CB81EA77FB90096A4AD /* SetHTTPBodyRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAC1EA77FB90096A4AD /* SetHTTPBodyRaw.swift */; };
-		5C2D1CB91EA77FB90096A4AD /* SetTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAD1EA77FB90096A4AD /* SetTimeout.swift */; };
-		5C2D1CBA1EA77FB90096A4AD /* WithOtherTypeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAE1EA77FB90096A4AD /* WithOtherTypeParams.swift */; };
-		5C2D1CBB1EA77FB90096A4AD /* WithStringParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D1CAF1EA77FB90096A4AD /* WithStringParams.swift */; };
 		5C33F0EB1EAB0614001D903D /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C33F0EC1EAB061D001D903D /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C33F0ED1EAB0630001D903D /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
 		5C33F0EE1EAB0630001D903D /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
 		5C33F0EF1EAB0630001D903D /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
 		5C33F0F01EAB0630001D903D /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
-		5C33F0F11EAB0630001D903D /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2001EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift */; };
-		5C33F0F21EAB0630001D903D /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2011EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift */; };
-		5C33F0F31EAB0630001D903D /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2021EA8B01D0090435E /* FireJSON.swift */; };
-		5C33F0F41EAB0630001D903D /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2031EA8B01D0090435E /* FireJSONModel.swift */; };
 		5C33F0F51EAB0630001D903D /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
 		5C33F0F61EAB0630001D903D /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
 		5C33F0F71EAB0630001D903D /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
@@ -40,14 +26,14 @@
 		5C378A941EAB069500674D0F /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
 		5C378A951EAB069500674D0F /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
 		5C378A961EAB069500674D0F /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
-		5C378A971EAB069500674D0F /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2001EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift */; };
-		5C378A981EAB069500674D0F /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2011EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift */; };
-		5C378A991EAB069500674D0F /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2021EA8B01D0090435E /* FireJSON.swift */; };
-		5C378A9A1EAB069500674D0F /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2031EA8B01D0090435E /* FireJSONModel.swift */; };
 		5C378A9B1EAB069500674D0F /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
 		5C378A9C1EAB069500674D0F /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
 		5C378A9D1EAB069500674D0F /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
 		5C378A9E1EAB069500674D0F /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
+		5C984FF31EACA05300100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FF21EACA05300100B13 /* Jsonify.framework */; };
+		5C984FF51EACA08000100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FF41EACA08000100B13 /* Jsonify.framework */; };
+		5C984FF71EACA08700100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FF61EACA08700100B13 /* Jsonify.framework */; };
+		5C984FF91EACA08F00100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FF81EACA08F00100B13 /* Jsonify.framework */; };
 		5C9D23201EAAECE9008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5C9D23211EAAEE28008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5CC5E2081EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
@@ -58,37 +44,26 @@
 		5CC5E20D1EA8B01D0090435E /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
 		5CC5E20E1EA8B01D0090435E /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
 		5CC5E20F1EA8B01D0090435E /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
-		5CC5E2101EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2001EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift */; };
-		5CC5E2111EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2001EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift */; };
-		5CC5E2121EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2011EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift */; };
-		5CC5E2131EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2011EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift */; };
-		5CC5E2141EA8B01D0090435E /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2021EA8B01D0090435E /* FireJSON.swift */; };
-		5CC5E2151EA8B01D0090435E /* FireJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2021EA8B01D0090435E /* FireJSON.swift */; };
-		5CC5E2161EA8B01D0090435E /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2031EA8B01D0090435E /* FireJSONModel.swift */; };
-		5CC5E2171EA8B01D0090435E /* FireJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2031EA8B01D0090435E /* FireJSONModel.swift */; };
 		5CC5E2181EA8B01D0090435E /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
 		5CC5E2191EA8B01D0090435E /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
 		5CC5E21A1EA8B01D0090435E /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
 		5CC5E21B1EA8B01D0090435E /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
 		5CC5E21C1EA8B01D0090435E /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
 		5CC5E21D1EA8B01D0090435E /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
+		89D3521188BB4ED50A5AC9F6 /* Pods_FireIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA294BD2FD65E6517317106 /* Pods_FireIOS.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5C2D1C9E1EA77F7A0096A4AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 463711FC1B04C2050019E1AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 463712041B04C2050019E1AB;
-			remoteInfo = Fire;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		463712051B04C2050019E1AB /* Fire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD47986A1264FD8ED9589D8 /* Pods_FireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E8E1A66855D25FEEF04FC8 /* Pods-FireOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireOSX/Pods-FireOSX.release.xcconfig"; sourceTree = "<group>"; };
+		2F87A819A17D30182912F70F /* Pods_FireWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3412D7F5EEEFEEA4A6BFA642 /* Pods-Fire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fire/Pods-Fire.release.xcconfig"; sourceTree = "<group>"; };
+		4104560E1CAECB44E64C5A6F /* Pods-FireTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireTVOS/Pods-FireTVOS.debug.xcconfig"; sourceTree = "<group>"; };
+		463712051B04C2050019E1AB /* FireIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FireIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7CB159A2F459CE4130E8BE /* Pods-FireIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireIOS/Pods-FireIOS.release.xcconfig"; sourceTree = "<group>"; };
+		4AA294BD2FD65E6517317106 /* Pods_FireIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D1C551EA777AE0096A4AD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Fire/Info.plist; sourceTree = SOURCE_ROOT; };
 		5C2D1C8B1EA77DF20096A4AD /* Fire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fire.h; path = Fire/Fire.h; sourceTree = SOURCE_ROOT; };
-		5C2D1C981EA77F7A0096A4AD /* FireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D1C9C1EA77F7A0096A4AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C2D1CA41EA77FB90096A4AD /* AddFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFiles.swift; sourceTree = "<group>"; };
 		5C2D1CA51EA77FB90096A4AD /* AddHTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHTTPHeader.swift; sourceTree = "<group>"; };
@@ -108,18 +83,34 @@
 		5C378A8D1EAB067F00674D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C77E2EE1EA8AB69005668B9 /* FireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FireOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C77E2F11EA8AB69005668B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C984F831EAC97A500100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-arqiehcyryjbxaftyomcwaaobljm/Build/Products/Debug-iphonesimulator/Jsonify-iOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984F851EAC97AB00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug/Jsonify-OSX/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984F871EAC97B500100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-watchos/Jsonify-watchOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984F891EAC97BA00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-appletvos/Jsonify-tvOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984F951EAC987C00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug/Jsonify-OSX/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FF21EACA05300100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-arqiehcyryjbxaftyomcwaaobljm/Build/Products/Debug/Jsonify-OSX/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FF41EACA08000100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-watchos/Jsonify-watchOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FF61EACA08700100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-appletvos/Jsonify-tvOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FF81EACA08F00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-iphoneos/Jsonify-iOS/Jsonify.framework"; sourceTree = "<group>"; };
 		5C9D231F1EAAECE9008CA64A /* FileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
 		5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-SessionDelegate.swift"; sourceTree = "<group>"; };
 		5CC5E1FC1EA8B01D0090435E /* Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
 		5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireAPI.swift; sourceTree = "<group>"; };
 		5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireHelper.swift; sourceTree = "<group>"; };
-		5CC5E2001EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FireJSON+ArrayLiteralConvertible.swift"; sourceTree = "<group>"; };
-		5CC5E2011EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FireJSON+DictionaryLiteralConvertible.swift"; sourceTree = "<group>"; };
-		5CC5E2021EA8B01D0090435E /* FireJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireJSON.swift; sourceTree = "<group>"; };
-		5CC5E2031EA8B01D0090435E /* FireJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireJSONModel.swift; sourceTree = "<group>"; };
 		5CC5E2041EA8B01D0090435E /* FireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireManager.swift; sourceTree = "<group>"; };
 		5CC5E2051EA8B01D0090435E /* FireValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireValues.swift; sourceTree = "<group>"; };
 		5CC5E2061EA8B01D0090435E /* String+Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Fire.swift"; sourceTree = "<group>"; };
+		8487CB0E90694A4FC2FE0F8A /* Pods-FireOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireOSX/Pods-FireOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		8A6428E5BC75F158141F4899 /* Pods-FireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireTests/Pods-FireTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEA6C8BF0D1EF5F5EB7B0314 /* Pods_FireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BE9AD4916190AB017F059F /* Pods_Fire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77A90456AF34525B19C178B /* Pods-FireWatchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireWatchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireWatchOS/Pods-FireWatchOS.release.xcconfig"; sourceTree = "<group>"; };
+		D489853088273E1B3A2D1B5B /* Pods-Fire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fire/Pods-Fire.debug.xcconfig"; sourceTree = "<group>"; };
+		DDF1D8DDD033EBACADD6D6A9 /* Pods-FireWatchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireWatchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireWatchOS/Pods-FireWatchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E266D2451B6A38CE24F0E366 /* Pods-FireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireTests/Pods-FireTests.release.xcconfig"; sourceTree = "<group>"; };
+		E784E683D0A5B7796ECFDF1E /* Pods-FireTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireTVOS/Pods-FireTVOS.release.xcconfig"; sourceTree = "<group>"; };
+		EF3156D78DE5A242FA23C5CF /* Pods_FireTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD193136240E211260D14539 /* Pods-FireIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireIOS/Pods-FireIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,14 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C2D1C951EA77F7A0096A4AD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C2D1C9D1EA77F7A0096A4AD /* Fire.framework in Frameworks */,
+				5C984FF91EACA08F00100B13 /* Jsonify.framework in Frameworks */,
+				89D3521188BB4ED50A5AC9F6 /* Pods_FireIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C984FF51EACA08000100B13 /* Jsonify.framework in Frameworks */,
+				4E619EC8883851D4F43ACF69 /* Pods_FireWatchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C984FF71EACA08700100B13 /* Jsonify.framework in Frameworks */,
+				4D3D0BAE3E7672929E21F6E4 /* Pods_FireTVOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +145,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C984FF31EACA05300100B13 /* Jsonify.framework in Frameworks */,
+				1042291E48B529DAD4C4B382 /* Pods_FireOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,15 +162,17 @@
 				5C77E2EF1EA8AB69005668B9 /* FireOSX */,
 				5C33F0E41EAB05EB001D903D /* FireWatchOS */,
 				5C378A8B1EAB067F00674D0F /* FireTVOS */,
+				5C2D1C991EA77F7A0096A4AD /* FireTests */,
 				463712061B04C2050019E1AB /* Products */,
+				58B2A4BC2563CA64D5CE03DF /* Pods */,
+				ED23D55D358FA0FF2DDD9E8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		463712061B04C2050019E1AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				463712051B04C2050019E1AB /* Fire.framework */,
-				5C2D1C981EA77F7A0096A4AD /* FireTests.xctest */,
+				463712051B04C2050019E1AB /* FireIOS.framework */,
 				5C77E2EE1EA8AB69005668B9 /* FireOSX.framework */,
 				5C33F0E31EAB05EB001D903D /* FireWatchOS.framework */,
 				5C378A8A1EAB067F00674D0F /* FireTVOS.framework */,
@@ -187,13 +180,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		463712071B04C2050019E1AB /* Fire */ = {
+		58B2A4BC2563CA64D5CE03DF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5C2D1C551EA777AE0096A4AD /* Info.plist */,
+				D489853088273E1B3A2D1B5B /* Pods-Fire.debug.xcconfig */,
+				3412D7F5EEEFEEA4A6BFA642 /* Pods-Fire.release.xcconfig */,
+				8487CB0E90694A4FC2FE0F8A /* Pods-FireOSX.debug.xcconfig */,
+				19E8E1A66855D25FEEF04FC8 /* Pods-FireOSX.release.xcconfig */,
+				4104560E1CAECB44E64C5A6F /* Pods-FireTVOS.debug.xcconfig */,
+				E784E683D0A5B7796ECFDF1E /* Pods-FireTVOS.release.xcconfig */,
+				8A6428E5BC75F158141F4899 /* Pods-FireTests.debug.xcconfig */,
+				E266D2451B6A38CE24F0E366 /* Pods-FireTests.release.xcconfig */,
+				DDF1D8DDD033EBACADD6D6A9 /* Pods-FireWatchOS.debug.xcconfig */,
+				B77A90456AF34525B19C178B /* Pods-FireWatchOS.release.xcconfig */,
+				FD193136240E211260D14539 /* Pods-FireIOS.debug.xcconfig */,
+				4A7CB159A2F459CE4130E8BE /* Pods-FireIOS.release.xcconfig */,
 			);
-			name = Fire;
-			path = Pitaya;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5C2D1C991EA77F7A0096A4AD /* FireTests */ = {
@@ -243,8 +246,7 @@
 		5C77E30F1EA8ABA5005668B9 /* FireIOS */ = {
 			isa = PBXGroup;
 			children = (
-				463712071B04C2050019E1AB /* Fire */,
-				5C2D1C991EA77F7A0096A4AD /* FireTests */,
+				5C2D1C551EA777AE0096A4AD /* Info.plist */,
 			);
 			name = FireIOS;
 			sourceTree = "<group>";
@@ -256,7 +258,6 @@
 				5CC5E1FC1EA8B01D0090435E /* Fire.swift */,
 				5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */,
 				5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */,
-				5CC5E1FF1EA8B01D0090435E /* FireJSON */,
 				5CC5E2041EA8B01D0090435E /* FireManager.swift */,
 				5CC5E2051EA8B01D0090435E /* FireValues.swift */,
 				5CC5E2061EA8B01D0090435E /* String+Fire.swift */,
@@ -265,15 +266,26 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		5CC5E1FF1EA8B01D0090435E /* FireJSON */ = {
+		ED23D55D358FA0FF2DDD9E8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5CC5E2001EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift */,
-				5CC5E2011EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift */,
-				5CC5E2021EA8B01D0090435E /* FireJSON.swift */,
-				5CC5E2031EA8B01D0090435E /* FireJSONModel.swift */,
+				5C984FF81EACA08F00100B13 /* Jsonify.framework */,
+				5C984FF61EACA08700100B13 /* Jsonify.framework */,
+				5C984FF41EACA08000100B13 /* Jsonify.framework */,
+				5C984FF21EACA05300100B13 /* Jsonify.framework */,
+				5C984F951EAC987C00100B13 /* Jsonify.framework */,
+				5C984F891EAC97BA00100B13 /* Jsonify.framework */,
+				5C984F871EAC97B500100B13 /* Jsonify.framework */,
+				5C984F851EAC97AB00100B13 /* Jsonify.framework */,
+				5C984F831EAC97A500100B13 /* Jsonify.framework */,
+				B6BE9AD4916190AB017F059F /* Pods_Fire.framework */,
+				AEA6C8BF0D1EF5F5EB7B0314 /* Pods_FireOSX.framework */,
+				EF3156D78DE5A242FA23C5CF /* Pods_FireTVOS.framework */,
+				0AD47986A1264FD8ED9589D8 /* Pods_FireTests.framework */,
+				2F87A819A17D30182912F70F /* Pods_FireWatchOS.framework */,
+				4AA294BD2FD65E6517317106 /* Pods_FireIOS.framework */,
 			);
-			path = FireJSON;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,50 +326,36 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		463712041B04C2050019E1AB /* Fire */ = {
+		463712041B04C2050019E1AB /* FireIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4637121B1B04C2050019E1AB /* Build configuration list for PBXNativeTarget "Fire" */;
+			buildConfigurationList = 4637121B1B04C2050019E1AB /* Build configuration list for PBXNativeTarget "FireIOS" */;
 			buildPhases = (
+				FD840E4F1D527290836C529E /* [CP] Check Pods Manifest.lock */,
 				463712001B04C2050019E1AB /* Sources */,
 				463712011B04C2050019E1AB /* Frameworks */,
 				463712021B04C2050019E1AB /* Headers */,
 				463712031B04C2050019E1AB /* Resources */,
+				4088523A089A8DDA5B9FAD83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Fire;
+			name = FireIOS;
 			productName = Pitaya;
-			productReference = 463712051B04C2050019E1AB /* Fire.framework */;
+			productReference = 463712051B04C2050019E1AB /* FireIOS.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		5C2D1C971EA77F7A0096A4AD /* FireTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C2D1CA01EA77F7A0096A4AD /* Build configuration list for PBXNativeTarget "FireTests" */;
-			buildPhases = (
-				5C2D1C941EA77F7A0096A4AD /* Sources */,
-				5C2D1C951EA77F7A0096A4AD /* Frameworks */,
-				5C2D1C961EA77F7A0096A4AD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5C2D1C9F1EA77F7A0096A4AD /* PBXTargetDependency */,
-			);
-			name = FireTests;
-			productName = FireTests;
-			productReference = 5C2D1C981EA77F7A0096A4AD /* FireTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		5C33F0E21EAB05EB001D903D /* FireWatchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C33F0EA1EAB05EB001D903D /* Build configuration list for PBXNativeTarget "FireWatchOS" */;
 			buildPhases = (
+				80E609A0E58EF8F7B7819E9C /* [CP] Check Pods Manifest.lock */,
 				5C33F0DE1EAB05EB001D903D /* Sources */,
 				5C33F0DF1EAB05EB001D903D /* Frameworks */,
 				5C33F0E01EAB05EB001D903D /* Headers */,
 				5C33F0E11EAB05EB001D903D /* Resources */,
+				FA32C32D34FA6A9EF90DCE65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,10 +370,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C378A911EAB067F00674D0F /* Build configuration list for PBXNativeTarget "FireTVOS" */;
 			buildPhases = (
+				EC5C25FAC8732C986E2C5130 /* [CP] Check Pods Manifest.lock */,
 				5C378A851EAB067F00674D0F /* Sources */,
 				5C378A861EAB067F00674D0F /* Frameworks */,
 				5C378A871EAB067F00674D0F /* Headers */,
 				5C378A881EAB067F00674D0F /* Resources */,
+				3782ABDAF3100FF207E1903C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,10 +390,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C77E2F51EA8AB69005668B9 /* Build configuration list for PBXNativeTarget "FireOSX" */;
 			buildPhases = (
+				DA9D47A464D159E65859FC4D /* [CP] Check Pods Manifest.lock */,
 				5C77E2E91EA8AB69005668B9 /* Sources */,
 				5C77E2EA1EA8AB69005668B9 /* Frameworks */,
 				5C77E2EB1EA8AB69005668B9 /* Headers */,
 				5C77E2EC1EA8AB69005668B9 /* Resources */,
+				63B806DE9B1B98DA1D19EB8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -419,12 +421,6 @@
 					463712041B04C2050019E1AB = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0830;
-					};
-					5C2D1C971EA77F7A0096A4AD = {
-						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 63YL5QDMNS;
-						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
 					};
 					5C33F0E21EAB05EB001D903D = {
 						CreatedOnToolsVersion = 8.3;
@@ -456,24 +452,16 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				463712041B04C2050019E1AB /* Fire */,
-				5C2D1C971EA77F7A0096A4AD /* FireTests */,
+				463712041B04C2050019E1AB /* FireIOS */,
 				5C77E2ED1EA8AB69005668B9 /* FireOSX */,
-				5C33F0E21EAB05EB001D903D /* FireWatchOS */,
 				5C378A891EAB067F00674D0F /* FireTVOS */,
+				5C33F0E21EAB05EB001D903D /* FireWatchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		463712031B04C2050019E1AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C2D1C961EA77F7A0096A4AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -503,42 +491,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3782ABDAF3100FF207E1903C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireTVOS/Pods-FireTVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4088523A089A8DDA5B9FAD83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireIOS/Pods-FireIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B806DE9B1B98DA1D19EB8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireOSX/Pods-FireOSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E609A0E58EF8F7B7819E9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA9D47A464D159E65859FC4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5C25FAC8732C986E2C5130 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA32C32D34FA6A9EF90DCE65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireWatchOS/Pods-FireWatchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD840E4F1D527290836C529E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		463712001B04C2050019E1AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5CC5E20C1EA8B01D0090435E /* FireAPI.swift in Sources */,
-				5CC5E2141EA8B01D0090435E /* FireJSON.swift in Sources */,
-				5CC5E2121EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
 				5CC5E2181EA8B01D0090435E /* FireManager.swift in Sources */,
-				5CC5E2101EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
 				5CC5E21C1EA8B01D0090435E /* String+Fire.swift in Sources */,
 				5CC5E20E1EA8B01D0090435E /* FireHelper.swift in Sources */,
 				5CC5E2081EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */,
 				5CC5E20A1EA8B01D0090435E /* Fire.swift in Sources */,
 				5C9D23201EAAECE9008CA64A /* FileInfo.swift in Sources */,
-				5CC5E2161EA8B01D0090435E /* FireJSONModel.swift in Sources */,
 				5CC5E21A1EA8B01D0090435E /* FireValues.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C2D1C941EA77F7A0096A4AD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C2D1CBA1EA77FB90096A4AD /* WithOtherTypeParams.swift in Sources */,
-				5C2D1CB41EA77FB90096A4AD /* BasicAuth.swift in Sources */,
-				5C2D1CB31EA77FB90096A4AD /* BaseTestCase.swift in Sources */,
-				5C2D1CB91EA77FB90096A4AD /* SetTimeout.swift in Sources */,
-				5C2D1CB61EA77FB90096A4AD /* Control.swift in Sources */,
-				5C2D1CB51EA77FB90096A4AD /* BasicTests.swift in Sources */,
-				5C2D1CB11EA77FB90096A4AD /* AddHTTPHeader.swift in Sources */,
-				5C2D1CB81EA77FB90096A4AD /* SetHTTPBodyRaw.swift in Sources */,
-				5C2D1CBB1EA77FB90096A4AD /* WithStringParams.swift in Sources */,
-				5C2D1CB01EA77FB90096A4AD /* AddFiles.swift in Sources */,
-				5C2D1CB71EA77FB90096A4AD /* ResponseJSON.swift in Sources */,
-				5C2D1CB21EA77FB90096A4AD /* AddSSLPinning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,10 +638,6 @@
 				5C33F0EE1EAB0630001D903D /* Fire.swift in Sources */,
 				5C33F0EF1EAB0630001D903D /* FireAPI.swift in Sources */,
 				5C33F0F01EAB0630001D903D /* FireHelper.swift in Sources */,
-				5C33F0F11EAB0630001D903D /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
-				5C33F0F21EAB0630001D903D /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
-				5C33F0F31EAB0630001D903D /* FireJSON.swift in Sources */,
-				5C33F0F41EAB0630001D903D /* FireJSONModel.swift in Sources */,
 				5C33F0F51EAB0630001D903D /* FireManager.swift in Sources */,
 				5C33F0F61EAB0630001D903D /* FireValues.swift in Sources */,
 				5C33F0F71EAB0630001D903D /* String+Fire.swift in Sources */,
@@ -569,10 +653,6 @@
 				5C378A941EAB069500674D0F /* Fire.swift in Sources */,
 				5C378A951EAB069500674D0F /* FireAPI.swift in Sources */,
 				5C378A961EAB069500674D0F /* FireHelper.swift in Sources */,
-				5C378A971EAB069500674D0F /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
-				5C378A981EAB069500674D0F /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
-				5C378A991EAB069500674D0F /* FireJSON.swift in Sources */,
-				5C378A9A1EAB069500674D0F /* FireJSONModel.swift in Sources */,
 				5C378A9B1EAB069500674D0F /* FireManager.swift in Sources */,
 				5C378A9C1EAB069500674D0F /* FireValues.swift in Sources */,
 				5C378A9D1EAB069500674D0F /* String+Fire.swift in Sources */,
@@ -586,28 +666,16 @@
 			files = (
 				5C9D23211EAAEE28008CA64A /* FileInfo.swift in Sources */,
 				5CC5E20D1EA8B01D0090435E /* FireAPI.swift in Sources */,
-				5CC5E2151EA8B01D0090435E /* FireJSON.swift in Sources */,
-				5CC5E2131EA8B01D0090435E /* FireJSON+DictionaryLiteralConvertible.swift in Sources */,
 				5CC5E2191EA8B01D0090435E /* FireManager.swift in Sources */,
-				5CC5E2111EA8B01D0090435E /* FireJSON+ArrayLiteralConvertible.swift in Sources */,
 				5CC5E21D1EA8B01D0090435E /* String+Fire.swift in Sources */,
 				5CC5E20F1EA8B01D0090435E /* FireHelper.swift in Sources */,
 				5CC5E2091EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */,
 				5CC5E20B1EA8B01D0090435E /* Fire.swift in Sources */,
-				5CC5E2171EA8B01D0090435E /* FireJSONModel.swift in Sources */,
 				5CC5E21B1EA8B01D0090435E /* FireValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5C2D1C9F1EA77F7A0096A4AD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 463712041B04C2050019E1AB /* Fire */;
-			targetProxy = 5C2D1C9E1EA77F7A0096A4AD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		463712191B04C2050019E1AB /* Debug */ = {
@@ -650,6 +718,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -692,6 +762,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -704,6 +776,7 @@
 		};
 		4637121C1B04C2050019E1AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD193136240E211260D14539 /* Pods-FireIOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -712,8 +785,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Jsonify-iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Fire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = "cn-meniny.Fire";
@@ -726,6 +804,7 @@
 		};
 		4637121D1B04C2050019E1AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A7CB159A2F459CE4130E8BE /* Pods-FireIOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -734,8 +813,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Jsonify-iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Fire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = "cn-meniny.Fire";
@@ -745,48 +829,9 @@
 			};
 			name = Release;
 		};
-		5C2D1CA11EA77F7A0096A4AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 63YL5QDMNS;
-				INFOPLIST_FILE = FireTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.FireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		5C2D1CA21EA77F7A0096A4AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = 63YL5QDMNS;
-				INFOPLIST_FILE = FireTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.FireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		5C33F0E81EAB05EB001D903D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF1D8DDD033EBACADD6D6A9 /* Pods-FireWatchOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -799,6 +844,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-watchos/Jsonify-watchOS",
+				);
 				INFOPLIST_FILE = FireWatchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -810,12 +859,13 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		5C33F0E91EAB05EB001D903D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B77A90456AF34525B19C178B /* Pods-FireWatchOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -827,6 +877,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-watchos/Jsonify-watchOS",
+				);
 				INFOPLIST_FILE = FireWatchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -836,12 +890,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 		5C378A8F1EAB067F00674D0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4104560E1CAECB44E64C5A6F /* Pods-FireTVOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -853,6 +908,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-appletvos/Jsonify-tvOS",
+				);
 				INFOPLIST_FILE = FireTVOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -864,12 +923,13 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
 		5C378A901EAB067F00674D0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E784E683D0A5B7796ECFDF1E /* Pods-FireTVOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -880,6 +940,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-appletvos/Jsonify-tvOS",
+				);
 				INFOPLIST_FILE = FireTVOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -889,12 +953,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
 		5C77E2F31EA8AB69005668B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8487CB0E90694A4FC2FE0F8A /* Pods-FireOSX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -908,11 +973,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug/Jsonify-OSX",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = FireOSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.FireOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -926,6 +995,7 @@
 		};
 		5C77E2F41EA8AB69005668B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E8E1A66855D25FEEF04FC8 /* Pods-FireOSX.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -938,11 +1008,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug/Jsonify-OSX",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = FireOSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.FireOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -963,20 +1037,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4637121B1B04C2050019E1AB /* Build configuration list for PBXNativeTarget "Fire" */ = {
+		4637121B1B04C2050019E1AB /* Build configuration list for PBXNativeTarget "FireIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4637121C1B04C2050019E1AB /* Debug */,
 				4637121D1B04C2050019E1AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5C2D1CA01EA77F7A0096A4AD /* Build configuration list for PBXNativeTarget "FireTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C2D1CA11EA77F7A0096A4AD /* Debug */,
-				5C2D1CA21EA77F7A0096A4AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -997,6 +1062,7 @@
 				5C378A901EAB067F00674D0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C77E2F51EA8AB69005668B9 /* Build configuration list for PBXNativeTarget "FireOSX" */ = {
 			isa = XCConfigurationList;

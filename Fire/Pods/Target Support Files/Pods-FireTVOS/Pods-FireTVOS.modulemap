@@ -1,0 +1,6 @@
+framework module Pods_FireTVOS {
+  umbrella header "Pods-FireTVOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

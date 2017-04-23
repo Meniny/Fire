@@ -27,6 +27,9 @@
 //
 
 import Foundation
+import Jsonify
+
+public typealias FireJSON = Jsonify
 
 public typealias FireJOSNResponseCallback = ((_ json: FireJSON, _ response: HTTPURLResponse?) -> Void)
 public typealias FireDataResponseCallback = ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)

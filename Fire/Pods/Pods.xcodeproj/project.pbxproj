@@ -1,0 +1,1513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11C0DF5493AF4873596A4BD0C0AA550F /* Jsonify-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F137DA21D8D99FEEDBA49403165AC3C5 /* Jsonify-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A3F3334A6DF3F842493113E2A1BFF5C /* Jsonify-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D37A62BE663B0017B536B95E47C7B3 /* Jsonify-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2312CB41481CE6D6856E7B25BA080184 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */; };
+		26BC46623EF30A85F88342478A451232 /* Jsonify-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC36C188ADC9D0B73EE56F5A4AE0564 /* Jsonify-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26EC2D59EE9993CDD78DE90382B739E7 /* Pods-FireIOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E38225502144514B1DE447922D516B /* Pods-FireIOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B82F1274FD34E212EA8BA0BD18F6CB9 /* Jsonify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8133D1330F7BEF9842BA7BD9CCCFFBE /* Jsonify.swift */; };
+		346F7347AC763370546FC24793859117 /* JsonifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB83732CB6BACE57DBF1A63B0A967F /* JsonifyModel.swift */; };
+		3AC8AC51035A8225C9EC60F4333A13A6 /* Jsonify-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA99031D0947538C9C1D946254BAFB3E /* Jsonify-watchOS-dummy.m */; };
+		3DB7F62C71755061B9305C870DD795E6 /* Pods-FireWatchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA7058433806B377866C7398955CD4C /* Pods-FireWatchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EA0CE8257BFDF9194FEE14054E2A1C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */; };
+		3ED8E08380BDBD49E9E3A6995A1E0427 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */; };
+		43DEB00F4E333F270E5D6263AB99526F /* Jsonify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8133D1330F7BEF9842BA7BD9CCCFFBE /* Jsonify.swift */; };
+		46C10BC9D41C857FE5CBCE6FA5F3E8B3 /* Pods-FireOSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9672C1016DD72FAFAC583FC042017D0 /* Pods-FireOSX-dummy.m */; };
+		4970A3FF7B06229D7666C2E3F9F01AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */; };
+		5294CC5144D27CCBE1623A4FB2EA6EB9 /* JsonifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB83732CB6BACE57DBF1A63B0A967F /* JsonifyModel.swift */; };
+		5C5257921035A3F5542C75CFBA989554 /* Pods-FireTVOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF12A0FCDBC80CF107ED6DBEB7088B7 /* Pods-FireTVOS-dummy.m */; };
+		60A6130016DCC31B570E71FB66849C89 /* Jsonify.h in Headers */ = {isa = PBXBuildFile; fileRef = 939732E531290794525F116AD6018DF2 /* Jsonify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E040DED04C367ED3CED7F558AFE5D8 /* Jsonify-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33114A8DF91EB84C32834CEFA5056A1E /* Jsonify-iOS-dummy.m */; };
+		6ECF4C9097F615FD48E3AB0F6E9E0389 /* Pods-FireOSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A66911158872C94023BAFAA7F5D827E /* Pods-FireOSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AB37B403FF504431D357D0C4179611B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215C1F74F52D4FB93EDD9E39A645EE09 /* Foundation.framework */; };
+		7B00C0B95B403A62BEAFD5AAE6877F8A /* Jsonify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8133D1330F7BEF9842BA7BD9CCCFFBE /* Jsonify.swift */; };
+		7B2E7F1CE742657BDFE52B2E18AB7476 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */; };
+		81270A623C4AEC49B191BB87B735092D /* Jsonify.h in Headers */ = {isa = PBXBuildFile; fileRef = 939732E531290794525F116AD6018DF2 /* Jsonify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8626DC2B07C229F7CE1ED79A8F318AB5 /* JsonifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB83732CB6BACE57DBF1A63B0A967F /* JsonifyModel.swift */; };
+		893D383FFA48E3AD5EE04DD6C0D2E39B /* Pods-FireIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4CDFB1B736034D54F7F225E72342D /* Pods-FireIOS-dummy.m */; };
+		8BED2CCE051E594FC23BFB43DAB63B0A /* Jsonify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8133D1330F7BEF9842BA7BD9CCCFFBE /* Jsonify.swift */; };
+		8EB85DC852DFCC8283AEBE9334B4F188 /* JsonifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB83732CB6BACE57DBF1A63B0A967F /* JsonifyModel.swift */; };
+		9815D81B2245D2714B5CBBD7569FAC8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */; };
+		A222038E36EDD67A877CAAF9B8170C7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */; };
+		AAB5B0D35B31F3E019E9398BEB4627B2 /* Pods-FireTVOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B840D8C752EC7E7B0533DECAE97827 /* Pods-FireTVOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9FFE9E92B46D6757EC3379C128D2ECD /* Jsonify.h in Headers */ = {isa = PBXBuildFile; fileRef = 939732E531290794525F116AD6018DF2 /* Jsonify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE738E5F0325E3011FBA40902E4A3E23 /* Pods-FireWatchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF56DFE766F9F2B43B09A282D11C4752 /* Pods-FireWatchOS-dummy.m */; };
+		D0F1DCA2360C8AE4E1B093020E3AE747 /* Jsonify.h in Headers */ = {isa = PBXBuildFile; fileRef = 939732E531290794525F116AD6018DF2 /* Jsonify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D673808A35B036F5233B4EA823372908 /* Jsonify-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5C700A2A90757FD08B9C369C90E7F /* Jsonify-tvOS-dummy.m */; };
+		EE0E7751EFDC7960B9046F9D644BF69D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */; };
+		EF9E447CC9B17E3B070972AD48DA3489 /* Jsonify-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E58714ADF6A3DABAF072E8111FA216 /* Jsonify-OSX-dummy.m */; };
+		F458ACD6F6A5D488F49F7C47377B8475 /* Jsonify-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 844AF320795BD79B73A07244D00B60FD /* Jsonify-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3696C17BF860FF04F7B9820EA0856D06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A41332D0FF01C93AA0AFB3AEBDB8E76;
+			remoteInfo = "Jsonify-tvOS";
+		};
+		A09C4E8B08164CCCD5547B11D1C36047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E0AA98EE7D888ED8B82B3D1147C4D2;
+			remoteInfo = "Jsonify-OSX";
+		};
+		C51FCD17BEE431319E205F548E1C6536 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FBD7D420464E59DF60AAB2BA91C4DC2;
+			remoteInfo = "Jsonify-watchOS";
+		};
+		CA4D59BA11D03A9CB127FC6D893049E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC6CAA977A1C3C832C4822D36CBFEB6B;
+			remoteInfo = "Jsonify-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001782C5072635EB9EAD9DD428ADA7A7 /* Pods-FireIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FireIOS.release.xcconfig"; sourceTree = "<group>"; };
+		02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0436413FA22F2AB4EFA7492B01CB7584 /* Pods-FireTVOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FireTVOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A66911158872C94023BAFAA7F5D827E /* Pods-FireOSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FireOSX-umbrella.h"; sourceTree = "<group>"; };
+		0BF4CDFB1B736034D54F7F225E72342D /* Pods-FireIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FireIOS-dummy.m"; sourceTree = "<group>"; };
+		1328AB0F746948182DA0FC3439CA144B /* Pods-FireWatchOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FireWatchOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1373F6915C95946C21FDB407D66B571A /* Jsonify-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Jsonify-watchOS.xcconfig"; path = "../Jsonify-watchOS/Jsonify-watchOS.xcconfig"; sourceTree = "<group>"; };
+		20880AE6222FCD95F51FAC25AA54F5DC /* Jsonify-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Jsonify-watchOS-prefix.pch"; path = "../Jsonify-watchOS/Jsonify-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		215C1F74F52D4FB93EDD9E39A645EE09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		242469A1D22B90A7E9BEF8D1391817DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Jsonify-tvOS/Info.plist"; sourceTree = "<group>"; };
+		27E998F421EB6BD01FC672EFF6BF59AA /* Pods-FireIOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FireIOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A178D0F616E92193D42BDC8CC5CC169 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AEA71CAEBA8BFB4A8095CE167B7B496 /* Pods-FireWatchOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FireWatchOS-resources.sh"; sourceTree = "<group>"; };
+		2C1D85B67B1DCF4293F38610908CA568 /* Jsonify-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Jsonify-iOS.modulemap"; path = "../Jsonify-iOS/Jsonify-iOS.modulemap"; sourceTree = "<group>"; };
+		33114A8DF91EB84C32834CEFA5056A1E /* Jsonify-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Jsonify-iOS-dummy.m"; path = "../Jsonify-iOS/Jsonify-iOS-dummy.m"; sourceTree = "<group>"; };
+		3D4577C097E7DED13C005DB8899F6BCB /* Pods-FireWatchOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FireWatchOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		47556E1F921775617A99DC173A02921B /* Jsonify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Jsonify.framework; path = "Jsonify-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE75D331C89DEC255E67851F3A9F5C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B840D8C752EC7E7B0533DECAE97827 /* Pods-FireTVOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FireTVOS-umbrella.h"; sourceTree = "<group>"; };
+		5AB4C101C920A92F85D13E80F72B6E90 /* Pods-FireTVOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FireTVOS-resources.sh"; sourceTree = "<group>"; };
+		5BA7058433806B377866C7398955CD4C /* Pods-FireWatchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FireWatchOS-umbrella.h"; sourceTree = "<group>"; };
+		5F3B3A126AE4A51BD70B82829BD6D1D7 /* Jsonify-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Jsonify-iOS-prefix.pch"; path = "../Jsonify-iOS/Jsonify-iOS-prefix.pch"; sourceTree = "<group>"; };
+		5FB580D01E74DDEEC62C5C07C5E41DE6 /* Pods-FireOSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FireOSX.modulemap"; sourceTree = "<group>"; };
+		6630932F912C0499F5706240489AAE8E /* Pods-FireIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FireIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		66AB83732CB6BACE57DBF1A63B0A967F /* JsonifyModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonifyModel.swift; path = Jsonify/Jsonify/JsonifyModel.swift; sourceTree = "<group>"; };
+		672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		79AFDA41777ED3A81DF5CE275B22DC9E /* Pods-FireTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FireTVOS.release.xcconfig"; sourceTree = "<group>"; };
+		81248C77F6597FB56EBEE4F66D108B76 /* Jsonify-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jsonify-OSX-prefix.pch"; sourceTree = "<group>"; };
+		82DD115E30872C54A82E1EC11F3C73B7 /* Jsonify-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Jsonify-iOS.xcconfig"; path = "../Jsonify-iOS/Jsonify-iOS.xcconfig"; sourceTree = "<group>"; };
+		844AF320795BD79B73A07244D00B60FD /* Jsonify-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jsonify-OSX-umbrella.h"; sourceTree = "<group>"; };
+		858B0136D78C47024369E35AE1B7CDBD /* Jsonify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Jsonify.framework; path = "Jsonify-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F79ED36EA9738EE8488613EC9A67AA1 /* Pods-FireTVOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FireTVOS.modulemap"; sourceTree = "<group>"; };
+		939732E531290794525F116AD6018DF2 /* Jsonify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Jsonify.h; path = Jsonify/Jsonify.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9539D1189F331CBCACFCFD00A888528B /* Jsonify-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Jsonify-OSX.xcconfig"; sourceTree = "<group>"; };
+		98E6EA1FC1222ABEBC9DAEEC5060CB58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Jsonify-watchOS/Info.plist"; sourceTree = "<group>"; };
+		99375A2D8631FD6AF0B1532C50CE1BDA /* Jsonify-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Jsonify-watchOS.modulemap"; path = "../Jsonify-watchOS/Jsonify-watchOS.modulemap"; sourceTree = "<group>"; };
+		9E8F92FE7E330AA5C85C3550C128473B /* Pods_FireTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FireTVOS.framework; path = "Pods-FireTVOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F06CD92A1B40D198341B592FCF91F43 /* Pods-FireWatchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FireWatchOS.modulemap"; sourceTree = "<group>"; };
+		A3AB3CA6CD579C09F931F166BC07EBD4 /* Pods_FireIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FireIOS.framework; path = "Pods-FireIOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E5C700A2A90757FD08B9C369C90E7F /* Jsonify-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Jsonify-tvOS-dummy.m"; path = "../Jsonify-tvOS/Jsonify-tvOS-dummy.m"; sourceTree = "<group>"; };
+		A9176D88B29517085DB432E126F1397D /* Jsonify-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Jsonify-tvOS.modulemap"; path = "../Jsonify-tvOS/Jsonify-tvOS.modulemap"; sourceTree = "<group>"; };
+		ACAF86C4C247ABF2443EA470D8EDD5B9 /* Pods-FireOSX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FireOSX-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B437919948D6E6323DC891CC9637AA7F /* Pods-FireOSX-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FireOSX-resources.sh"; sourceTree = "<group>"; };
+		B64988716B0A08C0848D2F483522EDCC /* Jsonify-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Jsonify-tvOS.xcconfig"; path = "../Jsonify-tvOS/Jsonify-tvOS.xcconfig"; sourceTree = "<group>"; };
+		B8133D1330F7BEF9842BA7BD9CCCFFBE /* Jsonify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Jsonify.swift; path = Jsonify/Jsonify/Jsonify.swift; sourceTree = "<group>"; };
+		B8FC7D8B8B880A99CB20EACDAF8659AD /* Pods-FireWatchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FireWatchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B91B63A4F4733E0FB609B6D900E5AF5A /* Pods-FireIOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FireIOS-resources.sh"; sourceTree = "<group>"; };
+		B9D9F04A3C0BDDAA9C99E01B55A60731 /* Pods-FireIOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FireIOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		C1D37A62BE663B0017B536B95E47C7B3 /* Jsonify-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Jsonify-tvOS-umbrella.h"; path = "../Jsonify-tvOS/Jsonify-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		C3E38225502144514B1DE447922D516B /* Pods-FireIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FireIOS-umbrella.h"; sourceTree = "<group>"; };
+		C632A6E69AB6E1123A8E7BB328665D64 /* Jsonify-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Jsonify-OSX.modulemap"; sourceTree = "<group>"; };
+		CB2E85D1616199A23230729D2EBA9CE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC36C188ADC9D0B73EE56F5A4AE0564 /* Jsonify-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Jsonify-iOS-umbrella.h"; path = "../Jsonify-iOS/Jsonify-iOS-umbrella.h"; sourceTree = "<group>"; };
+		CBDAA48F3D3300E070230D796335BE4F /* Pods-FireOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FireOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		D0A7917F17ED65DFF8FF9E03E2D4E6AA /* Jsonify-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Jsonify-tvOS-prefix.pch"; path = "../Jsonify-tvOS/Jsonify-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		D4052844B65F6328291D963715B2229F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E58714ADF6A3DABAF072E8111FA216 /* Jsonify-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Jsonify-OSX-dummy.m"; sourceTree = "<group>"; };
+		D5908E1F23F5FBC09BA7C6B9BC7D6D93 /* Pods-FireTVOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FireTVOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D9672C1016DD72FAFAC583FC042017D0 /* Pods-FireOSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FireOSX-dummy.m"; sourceTree = "<group>"; };
+		DCB50BCF679765033D136D806D883A60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Jsonify-iOS/Info.plist"; sourceTree = "<group>"; };
+		DF56DFE766F9F2B43B09A282D11C4752 /* Pods-FireWatchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FireWatchOS-dummy.m"; sourceTree = "<group>"; };
+		E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E1EA44FAA941AC9C514028414E02B987 /* Pods_FireWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FireWatchOS.framework; path = "Pods-FireWatchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2443E3325214C3914B9D240FF8AFD42 /* Pods-FireIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FireIOS.modulemap"; sourceTree = "<group>"; };
+		E39699F8DF1ED72FD7AB6D87B0EE6DA0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5B778133B202820DEAEF597C756BBF8 /* Pods-FireOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FireOSX.release.xcconfig"; sourceTree = "<group>"; };
+		EF43D2148A45509EA0A6E32AFC065AD8 /* Pods-FireWatchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FireWatchOS.release.xcconfig"; sourceTree = "<group>"; };
+		F0A7AA2ACE31EE82AB4B3DF391456EFE /* Pods-FireTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FireTVOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F137DA21D8D99FEEDBA49403165AC3C5 /* Jsonify-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Jsonify-watchOS-umbrella.h"; path = "../Jsonify-watchOS/Jsonify-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		F192E76EDBC7B63710B673A08C63890F /* Pods-FireOSX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FireOSX-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1E6EE283D2F5FB3B9FC400EA050D782 /* Jsonify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Jsonify.framework; path = "Jsonify-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2FB438014B3F4D936094730BF826F19 /* Pods_FireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FireOSX.framework; path = "Pods-FireOSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA99031D0947538C9C1D946254BAFB3E /* Jsonify-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Jsonify-watchOS-dummy.m"; path = "../Jsonify-watchOS/Jsonify-watchOS-dummy.m"; sourceTree = "<group>"; };
+		FE47DAA63ACC7153AA6B66B4F2ADA40F /* Jsonify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Jsonify.framework; path = "Jsonify-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF12A0FCDBC80CF107ED6DBEB7088B7 /* Pods-FireTVOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FireTVOS-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10EDF0CE8F4ED48ADA9E03D13DFE2934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2312CB41481CE6D6856E7B25BA080184 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184BFF2A9539D4C3884C931B8580B443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2E7F1CE742657BDFE52B2E18AB7476 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B97501942BB3325AAF5EB9C50ACB219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0E7751EFDC7960B9046F9D644BF69D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51CB1A85D8E34A6072D7A80F3E1D7DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4970A3FF7B06229D7666C2E3F9F01AF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82A17C07B20782DA26F7360D2CAD0B1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED8E08380BDBD49E9E3A6995A1E0427 /* Cocoa.framework in Frameworks */,
+				7AB37B403FF504431D357D0C4179611B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A01591BDABDF85B70DDD6950F44BF12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EA0CE8257BFDF9194FEE14054E2A1C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1C08B9D5AE2C430E72428FF4A7C2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9815D81B2245D2714B5CBBD7569FAC8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE9D82C03F854BBCE39B29D320546DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A222038E36EDD67A877CAAF9B8170C7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025224BBA3522CA630B887147FAA2CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47556E1F921775617A99DC173A02921B /* Jsonify.framework */,
+				F1E6EE283D2F5FB3B9FC400EA050D782 /* Jsonify.framework */,
+				FE47DAA63ACC7153AA6B66B4F2ADA40F /* Jsonify.framework */,
+				858B0136D78C47024369E35AE1B7CDBD /* Jsonify.framework */,
+				A3AB3CA6CD579C09F931F166BC07EBD4 /* Pods_FireIOS.framework */,
+				F2FB438014B3F4D936094730BF826F19 /* Pods_FireOSX.framework */,
+				9E8F92FE7E330AA5C85C3550C128473B /* Pods_FireTVOS.framework */,
+				E1EA44FAA941AC9C514028414E02B987 /* Pods_FireWatchOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090BC3AE2E51F2C97DFAE942A42D676C /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		44C20708376E1D92402E0308741430CF /* Pods-FireWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				E39699F8DF1ED72FD7AB6D87B0EE6DA0 /* Info.plist */,
+				9F06CD92A1B40D198341B592FCF91F43 /* Pods-FireWatchOS.modulemap */,
+				1328AB0F746948182DA0FC3439CA144B /* Pods-FireWatchOS-acknowledgements.markdown */,
+				3D4577C097E7DED13C005DB8899F6BCB /* Pods-FireWatchOS-acknowledgements.plist */,
+				DF56DFE766F9F2B43B09A282D11C4752 /* Pods-FireWatchOS-dummy.m */,
+				2AEA71CAEBA8BFB4A8095CE167B7B496 /* Pods-FireWatchOS-resources.sh */,
+				5BA7058433806B377866C7398955CD4C /* Pods-FireWatchOS-umbrella.h */,
+				B8FC7D8B8B880A99CB20EACDAF8659AD /* Pods-FireWatchOS.debug.xcconfig */,
+				EF43D2148A45509EA0A6E32AFC065AD8 /* Pods-FireWatchOS.release.xcconfig */,
+			);
+			name = "Pods-FireWatchOS";
+			path = "Target Support Files/Pods-FireWatchOS";
+			sourceTree = "<group>";
+		};
+		519EEEE9DFE8AF95F2DAA88343C055EC /* Pods-FireIOS */ = {
+			isa = PBXGroup;
+			children = (
+				4AE75D331C89DEC255E67851F3A9F5C7 /* Info.plist */,
+				E2443E3325214C3914B9D240FF8AFD42 /* Pods-FireIOS.modulemap */,
+				27E998F421EB6BD01FC672EFF6BF59AA /* Pods-FireIOS-acknowledgements.markdown */,
+				B9D9F04A3C0BDDAA9C99E01B55A60731 /* Pods-FireIOS-acknowledgements.plist */,
+				0BF4CDFB1B736034D54F7F225E72342D /* Pods-FireIOS-dummy.m */,
+				B91B63A4F4733E0FB609B6D900E5AF5A /* Pods-FireIOS-resources.sh */,
+				C3E38225502144514B1DE447922D516B /* Pods-FireIOS-umbrella.h */,
+				6630932F912C0499F5706240489AAE8E /* Pods-FireIOS.debug.xcconfig */,
+				001782C5072635EB9EAD9DD428ADA7A7 /* Pods-FireIOS.release.xcconfig */,
+			);
+			name = "Pods-FireIOS";
+			path = "Target Support Files/Pods-FireIOS";
+			sourceTree = "<group>";
+		};
+		67F3DDAB5B0C7C94C8DC2C0CD6C79953 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCB50BCF679765033D136D806D883A60 /* Info.plist */,
+				CB2E85D1616199A23230729D2EBA9CE8 /* Info.plist */,
+				98E6EA1FC1222ABEBC9DAEEC5060CB58 /* Info.plist */,
+				242469A1D22B90A7E9BEF8D1391817DE /* Info.plist */,
+				2C1D85B67B1DCF4293F38610908CA568 /* Jsonify-iOS.modulemap */,
+				82DD115E30872C54A82E1EC11F3C73B7 /* Jsonify-iOS.xcconfig */,
+				33114A8DF91EB84C32834CEFA5056A1E /* Jsonify-iOS-dummy.m */,
+				5F3B3A126AE4A51BD70B82829BD6D1D7 /* Jsonify-iOS-prefix.pch */,
+				CBC36C188ADC9D0B73EE56F5A4AE0564 /* Jsonify-iOS-umbrella.h */,
+				C632A6E69AB6E1123A8E7BB328665D64 /* Jsonify-OSX.modulemap */,
+				9539D1189F331CBCACFCFD00A888528B /* Jsonify-OSX.xcconfig */,
+				D4E58714ADF6A3DABAF072E8111FA216 /* Jsonify-OSX-dummy.m */,
+				81248C77F6597FB56EBEE4F66D108B76 /* Jsonify-OSX-prefix.pch */,
+				844AF320795BD79B73A07244D00B60FD /* Jsonify-OSX-umbrella.h */,
+				A9176D88B29517085DB432E126F1397D /* Jsonify-tvOS.modulemap */,
+				B64988716B0A08C0848D2F483522EDCC /* Jsonify-tvOS.xcconfig */,
+				A7E5C700A2A90757FD08B9C369C90E7F /* Jsonify-tvOS-dummy.m */,
+				D0A7917F17ED65DFF8FF9E03E2D4E6AA /* Jsonify-tvOS-prefix.pch */,
+				C1D37A62BE663B0017B536B95E47C7B3 /* Jsonify-tvOS-umbrella.h */,
+				99375A2D8631FD6AF0B1532C50CE1BDA /* Jsonify-watchOS.modulemap */,
+				1373F6915C95946C21FDB407D66B571A /* Jsonify-watchOS.xcconfig */,
+				FA99031D0947538C9C1D946254BAFB3E /* Jsonify-watchOS-dummy.m */,
+				20880AE6222FCD95F51FAC25AA54F5DC /* Jsonify-watchOS-prefix.pch */,
+				F137DA21D8D99FEEDBA49403165AC3C5 /* Jsonify-watchOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Jsonify-OSX";
+			sourceTree = "<group>";
+		};
+		71877252CC47AB1885A21D2F65DFDD8A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		72739932EAE1AE543E900B0B8031ED44 /* Pods-FireOSX */ = {
+			isa = PBXGroup;
+			children = (
+				D4052844B65F6328291D963715B2229F /* Info.plist */,
+				5FB580D01E74DDEEC62C5C07C5E41DE6 /* Pods-FireOSX.modulemap */,
+				ACAF86C4C247ABF2443EA470D8EDD5B9 /* Pods-FireOSX-acknowledgements.markdown */,
+				F192E76EDBC7B63710B673A08C63890F /* Pods-FireOSX-acknowledgements.plist */,
+				D9672C1016DD72FAFAC583FC042017D0 /* Pods-FireOSX-dummy.m */,
+				B437919948D6E6323DC891CC9637AA7F /* Pods-FireOSX-resources.sh */,
+				0A66911158872C94023BAFAA7F5D827E /* Pods-FireOSX-umbrella.h */,
+				CBDAA48F3D3300E070230D796335BE4F /* Pods-FireOSX.debug.xcconfig */,
+				E5B778133B202820DEAEF597C756BBF8 /* Pods-FireOSX.release.xcconfig */,
+			);
+			name = "Pods-FireOSX";
+			path = "Target Support Files/Pods-FireOSX";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9CE66CDE1AE81A05FA082983A88A0B51 /* Frameworks */,
+				F5B0F223156304B63630AC4F598E7939 /* Pods */,
+				025224BBA3522CA630B887147FAA2CF5 /* Products */,
+				979C346F6A0B1CA76A2F3F7DBD3886A2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		979C346F6A0B1CA76A2F3F7DBD3886A2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				519EEEE9DFE8AF95F2DAA88343C055EC /* Pods-FireIOS */,
+				72739932EAE1AE543E900B0B8031ED44 /* Pods-FireOSX */,
+				D9CE536B3392E89733455DAE4D0D0808 /* Pods-FireTVOS */,
+				44C20708376E1D92402E0308741430CF /* Pods-FireWatchOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9CE66CDE1AE81A05FA082983A88A0B51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71877252CC47AB1885A21D2F65DFDD8A /* iOS */,
+				B32A65AA48AEE3BCDABA0EDC6DC51248 /* OS X */,
+				090BC3AE2E51F2C97DFAE942A42D676C /* tvOS */,
+				AF0110E626B7D115952F313DCAC8692F /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF0110E626B7D115952F313DCAC8692F /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		B32A65AA48AEE3BCDABA0EDC6DC51248 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */,
+				215C1F74F52D4FB93EDD9E39A645EE09 /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		BA70B2AFADEB045564E75CC682D78A1F /* Jsonify */ = {
+			isa = PBXGroup;
+			children = (
+				939732E531290794525F116AD6018DF2 /* Jsonify.h */,
+				B8133D1330F7BEF9842BA7BD9CCCFFBE /* Jsonify.swift */,
+				66AB83732CB6BACE57DBF1A63B0A967F /* JsonifyModel.swift */,
+				67F3DDAB5B0C7C94C8DC2C0CD6C79953 /* Support Files */,
+			);
+			name = Jsonify;
+			path = Jsonify;
+			sourceTree = "<group>";
+		};
+		D9CE536B3392E89733455DAE4D0D0808 /* Pods-FireTVOS */ = {
+			isa = PBXGroup;
+			children = (
+				2A178D0F616E92193D42BDC8CC5CC169 /* Info.plist */,
+				8F79ED36EA9738EE8488613EC9A67AA1 /* Pods-FireTVOS.modulemap */,
+				D5908E1F23F5FBC09BA7C6B9BC7D6D93 /* Pods-FireTVOS-acknowledgements.markdown */,
+				0436413FA22F2AB4EFA7492B01CB7584 /* Pods-FireTVOS-acknowledgements.plist */,
+				FFF12A0FCDBC80CF107ED6DBEB7088B7 /* Pods-FireTVOS-dummy.m */,
+				5AB4C101C920A92F85D13E80F72B6E90 /* Pods-FireTVOS-resources.sh */,
+				50B840D8C752EC7E7B0533DECAE97827 /* Pods-FireTVOS-umbrella.h */,
+				F0A7AA2ACE31EE82AB4B3DF391456EFE /* Pods-FireTVOS.debug.xcconfig */,
+				79AFDA41777ED3A81DF5CE275B22DC9E /* Pods-FireTVOS.release.xcconfig */,
+			);
+			name = "Pods-FireTVOS";
+			path = "Target Support Files/Pods-FireTVOS";
+			sourceTree = "<group>";
+		};
+		F5B0F223156304B63630AC4F598E7939 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA70B2AFADEB045564E75CC682D78A1F /* Jsonify */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3FED9A3A1F4E0C3D1A34797C818078D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB7F62C71755061B9305C870DD795E6 /* Pods-FireWatchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46321C7245281663A23C37A1C44E1C19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26BC46623EF30A85F88342478A451232 /* Jsonify-iOS-umbrella.h in Headers */,
+				60A6130016DCC31B570E71FB66849C89 /* Jsonify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8565F1E5C1A61FE9EAE5DC761415191B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3F3334A6DF3F842493113E2A1BFF5C /* Jsonify-tvOS-umbrella.h in Headers */,
+				81270A623C4AEC49B191BB87B735092D /* Jsonify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78BEE988B633B1B877D5536B085DA56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB5B0D35B31F3E019E9398BEB4627B2 /* Pods-FireTVOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD044C71C345DD40F219430A53D62FEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F458ACD6F6A5D488F49F7C47377B8475 /* Jsonify-OSX-umbrella.h in Headers */,
+				D0F1DCA2360C8AE4E1B093020E3AE747 /* Jsonify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8650860624E0DE526506EAB52038FD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C0DF5493AF4873596A4BD0C0AA550F /* Jsonify-watchOS-umbrella.h in Headers */,
+				B9FFE9E92B46D6757EC3379C128D2ECD /* Jsonify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14B1A65856053E7E41A7A0FB75F62D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ECF4C9097F615FD48E3AB0F6E9E0389 /* Pods-FireOSX-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F315636C2258436CE163E559B23540FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EC2D59EE9993CDD78DE90382B739E7 /* Pods-FireIOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		033F5076A39FC6D5875CCAB45EA9F6A7 /* Pods-FireOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC2681047182CD7E144B0E9796B0D7CC /* Build configuration list for PBXNativeTarget "Pods-FireOSX" */;
+			buildPhases = (
+				3692E1E10E594D853FE7054E562A3DCE /* Sources */,
+				3B97501942BB3325AAF5EB9C50ACB219 /* Frameworks */,
+				F14B1A65856053E7E41A7A0FB75F62D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				479BCB795A4AB83E3032B2F5AB37BB33 /* PBXTargetDependency */,
+			);
+			name = "Pods-FireOSX";
+			productName = "Pods-FireOSX";
+			productReference = F2FB438014B3F4D936094730BF826F19 /* Pods_FireOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		08E0AA98EE7D888ED8B82B3D1147C4D2 /* Jsonify-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B8FFC6CB91D8EDB959C14E690A230E4 /* Build configuration list for PBXNativeTarget "Jsonify-OSX" */;
+			buildPhases = (
+				D7F8DEA7BACED1DCF41CA19D9B469DE7 /* Sources */,
+				82A17C07B20782DA26F7360D2CAD0B1C /* Frameworks */,
+				CD044C71C345DD40F219430A53D62FEC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jsonify-OSX";
+			productName = "Jsonify-OSX";
+			productReference = 47556E1F921775617A99DC173A02921B /* Jsonify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0FBD7D420464E59DF60AAB2BA91C4DC2 /* Jsonify-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954031F876F5B5EA3D9696579684E900 /* Build configuration list for PBXNativeTarget "Jsonify-watchOS" */;
+			buildPhases = (
+				894F00169D5E793B45245D2CDF766399 /* Sources */,
+				AC1C08B9D5AE2C430E72428FF4A7C2BA /* Frameworks */,
+				E8650860624E0DE526506EAB52038FD2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jsonify-watchOS";
+			productName = "Jsonify-watchOS";
+			productReference = 858B0136D78C47024369E35AE1B7CDBD /* Jsonify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3A41332D0FF01C93AA0AFB3AEBDB8E76 /* Jsonify-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72ED3F3CB18F6E74D6FC7C3B1E4BDA5E /* Build configuration list for PBXNativeTarget "Jsonify-tvOS" */;
+			buildPhases = (
+				74F79335ED00F9A185FDB01E90EAFBB4 /* Sources */,
+				FE9D82C03F854BBCE39B29D320546DFF /* Frameworks */,
+				8565F1E5C1A61FE9EAE5DC761415191B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jsonify-tvOS";
+			productName = "Jsonify-tvOS";
+			productReference = FE47DAA63ACC7153AA6B66B4F2ADA40F /* Jsonify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43525A34763A8C20F71462E7D4B6FEB6 /* Pods-FireIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7B56E14009539083C595591B44F028 /* Build configuration list for PBXNativeTarget "Pods-FireIOS" */;
+			buildPhases = (
+				E7A9499990DBE1DD8078FDDA36787EFA /* Sources */,
+				10EDF0CE8F4ED48ADA9E03D13DFE2934 /* Frameworks */,
+				F315636C2258436CE163E559B23540FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C554F638004F8623AF142DDEEA5D24A7 /* PBXTargetDependency */,
+			);
+			name = "Pods-FireIOS";
+			productName = "Pods-FireIOS";
+			productReference = A3AB3CA6CD579C09F931F166BC07EBD4 /* Pods_FireIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		483F168CA6506ED97BDE9B86699C8A5C /* Pods-FireWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81B9FE8787D7CCCBFAF11D2BFE5A10CA /* Build configuration list for PBXNativeTarget "Pods-FireWatchOS" */;
+			buildPhases = (
+				D0EAA163519825F92033DD78D34CE6FF /* Sources */,
+				184BFF2A9539D4C3884C931B8580B443 /* Frameworks */,
+				3FED9A3A1F4E0C3D1A34797C818078D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB19F9FA79227F300668EA55C7078610 /* PBXTargetDependency */,
+			);
+			name = "Pods-FireWatchOS";
+			productName = "Pods-FireWatchOS";
+			productReference = E1EA44FAA941AC9C514028414E02B987 /* Pods_FireWatchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC6CAA977A1C3C832C4822D36CBFEB6B /* Jsonify-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B3900C92CC088D64D3C6490B64826C6 /* Build configuration list for PBXNativeTarget "Jsonify-iOS" */;
+			buildPhases = (
+				798F0222941D59D748D0FA21DBE726A5 /* Sources */,
+				51CB1A85D8E34A6072D7A80F3E1D7DC6 /* Frameworks */,
+				46321C7245281663A23C37A1C44E1C19 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jsonify-iOS";
+			productName = "Jsonify-iOS";
+			productReference = F1E6EE283D2F5FB3B9FC400EA050D782 /* Jsonify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1673949647AD2CBC001D9D665B1C1EF /* Pods-FireTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A961AE26E8FEB39A492A38EEE7256A /* Build configuration list for PBXNativeTarget "Pods-FireTVOS" */;
+			buildPhases = (
+				3143CFB21D58A3B108AA7CE4E11EB2EE /* Sources */,
+				8A01591BDABDF85B70DDD6950F44BF12 /* Frameworks */,
+				B78BEE988B633B1B877D5536B085DA56 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0384A311CE068DE9125C26214C3D8824 /* PBXTargetDependency */,
+			);
+			name = "Pods-FireTVOS";
+			productName = "Pods-FireTVOS";
+			productReference = 9E8F92FE7E330AA5C85C3550C128473B /* Pods_FireTVOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 025224BBA3522CA630B887147FAA2CF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC6CAA977A1C3C832C4822D36CBFEB6B /* Jsonify-iOS */,
+				08E0AA98EE7D888ED8B82B3D1147C4D2 /* Jsonify-OSX */,
+				3A41332D0FF01C93AA0AFB3AEBDB8E76 /* Jsonify-tvOS */,
+				0FBD7D420464E59DF60AAB2BA91C4DC2 /* Jsonify-watchOS */,
+				43525A34763A8C20F71462E7D4B6FEB6 /* Pods-FireIOS */,
+				033F5076A39FC6D5875CCAB45EA9F6A7 /* Pods-FireOSX */,
+				F1673949647AD2CBC001D9D665B1C1EF /* Pods-FireTVOS */,
+				483F168CA6506ED97BDE9B86699C8A5C /* Pods-FireWatchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3143CFB21D58A3B108AA7CE4E11EB2EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5257921035A3F5542C75CFBA989554 /* Pods-FireTVOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3692E1E10E594D853FE7054E562A3DCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C10BC9D41C857FE5CBCE6FA5F3E8B3 /* Pods-FireOSX-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F79335ED00F9A185FDB01E90EAFBB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D673808A35B036F5233B4EA823372908 /* Jsonify-tvOS-dummy.m in Sources */,
+				8BED2CCE051E594FC23BFB43DAB63B0A /* Jsonify.swift in Sources */,
+				8EB85DC852DFCC8283AEBE9334B4F188 /* JsonifyModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798F0222941D59D748D0FA21DBE726A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E040DED04C367ED3CED7F558AFE5D8 /* Jsonify-iOS-dummy.m in Sources */,
+				2B82F1274FD34E212EA8BA0BD18F6CB9 /* Jsonify.swift in Sources */,
+				5294CC5144D27CCBE1623A4FB2EA6EB9 /* JsonifyModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894F00169D5E793B45245D2CDF766399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC8AC51035A8225C9EC60F4333A13A6 /* Jsonify-watchOS-dummy.m in Sources */,
+				7B00C0B95B403A62BEAFD5AAE6877F8A /* Jsonify.swift in Sources */,
+				346F7347AC763370546FC24793859117 /* JsonifyModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EAA163519825F92033DD78D34CE6FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE738E5F0325E3011FBA40902E4A3E23 /* Pods-FireWatchOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F8DEA7BACED1DCF41CA19D9B469DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9E447CC9B17E3B070972AD48DA3489 /* Jsonify-OSX-dummy.m in Sources */,
+				43DEB00F4E333F270E5D6263AB99526F /* Jsonify.swift in Sources */,
+				8626DC2B07C229F7CE1ED79A8F318AB5 /* JsonifyModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A9499990DBE1DD8078FDDA36787EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893D383FFA48E3AD5EE04DD6C0D2E39B /* Pods-FireIOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0384A311CE068DE9125C26214C3D8824 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Jsonify-tvOS";
+			target = 3A41332D0FF01C93AA0AFB3AEBDB8E76 /* Jsonify-tvOS */;
+			targetProxy = 3696C17BF860FF04F7B9820EA0856D06 /* PBXContainerItemProxy */;
+		};
+		479BCB795A4AB83E3032B2F5AB37BB33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Jsonify-OSX";
+			target = 08E0AA98EE7D888ED8B82B3D1147C4D2 /* Jsonify-OSX */;
+			targetProxy = A09C4E8B08164CCCD5547B11D1C36047 /* PBXContainerItemProxy */;
+		};
+		BB19F9FA79227F300668EA55C7078610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Jsonify-watchOS";
+			target = 0FBD7D420464E59DF60AAB2BA91C4DC2 /* Jsonify-watchOS */;
+			targetProxy = C51FCD17BEE431319E205F548E1C6536 /* PBXContainerItemProxy */;
+		};
+		C554F638004F8623AF142DDEEA5D24A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Jsonify-iOS";
+			target = AC6CAA977A1C3C832C4822D36CBFEB6B /* Jsonify-iOS */;
+			targetProxy = CA4D59BA11D03A9CB127FC6D893049E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F955CD892F97F600A6DC0D79FB9AC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64988716B0A08C0848D2F483522EDCC /* Jsonify-tvOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4193877A4473DFFE96D70C7280707F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79AFDA41777ED3A81DF5CE275B22DC9E /* Pods-FireTVOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FireTVOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FireTVOS/Pods-FireTVOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FireTVOS;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A28C114B6A3D735CE9A1ACBCA875831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6630932F912C0499F5706240489AAE8E /* Pods-FireIOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FireIOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FireIOS/Pods-FireIOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FireIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E996147D97CDE12E78D4DD95410F1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF43D2148A45509EA0A6E32AFC065AD8 /* Pods-FireWatchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FireWatchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FireWatchOS/Pods-FireWatchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FireWatchOS;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6A229CE02481B2103638AEF73A821249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1373F6915C95946C21FDB407D66B571A /* Jsonify-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		78AFDB8BD47D473F524EED7B98E09952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001782C5072635EB9EAD9DD428ADA7A7 /* Pods-FireIOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FireIOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FireIOS/Pods-FireIOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FireIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A6CB270CE8F5C8AA547E559278AB9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1373F6915C95946C21FDB407D66B571A /* Jsonify-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8A25077121C073A6AA1ABCDCF1F55FD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9539D1189F331CBCACFCFD00A888528B /* Jsonify-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-OSX/Jsonify-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Jsonify-OSX/Jsonify-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		927E6DD0D8D1E38E166F5227D9F5FAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B778133B202820DEAEF597C756BBF8 /* Pods-FireOSX.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FireOSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-FireOSX/Pods-FireOSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FireOSX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A447CBF483BDBE8BDCAD61EA823BFAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		AB33C29BA2D16A07A7D75AEE433E18E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DC47FBB9FA22CA28353C67DAFDAD04EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FC7D8B8B880A99CB20EACDAF8659AD /* Pods-FireWatchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FireWatchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FireWatchOS/Pods-FireWatchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FireWatchOS;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E59BC89E90753E051663F0CC0469D31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9539D1189F331CBCACFCFD00A888528B /* Jsonify-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-OSX/Jsonify-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Jsonify-OSX/Jsonify-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E803CD1BF9505FF57935E5BFCF107678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDAA48F3D3300E070230D796335BE4F /* Pods-FireOSX.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FireOSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-FireOSX/Pods-FireOSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FireOSX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC6E412AF5B10A9C122DB07ECBCFE30D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A7AA2ACE31EE82AB4B3DF391456EFE /* Pods-FireTVOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FireTVOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FireTVOS/Pods-FireTVOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FireTVOS;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F512C37C1DD9FBEB45CCC05826A55E0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64988716B0A08C0848D2F483522EDCC /* Jsonify-tvOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB3655A0B5F7772BFC81C83543D94AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82DD115E30872C54A82E1EC11F3C73B7 /* Jsonify-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-iOS/Jsonify-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-iOS/Jsonify-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB6F6B13488A9A031F127E9D3F339523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82DD115E30872C54A82E1EC11F3C73B7 /* Jsonify-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-iOS/Jsonify-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-iOS/Jsonify-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B8FFC6CB91D8EDB959C14E690A230E4 /* Build configuration list for PBXNativeTarget "Jsonify-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59BC89E90753E051663F0CC0469D31F /* Debug */,
+				8A25077121C073A6AA1ABCDCF1F55FD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB33C29BA2D16A07A7D75AEE433E18E1 /* Debug */,
+				9A447CBF483BDBE8BDCAD61EA823BFAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72ED3F3CB18F6E74D6FC7C3B1E4BDA5E /* Build configuration list for PBXNativeTarget "Jsonify-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F512C37C1DD9FBEB45CCC05826A55E0E /* Debug */,
+				3F955CD892F97F600A6DC0D79FB9AC17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B3900C92CC088D64D3C6490B64826C6 /* Build configuration list for PBXNativeTarget "Jsonify-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3655A0B5F7772BFC81C83543D94AF8 /* Debug */,
+				FB6F6B13488A9A031F127E9D3F339523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81B9FE8787D7CCCBFAF11D2BFE5A10CA /* Build configuration list for PBXNativeTarget "Pods-FireWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC47FBB9FA22CA28353C67DAFDAD04EC /* Debug */,
+				5E996147D97CDE12E78D4DD95410F1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		954031F876F5B5EA3D9696579684E900 /* Build configuration list for PBXNativeTarget "Jsonify-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A6CB270CE8F5C8AA547E559278AB9F7 /* Debug */,
+				6A229CE02481B2103638AEF73A821249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A961AE26E8FEB39A492A38EEE7256A /* Build configuration list for PBXNativeTarget "Pods-FireTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6E412AF5B10A9C122DB07ECBCFE30D /* Debug */,
+				4193877A4473DFFE96D70C7280707F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC2681047182CD7E144B0E9796B0D7CC /* Build configuration list for PBXNativeTarget "Pods-FireOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E803CD1BF9505FF57935E5BFCF107678 /* Debug */,
+				927E6DD0D8D1E38E166F5227D9F5FAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7B56E14009539083C595591B44F028 /* Build configuration list for PBXNativeTarget "Pods-FireIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A28C114B6A3D735CE9A1ACBCA875831 /* Debug */,
+				78AFDB8BD47D473F524EED7B98E09952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

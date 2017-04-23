@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		43DE8D373BCE0FFBB6BB769B /* Pods_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD1419967061A9D1CD9484E /* Pods_watchOS.framework */; };
+		5C984FE61EAC9C6000100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FE51EAC9C6000100B13 /* Jsonify.framework */; };
+		5C984FE81EAC9C7200100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FE71EAC9C7200100B13 /* Jsonify.framework */; };
+		5C984FEA1EAC9C7900100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FE91EAC9C7900100B13 /* Jsonify.framework */; };
+		5C984FEC1EAC9C7D00100B13 /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C984FEB1EAC9C7D00100B13 /* Jsonify.framework */; };
 		5CFBF56B1EAC29DA0013DEC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBF56A1EAC29DA0013DEC2 /* AppDelegate.swift */; };
 		5CFBF56D1EAC29DA0013DEC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBF56C1EAC29DA0013DEC2 /* ViewController.swift */; };
 		5CFBF5701EAC29DA0013DEC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFBF56E1EAC29DA0013DEC2 /* Main.storyboard */; };
@@ -57,6 +61,10 @@
 		2C06236F621888A6B54CE8A5 /* Pods-Fire-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fire-Demo/Pods-Fire-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		45810B05D7635D19A9A7241B /* Pods_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EB711DC1EF6592E852A10C /* Pods-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS/Pods-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5C984FE51EAC9C6000100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-iphoneos/Jsonify-iOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FE71EAC9C7200100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-Demo-cqxegecmhcqjtxexckxozcdkhyye/Build/Products/Debug/Jsonify-OSX/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FE91EAC9C7900100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-appletvos/Jsonify-tvOS/Jsonify.framework"; sourceTree = "<group>"; };
+		5C984FEB1EAC9C7D00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "Pods/../build/Debug-watchos/Jsonify-watchOS/Jsonify.framework"; sourceTree = "<group>"; };
 		5CFBF5621EAC28AF0013DEC2 /* Fire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-Demo-cqxegecmhcqjtxexckxozcdkhyye/Build/Products/Debug-iphonesimulator/Fire/Fire.framework"; sourceTree = "<group>"; };
 		5CFBF5681EAC29DA0013DEC2 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CFBF56A1EAC29DA0013DEC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C984FE61EAC9C6000100B13 /* Jsonify.framework in Frameworks */,
 				5CFBF5D71EAC2B6A0013DEC2 /* Fire.framework in Frameworks */,
 				C05FD4C9E5D052FB7EF1B9D4 /* Pods_iOS.framework in Frameworks */,
 			);
@@ -117,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C984FEA1EAC9C7900100B13 /* Jsonify.framework in Frameworks */,
 				5CFBF5DB1EAC2B7A0013DEC2 /* Fire.framework in Frameworks */,
 				AFC486F0D184ACD673A49004 /* Pods_tvOS.framework in Frameworks */,
 			);
@@ -126,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C984FE81EAC9C7200100B13 /* Jsonify.framework in Frameworks */,
 				5CFBF5DD1EAC2B820013DEC2 /* Fire.framework in Frameworks */,
 				CDB3C1E0442C325CEC7D1A42 /* Pods_macOS.framework in Frameworks */,
 			);
@@ -135,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C984FEC1EAC9C7D00100B13 /* Jsonify.framework in Frameworks */,
 				5CFBF5F01EAC2D7E0013DEC2 /* Fire.framework in Frameworks */,
 				43DE8D373BCE0FFBB6BB769B /* Pods_watchOS.framework in Frameworks */,
 			);
@@ -236,6 +248,10 @@
 		F75193168398D42565BF3A77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C984FEB1EAC9C7D00100B13 /* Jsonify.framework */,
+				5C984FE91EAC9C7900100B13 /* Jsonify.framework */,
+				5C984FE71EAC9C7200100B13 /* Jsonify.framework */,
+				5C984FE51EAC9C6000100B13 /* Jsonify.framework */,
 				5CFBF5EF1EAC2D7E0013DEC2 /* Fire.framework */,
 				5CFBF5DF1EAC2CEA0013DEC2 /* Fire.framework */,
 				5CFBF5DC1EAC2B820013DEC2 /* Fire.framework */,
@@ -783,6 +799,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Fire",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Fire-iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Jsonify-iOS",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -803,6 +820,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Fire",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Fire-iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Jsonify-iOS",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -825,6 +843,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Fire",
 					"$(PROJECT_DIR)/build/Debug-appletvos/Fire-tvOS",
+					"$(PROJECT_DIR)/build/Debug-appletvos/Jsonify-tvOS",
 				);
 				INFOPLIST_FILE = tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -850,6 +869,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Fire",
 					"$(PROJECT_DIR)/build/Debug-appletvos/Fire-tvOS",
+					"$(PROJECT_DIR)/build/Debug-appletvos/Jsonify-tvOS",
 				);
 				INFOPLIST_FILE = tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -912,6 +932,10 @@
 			baseConfigurationReference = 242A4CC37AFA7220CD325D22 /* Pods-watchOS.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 63YL5QDMNS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-watchos/Jsonify-watchOS",
+				);
 				INFOPLIST_FILE = watchOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.watchOS;
@@ -929,6 +953,10 @@
 			baseConfigurationReference = C87163EE36424D5C68E29CB4 /* Pods-watchOS.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 63YL5QDMNS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-watchos/Jsonify-watchOS",
+				);
 				INFOPLIST_FILE = watchOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.watchOS;

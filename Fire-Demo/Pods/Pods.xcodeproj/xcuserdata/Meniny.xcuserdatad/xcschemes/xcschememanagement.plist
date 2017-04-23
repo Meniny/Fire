@@ -24,6 +24,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Jsonify-OSX.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Jsonify-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Jsonify-tvOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Jsonify-watchOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +67,62 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C9FE6BCCB61943C16413A875D906F7E</key>
+		<key>1646FE36D9F4A1C6A3866363DEE355D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3AF80B79CA5441922ACC323B71AF895D</key>
+		<key>1EA83ABB11AE603C2C3F8D732BF69592</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6037504CAE9A9AEFBE11998CEF70FB63</key>
+		<key>2B3229968144169EB8276F78A826AF33</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6287E7C992ABF8F11FFD3A9B0A90043D</key>
+		<key>3A5F904FCAC7D17A11934E1D2C74CB8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8764E2EB829090724CE378A059D26C89</key>
+		<key>7E296B8AD139B908FB41BC945C8A1757</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E5BC5DCCAA3A8DF70306451C0E7F390</key>
+		<key>892DEBC1F06A8109E26CCC6843C00BC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC9DFBC0562EC993E117B312BD541A7F</key>
+		<key>9848D7A5379C8BD2A3B8958C033964E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC9E72717F511778086534125F9B058C</key>
+		<key>A0023704DA1E27C5AB0C6BEB4A84E74E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A09182C3682142167BA2AD8C8AC235F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C000FADA2736349CA041B1D3EBDA6421</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEE96D45DA4AE014F79B8923F7C1A925</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E82233D666BD8AA7C5891A22D582765F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

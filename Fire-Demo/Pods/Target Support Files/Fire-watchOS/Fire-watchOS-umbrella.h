@@ -11,6 +11,7 @@
 #endif
 
 #import "Fire.h"
+#import "Jsonify.h"
 
 FOUNDATION_EXPORT double FireVersionNumber;
 FOUNDATION_EXPORT const unsigned char FireVersionString[];

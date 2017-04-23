@@ -1,0 +1,39 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'FireIOS' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Fire
+  pod 'Jsonify'
+  # target 'FireTests' do
+    # inherit! :search_paths
+    # Pods for testing
+  # end
+
+end
+
+target 'FireOSX' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FireOSX
+  pod 'Jsonify'
+end
+
+target 'FireTVOS' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FireTVOS
+  pod 'Jsonify'
+end
+
+target 'FireWatchOS' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FireWatchOS
+  pod 'Jsonify'
+end

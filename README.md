@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire">
   <br/><a href="https://github.com/Meniny/Fire-in-Swift/archive/master.zip">
-  <img alt="Version" src="https://img.shields.io/badge/version-2.3.5-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/version-2.4.0-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <img alt="Swift" src="https://img.shields.io/badge/swift-3.0%2B-orange.svg">
@@ -48,6 +48,10 @@ Fire was written for humans to read, and incidentally, for machines to execute :
 * tvOS 9.0+
 * Xcode 8 with Swift 3
 
+## Dependency
+
+* [Jsonify](https://github.com/Meniny/Jsonify-in-Swift)
+
 ## Installation
 
 #### CocoaPods
@@ -55,27 +59,6 @@ Fire was written for humans to read, and incidentally, for machines to execute :
 ```ruby
 pod 'Fire'
 ```
-
-#### Manually: Framework
-
-First, excute this:
-
-```bash
-git submodule add https://github.com/Meniny/Fire-in-Swift.git
-```
-
-then:
-
-* Drag `Fire-in-Swift/Fire/Fire.xcodeproj` into your project
-* Go to `PROJECT`->`TARGETS`->[YOUR_TARGET_NAME]->`General`->`Embedded Binaries`
-* Click `＋`
-* Select `Fire.frameWork`, click `Add`
-
-![Manaually](https://ooo.0o0.ooo/2017/04/23/58fc34ceae0b0.png)
-
-#### Manually: Source Files
-
-Copy all files in the `Fire/Source` directory into your project.
 
 ## Contribution
 
@@ -146,102 +129,6 @@ f.cancel {
 }
 ```
 
-## Samples
-
-```swift
-//
-//  ViewController.swift
-//  Fire-Demo
-//
-//  Created by Meniny on 2016-04-19.
-//  Copyright © 2016 Meniny. All rights reserved.
-//
-
-import UIKit
-import Fire
-
-class ViewController: UIViewController {
-
-    let BASEURL = "http://yourdomain.com/"
-    let GETURL = "http://meniny.cn/blogroll.json"
-    let POSTURL = "http://yourdomain.com/post.php"
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
-        get()
-    }
-
-    func get() {
-        let f = Fire.build(HTTPMethod: .GET, url: GETURL)
-            .setParams(["l": "zh"])
-            .onError { (error) in
-                print(error)
-        }
-        f.fire { (json, resp) in
-            print(json.rawValue)
-        }
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.2) {
-            ViewController.cancelTask(f)
-        }
-    }
-
-    class func cancelTask(_ f: Fire) {
-        f.cancel {
-            print("Canceled - \(f.fireManager.request)")
-        }
-    }
-
-    func post() {
-        Fire.build(HTTPMethod: .POST, url: POSTURL, params: ["l": "zh"], timeout: 0)
-            .onError { (error) in
-                print(error)
-            }
-            .fireForJSON { (json, resp) in
-                print(json.rawValue)
-        }
-    }
-
-    func header() {
-        Fire.build(HTTPMethod: .GET, url: GETURL)
-            .setHTTPHeaders(["Agent": "Demo-App"])
-            .setParams(["l": "zh"])
-            .onError { (error) in
-                print(error)
-            }
-            .fireForJSON { (json, resp) in
-                print(json.rawValue)
-        }
-    }
-
-    func simple() {
-        Fire.get(GETURL, params: ["l": "zh"], timeout: 0, callback: { (json, resp) in
-            print(json.rawValue)
-        }) { (error) in
-            print(error)
-        }
-    }
-
-    func fireAPI() {
-        FireAPI.baseURL = BASEURL
-        let api = FireAPI(appending: "get.php", HTTPMethod: .GET, successCode: .success)
-        Fire.requestFor(api, params: [:], timeout: 0, callback: { (json, resp) in
-            if resp != nil && resp?.statusCode == api.successCode.rawValue {
-                print(json.rawValue)
-            }
-        }) { (error) in
-            print(error.localizedDescription)
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-}
-```
-
 # 中文介绍
 
 ## 这是什么?
@@ -269,6 +156,10 @@ Fire 为了更好的可读性而生，碰巧还可以运行 :)
 * tvOS 9.0+
 * Xcode 8 及 Swift 3
 
+## 依赖
+
+* [Jsonify](https://github.com/Meniny/Jsonify-in-Swift)
+
 ## 安装
 
 #### CocoaPods
@@ -276,27 +167,6 @@ Fire 为了更好的可读性而生，碰巧还可以运行 :)
 ```ruby
 pod 'Fire'
 ```
-
-#### 手动安装: 框架
-
-首先执行这条指令:
-
-```bash
-git submodule add https://github.com/Meniny/Fire-in-Swift.git
-```
-
-然后:
-
-* 将 `Fire-in-Swift/Fire/Fire.xcodeproj` 拖入你的项目
-* 定位到 `PROJECT`->`TARGETS`->[YOUR_TARGET_NAME]->`General`->`Embedded Binaries`
-* 点击 `＋`
-* 选择 `Fire.frameWork` 后点击 `Add`
-
-![Manaually](https://ooo.0o0.ooo/2017/04/23/58fc34ceae0b0.png)
-
-#### 手动安装: 源文件
-
-请将 `Fire/Source` 文件夹中所有内容复制到你的项目中。
 
 ## 贡献
 
@@ -364,101 +234,5 @@ Fire.fireForData { (data, resp) -> Void in
 ```swift
 f.cancel {
    print("Canceled")
-}
-```
-
-## 示例
-
-```swift
-//
-//  ViewController.swift
-//  Fire-Demo
-//
-//  Created by Meniny on 2016-04-19.
-//  Copyright © 2016 Meniny. All rights reserved.
-//
-
-import UIKit
-import Fire
-
-class ViewController: UIViewController {
-
-    let BASEURL = "http://yourdomain.com/"
-    let GETURL = "http://meniny.cn/blogroll.json"
-    let POSTURL = "http://yourdomain.com/post.php"
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
-        get()
-    }
-
-    func get() {
-        let f = Fire.build(HTTPMethod: .GET, url: GETURL)
-            .setParams(["l": "zh"])
-            .onError { (error) in
-                print(error)
-        }
-        f.fire { (json, resp) in
-            print(json.rawValue)
-        }
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.2) {
-            ViewController.cancelTask(f)
-        }
-    }
-
-    class func cancelTask(_ f: Fire) {
-        f.cancel {
-            print("Canceled - \(f.fireManager.request)")
-        }
-    }
-
-    func post() {
-        Fire.build(HTTPMethod: .POST, url: POSTURL, params: ["l": "zh"], timeout: 0)
-            .onError { (error) in
-                print(error)
-            }
-            .fireForJSON { (json, resp) in
-                print(json.rawValue)
-        }
-    }
-
-    func header() {
-        Fire.build(HTTPMethod: .GET, url: GETURL)
-            .setHTTPHeaders(["Agent": "Demo-App"])
-            .setParams(["l": "zh"])
-            .onError { (error) in
-                print(error)
-            }
-            .fireForJSON { (json, resp) in
-                print(json.rawValue)
-        }
-    }
-
-    func simple() {
-        Fire.get(GETURL, params: ["l": "zh"], timeout: 0, callback: { (json, resp) in
-            print(json.rawValue)
-        }) { (error) in
-            print(error)
-        }
-    }
-
-    func fireAPI() {
-        FireAPI.baseURL = BASEURL
-        let api = FireAPI(appending: "get.php", HTTPMethod: .GET, successCode: .success)
-        Fire.requestFor(api, params: [:], timeout: 0, callback: { (json, resp) in
-            if resp != nil && resp?.statusCode == api.successCode.rawValue {
-                print(json.rawValue)
-            }
-        }) { (error) in
-            print(error.localizedDescription)
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 ```

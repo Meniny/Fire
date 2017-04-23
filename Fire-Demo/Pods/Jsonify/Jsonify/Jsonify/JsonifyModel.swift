@@ -20,29 +20,31 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-//  FireJSONModel.swift
-//  FireJSON
+//  JsonifyModel.swift
+//  Jsonify 
 //
 //  Created by Meniny on 15/10/3.
 //
 
 import Foundation
 
-open class FireJSONModel: NSObject {
+open class JsonifyModel: NSObject {
     
-    open var FireJSONObject: FireJSON?
+    open var JsonifyObject: Jsonify?
     
     public override init() {
         super.init()
     }
-    public init(fromJSONString string: String, encoding: String.Encoding = String.Encoding.utf8) {
-        let jsonnd = FireJSON(string: string, encoding: encoding)
-        self.FireJSONObject = jsonnd
+    
+    public init(JSONString string: String, encoding: String.Encoding = String.Encoding.utf8) {
+        let jsonnd = Jsonify(string: string, encoding: encoding)
+        self.JsonifyObject = jsonnd
         super.init()
         self.mapValues()
     }
-    public init(FireJSONObject json: FireJSON) {
-        self.FireJSONObject = json
+    
+    public init(JsonifyObject json: Jsonify) {
+        self.JsonifyObject = json
         super.init()
         self.mapValues()
     }
@@ -50,7 +52,7 @@ open class FireJSONModel: NSObject {
     internal func mapValues() {
         let mirror = Mirror(reflecting: self)
         for (k, v) in AnyRandomAccessCollection(mirror.children)! {
-            if let key = k, let jSONNDObject = self.FireJSONObject {
+            if let key = k, let jSONNDObject = self.JsonifyObject {
                 let json = jSONNDObject[key]
                 var valueWillBeSet: Any?
                 switch v {
@@ -72,7 +74,7 @@ open class FireJSONModel: NSObject {
     
     open var raw: String? {
         get {
-            return self.FireJSONObject?.raw
+            return self.JsonifyObject?.raw
         }
     }
 

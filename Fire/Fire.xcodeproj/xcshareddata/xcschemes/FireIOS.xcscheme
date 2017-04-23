@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "463712041B04C2050019E1AB"
-               BuildableName = "Fire.framework"
-               BlueprintName = "Fire"
+               BuildableName = "FireIOS.framework"
+               BlueprintName = "FireIOS"
                ReferencedContainer = "container:Fire.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4637120F1B04C2050019E1AB"
+               BlueprintIdentifier = "5C2D1C971EA77F7A0096A4AD"
                BuildableName = "FireTests.xctest"
                BlueprintName = "FireTests"
                ReferencedContainer = "container:Fire.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4637120F1B04C2050019E1AB"
+               BlueprintIdentifier = "5C2D1C971EA77F7A0096A4AD"
                BuildableName = "FireTests.xctest"
                BlueprintName = "FireTests"
                ReferencedContainer = "container:Fire.xcodeproj">
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "463712041B04C2050019E1AB"
-            BuildableName = "Fire.framework"
-            BlueprintName = "Fire"
+            BuildableName = "FireIOS.framework"
+            BlueprintName = "FireIOS"
             ReferencedContainer = "container:Fire.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "463712041B04C2050019E1AB"
-            BuildableName = "Fire.framework"
-            BlueprintName = "Fire"
+            BuildableName = "FireIOS.framework"
+            BlueprintName = "FireIOS"
             ReferencedContainer = "container:Fire.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -104,8 +104,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "463712041B04C2050019E1AB"
-            BuildableName = "Fire.framework"
-            BlueprintName = "Fire"
+            BuildableName = "FireIOS.framework"
+            BlueprintName = "FireIOS"
             ReferencedContainer = "container:Fire.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

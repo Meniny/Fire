@@ -1,0 +1,6 @@
+framework module Pods_FireIOS {
+  umbrella header "Pods-FireIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

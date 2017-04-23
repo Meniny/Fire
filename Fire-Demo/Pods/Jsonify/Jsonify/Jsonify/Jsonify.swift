@@ -20,20 +20,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-//  FireJSON.swift
-//  FireJSON
+//  Jsonify.swift
+//  Jsonify 
 //
 //  Created by Meniny on 15/10/7.
 //
 
 import Foundation
 
-public struct FireJSON {
+public struct Jsonify {
     
-    public static var debug = false
+    public static var DEBUG = false
     
     public var data: Any!
     
+    // MARK: - Init
     public init(string: String, encoding: String.Encoding = String.Encoding.utf8) {
         do {
             if let data = string.data(using: encoding) {
@@ -41,13 +42,15 @@ public struct FireJSON {
                 self.data = d as AnyObject!
             }
         } catch let error as NSError {
-            let e = NSError(domain: "FireJSON.JSONParseError", code: error.code, userInfo: error.userInfo)
-            if FireJSON.debug { NSLog(e.localizedDescription) }
+            if Jsonify.DEBUG {
+                let e = NSError(domain: "Jsonify.JSONParseError", code: error.code, userInfo: error.userInfo)
+                print(e.localizedDescription)
+            }
         }
     }
 
     fileprivate init(any: AnyObject) {
-        let j: FireJSON = [any]
+        let j: Jsonify = [any]
         self.data = j.arrayValue.first?.data
     }
     
@@ -58,23 +61,34 @@ public struct FireJSON {
     public init() {
         self.init(JSONdata: nil)
     }
+    
     public init(dictionary: [String: Any]) {
         self.init(any: dictionary as AnyObject)
     }
+    
     public init(array: [Any]) {
         self.init(any: array as AnyObject)
     }
-    public subscript (index: String) -> FireJSON {
+}
+
+// MARK: - Subscript
+extension Jsonify {
+    public subscript (index: String) -> Jsonify {
         if let jsonDictionary = self.data as? Dictionary<String, AnyObject> {
             if let value = jsonDictionary[index] {
-                return FireJSON(JSONdata: value)
+                return Jsonify(JSONdata: value)
             } else {
-                if FireJSON.debug { NSLog("FireJSON: No such key '\(index)'") }
+                if Jsonify.DEBUG {
+                    print("Jsonify: No such key '\(index)'")
+                }
             }
         }
-        return FireJSON(JSONdata: nil)
+        return Jsonify(JSONdata: nil)
     }
+}
 
+// MARK: - Getting Values
+extension Jsonify {
     public var raw: String? {
         get {
             if let _ = self.data {
@@ -82,18 +96,17 @@ public struct FireJSON {
                     let d = try JSONSerialization.data(withJSONObject: self.data, options: .prettyPrinted)
                     return NSString(data: d, encoding: String.Encoding.utf8.rawValue) as String?
                 } catch { return nil }
-                // can not test Errors here.
-                // It seems that NSJSONSerialization.dataWithJSONObject() method dose not support do-try-catch in Swift 2 now.
             }
             return nil
         }
     }
-
+    
     public var rawValue: String {
         get {
             return self.raw ?? ""
         }
     }
+    
     public var int: Int? {
         get {
             if let number = self.data as? NSNumber {
@@ -105,11 +118,13 @@ public struct FireJSON {
             return nil
         }
     }
+    
     public var intValue: Int {
         get {
             return self.int ?? 0
         }
     }
+    
     public var double: Double? {
         get {
             if let number = self.data as? NSNumber {
@@ -121,38 +136,44 @@ public struct FireJSON {
             return nil
         }
     }
+    
     public var doubleValue: Double {
         get {
             return self.double ?? 0.0
         }
     }
+    
     public var string: String? {
         get {
             return self.data as? String
         }
     }
+    
     public var stringValue: String {
         get {
             return self.string ?? ""
         }
     }
+    
     public var bool: Bool? {
         get {
             return self.data as? Bool
         }
     }
+    
     public var boolValue: Bool {
         get {
             return self.bool ?? false
         }
     }
-    public var array: [FireJSON]? {
+    
+    public var array: [Jsonify]? {
         get {
             if let _ = self.data {
-                if let arr = self.data as? Array<AnyObject> {
-                    var result = Array<FireJSON>()
+                if let arr = self.data as? [AnyObject] {
+                    var result: [Jsonify] = []
                     for i in arr {
-                        result.append(FireJSON(JSONdata: i))
+                        result.append(Jsonify(JSONdata: i))
                     }
                     return result
                 }
@@ -161,9 +182,27 @@ public struct FireJSON {
             return nil
         }
     }
-    public var arrayValue: [FireJSON] {
+    public var arrayValue: [Jsonify] {
         get {
-            return self.array ?? [] 
+            return self.array ?? []
         }
+    }
+}
+
+// MARK: - Convertible
+extension Jsonify: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Any...) {
+        self.init(JSONdata: elements as AnyObject!)
+    }
+}
+
+extension Jsonify: ExpressibleByDictionaryLiteral {
+    public init(dictionaryLiteral elements: (String, Any)...) {
+        let data = elements.reduce([String: Any]()){(dictionary: [String: Any], element:(String, Any)) -> [String: Any] in
+            var d = dictionary
+            d[element.0] = element.1
+            return d
+        }
+        self.init(JSONdata: data as AnyObject)
     }
 }

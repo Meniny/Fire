@@ -98,25 +98,25 @@ f.onError({ (error) -> Void in
 Finally, fire up:
 
 ```swift
-Fire.fire { (json, resp) -> Void in
+f.fire { (json, resp) -> Void in
     print(json["arg"]["key"].stringValue)
 }
 
 // or
 
-Fire.fireForJSON { (json, resp) -> Void in
+f.fireForJSON { (json, resp) -> Void in
     print(json["arg"]["key"].stringValue)
 }
 
 // or
 
-Fire.fireForString { (str, resp) -> Void in
+f.fireForString { (str, resp) -> Void in
     print(str)
 }
 
 // or
 
-Fire.fireForData { (data, resp) -> Void in
+f.fireForData { (data, resp) -> Void in
     print("Success")
 }
 ```
@@ -206,25 +206,25 @@ f.onError({ (error) -> Void in
 最后，发起请求:
 
 ```swift
-Fire.fire { (json, resp) -> Void in
+f.fire { (json, resp) -> Void in
     print(json["arg"]["key"].stringValue)
 }
 
 // or
 
-Fire.fireForJSON { (json, resp) -> Void in
+f.fireForJSON { (json, resp) -> Void in
     print(json["arg"]["key"].stringValue)
 }
 
 // or
 
-Fire.fireForString { (str, resp) -> Void in
+f.fireForString { (str, resp) -> Void in
     print(str)
 }
 
 // or
 
-Fire.fireForData { (data, resp) -> Void in
+f.fireForData { (data, resp) -> Void in
     print("Success")
 }
 ```

@@ -15,13 +15,10 @@ open class FireDemo {
     static var POSTURL = "http://yourdomain.com/post.php"
     
     open class func get() {
-        let f = Fire.build(HTTPMethod: .GET, url: FireDemo.GETURL)
-            .setParams(["l": "zh"])
-            .onError { (error) in
-                print(error)
-        }
-        f.fire { (json, resp) in
+        Fire.async(HTTPMethod: .GET, url: FireDemo.GETURL, params: ["l": "zh"], callback: { (json, resp) in
             print(json.rawValue)
+        }) { (error) in
+            print(error)
         }
 //        DispatchQueue.global().asyncAfter(deadline: .now() + 0.2) {
 //            FireDemo.cancelTask(f)

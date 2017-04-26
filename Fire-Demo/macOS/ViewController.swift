@@ -16,7 +16,7 @@ class ViewController: NSViewController {
         
         // Do any additional setup after loading the view.
         
-//        FireDemo.get()
+        FireDemo.get()
         
         FireDemo.upload()
     }

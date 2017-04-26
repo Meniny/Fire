@@ -76,6 +76,8 @@ open class FireManager: NSObject, URLSessionDelegate {
     var errorCallback: FireErrorCallback?
     var callback: FireDataResponseCallback?
     
+    private var dispatch: FireDispatch = FireDispatch.asynchronously
+    
     open var session: URLSession!
     open let url: String!
     open var request: URLRequest!
@@ -107,10 +109,11 @@ open class FireManager: NSObject, URLSessionDelegate {
         return "Fire"
         }()
 
-    public init(url: String, method: HTTPMethod!, timeout: Double = FireManager.oneMinute) {
+    public init(url: String, method: HTTPMethod!, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously) {
         self.url = url
         self.request = URLRequest(url: URL(string: url)!)
         self.method = method
+        self.dispatch = dispatch
         
         super.init()
         // setup a session with delegate to self
@@ -372,79 +375,61 @@ open class FireManager: NSObject, URLSessionDelegate {
         
         self.printReuestDebugInfo()
         
-        let dataCompletionHandler: URLSesstionDataCompletionHandler
-//        let urlCompletionHandler: URLSesstionURLCompletionHandler
-//
-//        if self.taskType == .download {
-//            dataCompletionHandler = { (data, response, error) -> Void in }
-//            urlCompletionHandler = { [weak self] (url, response, error) -> Void in
-//                
-//                self?.printResponseDebugInfo(response)
-//                
-//                if let error = error as NSError? {
-//                    if error.code == -999 {
-//                        DispatchQueue.main.async {
-//                            self?.cancelCallback?()
-//                        }
-//                    } else {
-//                        let e = NSError(domain: self?.errorDomain ?? "Fire", code: error.code, userInfo: error.userInfo)
-//                        print("[Fire] Error:\n", e.localizedDescription)
-//                        DispatchQueue.main.async {
-//                            self?.errorCallback?(e)
-//                            self?.session.finishTasksAndInvalidate()
-//                        }
-//                    }
-//                } else {
-//                    DispatchQueue.main.async {
-////                        self?.callback?(url, response as? HTTPURLResponse)
-//                        self?.session.finishTasksAndInvalidate()
-//                    }
-//                }
-//            }
-//            
-//        } else {
-//            urlCompletionHandler = { (url, response, error) -> Void in }
-            dataCompletionHandler = { [weak self] (data, response, error) -> Void in
-                
-                self?.printResponseDebugInfo(response)
-                
-                if let error = error as NSError? {
-                    if error.code == -999 {
-                        DispatchQueue.main.async {
-                            self?.cancelCallback?()
-                        }
-                    } else {
-                        let e = NSError(domain: self?.errorDomain ?? "Fire", code: error.code, userInfo: error.userInfo)
-                        print("[Fire] Error:\n", e.localizedDescription)
-                        DispatchQueue.main.async {
-                            self?.errorCallback?(e)
-                            self?.session.finishTasksAndInvalidate()
-                        }
+        let semaphore = DispatchSemaphore(value: 0)
+        
+        let dataCompletionHandler: URLSesstionDataCompletionHandler = { [weak self] (data, response, error) -> Void in
+            self?.printResponseDebugInfo(response)
+            
+            semaphore.signal()
+            
+            if let error = error as NSError? {
+                if error.code == -999 {
+                    DispatchQueue.main.async {
+                        self?.cancelCallback?()
                     }
                 } else {
+                    let e = NSError(domain: self?.errorDomain ?? "Fire", code: error.code, userInfo: error.userInfo)
+                    print("[Fire] Error:\n", e.localizedDescription)
                     DispatchQueue.main.async {
-                        self?.callback?(data, response as? HTTPURLResponse)
+                        self?.errorCallback?(e)
                         self?.session.finishTasksAndInvalidate()
                     }
                 }
+            } else {
+                DispatchQueue.main.async {
+                    self?.callback?(data, response as? HTTPURLResponse)
+                    self?.session.finishTasksAndInvalidate()
+                }
             }
-//        }
-//        
-//        switch self.taskType {
-//        case .dataTask:
-            self.task = self.session.dataTask(with: self.request, completionHandler: dataCompletionHandler)
-//        case .uploadDataTask:
-//            self.task = self.session.uploadTask(with: self.request, from: nil, completionHandler: dataCompletionHandler)
-//        case .uploadFileTask:
-//            self.task = self.session.uploadTask(with: self.request, fromFile: URL(string: "")!, completionHandler: dataCompletionHandler)
-//        default:
-//            self.task = self.session.downloadTask(with: self.request, completionHandler: urlCompletionHandler)
-//        }
+        }
+        
+        self.task = self.session.dataTask(with: self.request, completionHandler: dataCompletionHandler)
         self.task.resume()
+        
+        if self.dispatch == FireDispatch.synchronously {
+            semaphore.wait()
+        }
     }
     
     open var progressCallback: FireProgressCallback?
 }
+
+extension FireManager {
+    
+    /**
+     the only init method of FireManager
+     
+     - parameter method: HTTP request method
+     - parameter url:    HTTP request url
+     
+     - returns: self (FireManager object)
+     */
+    static func build(_ method: HTTPMethod, url: String, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously) -> FireManager {
+        return FireManager(url: url, method: method, timeout: timeout, dispatch: dispatch)
+    }
+}
+
+
 
 extension FireManager: URLSessionTaskDelegate, URLSessionDownloadDelegate {
     public func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
@@ -465,19 +450,3 @@ extension FireManager: URLSessionTaskDelegate, URLSessionDownloadDelegate {
         }
     }
 }
-
-extension FireManager {
-    
-    /**
-     the only init method of FireManager
-     
-     - parameter method: HTTP request method
-     - parameter url:    HTTP request url
-     
-     - returns: self (FireManager object)
-     */
-    static func build(_ method: HTTPMethod, url: String, timeout: Double = FireManager.oneMinute) -> FireManager {
-        return FireManager(url: url, method: method, timeout: timeout)
-    }
-}
-

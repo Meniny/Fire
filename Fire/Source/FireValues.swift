@@ -8,6 +8,11 @@
 
 import Foundation
 
+public enum FireDispatch {
+    case synchronously
+    case asynchronously
+}
+
 /**
  *  HTTP method enum for Fire
  */

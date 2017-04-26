@@ -46,6 +46,7 @@ open class Fire {
     open static var baseURL: String?
     
     open var fireManager: FireManager!
+    
 
     /**
     the only init method to fire a HTTP / HTTPS request
@@ -56,8 +57,8 @@ open class Fire {
     
     - returns: a Fire object
     */
-    open static func build(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
-        return Fire(HTTPMethod: method, url: url, params: params, timeout: timeout)
+    open static func build(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously) -> Fire {
+        return Fire(HTTPMethod: method, url: url, params: params, timeout: timeout, dispatch: dispatch)
 //        let p = Fire()
 //        p.fireManager = FireManager.build(method, url: url, timeout: timeout)
 //        return p
@@ -72,7 +73,7 @@ open class Fire {
      
      - returns: a Fire object
      */
-    public init(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double) {
+    public init(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double, dispatch: FireDispatch = FireDispatch.asynchronously) {
         let fullURL = (Fire.baseURL == nil ? url : (Fire.baseURL! + url))
         self.fireManager = FireManager.build(method, url: fullURL, timeout: timeout)
         self.fireManager.setParams(params)
@@ -251,6 +252,16 @@ open class Fire {
         return self
     }
     
+    
+    /// Progress callback of upload/download task
+    ///
+    /// - Parameter handler: callback
+    /// - Returns: self (Fire object)
+    open func handleProgress(_ handler: FireProgressCallback?) -> Fire {
+        self.fireManager.progressCallback = handler
+        return self
+    }
+    
     /**
     add error callback to self (Fire object).
     this will called only when network error, if we can receive any data from server, fireForData() will be fired.
@@ -335,42 +346,50 @@ extension Fire {
     
     // MARK: Builder
     
-    open static func build(api: FireAPI, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
-        return Fire.build(HTTPMethod: api.method, url: api.stringValue, timeout: timeout).setParams(params)
+    open static func build(api: FireAPI, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously) -> Fire {
+        return Fire.build(HTTPMethod: api.method, url: api.stringValue, timeout: timeout, dispatch: dispatch).setParams(params)
     }
     
-    open static func build(fileURL: URL, name: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
+    open static func build(fileURL: URL, name: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously) -> Fire {
         let file = FileInfo(name: name, url: fileURL, mimeType: mimeType)
-        return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles([file])
+        return Fire.build(HTTPMethod: .POST, url: toURL, dispatch: dispatch).setParams(params).setFiles([file])
     }
     
-    open static func build(data: Data, name: String, ext: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
+    open static func build(data: Data, name: String, ext: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously) -> Fire {
         let file = FileInfo(name: name, data: data, ext: ext, mimeType: mimeType)
-        return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles([file])
+        return Fire.build(HTTPMethod: .POST, url: toURL, dispatch: dispatch).setParams(params).setFiles([file])
     }
     
-    open static func build(files: [FileInfo], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute) -> Fire {
-        return Fire.build(HTTPMethod: .POST, url: toURL).setParams(params).setFiles(files)
+    open static func build(files: [FileInfo], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously) -> Fire {
+        return Fire.build(HTTPMethod: .POST, url: toURL, dispatch: dispatch).setParams(params).setFiles(files)
     }
     
     // MARK: - Request
     
-    open static func request(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        Fire.build(HTTPMethod: method, url: url, params: params, timeout: timeout)
+    open static func request(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: method, url: url, params: params, timeout: timeout, dispatch: dispatch)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }
     
-    open static func request(api: FireAPI, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        Fire.build(HTTPMethod: api.method, url: api.stringValue, params: params, timeout: timeout)
+    open static func request(api: FireAPI, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: api.method, url: api.stringValue, params: params, timeout: timeout, dispatch: dispatch)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
+    }
+    
+    open static func sync(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.request(HTTPMethod: method, url: url, params: params, timeout: timeout, dispatch: FireDispatch.synchronously, callback: callback, onError: onError)
+    }
+    
+    open static func async(HTTPMethod method: HTTPMethod, url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.request(HTTPMethod: method, url: url, params: params, timeout: timeout, dispatch: FireDispatch.asynchronously, callback: callback, onError: onError)
     }
     
     // MARK: - UPLOAD
-    open static func upload(fileURL: URL, name: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+    open static func upload(fileURL: URL, name: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         let file = FileInfo(name: name, url: fileURL, mimeType: mimeType)
-        Fire.build(HTTPMethod: .POST, url: toURL)
+        Fire.build(HTTPMethod: .POST, url: toURL, dispatch: dispatch)
             .setParams(params)
             .handleProgress(progress)
             .setFiles([file])
@@ -378,9 +397,9 @@ extension Fire {
             .fire(callback)
     }
     
-    open static func upload(data: Data, name: String, ext: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+    open static func upload(data: Data, name: String, ext: String, mimeType: String, toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
         let file = FileInfo(name: name, data: data, ext: ext, mimeType: mimeType)
-        Fire.build(HTTPMethod: .POST, url: toURL)
+        Fire.build(HTTPMethod: .POST, url: toURL, dispatch: dispatch)
             .setParams(params)
             .handleProgress(progress)
             .setFiles([file])
@@ -388,40 +407,35 @@ extension Fire {
             .fire(callback)
     }
     
-    open static func upload(files: [FileInfo], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        Fire.build(HTTPMethod: .POST, url: toURL)
+    open static func upload(files: [FileInfo], toURL: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, progress: FireProgressCallback?, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .POST, url: toURL, dispatch: dispatch)
             .setParams(params)
             .setFiles(files)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }
     
-    open func handleProgress(_ handler: FireProgressCallback?) -> Fire {
-        self.fireManager.progressCallback = handler
-        return self
-    }
-    
     // MARK: - GET POST PUT DELETE
-    open static func get(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        Fire.build(HTTPMethod: .GET, url: url, params: params, timeout: timeout)
+    open static func get(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .GET, url: url, params: params, timeout: timeout, dispatch: dispatch)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }
     
-    open static func post(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        Fire.build(HTTPMethod: .POST, url: url, params: params, timeout: timeout)
+    open static func post(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .POST, url: url, params: params, timeout: timeout, dispatch: dispatch)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }
     
-    open static func put(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        Fire.build(HTTPMethod: .PUT, url: url, params: params, timeout: timeout)
+    open static func put(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .PUT, url: url, params: params, timeout: timeout, dispatch: dispatch)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }
     
-    open static func delete(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
-        Fire.build(HTTPMethod: .DELETE, url: url, params: params, timeout: timeout)
+    open static func delete(_ url: String, params: [String: Any]? = nil, timeout: Double = FireManager.oneMinute, dispatch: FireDispatch = FireDispatch.asynchronously, callback: FireJOSNResponseCallback?, onError: FireErrorCallback?) {
+        Fire.build(HTTPMethod: .DELETE, url: url, params: params, timeout: timeout, dispatch: dispatch)
             .onError(onError == nil ? FireEmptyErrorCallback : onError!)
             .fire(callback)
     }

@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://ooo.0o0.ooo/2017/04/22/58fac03652695.png" alt="Fire">
   <br/><a href="https://cocoapods.org/pods/Fire">
-  <img alt="Version" src="https://img.shields.io/badge/version-2.4.1-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/version-2.5.0-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <img alt="Swift" src="https://img.shields.io/badge/swift-3.0%2B-orange.svg">
@@ -36,7 +36,7 @@ Fire was written for humans to read, and incidentally, for machines to execute :
 - [x] HTTP Basic Authorization
 - [x] TLS Certificate and Public Key Pinning
 - [x] Comprehensive Unit and Integration Test Coverage
-- [x] Asynchronous Request
+- [x] Synchronously/Asynchronously Request
 - [x] Timeouts
 - [x] form (`x-www-form-encoded`)/JSON HTTP body
 
@@ -144,7 +144,7 @@ Fire 为了更好的可读性而生，碰巧还可以运行 :)
 - [x] 支持 HTTP Basic 认证
 - [x] 支持 SSL Pinning
 - [x] 全面的单元和集成测试覆盖
-- [x] 异步请求
+- [x] 同步/异步请求
 - [x] 超时
 - [x] 支持 form (`x-www-form-encoded`)/JSON HTTP 请求体
 

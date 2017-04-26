@@ -129,6 +129,12 @@ f.cancel {
 }
 ```
 
+Use `FireDispatch` if you want to send requests synchronously:
+
+```swift
+let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: dispatch)
+```
+
 # 中文介绍
 
 ## 这是什么?
@@ -235,4 +241,10 @@ f.fireForData { (data, resp) -> Void in
 f.cancel {
    print("Canceled")
 }
+```
+
+如果你想发送同步请求, 请使用 `FireDispatch`:
+
+```swift
+let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: dispatch)
 ```

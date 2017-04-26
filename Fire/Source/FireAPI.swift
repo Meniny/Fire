@@ -38,7 +38,7 @@ open class FireAPI: CustomStringConvertible {
     }
     
     open var stringValue: String {
-        return fullURL == nil ? "" : fullURL!
+        return fullURL ?? ""
     }
     
     open var description: String {

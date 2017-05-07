@@ -28,18 +28,32 @@
 
 import Foundation
 
-extension String {
+public extension String {
     /// return base64 string of self String
-    var base64: String! {
-        let utf8EncodeData: Data! = self.data(using: String.Encoding.utf8, allowLossyConversion: true)
-        let base64EncodingData = utf8EncodeData.base64EncodedString(options: [])
-        return base64EncodingData
+    public var base64: String? {
+        if let utf8EncodeData = self.data(using: String.Encoding.utf8, allowLossyConversion: true) {
+            let base64EncodingData = utf8EncodeData.base64EncodedString(options: [])
+            return base64EncodingData
+        }
+        return nil
     }
 }
 
-extension String {
+public extension String {
     /// return NSData of self String
-    var nsdata: Data {
+    public var data: Data {
         return self.data(using: String.Encoding.utf8)!
+    }
+}
+
+public extension Dictionary {
+    public var pretty: String {
+        return "\(self as NSDictionary)"
+    }
+}
+
+public extension Array {
+    public var pretty: String {
+        return "\(self as NSArray)"
     }
 }

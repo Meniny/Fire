@@ -2,7 +2,7 @@
 <p align="center">
   <img src="./Fire.png" alt="Fire">
   <br/><a href="https://cocoapods.org/pods/Fire">
-  <img alt="Version" src="https://img.shields.io/badge/version-2.5.0-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/version-2.6.0-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <img alt="Swift" src="https://img.shields.io/badge/swift-3.0%2B-orange.svg">
@@ -50,7 +50,7 @@ Fire was written for humans to read, and incidentally, for machines to execute :
 
 ## Dependency
 
-* [Jsonify](https://github.com/Meniny/Jsonify-in-Swift)
+* [Jsonify-in-Swift](https://github.com/Meniny/Jsonify-in-Swift)
 
 ## Installation
 
@@ -129,10 +129,10 @@ f.cancel {
 }
 ```
 
-Use `FireDispatch` if you want to send requests synchronously:
+Use `Fire.Dispatch` if you want to send requests synchronously:
 
 ```swift
-let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: dispatch)
+let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: .synchronously)
 ```
 
 # 中文介绍
@@ -164,7 +164,7 @@ Fire 为了更好的可读性而生，碰巧还可以运行 :)
 
 ## 依赖
 
-* [Jsonify](https://github.com/Meniny/Jsonify-in-Swift)
+* [Jsonify-in-Swift](https://github.com/Meniny/Jsonify-in-Swift)
 
 ## 安装
 
@@ -243,8 +243,8 @@ f.cancel {
 }
 ```
 
-如果你想发送同步请求, 请使用 `FireDispatch`:
+如果你想发送同步请求, 请使用 `Fire.Dispatch`:
 
 ```swift
-let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: dispatch)
+let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: .synchronously)
 ```

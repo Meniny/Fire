@@ -11,12 +11,13 @@ import Fire
 
 open class FireDemo {
     static var BASEURL = "http://yourdomain.com/"
-    static var GETURL = "http://meniny.cn/blogroll.json"
+    static var GETURL = "http://meniny.cn/docs.json"
     static var POSTURL = "http://yourdomain.com/post.php"
     
     open class func get() {
+        Fire.Configuration.DEBUG = true
         Fire.async(HTTPMethod: .GET, url: FireDemo.GETURL, params: ["l": "zh"], callback: { (json, resp) in
-            print(json.rawValue)
+//            print(json.rawValue)
         }) { (error) in
             print(error)
         }
@@ -27,7 +28,7 @@ open class FireDemo {
     
     open class func cancelTask(_ f: Fire) {
         f.cancel {
-            print("Canceled - \(f.fireManager.request)")
+            print("Canceled - \(f.request)")
         }
     }
     
@@ -37,7 +38,7 @@ open class FireDemo {
                 print(error)
             }
             .fireForJSON { (json, resp) in
-                print(json.rawValue)
+//                print(json.rawValue)
         }
     }
     
@@ -49,7 +50,7 @@ open class FireDemo {
                 print(error)
             }
             .fireForJSON { (json, resp) in
-                print(json.rawValue)
+//                print(json.rawValue)
         }
     }
     
@@ -61,12 +62,12 @@ open class FireDemo {
         }
     }
     
-    open class func fireAPI() {
-        FireAPI.baseURL = FireDemo.BASEURL
-        let api = FireAPI(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+    open class func FireAPI() {
+        Fire.API.baseURL = FireDemo.BASEURL
+        let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
         Fire.request(api: api, params: [:], timeout: 0, callback: { (json, resp) in
             if resp != nil && resp?.statusCode == api.successCode.rawValue {
-                print(json.rawValue)
+//                print(json.rawValue)
             }
         }) { (error) in
             print(error.localizedDescription)
@@ -75,31 +76,31 @@ open class FireDemo {
     
     open class func upload() {
         let imgPath = "/Users/Meniny/Desktop/Jsonify.png"
-        let data = try? Data(contentsOf: URL(fileURLWithPath: imgPath))
-        //NSImage(contentsOfFile: imgPath)!.tiffRepresentation(using: .JPEG, factor: 0.1)
         let name = "smfile"
         let ext = "png"
         let mime = "image/png"
         let toURL = "https://sm.ms/api/upload/"
         let params = ["format": "json", "ssl": "1"]
-        Fire.upload(data: data!,
-                    name: name,
-                    ext: ext,
-                    mimeType: mime,
-                    toURL: toURL,
-                    params: params,
-                    timeout: 200,
-                    progress: { (sent, total, progress) in
-                        print(String(format: "%0.2f", progress) + "%")
-        }, callback: { (json, resp) in
-            let success = json["code"].stringValue
-            if success == "success" {
-                print(json["data"]["url"].stringValue)
-            } else {
-                print(json["msg"].stringValue)
+        if let data = try? Data(contentsOf: URL(fileURLWithPath: imgPath)) {
+            Fire.upload(data: data,
+                        name: name,
+                        ext: ext,
+                        mimeType: mime,
+                        toURL: toURL,
+                        params: params,
+                        timeout: 200,
+                        progress: { (sent, total, progress) in
+                            print(String(format: "%0.2f", progress) + "%")
+            }, callback: { (json, resp) in
+                let success = json["code"].stringValue
+                if success == "success" {
+                    print(json["data"]["url"].stringValue)
+                } else {
+                    print(json["msg"].stringValue)
+                }
+            }) { (error) in
+                print(error.localizedDescription)
             }
-        }) { (error) in
-            print(error.localizedDescription)
         }
     }
 }

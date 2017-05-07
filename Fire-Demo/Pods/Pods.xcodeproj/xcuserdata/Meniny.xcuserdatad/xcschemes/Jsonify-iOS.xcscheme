@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C686B800CFC033F247A0A5D3F4F667D8"
+               BlueprintIdentifier = "72EC2AF29F05636C40B4343902F0F718"
                BuildableName = "Jsonify.framework"
                BlueprintName = "Jsonify-iOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C686B800CFC033F247A0A5D3F4F667D8"
+            BlueprintIdentifier = "72EC2AF29F05636C40B4343902F0F718"
             BuildableName = "Jsonify.framework"
             BlueprintName = "Jsonify-iOS"
             ReferencedContainer = "container:Pods.xcodeproj">

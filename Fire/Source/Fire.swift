@@ -117,6 +117,8 @@ open class Fire: NSObject, URLSessionDelegate {
         return "Fire"
     }()
     
+    open var customUserAgent: String? = nil
+    
     // MARK: - /////////////////////////////
     
     public init(url: String, method: Fire.HTTPMethod!, timeout: Double = FireDefaultTimeout, dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) {
@@ -392,6 +394,11 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
+    open func setUserAgent(_ agent: String) -> Fire {
+        self.customUserAgent = agent
+        return self
+    }
+    
     // MARK: - /////////////////////////////
     
     /**
@@ -502,7 +509,12 @@ open class Fire: NSObject, URLSessionDelegate {
             let f = ("Content-Type", self.HTTPBodyRawIsJSON ? "application/json" : "text/plain;charset=UTF-8")
             self.request.setValue(f.0, forHTTPHeaderField: f.1)
         }
-        self.request.addValue(self.userAgent, forHTTPHeaderField: "User-Agent")
+        let agentKey = "User-Agent"
+        if let agent = self.customUserAgent {
+            self.request.addValue(agent, forHTTPHeaderField: agentKey)
+        } else {
+            self.request.addValue(self.userAgent, forHTTPHeaderField: agentKey)
+        }
         if let auth = self.basicAuth {
             let authString = "Basic " + (auth.0 + ":" + auth.1).base64!
             self.request.addValue(authString, forHTTPHeaderField: "Authorization")

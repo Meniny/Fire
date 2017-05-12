@@ -252,13 +252,27 @@ let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dis
 
 # ⽇本語
 
-## 動作環境
+## 開発環境/動作環境
 
 * iOS 8.0 以上
 * macOS 10.10 以上
 * watchOS 2.0 以上
 * tvOS 9.0 以上
 * Xcode 8 / Swift 3 以上
+
+## インストール
+
+#### CocoaPods
+
+`CocoaPods` でライブラリをインストールします。
+
+Podfile:
+
+```ruby
+pod 'Fire'
+```
+
+プロジェクトのディレクトリ内で以下を実行 `pod install`
 
 ## ライセンス
 

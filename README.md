@@ -20,6 +20,7 @@
 
 * [Introduction in English](#Introduction)
 * [中文介绍](#中文介绍)
+* [⽇本語](#⽇本語)
 
 # Introduction
 
@@ -247,4 +248,73 @@ f.cancel {
 
 ```swift
 let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: .synchronously)
+```
+
+# ⽇本語
+
+## 動作環境
+
+* iOS 8.0 以上
+* macOS 10.10 以上
+* watchOS 2.0 以上
+* tvOS 9.0 以上
+* Xcode 8 / Swift 3 以上
+
+## ライセンス
+
+関連するリポジトリ含め、すべてMITです。詳細は各リポジトリ内のLICENSEをご覧ください。
+
+## 貢献ガイド、サポート情報、ご留意事項
+
+(※準備中です)
+
+## 開発/ビルド方法/使用方法
+
+```swift
+let f = Fire.build(HTTPMethod: .GET, url: "https://yourdomain.com/get?l=zh")
+```
+
+```swift
+f.setParams(["key": "value"])
+f.setFiles([file])
+f.setHTTPHeaders(["Accept": "application/json"])
+f.setBasicAuth("user", password: "pwd!@#")
+f.setHTTPBody(raw: json.rawValue)
+let certData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("FireDemo", ofType: "cer")!)!
+f.setSSLPinning(localCertData: certData) {
+    print("Warning: Under Man-in-the-middle attack!!")
+}
+f.onError({ (error) -> Void in
+    print("Error: Network offline!")
+})
+```
+
+```swift
+f.fire { (json, resp) -> Void in
+    print(json["arg"]["key"].stringValue)
+}
+
+// or
+
+f.fireForJSON { (json, resp) -> Void in
+    print(json["arg"]["key"].stringValue)
+}
+
+// or
+
+f.fireForString { (str, resp) -> Void in
+    print(str)
+}
+
+// or
+
+f.fireForData { (data, resp) -> Void in
+    print("Success")
+}
+```
+
+```swift
+f.cancel {
+   print("Canceled")
+}
 ```

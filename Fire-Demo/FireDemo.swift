@@ -36,9 +36,8 @@ open class FireDemo {
         Fire.build(HTTPMethod: .POST, url: FireDemo.POSTURL, params: ["l": "zh"], timeout: 0)
             .onError { (error) in
                 print(error)
-            }
-            .fireForJSON { (json, resp) in
-//                print(json.rawValue)
+            }.fireForJSON { (json, resp) in
+                
         }
     }
     
@@ -48,13 +47,16 @@ open class FireDemo {
             .setParams(["l": "zh"])
             .onError { (error) in
                 print(error)
-            }
-            .fireForJSON { (json, resp) in
+            }.fireForJSON { (json, resp) in
 //                print(json.rawValue)
         }
     }
     
     open class func simple() {
+        Fire.build(.GET, url: "").onError { (error) in
+            
+        }
+        
         Fire.get(FireDemo.GETURL, params: ["l": "zh"], timeout: 0, callback: { (json, resp) in
             print(json.rawValue)
         }) { (error) in
@@ -62,12 +64,42 @@ open class FireDemo {
         }
     }
     
-    open class func FireAPI() {
+    open class func FireAPI1() {
         Fire.API.baseURL = FireDemo.BASEURL
         let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
         Fire.request(api: api, params: [:], timeout: 0, callback: { (json, resp) in
-            if resp != nil && resp?.statusCode == api.successCode.rawValue {
-//                print(json.rawValue)
+            if let status = resp?.statusCode {
+                if status == api.successCode.rawValue {
+                    // ...
+                }
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    open class func FireAPI2() {
+        Fire.API.baseURL = FireDemo.BASEURL
+        let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+        api.requestJSON(params: ["user": "Elias"], callback: { (json, resp) in
+            if let status = resp?.statusCode {
+                if status == api.successCode.rawValue {
+                    // ...
+                }
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    open class func FireAPI3() {
+        Fire.API.baseURL = FireDemo.BASEURL
+        let api = Fire.API(appending: "get.php", HTTPMethod: .GET, headers: ["Content-Type": "text/json"], successCode: .success)
+        api.requestJSON(params: ["userid": "1232"], headers: ["Device": "iOS"], timeout: 60, dispatch: .asynchronously, callback: { (json, resp) in
+            if let status = resp?.statusCode {
+                if status == api.successCode.rawValue {
+                    // ...
+                }
             }
         }) { (error) in
             print(error.localizedDescription)

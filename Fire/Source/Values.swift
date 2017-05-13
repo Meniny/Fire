@@ -11,18 +11,46 @@ import Jsonify
 
 public typealias FireJSON = Jsonify
 
-public typealias FireJOSNResponseCallback = ((_ json: Jsonify, _ response: HTTPURLResponse?) -> Void)
-public typealias FireDataResponseCallback = ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)
-public typealias FireURLResponseCallback = ((_ url: URL?, _ response: HTTPURLResponse?) -> Void)
-public typealias FireStringResponseCallback = ((_ string: String?, _ response: HTTPURLResponse?) -> Void)
-public typealias FireVoidCallback = (() -> Void)
-public typealias FireErrorCallback = ((_ error: Error) -> Void)
-public typealias FireProgressCallback = ((_ completedBytes: Int64, _ totalBytes: Int64, _ progress: Float) -> Void)
+public typealias FireUserAgent = Fire.UserAgent
+public typealias FireBasicAuth = Fire.BasicAuth
+public typealias FireHeaderFields = Fire.HeaderFields
+public typealias FireParams = Fire.Params
+
+public typealias FireGenericResponseCallback = Fire.GenericResponseCallback
+public typealias FireJOSNResponseCallback = Fire.JOSNResponseCallback
+public typealias FireDataResponseCallback = Fire.DataResponseCallback
+public typealias FireURLResponseCallback = Fire.URLResponseCallback
+public typealias FireStringResponseCallback = Fire.StringResponseCallback
+public typealias FireVoidCallback = Fire.VoidCallback
+public typealias FireErrorCallback = Fire.ErrorCallback
+public typealias FireProgressCallback = Fire.ProgressCallback
 
 public let FireDefaultTimeout: Double = 60.0
 public let FireEmptyErrorCallback: FireErrorCallback = { (error) in }
 
+public protocol FireResponseProtocol {}
+
+extension Jsonify: FireResponseProtocol {}
+extension String: FireResponseProtocol {}
+extension Data: FireResponseProtocol {}
+
 public extension Fire {
+    
+    public typealias Params = [String: Any]
+    public typealias UserAgent = String
+    public typealias BasicAuth = (name: String, pwd: String)
+    public typealias HeaderFields = [String: String]
+    public typealias GenericResponseCallback = ((_ value: FireResponseProtocol?, _ response: HTTPURLResponse?, _ type: Fire.ResponseType) -> Void)
+    public typealias JOSNResponseCallback = ((_ json: Jsonify, _ response: HTTPURLResponse?) -> Void)
+    public typealias DataResponseCallback = ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)
+    public typealias URLResponseCallback = ((_ url: URL?, _ response: HTTPURLResponse?) -> Void)
+    public typealias StringResponseCallback = ((_ string: String?, _ response: HTTPURLResponse?) -> Void)
+    public typealias VoidCallback = (() -> Void)
+    public typealias ErrorCallback = ((_ error: Error) -> Void)
+    public typealias ProgressCallback = ((_ completedBytes: Int64, _ totalBytes: Int64, _ progress: Float) -> Void)
+    
+    public static let DefaultTimeout: Double = 60.0
+    public static let EmptyErrorCallback: FireErrorCallback = { (error) in }
     
     public enum Key: String {
         case contentLength     = "Content-Length"
@@ -38,6 +66,12 @@ public extension Fire {
         case asynchronously = "Asynchronously"
     }
     
+    public enum ResponseType {
+        case JSON
+        case string
+        case data
+    }
+    
     /**
      *  HTTP method enum for Fire
      */
@@ -49,12 +83,6 @@ public extension Fire {
         case HEAD = "HEAD"
         case OPTIONS = "OPTIONS"
         case PATCH = "PATCH"
-    }
-    
-    public enum ResponseType {
-        case data
-        case json
-        case string
     }
     
     /**
@@ -353,3 +381,14 @@ public extension Fire {
         case unparseableResponseHeaders = 600
     }
 }
+
+
+
+
+
+
+
+
+
+
+// ...

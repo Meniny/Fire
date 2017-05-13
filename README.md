@@ -2,7 +2,7 @@
 <p align="center">
   <img src="./Fire.png" alt="Fire">
   <br/><a href="https://cocoapods.org/pods/Fire">
-  <img alt="Version" src="https://img.shields.io/badge/version-2.6.1-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/version-2.6.2-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <img alt="Swift" src="https://img.shields.io/badge/swift-3.0%2B-orange.svg">
@@ -136,6 +136,52 @@ Use `Fire.Dispatch` if you want to send requests synchronously:
 let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: .synchronously)
 ```
 
+`Fire.API`:
+
+```swift
+open class func FireAPI1() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+    Fire.request(api: api, params: [:], timeout: 0, callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+
+open class func FireAPI2() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+    api.requestJSON(params: ["user": "Elias"], callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+
+open class func FireAPI3() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, headers: ["Content-Type": "text/json"], successCode: .success)
+    api.requestJSON(params: ["userid": "1232"], headers: ["Device": "iOS"], timeout: 60, dispatch: .asynchronously, callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+```
+
 # 中文介绍
 
 ## 这是什么?
@@ -250,7 +296,70 @@ f.cancel {
 let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: .synchronously)
 ```
 
+`Fire.API`:
+
+```swift
+open class func FireAPI1() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+    Fire.request(api: api, params: [:], timeout: 0, callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+
+open class func FireAPI2() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+    api.requestJSON(params: ["user": "Elias"], callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+
+open class func FireAPI3() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, headers: ["Content-Type": "text/json"], successCode: .success)
+    api.requestJSON(params: ["userid": "1232"], headers: ["Device": "iOS"], timeout: 60, dispatch: .asynchronously, callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+```
+
 # ⽇本語
+
+## ファイア(Fire)とは何か？
+
+Fire とは Swift で　作られる iOS/macOS/watchOS/tvOSiプラットホーム HTTP/HTTPS の軽量なデータのインタネットフレームワーク(Internet-Framework)、[Python-Requests:HTTP for Humans](http://docs.python-requests.org/en/master/) に深い影響を与えられた。
+
+人を理解やすくなるために、作られました。たまたまにプログラムを実行できる。
+
+## フィーチャー(Features)
+
+- [x] 連鎖されるリクエストとレスポンス のメソッド
+- [x] Upload file/date可能
+- [x] HTTP Basic 認証をサポートしている
+- [x] SSL Pinning をサポートしている
+- [x] 全局と局部的なテスト可能
+- [x] 同期通信/非同期通信
+- [x] タイムアウト
+- [x] form(`x-www-form-encoded`)/JSON HTTP 制式をサポートしている
 
 ## 開発環境/動作環境
 
@@ -279,6 +388,8 @@ pod 'Fire'
 関連するリポジトリ含め、すべてMITです。詳細は各リポジトリ内のLICENSEをご覧ください。
 
 ## 貢献ガイド、サポート情報、ご留意事項
+
+`@渋谷の猫`
 
 (※準備中です)
 
@@ -330,5 +441,57 @@ f.fireForData { (data, resp) -> Void in
 ```swift
 f.cancel {
    print("Canceled")
+}
+```
+
+`Fire.Dispatch`:
+
+```swift
+let f = Fire.build(HTTPMethod: .GET, url: api.stringValue, timeout: timeout, dispatch: .synchronously)
+```
+
+`Fire.API`:
+
+```swift
+open class func FireAPI1() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+    Fire.request(api: api, params: [:], timeout: 0, callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+
+open class func FireAPI2() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, successCode: .success)
+    api.requestJSON(params: ["user": "Elias"], callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+
+open class func FireAPI3() {
+    Fire.API.baseURL = FireDemo.BASEURL
+    let api = Fire.API(appending: "get.php", HTTPMethod: .GET, headers: ["Content-Type": "text/json"], successCode: .success)
+    api.requestJSON(params: ["userid": "1232"], headers: ["Device": "iOS"], timeout: 60, dispatch: .asynchronously, callback: { (json, resp) in
+        if let status = resp?.statusCode {
+            if status == api.successCode.rawValue {
+                // ...
+            }
+        }
+    }) { (error) in
+        print(error.localizedDescription)
+    }
 }
 ```

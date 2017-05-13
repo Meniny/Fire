@@ -344,22 +344,22 @@ open class func FireAPI3() {
 
 # ⽇本語
 
-## ファイア(Fire)とは何か？
+## Fire とは何か？
 
-Fire とは Swift で　作られる iOS/macOS/watchOS/tvOSiプラットホーム HTTP/HTTPS の軽量なデータのインタネットフレームワーク(Internet-Framework)、[Python-Requests:HTTP for Humans](http://docs.python-requests.org/en/master/) に深い影響を与えられた。
+Fire とは Swift で作られる iOS/macOS/watchOS/tvOSiプラットホーム HTTP/HTTPS の軽量なデータのインタネットフレームワーク(Internet-Framework)、[Python-Requests:HTTP for Humans](http://docs.python-requests.org/en/master/) に深い影響を与えられた。
 
 人を理解やすくなるために、作られました。たまたまにプログラムを実行できる。
 
 ## フィーチャー(Features)
 
 - [x] 連鎖されるリクエストとレスポンス のメソッド
-- [x] Upload file/date可能
+- [x] Upload file/data 可能
 - [x] HTTP Basic 認証をサポートしている
 - [x] SSL Pinning をサポートしている
 - [x] 全局と局部的なテスト可能
 - [x] 同期通信/非同期通信
 - [x] タイムアウト
-- [x] form(`x-www-form-encoded`)/JSON HTTP 制式をサポートしている
+- [x] form (`x-www-form-encoded`)/JSON HTTP 制式をサポートしている
 
 ## 開発環境/動作環境
 
@@ -395,9 +395,13 @@ pod 'Fire'
 
 ## 開発/ビルド方法/使用方法
 
+1. `Fire.build`
+
 ```swift
 let f = Fire.build(HTTPMethod: .GET, url: "https://yourdomain.com/get?l=zh")
 ```
+
+2. `set...`/`add...`
 
 ```swift
 f.setParams(["key": "value"])
@@ -413,6 +417,8 @@ f.onError({ (error) -> Void in
     print("Error: Network offline!")
 })
 ```
+
+3. `fire { (...) in }`
 
 ```swift
 f.fire { (json, resp) -> Void in

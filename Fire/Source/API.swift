@@ -10,6 +10,14 @@ import Foundation
 import Jsonify
 
 public extension Fire {
+    
+    /// Simple API structure
+    /// 
+    ///     let api = Fire.API(appending: ...)
+    ///     api.request(... { (_, _ , _) in 
+    ///         // ...
+    ///     })
+    ///
     public struct API: CustomStringConvertible {
         
         public static var baseURL: String?

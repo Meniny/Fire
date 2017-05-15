@@ -28,7 +28,7 @@ open class FireDemo {
     
     open class func cancelTask(_ f: Fire) {
         f.cancel {
-            print("Canceled - \(f.request)")
+            print("Canceled \(f)")
         }
     }
     

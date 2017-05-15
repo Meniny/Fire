@@ -52,15 +52,16 @@ public extension Fire {
     public static let DefaultTimeout: Double = 60.0
     public static let EmptyErrorCallback: FireErrorCallback = { (error) in }
     
-    public enum Key: String {
-        case contentLength     = "Content-Length"
-        case contentType       = "Content-Type"
-        case authorization     = "Authorization"
+    public enum Keys: String {
+        case contentLength        = "Content-Length"
+        case contentType          = "Content-Type"
+        case authorization        = "Authorization"
         case contentTypeData      = "x-www-form-urlencoded"
         case contentTypeJSON      = "application/json"
         case contentTypeMultipart = "multipart/form-data"
     }
     
+    /// To make a Fire request Synchronously or Asynchronously
     public enum Dispatch: String {
         case synchronously = "Synchronously"
         case asynchronously = "Asynchronously"
@@ -72,9 +73,7 @@ public extension Fire {
         case data
     }
     
-    /**
-     *  HTTP method enum for Fire
-     */
+    /// HTTP method enum for Fire
     public enum HTTPMethod: String {
         case GET = "GET"
         case POST = "POST"
@@ -85,9 +84,7 @@ public extension Fire {
         case PATCH = "PATCH"
     }
     
-    /**
-     * Response Status Code
-     */
+    /// Response Status Codes
     public enum ResponseStatus: Int {
         /**
          * 0

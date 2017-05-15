@@ -29,15 +29,18 @@
 import Foundation
 
 public extension Fire {
-    /**
-     *  the file struct for Fire to upload
-     */
-    public struct File {
+    
+    /// Simple file information structure for Fire to upload
+    public struct File: CustomStringConvertible {
         public let name: String
         public let nameWithExt: String
         public let url: URL?
         public let data: Data?
         public let mimeType: String
+        
+        public var description: String {
+            return "<[Fire.File] name: \(self.nameWithExt); url: \(self.url?.absoluteString ?? "nil"); data: \(self.data?.count ?? 0) Bytes; MIME: \(self.mimeType)>"
+        }
         
         public init(name: String, path: String, mimeType: String) {
             self.name = name

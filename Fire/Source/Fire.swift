@@ -51,24 +51,37 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
 }
 
+/// Fire is a delightful HTTP/HTTPS networking framework for Apple platforms under MIT license.
+///
+/// It's pretty simple to use:
+///
+///     Fire.build(...).fire { (json, _) in
+///         // ...
+///     }
+///
+/// See [https://github.com/Meniny/Fire-in-Swift/](https://github.com/Meniny/Fire-in-Swift/) for more detail.
+///
 open class Fire: NSObject, URLSessionDelegate {
     
-    open class Configuration {
-//        #if DEBUG
-        open static var DEBUG = true
-//        #else
-//        open static var DEBUG = false
-//        #endif
-        open static var baseURL: String? = nil
+    public struct Configuration {
+        #if DEBUG
+            /// if set to true, Fire will log all information in a NSURLSession lifecycle
+            public static var DEBUG = true
+        #else
+            /// if set to true, Fire will log all information in a NSURLSession lifecycle
+            public static var DEBUG = false
+        #endif
+        public static var baseURL: String? = nil
     }
     
-    /// if set to true, Fire will log all information in a NSURLSession lifecycle
+    open override var description: String {
+        let pa = self.parameters ?? [:]
+        let ba = self.basicAuth ?? ("", "")
+        return "<[Fire] [\(self.method.rawValue)] \(self.url) \nparameters: \(pa)\nbasic auth: \(ba)\ncer data: \(self.localCertDataArray)>"
+    }
+    
     private var debugBody: String = ""
-    
     private var expectedResponseType = Fire.ResponseType.data
-    
-    //    public var taskType: FireTaskType = .dataTask
-    
     private let boundary = "FireUGl0YXlh"
     private let errorDomain = "cn.meniny.Fire"
     
@@ -77,7 +90,7 @@ open class Fire: NSObject, URLSessionDelegate {
     open var HTTPBodyRaw = ""
     open var HTTPBodyRawIsJSON = false
     
-    open let method: Fire.HTTPMethod!
+    open let method: Fire.HTTPMethod
     open var parameters: Fire.Params?
     open var uploadFiles: [Fire.File]?
     
@@ -86,11 +99,11 @@ open class Fire: NSObject, URLSessionDelegate {
     open var cancelCallback: Fire.VoidCallback?
     open var progressCallback: Fire.ProgressCallback?
     
-    open var session: URLSession!
-    open let url: String!
-    open var request: URLRequest!
-    open var task: URLSessionTask!
-    open var basicAuth: Fire.BasicAuth!
+    open var session: URLSession?
+    open let url: String
+    open var request: URLRequest?
+    open var task: URLSessionTask?
+    open var basicAuth: Fire.BasicAuth?
     
     open var localCertDataArray: [Data] = []
     open var SSLValidateErrorCallBack: Fire.VoidCallback?
@@ -119,15 +132,18 @@ open class Fire: NSObject, URLSessionDelegate {
     
     open var customUserAgent: String? = nil
     
-    // MARK: - /////////////////////////////
+    // MARK: - ///////////////////////////// init /////////////////////////////
     
-    public init(url: String, method: Fire.HTTPMethod!, timeout: TimeInterval = FireDefaultTimeout, dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) {
+    public init(url: String, method: Fire.HTTPMethod, timeout: TimeInterval = FireDefaultTimeout, dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) {
         self.url = url
-        self.request = URLRequest(url: URL(string: url)!)
         self.method = method
         self.dispatch = dispatch
+        if let u = URL(string: url) {
+            self.request = URLRequest(url: u)
+        }
         
         super.init()
+        
         // setup a session with delegate to self
         let sessionConfiguration = Foundation.URLSession.shared.configuration
         sessionConfiguration.timeoutIntervalForRequest = (timeout <= 0 ? FireDefaultTimeout : timeout)
@@ -149,7 +165,7 @@ open class Fire: NSObject, URLSessionDelegate {
         self.parameters = params
     }
 
-    // MARK: - /////////////////////////////
+    // MARK: - ///////////////////////////// build & request & quick usage /////////////////////////////
     
     /**
      the only init method of FireManager
@@ -270,7 +286,7 @@ open class Fire: NSObject, URLSessionDelegate {
             .fireForJSON(callback)
     }
 
-    // MARK: - /////////////////////////////
+    // MARK: - ///////////////////////////// setting & adding /////////////////////////////
     
     @discardableResult open func setSSLPinning(localCertData dataArray: [Data], SSLValidateErrorCallBack: Fire.VoidCallback? = nil) -> Fire {
         self.localCertDataArray = dataArray
@@ -399,7 +415,7 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
-    // MARK: - /////////////////////////////
+    // MARK: - ///////////////////////////// fire in hole /////////////////////////////
     
     /**
      async response the http body in NSData type
@@ -503,12 +519,16 @@ open class Fire: NSObject, URLSessionDelegate {
      */
     open func cancel(_ callback: Fire.VoidCallback?) {
         self.cancelCallback = callback
-        self.task.cancel()
+        self.task?.cancel()
         if Fire.Configuration.DEBUG {
-            if let u = self.request.url {
+            if let u = self.request?.url {
                 print("[Fire] Request of \"\(u)\" Cancelled")
             } else {
-                print("[Fire] Request Cancelled:\n\(self.request)")
+                if let r = self.request {
+                    print("[Fire] Request Cancelled:\n\(r)")
+                } else {
+                    print("[Fire] Request Cancelled.")
+                }
             }
         }
     }
@@ -519,36 +539,36 @@ open class Fire: NSObject, URLSessionDelegate {
         if self.method == .GET && self.parameters?.count > 0 {
             self.request = URLRequest(url: URL(string: url + "?" + Fire.Helper.buildParams(self.parameters!))!)
         }
-        self.request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
-        self.request.httpMethod = self.method.rawValue
+        self.request?.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
+        self.request?.httpMethod = self.method.rawValue
     }
     
     fileprivate func buildHeader() {
         // multipart Content-Type; see http://www.rfc-editor.org/rfc/rfc2046.txt
         if self.parameters?.count > 0 {
             let f = ("Content-Type", "application/x-www-form-urlencoded")
-            self.request.setValue(f.1, forHTTPHeaderField: f.0)
+            self.request?.setValue(f.1, forHTTPHeaderField: f.0)
         }
         if self.uploadFiles?.count > 0 && self.method != .GET {
             let f = ("Content-Type", "multipart/form-data; boundary=" + self.boundary)
-            self.request.setValue(f.1, forHTTPHeaderField: f.0)
+            self.request?.setValue(f.1, forHTTPHeaderField: f.0)
         }
         if self.HTTPBodyRaw != "" {
             let f = ("Content-Type", self.HTTPBodyRawIsJSON ? "application/json" : "text/plain;charset=UTF-8")
-            self.request.setValue(f.0, forHTTPHeaderField: f.1)
+            self.request?.setValue(f.0, forHTTPHeaderField: f.1)
         }
         let agentKey = "User-Agent"
         if let agent = self.customUserAgent {
-            self.request.addValue(agent, forHTTPHeaderField: agentKey)
+            self.request?.addValue(agent, forHTTPHeaderField: agentKey)
         } else {
-            self.request.addValue(self.userAgent, forHTTPHeaderField: agentKey)
+            self.request?.addValue(self.userAgent, forHTTPHeaderField: agentKey)
         }
         if let auth = self.basicAuth {
             let authString = "Basic " + (auth.0 + ":" + auth.1).base64!
-            self.request.addValue(authString, forHTTPHeaderField: "Authorization")
+            self.request?.addValue(authString, forHTTPHeaderField: "Authorization")
         }
         for i in self.extraHTTPHeaders {
-            self.request.setValue(i.1, forHTTPHeaderField: i.0)
+            self.request?.setValue(i.1, forHTTPHeaderField: i.0)
         }
     }
     
@@ -629,8 +649,8 @@ open class Fire: NSObject, URLSessionDelegate {
                 self.debugBody.append(d8.isEmpty ? "Data<\(data.length) Bytes>" : d8)
             }
         }
-        self.request.httpBody = data as Data
-        self.request.setValue("\(data.length)", forHTTPHeaderField: "Content-Length")
+        self.request?.httpBody = data as Data
+        self.request?.setValue("\(data.length)", forHTTPHeaderField: "Content-Length")
     }
     
     fileprivate func printReuestDebugInfo() {
@@ -643,7 +663,7 @@ open class Fire: NSObject, URLSessionDelegate {
             if let p = self.parameters {
                 output.append("[Fire] Parameters:\n" + p.pretty + "\n")
             }
-            if let a = self.request.allHTTPHeaderFields {
+            if let a = self.request?.allHTTPHeaderFields {
                 output.append("[Fire] Request HEADERS:\n" + a.pretty + "\n")
             }
             let s = "[Fire] Request Body:\n"
@@ -689,7 +709,7 @@ open class Fire: NSObject, URLSessionDelegate {
                     print("[Fire] Error:\n", e.localizedDescription)
                     DispatchQueue.main.async {
                         self?.errorCallback?(e)
-                        self?.session.finishTasksAndInvalidate()
+                        self?.session?.finishTasksAndInvalidate()
                     }
                 }
             } else {
@@ -706,16 +726,21 @@ open class Fire: NSObject, URLSessionDelegate {
                             print(s)
                         }
                     }
-                    self?.session.finishTasksAndInvalidate()
+                    self?.session?.finishTasksAndInvalidate()
                 }
             }
         }
-        
-        self.task = self.session.dataTask(with: self.request, completionHandler: dataCompletionHandler)
-        self.task.resume()
-        
-        if self.dispatch == Fire.Dispatch.synchronously {
-            semaphore.wait()
+        if let r = self.request {
+            self.task = self.session?.dataTask(with: r, completionHandler: dataCompletionHandler)
+            self.task?.resume()
+            
+            if self.dispatch == Fire.Dispatch.synchronously {
+                semaphore.wait()
+            }
+        } else {
+            if Fire.Configuration.DEBUG {
+                print("[Fire] ERROR: Failed to fire task, nil request.")
+            }
         }
     }
 }

@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        FireDemo.get()
+        FireDemo.get()
+        FireDemo.post()
         FireDemo.FireAPI3()
+        FireDemo.escape()
     }
 
     override func didReceiveMemoryWarning() {

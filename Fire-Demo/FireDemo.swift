@@ -10,13 +10,13 @@ import Foundation
 import Fire
 
 open class FireDemo {
-    static var BASEURL = "http://yourdomain.com/"
+    static var BASEURL = "http://your-domain.com/"
     static var GETURL = "http://meniny.cn/docs.json"
-    static var POSTURL = "http://yourdomain.com/post.php"
+    static var POSTURL = "http://your-domain.com/post.php"
     
     open class func get() {
         Fire.Configuration.DEBUG = true
-        Fire.async(HTTPMethod: .GET, url: FireDemo.GETURL, params: ["l": "zh"], callback: { (json, resp) in
+        Fire.async(HTTPMethod: .GET, url: FireDemo.GETURL, appendToBaseURL: false, params: ["l": "zh"], callback: { (json, resp) in
 //            print(json.rawValue)
         }) { (error) in
             print(error)
@@ -33,7 +33,7 @@ open class FireDemo {
     }
     
     open class func post() {
-        Fire.build(HTTPMethod: .POST, url: FireDemo.POSTURL, params: ["l": "zh"], timeout: 0)
+        Fire.build(HTTPMethod: .POST, url: FireDemo.POSTURL, appendToBaseURL: false, params: ["l": "zh"], timeout: 0)
             .onError { (error) in
                 print(error)
             }.fireForJSON { (json, resp) in
@@ -42,7 +42,7 @@ open class FireDemo {
     }
     
     open class func header() {
-        Fire.build(HTTPMethod: .GET, url: FireDemo.GETURL)
+        Fire.build(HTTPMethod: .GET, url: FireDemo.GETURL, appendToBaseURL: false)
             .setHTTPHeaders(["Agent": "Demo-App"])
             .setParams(["l": "zh"])
             .onError { (error) in
@@ -53,11 +53,7 @@ open class FireDemo {
     }
     
     open class func simple() {
-        Fire.build(.GET, url: "").onError { (error) in
-            
-        }
-        
-        Fire.get(FireDemo.GETURL, params: ["l": "zh"], timeout: 0, callback: { (json, resp) in
+        Fire.get(FireDemo.GETURL, appendToBaseURL: false, params: ["l": "zh"], timeout: 0, callback: { (json, resp) in
             print(json.rawValue)
         }) { (error) in
             print(error)
@@ -103,6 +99,19 @@ open class FireDemo {
             }
         }) { (error) in
             print(error.localizedDescription)
+        }
+    }
+    
+    open class func escape() {
+        Fire.Configuration.baseURL = FireDemo.BASEURL
+        let u = "/abc 123/中文/def.json"
+        let p: Fire.Params = ["姓名": "ÔÓ"]
+        Fire.get(u, params: p, callback: nil, onError: nil)
+        Fire.build(HTTPMethod: .POST, url: u, appendToBaseURL: true, params: p, timeout: 60, dispatch: .asynchronously)
+            .fire { (json, resp) in
+                
+            }.onError { (error) in
+                
         }
     }
     

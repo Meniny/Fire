@@ -27,28 +27,14 @@ public extension Fire {
         public var headerFields: Fire.HeaderFields?// = nil
         public let successCode: Fire.ResponseStatus// = Fire.ResponseStatus.success
         
-        public init(appending url: String, HTTPMethod method: Fire.HTTPMethod = .GET, headers: Fire.HeaderFields? = nil, successCode: Fire.ResponseStatus = Fire.ResponseStatus.success) {
+        public var ignoreBaseURL: Bool = false
+        
+        public init(useBaseURL: Bool = true, appending url: String, HTTPMethod method: Fire.HTTPMethod = .GET, headers: Fire.HeaderFields? = nil, successCode: Fire.ResponseStatus = Fire.ResponseStatus.success) {
+            self.ignoreBaseURL = !useBaseURL
             self.method = method
             self.headerFields = headers
             self.successCode = successCode
-            if let base = Fire.API.baseURL {
-                let sep = "/"
-                if base.hasSuffix(sep) {
-                    if url.hasPrefix(sep) {
-                        self.fullURL = base + url.substring(from: url.index(url.startIndex, offsetBy: 1))
-                    } else {
-                        self.fullURL = base + url
-                    }
-                } else {
-                    if url.hasPrefix(sep) {
-                        self.fullURL = base + url
-                    } else {
-                        self.fullURL = base + sep + url
-                    }
-                }
-            } else {
-                self.fullURL = url
-            }
+            self.fullURL = Fire.Helper.appendURL(url, to: useBaseURL ? Fire.API.baseURL : nil)
         }
         
         public var stringValue: String {
@@ -69,7 +55,7 @@ public extension Fire {
             onError: Fire.ErrorCallback?
             ) -> Fire {
             
-            let f = Fire.build(self.method, url: self.fullURL, timeout: timeout, dispatch: dispatch).setParams(params)
+            let f = Fire.build(HTTPMethod: self.method, url: self.fullURL, timeout: timeout, dispatch: dispatch).setParams(params)
             if let hs = fields {
                 f.addHTTPHeaders(hs)
             }

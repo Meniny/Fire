@@ -40,6 +40,19 @@ public extension String {
 }
 
 public extension String {
+    
+    public var unicodeCharactersDecodedString: String? {
+        let tempString = self.replacingOccurrences(of: "\\u", with: "\\U").replacingOccurrences(of:"\"", with: "\\\"")
+        if let tempData = "\"\(tempString)\"".data(using: .utf8) {
+            if let res = try? PropertyListSerialization.propertyList(from: tempData, options: [], format: nil) {
+                return res as? String
+            }
+        }
+        return nil
+    }
+}
+
+public extension String {
     /// return NSData of self String
     public var data: Data {
         return self.data(using: String.Encoding.utf8)!

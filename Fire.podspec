@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Fire"
-  s.version          = "2.6.3"
+  s.version          = "2.6.4"
   s.summary          = "A delightful HTTP/HTTPS networking framework written in Swift"
 
 # This description is used to generate tags and improve search results.

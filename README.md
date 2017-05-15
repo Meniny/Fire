@@ -2,7 +2,7 @@
 <p align="center">
   <img src="./Fire.png" alt="Fire">
   <br/><a href="https://cocoapods.org/pods/Fire">
-  <img alt="Version" src="https://img.shields.io/badge/version-2.6.2-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/version-2.6.4-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <img alt="Swift" src="https://img.shields.io/badge/swift-3.0%2B-orange.svg">

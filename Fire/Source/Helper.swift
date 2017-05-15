@@ -32,7 +32,25 @@ public extension Fire {
 
     public struct Helper {
         
-        static func buildParams(_ parameters: [String: Any]) -> String {
+        public static func appendURL(_ appending: String, to baseURL: String?) -> String {
+            if let base = baseURL {
+                let sep = "/"
+                if base.hasSuffix(sep) {
+                    if appending.hasPrefix(sep) {
+                        return base + appending.substring(from: appending.index(appending.startIndex, offsetBy: 1))
+                    }
+                    return base + appending
+                }
+                
+                if appending.hasPrefix(sep) {
+                    return base + appending
+                }
+                return base + sep + appending
+            }
+            return appending
+        }
+        
+        public static func buildParams(_ parameters: [String: Any]) -> String {
             var components: [(String, String)] = []
             for key in Array(parameters.keys).sorted(by: <) {
                 let value = parameters[key]
@@ -42,7 +60,7 @@ public extension Fire {
             return components.map{"\($0)=\($1)"}.joined(separator: "&")
         }
         
-        static func queryComponents(_ key: String, _ value: Any) -> [(String, String)] {
+        public static func queryComponents(_ key: String, _ value: Any) -> [(String, String)] {
             var components: [(String, String)] = []
             var valueString = ""
             
@@ -63,9 +81,17 @@ public extension Fire {
             return components
         }
         
-        static func escape(_ string: String) -> String {
-            let legalURLCharactersToBeEscaped: CFString = ":&=;+!@#$()',*" as CFString
-            return CFURLCreateStringByAddingPercentEscapes(nil, string as CFString!, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+        public static func escape(_ string: String) -> String {
+            if #available(iOS 10.0, macOS 10.12, *) {
+                if let esc = string.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {
+                    return esc
+                }
+                return string
+            } else {
+                let chars = ":&=;+!@#$()',*"
+                let legalURLCharactersToBeEscaped: CFString = chars as CFString
+                return CFURLCreateStringByAddingPercentEscapes(nil, string as CFString!, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+            }
         }
     }
 }

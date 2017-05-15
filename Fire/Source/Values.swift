@@ -62,7 +62,8 @@ public extension Fire {
     }
     
     /// To make a Fire request Synchronously or Asynchronously
-    public enum Dispatch: String {
+    public typealias Dispatch = Fire.DispatchPolicy
+    public enum DispatchPolicy: String {
         case synchronously = "Synchronously"
         case asynchronously = "Asynchronously"
     }

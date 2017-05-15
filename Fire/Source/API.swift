@@ -26,12 +26,14 @@ public extension Fire {
         public let method: Fire.HTTPMethod// = Fire.HTTPMethod.GET
         public var headerFields: Fire.HeaderFields?// = nil
         public let successCode: Fire.ResponseStatus// = Fire.ResponseStatus.success
+        public var defaultParameters: Fire.Params?
         
         public var ignoreBaseURL: Bool = false
         
-        public init(useBaseURL: Bool = true, appending url: String, HTTPMethod method: Fire.HTTPMethod = .GET, headers: Fire.HeaderFields? = nil, successCode: Fire.ResponseStatus = Fire.ResponseStatus.success) {
+        public init(useBaseURL: Bool = true, appending url: String, HTTPMethod method: Fire.HTTPMethod = .GET, params: Fire.Params? = nil, headers: Fire.HeaderFields? = nil, successCode: Fire.ResponseStatus = Fire.ResponseStatus.success) {
             self.ignoreBaseURL = !useBaseURL
             self.method = method
+            self.defaultParameters = params
             self.headerFields = headers
             self.successCode = successCode
             self.fullURL = Fire.Helper.appendURL(url, to: useBaseURL ? Fire.API.baseURL : nil)
@@ -55,12 +57,12 @@ public extension Fire {
             onError: Fire.ErrorCallback?
             ) -> Fire {
             
-            let f = Fire.build(HTTPMethod: self.method, url: self.fullURL, timeout: timeout, dispatch: dispatch).setParams(params)
-            if let hs = fields {
-                f.addHTTPHeaders(hs)
-            }
-            f.onError(onError)
-            return f.fire(forType: responseType, callback: callback)
+            return Fire.build(HTTPMethod: self.method, url: self.fullURL, timeout: timeout, dispatch: dispatch)
+                .setParams(params)
+                .addParams(self.defaultParameters)
+                .addHTTPHeaders(fields)
+                .onError(onError)
+                .fire(forType: responseType, callback: callback)
         }
         
         @discardableResult public func requestJSON(

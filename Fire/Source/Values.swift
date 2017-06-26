@@ -15,6 +15,7 @@ public typealias FireUserAgent = Fire.UserAgent
 public typealias FireBasicAuth = Fire.BasicAuth
 public typealias FireHeaderFields = Fire.HeaderFields
 public typealias FireParams = Fire.Params
+public typealias FireFileDescriptor = Fire.FileDescriptor
 
 public typealias FireGenericResponseCallback = Fire.GenericResponseCallback
 public typealias FireJOSNResponseCallback = Fire.JOSNResponseCallback

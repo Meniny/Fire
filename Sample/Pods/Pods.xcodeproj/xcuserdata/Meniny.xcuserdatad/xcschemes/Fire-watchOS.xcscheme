@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A2CC359D4F8C77856A5A7EDD4D1F5DD5"
+               BlueprintIdentifier = "649F851DD6DFFFD3B4EB26EAF041C8E8"
                BuildableName = "Fire.framework"
                BlueprintName = "Fire-watchOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A2CC359D4F8C77856A5A7EDD4D1F5DD5"
+            BlueprintIdentifier = "649F851DD6DFFFD3B4EB26EAF041C8E8"
             BuildableName = "Fire.framework"
             BlueprintName = "Fire-watchOS"
             ReferencedContainer = "container:Pods.xcodeproj">

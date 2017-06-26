@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "01D735EEF95A4C4F77FFA2E627AC45D1"
-               BuildableName = "Fire.framework"
-               BlueprintName = "Fire-tvOS"
+               BlueprintIdentifier = "98C78DD8D415126E9B781AED60205D3A"
+               BuildableName = "Jsonify.framework"
+               BlueprintName = "Jsonify-tvOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "01D735EEF95A4C4F77FFA2E627AC45D1"
-            BuildableName = "Fire.framework"
-            BlueprintName = "Fire-tvOS"
+            BlueprintIdentifier = "98C78DD8D415126E9B781AED60205D3A"
+            BuildableName = "Jsonify.framework"
+            BlueprintName = "Jsonify-tvOS"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-//  Fire.File.swift
+//  Fire.FileDescriptorDescriptor.swift
 //  Fire
 //
 //  Created by Meniny on 15/10/7.
@@ -31,7 +31,7 @@ import Foundation
 public extension Fire {
     
     /// Simple file information structure for Fire to upload
-    public struct File: CustomStringConvertible {
+    public struct FileDescriptor: CustomStringConvertible {
         public let name: String
         public let nameWithExt: String
         public let url: URL?
@@ -39,7 +39,7 @@ public extension Fire {
         public let mimeType: String
         
         public var description: String {
-            return "<[Fire.File] name: \(self.nameWithExt); url: \(self.url?.absoluteString ?? "nil"); data: \(self.data?.count ?? 0) Bytes; MIME: \(self.mimeType)>"
+            return "<[Fire.FileDescriptor] name: \(self.nameWithExt); url: \(self.url?.absoluteString ?? "nil"); data: \(self.data?.count ?? 0) Bytes; MIME: \(self.mimeType)>"
         }
         
         public init(name: String, path: String, mimeType: String) {
@@ -70,5 +70,7 @@ public extension Fire {
             self.nameWithExt = name + "." + ext
         }
     }
+    
+    public typealias File = FileDescriptor
 }
 

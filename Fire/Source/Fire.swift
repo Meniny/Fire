@@ -94,7 +94,7 @@ open class Fire: NSObject, URLSessionDelegate {
     
     open let method: Fire.HTTPMethod
     open var parameters: Fire.Params?
-    open var uploadFiles: [Fire.File]?
+    open var uploadFiles: [Fire.FileDescriptor]?
     
     open var callback: Fire.DataResponseCallback?
     open var errorCallback: Fire.ErrorCallback?
@@ -218,7 +218,7 @@ open class Fire: NSObject, URLSessionDelegate {
         timeout: TimeInterval = Fire.DefaultTimeout,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) -> Fire {
         
-        let file = Fire.File(name: name, url: fileURL, mimeType: mimeType)
+        let file = Fire.FileDescriptor(name: name, url: fileURL, mimeType: mimeType)
         
         return Fire.build(HTTPMethod: .POST, url: toURL, prependBaseURL: prependBaseURL, dispatch: dispatch).setParams(params).setFiles([file])
     }
@@ -234,13 +234,13 @@ open class Fire: NSObject, URLSessionDelegate {
         timeout: TimeInterval = Fire.DefaultTimeout,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) -> Fire {
         
-        let file = Fire.File(name: name, data: data, ext: ext, mimeType: mimeType)
+        let file = Fire.FileDescriptor(name: name, data: data, ext: ext, mimeType: mimeType)
         
         return Fire.build(HTTPMethod: .POST, url: toURL, prependBaseURL: prependBaseURL, dispatch: dispatch).setParams(params).setFiles([file])
     }
     
     @discardableResult open static func build(
-        files: [Fire.File],
+        files: [Fire.FileDescriptor],
         toURL: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
@@ -321,7 +321,7 @@ open class Fire: NSObject, URLSessionDelegate {
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
         
-        let file = Fire.File(name: name, url: fileURL, mimeType: mimeType)
+        let file = Fire.FileDescriptor(name: name, url: fileURL, mimeType: mimeType)
         
         return Fire.build(HTTPMethod: .POST, url: toURL, prependBaseURL: prependBaseURL, dispatch: dispatch)
             .setParams(params)
@@ -345,7 +345,7 @@ open class Fire: NSObject, URLSessionDelegate {
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
         
-        let file = Fire.File(name: name, data: data, ext: ext, mimeType: mimeType)
+        let file = Fire.FileDescriptor(name: name, data: data, ext: ext, mimeType: mimeType)
         
         return Fire.build(HTTPMethod: .POST, url: toURL, prependBaseURL: prependBaseURL, dispatch: dispatch)
             .setParams(params)
@@ -356,7 +356,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult open static func upload(
-        files: [Fire.File],
+        files: [Fire.FileDescriptor],
         toURL: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
@@ -480,7 +480,7 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
-    @discardableResult open func addFile(_ file: Fire.File?) -> Fire {
+    @discardableResult open func addFile(_ file: Fire.FileDescriptor?) -> Fire {
         if let f = file {
             if self.uploadFiles == nil {
                 self.uploadFiles = []
@@ -490,7 +490,7 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
-    @discardableResult open func addFiles(_ files: [Fire.File]?) -> Fire {
+    @discardableResult open func addFiles(_ files: [Fire.FileDescriptor]?) -> Fire {
         if let fs = files {
             if self.uploadFiles == nil {
                 self.uploadFiles = []
@@ -500,7 +500,7 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
-    @discardableResult open func setFiles(_ files: [Fire.File]?) -> Fire {
+    @discardableResult open func setFiles(_ files: [Fire.FileDescriptor]?) -> Fire {
         self.uploadFiles = files
         return self
     }

@@ -95,3 +95,46 @@ public extension Fire {
         }
     }
 }
+
+public extension String {
+    /// return base64 string of self String
+    public var base64: String? {
+        if let utf8EncodeData = self.data(using: String.Encoding.utf8, allowLossyConversion: true) {
+            let base64EncodingData = utf8EncodeData.base64EncodedString(options: [])
+            return base64EncodingData
+        }
+        return nil
+    }
+}
+
+public extension String {
+    
+    public var unicodeCharactersDecodedString: String? {
+        let tempString = self.replacingOccurrences(of: "\\u", with: "\\U").replacingOccurrences(of:"\"", with: "\\\"")
+        if let tempData = "\"\(tempString)\"".data(using: .utf8) {
+            if let res = try? PropertyListSerialization.propertyList(from: tempData, options: [], format: nil) {
+                return res as? String
+            }
+        }
+        return nil
+    }
+}
+
+public extension String {
+    /// return NSData of self String
+    public var data: Data {
+        return self.data(using: String.Encoding.utf8)!
+    }
+}
+
+public extension Dictionary {
+    public var pretty: String {
+        return "\(self as NSDictionary)"
+    }
+}
+
+public extension Array {
+    public var pretty: String {
+        return "\(self as NSArray)"
+    }
+}

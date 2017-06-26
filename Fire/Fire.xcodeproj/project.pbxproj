@@ -13,39 +13,27 @@
 		5C2D1C931EA77E910096A4AD /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C33F0EB1EAB0614001D903D /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C33F0EC1EAB061D001D903D /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C33F0ED1EAB0630001D903D /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
-		5C33F0EE1EAB0630001D903D /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
-		5C33F0EF1EAB0630001D903D /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
-		5C33F0F01EAB0630001D903D /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
-		5C33F0F51EAB0630001D903D /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
-		5C33F0F61EAB0630001D903D /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
-		5C33F0F71EAB0630001D903D /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
-		5C33F0F81EAB0630001D903D /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
 		5C378A921EAB068C00674D0F /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D1C8B1EA77DF20096A4AD /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C378A931EAB069500674D0F /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
-		5C378A941EAB069500674D0F /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
-		5C378A951EAB069500674D0F /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
-		5C378A961EAB069500674D0F /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
-		5C378A9B1EAB069500674D0F /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
-		5C378A9C1EAB069500674D0F /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
-		5C378A9D1EAB069500674D0F /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
-		5C378A9E1EAB069500674D0F /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
-		5C9D23201EAAECE9008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
-		5C9D23211EAAEE28008CA64A /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D231F1EAAECE9008CA64A /* FileInfo.swift */; };
-		5CC5E2081EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
-		5CC5E2091EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */; };
-		5CC5E20A1EA8B01D0090435E /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
-		5CC5E20B1EA8B01D0090435E /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FC1EA8B01D0090435E /* Fire.swift */; };
-		5CC5E20C1EA8B01D0090435E /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
-		5CC5E20D1EA8B01D0090435E /* FireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */; };
-		5CC5E20E1EA8B01D0090435E /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
-		5CC5E20F1EA8B01D0090435E /* FireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */; };
-		5CC5E2181EA8B01D0090435E /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
-		5CC5E2191EA8B01D0090435E /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2041EA8B01D0090435E /* FireManager.swift */; };
-		5CC5E21A1EA8B01D0090435E /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
-		5CC5E21B1EA8B01D0090435E /* FireValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2051EA8B01D0090435E /* FireValues.swift */; };
-		5CC5E21C1EA8B01D0090435E /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
-		5CC5E21D1EA8B01D0090435E /* String+Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E2061EA8B01D0090435E /* String+Fire.swift */; };
+		5CD6A2921F0124980091390C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28C1F0124980091390C /* API.swift */; };
+		5CD6A2931F0124980091390C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28C1F0124980091390C /* API.swift */; };
+		5CD6A2941F0124980091390C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28C1F0124980091390C /* API.swift */; };
+		5CD6A2951F0124980091390C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28C1F0124980091390C /* API.swift */; };
+		5CD6A2961F0124980091390C /* FileDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28D1F0124980091390C /* FileDescriptor.swift */; };
+		5CD6A2971F0124980091390C /* FileDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28D1F0124980091390C /* FileDescriptor.swift */; };
+		5CD6A2981F0124980091390C /* FileDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28D1F0124980091390C /* FileDescriptor.swift */; };
+		5CD6A2991F0124980091390C /* FileDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28D1F0124980091390C /* FileDescriptor.swift */; };
+		5CD6A29A1F0124980091390C /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28E1F0124980091390C /* Fire.swift */; };
+		5CD6A29B1F0124980091390C /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28E1F0124980091390C /* Fire.swift */; };
+		5CD6A29C1F0124980091390C /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28E1F0124980091390C /* Fire.swift */; };
+		5CD6A29D1F0124980091390C /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28E1F0124980091390C /* Fire.swift */; };
+		5CD6A29E1F0124980091390C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28F1F0124980091390C /* Helper.swift */; };
+		5CD6A29F1F0124980091390C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28F1F0124980091390C /* Helper.swift */; };
+		5CD6A2A01F0124980091390C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28F1F0124980091390C /* Helper.swift */; };
+		5CD6A2A11F0124980091390C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A28F1F0124980091390C /* Helper.swift */; };
+		5CD6A2A61F0124980091390C /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A2911F0124980091390C /* Values.swift */; };
+		5CD6A2A71F0124980091390C /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A2911F0124980091390C /* Values.swift */; };
+		5CD6A2A81F0124980091390C /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A2911F0124980091390C /* Values.swift */; };
+		5CD6A2A91F0124980091390C /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6A2911F0124980091390C /* Values.swift */; };
 		89D3521188BB4ED50A5AC9F6 /* Pods_FireIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA294BD2FD65E6517317106 /* Pods_FireIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,14 +79,11 @@
 		5C984FFA1EACA38D00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-arqiehcyryjbxaftyomcwaaobljm/Build/Products/Debug-iphoneos/Jsonify-iOS/Jsonify.framework"; sourceTree = "<group>"; };
 		5C984FFC1EACA39700100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-arqiehcyryjbxaftyomcwaaobljm/Build/Products/Debug-appletvos/Jsonify-tvOS/Jsonify.framework"; sourceTree = "<group>"; };
 		5C984FFE1EACA39F00100B13 /* Jsonify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Jsonify.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-arqiehcyryjbxaftyomcwaaobljm/Build/Products/Debug-watchos/Jsonify-watchOS/Jsonify.framework"; sourceTree = "<group>"; };
-		5C9D231F1EAAECE9008CA64A /* FileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
-		5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-SessionDelegate.swift"; sourceTree = "<group>"; };
-		5CC5E1FC1EA8B01D0090435E /* Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
-		5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireAPI.swift; sourceTree = "<group>"; };
-		5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireHelper.swift; sourceTree = "<group>"; };
-		5CC5E2041EA8B01D0090435E /* FireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireManager.swift; sourceTree = "<group>"; };
-		5CC5E2051EA8B01D0090435E /* FireValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireValues.swift; sourceTree = "<group>"; };
-		5CC5E2061EA8B01D0090435E /* String+Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Fire.swift"; sourceTree = "<group>"; };
+		5CD6A28C1F0124980091390C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5CD6A28D1F0124980091390C /* FileDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDescriptor.swift; sourceTree = "<group>"; };
+		5CD6A28E1F0124980091390C /* Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
+		5CD6A28F1F0124980091390C /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5CD6A2911F0124980091390C /* Values.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
 		8487CB0E90694A4FC2FE0F8A /* Pods-FireOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireOSX/Pods-FireOSX.debug.xcconfig"; sourceTree = "<group>"; };
 		8A6428E5BC75F158141F4899 /* Pods-FireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireTests/Pods-FireTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA6C8BF0D1EF5F5EB7B0314 /* Pods_FireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2D1C8B1EA77DF20096A4AD /* Fire.h */,
-				5CC5E1FA1EA8B01D0090435E /* Source */,
+				5CD6A28B1F0124980091390C /* Source */,
 				5C77E30F1EA8ABA5005668B9 /* FireIOS */,
 				5C77E2EF1EA8AB69005668B9 /* FireOSX */,
 				5C33F0E41EAB05EB001D903D /* FireWatchOS */,
@@ -246,17 +231,14 @@
 			name = FireIOS;
 			sourceTree = "<group>";
 		};
-		5CC5E1FA1EA8B01D0090435E /* Source */ = {
+		5CD6A28B1F0124980091390C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5CC5E1FB1EA8B01D0090435E /* FileManager-SessionDelegate.swift */,
-				5CC5E1FC1EA8B01D0090435E /* Fire.swift */,
-				5CC5E1FD1EA8B01D0090435E /* FireAPI.swift */,
-				5CC5E1FE1EA8B01D0090435E /* FireHelper.swift */,
-				5CC5E2041EA8B01D0090435E /* FireManager.swift */,
-				5CC5E2051EA8B01D0090435E /* FireValues.swift */,
-				5CC5E2061EA8B01D0090435E /* String+Fire.swift */,
-				5C9D231F1EAAECE9008CA64A /* FileInfo.swift */,
+				5CD6A28C1F0124980091390C /* API.swift */,
+				5CD6A28D1F0124980091390C /* FileDescriptor.swift */,
+				5CD6A28E1F0124980091390C /* Fire.swift */,
+				5CD6A28F1F0124980091390C /* Helper.swift */,
+				5CD6A2911F0124980091390C /* Values.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -617,14 +599,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC5E20C1EA8B01D0090435E /* FireAPI.swift in Sources */,
-				5CC5E2181EA8B01D0090435E /* FireManager.swift in Sources */,
-				5CC5E21C1EA8B01D0090435E /* String+Fire.swift in Sources */,
-				5CC5E20E1EA8B01D0090435E /* FireHelper.swift in Sources */,
-				5CC5E2081EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */,
-				5CC5E20A1EA8B01D0090435E /* Fire.swift in Sources */,
-				5C9D23201EAAECE9008CA64A /* FileInfo.swift in Sources */,
-				5CC5E21A1EA8B01D0090435E /* FireValues.swift in Sources */,
+				5CD6A2921F0124980091390C /* API.swift in Sources */,
+				5CD6A2A61F0124980091390C /* Values.swift in Sources */,
+				5CD6A29A1F0124980091390C /* Fire.swift in Sources */,
+				5CD6A2961F0124980091390C /* FileDescriptor.swift in Sources */,
+				5CD6A29E1F0124980091390C /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,14 +611,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C33F0ED1EAB0630001D903D /* FileManager-SessionDelegate.swift in Sources */,
-				5C33F0EE1EAB0630001D903D /* Fire.swift in Sources */,
-				5C33F0EF1EAB0630001D903D /* FireAPI.swift in Sources */,
-				5C33F0F01EAB0630001D903D /* FireHelper.swift in Sources */,
-				5C33F0F51EAB0630001D903D /* FireManager.swift in Sources */,
-				5C33F0F61EAB0630001D903D /* FireValues.swift in Sources */,
-				5C33F0F71EAB0630001D903D /* String+Fire.swift in Sources */,
-				5C33F0F81EAB0630001D903D /* FileInfo.swift in Sources */,
+				5CD6A2951F0124980091390C /* API.swift in Sources */,
+				5CD6A2A91F0124980091390C /* Values.swift in Sources */,
+				5CD6A29D1F0124980091390C /* Fire.swift in Sources */,
+				5CD6A2991F0124980091390C /* FileDescriptor.swift in Sources */,
+				5CD6A2A11F0124980091390C /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,14 +623,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C378A931EAB069500674D0F /* FileManager-SessionDelegate.swift in Sources */,
-				5C378A941EAB069500674D0F /* Fire.swift in Sources */,
-				5C378A951EAB069500674D0F /* FireAPI.swift in Sources */,
-				5C378A961EAB069500674D0F /* FireHelper.swift in Sources */,
-				5C378A9B1EAB069500674D0F /* FireManager.swift in Sources */,
-				5C378A9C1EAB069500674D0F /* FireValues.swift in Sources */,
-				5C378A9D1EAB069500674D0F /* String+Fire.swift in Sources */,
-				5C378A9E1EAB069500674D0F /* FileInfo.swift in Sources */,
+				5CD6A2941F0124980091390C /* API.swift in Sources */,
+				5CD6A2A81F0124980091390C /* Values.swift in Sources */,
+				5CD6A29C1F0124980091390C /* Fire.swift in Sources */,
+				5CD6A2981F0124980091390C /* FileDescriptor.swift in Sources */,
+				5CD6A2A01F0124980091390C /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,14 +635,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C9D23211EAAEE28008CA64A /* FileInfo.swift in Sources */,
-				5CC5E20D1EA8B01D0090435E /* FireAPI.swift in Sources */,
-				5CC5E2191EA8B01D0090435E /* FireManager.swift in Sources */,
-				5CC5E21D1EA8B01D0090435E /* String+Fire.swift in Sources */,
-				5CC5E20F1EA8B01D0090435E /* FireHelper.swift in Sources */,
-				5CC5E2091EA8B01D0090435E /* FileManager-SessionDelegate.swift in Sources */,
-				5CC5E20B1EA8B01D0090435E /* Fire.swift in Sources */,
-				5CC5E21B1EA8B01D0090435E /* FireValues.swift in Sources */,
+				5CD6A2931F0124980091390C /* API.swift in Sources */,
+				5CD6A2A71F0124980091390C /* Values.swift in Sources */,
+				5CD6A29B1F0124980091390C /* Fire.swift in Sources */,
+				5CD6A2971F0124980091390C /* FileDescriptor.swift in Sources */,
+				5CD6A29F1F0124980091390C /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

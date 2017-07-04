@@ -18,15 +18,15 @@
 
 ***
 
-* [Introduction in English](#Introduction)
-* [中文介绍](#中文介绍)
+* [English](#Introduction)
+* [中文](#中文介绍)
 * [⽇本語](#⽇本語)
 
 # Introduction
 
 ## What's this?
 
-Fire is a delightful HTTP/HTTPS networking framework for iOS/macOS/watchOS/tvOS platform written in Swift and inspired by [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/).
+`Fire` is a delightful HTTP/HTTPS networking framework for iOS/macOS/watchOS/tvOS platform written in Swift and inspired by [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/).
 
 Fire was written for humans to read, and incidentally, for machines to execute :)
 
@@ -51,7 +51,7 @@ Fire was written for humans to read, and incidentally, for machines to execute :
 
 ## Dependency
 
-* [Jsonify-in-Swift](https://github.com/Meniny/Jsonify-in-Swift)
+* [Jsonify](https://github.com/Meniny/Jsonify)
 
 ## Installation
 
@@ -67,11 +67,11 @@ You are welcome to fork and submit pull requests.
 
 ## License
 
-Fire is open-sourced software, licensed under the `MIT` license.
+`Fire` is open-sourced software, licensed under the `MIT` license.
 
 ## Usage
 
-To send a request with Fire, you need to do 3 steps.
+To send a request with `Fire`, you need to do 3 steps.
 
 First, build up a Fire object:
 
@@ -186,7 +186,7 @@ open class func FireAPI3() {
 
 ## 这是什么?
 
-Fire 一个使用 Swift 书写的轻量级 iOS/macOS/watchOS/tvOS 平台 HTTP/HTTPS 网络框架，深受 [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/) 启发。
+`Fire` 一个使用 Swift 书写的轻量级 iOS/macOS/watchOS/tvOS 平台 HTTP/HTTPS 网络框架，深受 [Python-Requests: HTTP for Humans](http://docs.python-requests.org/en/master/) 启发。
 
 Fire 为了更好的可读性而生，碰巧还可以运行 :)
 
@@ -211,7 +211,7 @@ Fire 为了更好的可读性而生，碰巧还可以运行 :)
 
 ## 依赖
 
-* [Jsonify-in-Swift](https://github.com/Meniny/Jsonify-in-Swift)
+* [Jsonify](https://github.com/Meniny/Jsonify)
 
 ## 安装
 
@@ -346,7 +346,7 @@ open class func FireAPI3() {
 
 ## Fire とは何か？
 
-Fire とは Swift で作られる iOS/macOS/watchOS/tvOSiプラットホーム HTTP/HTTPS の軽量なデータのインタネットフレームワーク(Internet-Framework)、[Python-Requests:HTTP for Humans](http://docs.python-requests.org/en/master/) に深い影響を与えられた。
+`Fire` とは Swift で作られる iOS/macOS/watchOS/tvOSiプラットホーム HTTP/HTTPS の軽量なデータのインタネットフレームワーク(Internet-Framework)、[Python-Requests:HTTP for Humans](http://docs.python-requests.org/en/master/) に深い影響を与えられた。
 
 人を理解やすくなるために、作られました。たまたまにプログラムを実行できる。
 

@@ -1,0 +1,2825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fire Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Fire" class="dashAnchor"></a>
+    <a title="Fire Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Fire Docs</a> (45% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Fire Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Fire Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Fire.html">Fire</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/Configuration.html">– Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/API.html">– API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/FileDescriptor.html">– FileDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/Helper.html">– Helper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/Keys.html">– Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/DispatchPolicy.html">– DispatchPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/ResponseType.html">– ResponseType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/HTTPMethod.html">– HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Fire/ResponseStatus.html">– ResponseStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:v4Fire18FireDefaultTimeoutSd">FireDefaultTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:v4Fire22FireEmptyErrorCallbackFPs5Error_T_">FireEmptyErrorCallback</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P4Fire20FireResponseProtocol">FireResponseProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Fire</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Fire is a delightful HTTP/HTTPS networking framework for Apple platforms under MIT license.</p>
+
+<p>It&rsquo;s pretty simple to use:</p>
+<pre class="highlight plaintext"><code>Fire.build(...).fire { (json, _) in
+    // ...
+}
+</code></pre>
+
+<p>See <a href="https://github.com/Meniny/Fire-in-Swift/">https://github.com/Meniny/Fire-in-Swift/</a> for more detail.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC4Fire4Fire13Configuration"></a>
+                    <a name="//apple_ref/swift/Struct/Configuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC4Fire4Fire13Configuration">Configuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/Fire/Configuration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire11descriptionSS">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire13ignoreBaseURLSb"></a>
+                    <a name="//apple_ref/swift/Property/ignoreBaseURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire13ignoreBaseURLSb">ignoreBaseURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire8dispatchOS0_14DispatchPolicy"></a>
+                    <a name="//apple_ref/swift/Property/dispatch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire8dispatchOS0_14DispatchPolicy">dispatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire11HTTPBodyRawSS"></a>
+                    <a name="//apple_ref/swift/Property/HTTPBodyRaw" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire11HTTPBodyRawSS">HTTPBodyRaw</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire17HTTPBodyRawIsJSONSb"></a>
+                    <a name="//apple_ref/swift/Property/HTTPBodyRawIsJSON" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire17HTTPBodyRawIsJSONSb">HTTPBodyRawIsJSON</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire6methodOS0_10HTTPMethod"></a>
+                    <a name="//apple_ref/swift/Property/method" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire6methodOS0_10HTTPMethod">method</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire10parametersGSqGVs10DictionarySSP___"></a>
+                    <a name="//apple_ref/swift/Property/parameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire10parametersGSqGVs10DictionarySSP___">parameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire11uploadFilesGSqGSaVS0_14FileDescriptor__"></a>
+                    <a name="//apple_ref/swift/Property/uploadFiles" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire11uploadFilesGSqGSaVS0_14FileDescriptor__">uploadFiles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire8callbackGSqFTGSqV10Foundation4Data_GSqCSo15HTTPURLResponse__T__"></a>
+                    <a name="//apple_ref/swift/Property/callback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire8callbackGSqFTGSqV10Foundation4Data_GSqCSo15HTTPURLResponse__T__">callback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire13errorCallbackGSqFPs5Error_T__"></a>
+                    <a name="//apple_ref/swift/Property/errorCallback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire13errorCallbackGSqFPs5Error_T__">errorCallback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire14cancelCallbackGSqFT_T__"></a>
+                    <a name="//apple_ref/swift/Property/cancelCallback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire14cancelCallbackGSqFT_T__">cancelCallback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire16progressCallbackGSqFTVs5Int64S1_Sf_T__"></a>
+                    <a name="//apple_ref/swift/Property/progressCallback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire16progressCallbackGSqFTVs5Int64S1_Sf_T__">progressCallback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire7sessionGSqCSo10URLSession_"></a>
+                    <a name="//apple_ref/swift/Property/session" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire7sessionGSqCSo10URLSession_">session</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire3urlSS"></a>
+                    <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire3urlSS">url</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire7requestGSqV10Foundation10URLRequest_"></a>
+                    <a name="//apple_ref/swift/Property/request" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire7requestGSqV10Foundation10URLRequest_">request</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire4taskGSqCSo14URLSessionTask_"></a>
+                    <a name="//apple_ref/swift/Property/task" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire4taskGSqCSo14URLSessionTask_">task</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire9basicAuthGSqT4nameSS3pwdSS__"></a>
+                    <a name="//apple_ref/swift/Property/basicAuth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire9basicAuthGSqT4nameSS3pwdSS__">basicAuth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire18localCertDataArrayGSaV10Foundation4Data_"></a>
+                    <a name="//apple_ref/swift/Property/localCertDataArray" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire18localCertDataArrayGSaV10Foundation4Data_">localCertDataArray</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire24SSLValidateErrorCallBackGSqFT_T__"></a>
+                    <a name="//apple_ref/swift/Property/SSLValidateErrorCallBack" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire24SSLValidateErrorCallBackGSqFT_T__">SSLValidateErrorCallBack</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire16extraHTTPHeadersGSaT3keySS5valueSS__"></a>
+                    <a name="//apple_ref/swift/Property/extraHTTPHeaders" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire16extraHTTPHeadersGSaT3keySS5valueSS__">extraHTTPHeaders</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire9userAgentSS"></a>
+                    <a name="//apple_ref/swift/Property/userAgent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire9userAgentSS">userAgent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC4Fire4Fire15customUserAgentGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/customUserAgent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC4Fire4Fire15customUserAgentGSqSS_">customUserAgent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="//////////////////////////////%20init%20/////////////////////////////"></a>
+                <a name="//apple_ref/swift/Section////////////////////////////// init /////////////////////////////" class="dashAnchor"></a>
+                <a href="#//////////////////////////////%20init%20/////////////////////////////">
+                  <h3 class="section-name">///////////////////////////// init /////////////////////////////</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4FirecFT3urlSS14prependBaseURLSb6methodOS0_10HTTPMethod6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(url:prependBaseURL:method:params:timeout:dispatch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4FirecFT3urlSS14prependBaseURLSb6methodOS0_10HTTPMethod6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_">init(url:prependBaseURL:method:params:timeout:dispatch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the only init method to fire a HTTP / HTTPS request</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">prependBaseURL</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire/HTTPMethod.html">HTTPMethod</a></span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">Params</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire.html#/s:ZvC4Fire4Fire14DefaultTimeoutSd">DefaultTimeout</a></span><span class="p">,</span> <span class="nv">dispatch</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire.html#/s:C4Fire4Fire8Dispatch">Dispatch</a></span> <span class="o">=</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire.html#/s:C4Fire4Fire8Dispatch">Dispatch</a></span><span class="o">.</span><span class="n">asynchronously</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>method</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the HTTP method you want</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the url you want</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>time out setting</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Fire object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4FirecFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(HTTPMethod:url:prependBaseURL:params:timeout:dispatch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4FirecFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_">init(HTTPMethod:url:prependBaseURL:params:timeout:dispatch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the only init method to fire a HTTP / HTTPS request</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="kt"><a href="../Classes/Fire/HTTPMethod.html">HTTPMethod</a></span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Classes/Fire/HTTPMethod.html">HTTPMethod</a></span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">prependBaseURL</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">Params</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">dispatch</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire.html#/s:C4Fire4Fire8Dispatch">Dispatch</a></span> <span class="o">=</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire.html#/s:C4Fire4Fire8Dispatch">Dispatch</a></span><span class="o">.</span><span class="n">asynchronously</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>method</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the HTTP method you want</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the url you want</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>time out setting</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Fire object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="//////////////////////////////%20build%20&amp;%20request%20&amp;%20quick%20usage%20/////////////////////////////"></a>
+                <a name="//apple_ref/swift/Section////////////////////////////// build &amp; request &amp; quick usage /////////////////////////////" class="dashAnchor"></a>
+                <a href="#//////////////////////////////%20build%20&amp;%20request%20&amp;%20quick%20usage%20/////////////////////////////">
+                  <h3 class="section-name">///////////////////////////// build &amp; request &amp; quick usage /////////////////////////////</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire5buildFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_"></a>
+                    <a name="//apple_ref/swift/Method/build(HTTPMethod:url:prependBaseURL:params:timeout:dispatch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire5buildFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_">build(HTTPMethod:url:prependBaseURL:params:timeout:dispatch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the only init method to fire a HTTP / HTTPS request</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">build</span><span class="p">(</span>
+        <span class="kt"><a href="../Classes/Fire/HTTPMethod.html">HTTPMethod</a></span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Classes/Fire/HTTPMethod.html">HTTPMethod</a></span><span class="p">,</span>
+        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">prependBaseURL</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nv">params</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">Params</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire.html#/s:ZvC4Fire4Fire14DefaultTimeoutSd">DefaultTimeout</a></span><span class="p">,</span>
+        <span class="nv">dispatch</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire.html#/s:C4Fire4Fire8Dispatch">Dispatch</a></span> <span class="o">=</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire.html#/s:C4Fire4Fire8Dispatch">Dispatch</a></span><span class="o">.</span><span class="n">asynchronously</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>method</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the HTTP method you want</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the url you want</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>time out setting</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Fire object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire5buildFT3apiVS0_3API6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_"></a>
+                    <a name="//apple_ref/swift/Method/build(api:params:timeout:dispatch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire5buildFT3apiVS0_3API6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_">build(api:params:timeout:dispatch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire5buildFT7fileURLV10Foundation3URL4nameSS8mimeTypeSS5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_"></a>
+                    <a name="//apple_ref/swift/Method/build(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:dispatch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire5buildFT7fileURLV10Foundation3URL4nameSS8mimeTypeSS5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_">build(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:dispatch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire5buildFT4dataV10Foundation4Data4nameSS3extSS8mimeTypeSS5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_"></a>
+                    <a name="//apple_ref/swift/Method/build(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:dispatch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire5buildFT4dataV10Foundation4Data4nameSS3extSS8mimeTypeSS5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_">build(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:dispatch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire5buildFT5filesGSaVS0_14FileDescriptor_5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_"></a>
+                    <a name="//apple_ref/swift/Method/build(files:toURL:prependBaseURL:params:timeout:dispatch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire5buildFT5filesGSaVS0_14FileDescriptor_5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy_S0_">build(files:toURL:prependBaseURL:params:timeout:dispatch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Request"></a>
+                <a name="//apple_ref/swift/Section/Request" class="dashAnchor"></a>
+                <a href="#/Request">
+                  <h3 class="section-name">Request</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire7requestFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/request(HTTPMethod:url:prependBaseURL:params:timeout:dispatch:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire7requestFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">request(HTTPMethod:url:prependBaseURL:params:timeout:dispatch:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire7requestFT3apiVS0_3API6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/request(api:params:timeout:dispatch:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire7requestFT3apiVS0_3API6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">request(api:params:timeout:dispatch:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire4syncFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/sync(HTTPMethod:url:prependBaseURL:params:timeout:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire4syncFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">sync(HTTPMethod:url:prependBaseURL:params:timeout:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire5asyncFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/async(HTTPMethod:url:prependBaseURL:params:timeout:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire5asyncFT10HTTPMethodOS0_10HTTPMethod3urlSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">async(HTTPMethod:url:prependBaseURL:params:timeout:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UPLOAD"></a>
+                <a name="//apple_ref/swift/Section/UPLOAD" class="dashAnchor"></a>
+                <a href="#/UPLOAD">
+                  <h3 class="section-name">UPLOAD</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire6uploadFT7fileURLV10Foundation3URL4nameSS8mimeTypeSS5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8progressGSqFTVs5Int64S5_Sf_T__8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/upload(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire6uploadFT7fileURLV10Foundation3URL4nameSS8mimeTypeSS5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8progressGSqFTVs5Int64S5_Sf_T__8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">upload(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire6uploadFT4dataV10Foundation4Data4nameSS3extSS8mimeTypeSS5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8progressGSqFTVs5Int64S5_Sf_T__8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/upload(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire6uploadFT4dataV10Foundation4Data4nameSS3extSS8mimeTypeSS5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8progressGSqFTVs5Int64S5_Sf_T__8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">upload(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire6uploadFT5filesGSaVS0_14FileDescriptor_5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8progressGSqFTVs5Int64S4_Sf_T__8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/upload(files:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire6uploadFT5filesGSaVS0_14FileDescriptor_5toURLSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8progressGSqFTVs5Int64S4_Sf_T__8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">upload(files:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/GET%20POST%20PUT%20DELETE"></a>
+                <a name="//apple_ref/swift/Section/GET POST PUT DELETE" class="dashAnchor"></a>
+                <a href="#/GET%20POST%20PUT%20DELETE">
+                  <h3 class="section-name">GET POST PUT DELETE</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire3getFTSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/get(_:prependBaseURL:params:timeout:dispatch:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire3getFTSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">get(_:prependBaseURL:params:timeout:dispatch:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire4postFTSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/post(_:prependBaseURL:params:timeout:dispatch:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire4postFTSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">post(_:prependBaseURL:params:timeout:dispatch:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire3putFTSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/put(_:prependBaseURL:params:timeout:dispatch:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire3putFTSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">put(_:prependBaseURL:params:timeout:dispatch:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC4Fire4Fire6deleteFTSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/delete(_:prependBaseURL:params:timeout:dispatch:callback:onError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC4Fire4Fire6deleteFTSS14prependBaseURLSb6paramsGSqGVs10DictionarySSP___7timeoutSd8dispatchOS0_14DispatchPolicy8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__7onErrorGSqFPs5Error_T___S0_">delete(_:prependBaseURL:params:timeout:dispatch:callback:onError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="//////////////////////////////%20setting%20&amp;%20adding%20/////////////////////////////"></a>
+                <a name="//apple_ref/swift/Section////////////////////////////// setting &amp; adding /////////////////////////////" class="dashAnchor"></a>
+                <a href="#//////////////////////////////%20setting%20&amp;%20adding%20/////////////////////////////">
+                  <h3 class="section-name">///////////////////////////// setting &amp; adding /////////////////////////////</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire13setSSLPinningFT13localCertDataGSaV10Foundation4Data_24SSLValidateErrorCallBackGSqFT_T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/setSSLPinning(localCertData:SSLValidateErrorCallBack:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire13setSSLPinningFT13localCertDataGSaV10Foundation4Data_24SSLValidateErrorCallBackGSqFT_T___S0_">setSSLPinning(localCertData:SSLValidateErrorCallBack:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire8addParamFTSS5valueP__S0_"></a>
+                    <a name="//apple_ref/swift/Method/addParam(_:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire8addParamFTSS5valueP__S0_">addParam(_:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire9addParamsFGSqGVs10DictionarySSP___S0_"></a>
+                    <a name="//apple_ref/swift/Method/addParams(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire9addParamsFGSqGVs10DictionarySSP___S0_">addParams(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire9setParamsFGSqGVs10DictionarySSP___S0_"></a>
+                    <a name="//apple_ref/swift/Method/setParams(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire9setParamsFGSqGVs10DictionarySSP___S0_">setParams(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire7addFileFGSqVS0_14FileDescriptor_S0_"></a>
+                    <a name="//apple_ref/swift/Method/addFile(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire7addFileFGSqVS0_14FileDescriptor_S0_">addFile(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire8addFilesFGSqGSaVS0_14FileDescriptor__S0_"></a>
+                    <a name="//apple_ref/swift/Method/addFiles(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire8addFilesFGSqGSaVS0_14FileDescriptor__S0_">addFiles(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire8setFilesFGSqGSaVS0_14FileDescriptor__S0_"></a>
+                    <a name="//apple_ref/swift/Method/setFiles(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire8setFilesFGSqGSaVS0_14FileDescriptor__S0_">setFiles(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire7onErrorFGSqFPs5Error_T__S0_"></a>
+                    <a name="//apple_ref/swift/Method/onError(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire7onErrorFGSqFPs5Error_T__S0_">onError(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire13addHTTPHeaderFTSS6forKeySS_S0_"></a>
+                    <a name="//apple_ref/swift/Method/addHTTPHeader(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire13addHTTPHeaderFTSS6forKeySS_S0_">addHTTPHeader(_:forKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>add a custom HTTP header to current hedaers</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">addHTTPHeader</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTP header key</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTP header value</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self (Fire object)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire14addHTTPHeadersFGSqGVs10DictionarySSSS__S0_"></a>
+                    <a name="//apple_ref/swift/Method/addHTTPHeaders(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire14addHTTPHeadersFGSqGVs10DictionarySSSS__S0_">addHTTPHeaders(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>add custom HTTP headers to current hedaers</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">addHTTPHeaders</span><span class="p">(</span><span class="n">_</span> <span class="nv">headers</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">HeaderFields</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTP header [key: value]</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self (Fire object)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire14setHTTPHeadersFGSqGVs10DictionarySSSS__S0_"></a>
+                    <a name="//apple_ref/swift/Method/setHTTPHeaders(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire14setHTTPHeadersFGSqGVs10DictionarySSSS__S0_">setHTTPHeaders(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>set custom HTTP headers to replace current headers</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">setHTTPHeaders</span><span class="p">(</span><span class="n">_</span> <span class="nv">headers</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">HeaderFields</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTP header [key: value]</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self (Fire object)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire16cleanHTTPHeadersFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/cleanHTTPHeaders()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire16cleanHTTPHeadersFT_T_">cleanHTTPHeaders()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire11setHTTPBodyFT3rawSS6isJSONSb_S0_"></a>
+                    <a name="//apple_ref/swift/Method/setHTTPBody(raw:isJSON:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire11setHTTPBodyFT3rawSS6isJSONSb_S0_">setHTTPBody(raw:isJSON:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire14handleProgressFGSqFTVs5Int64S1_Sf_T__S0_"></a>
+                    <a name="//apple_ref/swift/Method/handleProgress(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire14handleProgressFGSqFTVs5Int64S1_Sf_T__S0_">handleProgress(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Progress callback of upload/download task</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">handleProgress</span><span class="p">(</span><span class="n">_</span> <span class="nv">handler</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">ProgressCallback</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>callback</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self (Fire object)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire12setBasicAuthFT4nameSS3pwdSS_S0_"></a>
+                    <a name="//apple_ref/swift/Method/setBasicAuth(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire12setBasicAuthFT4nameSS3pwdSS_S0_">setBasicAuth(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire12setUserAgentFSSS0_"></a>
+                    <a name="//apple_ref/swift/Method/setUserAgent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire12setUserAgentFSSS0_">setUserAgent(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="//////////////////////////////%20fire%20in%20hole%20/////////////////////////////"></a>
+                <a name="//apple_ref/swift/Section////////////////////////////// fire in hole /////////////////////////////" class="dashAnchor"></a>
+                <a href="#//////////////////////////////%20fire%20in%20hole%20/////////////////////////////">
+                  <h3 class="section-name">///////////////////////////// fire in hole /////////////////////////////</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire11fireForDataFGSqFTGSqV10Foundation4Data_GSqCSo15HTTPURLResponse__T__S0_"></a>
+                    <a name="//apple_ref/swift/Method/fireForData(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire11fireForDataFGSqFTGSqV10Foundation4Data_GSqCSo15HTTPURLResponse__T__S0_">fireForData(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>async response the http body in NSData type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">fireForData</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">DataResponseCallback</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>callback Closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>void</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire13fireForStringFGSqFTGSqSS_GSqCSo15HTTPURLResponse__T__S0_"></a>
+                    <a name="//apple_ref/swift/Method/fireForString(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire13fireForStringFGSqFTGSqSS_GSqCSo15HTTPURLResponse__T__S0_">fireForString(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>async response the http body in String type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">fireForString</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">StringResponseCallback</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>callback Closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>void</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire11fireForJSONFGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__S0_"></a>
+                    <a name="//apple_ref/swift/Method/fireForJSON(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire11fireForJSONFGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T__S0_">fireForJSON(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>async response the http body in JSON type use Jsonify</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">fireForJSON</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">JOSNResponseCallback</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>callback Closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>void</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire4fireFT7forTypeOS0_12ResponseType8callbackGSqFTGSqPS_20FireResponseProtocol__GSqCSo15HTTPURLResponse_S1__T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/fire(forType:callback:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire4fireFT7forTypeOS0_12ResponseType8callbackGSqFTGSqPS_20FireResponseProtocol__GSqCSo15HTTPURLResponse_S1__T___S0_">fire(forType:callback:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>async response the http body in JSON type use Jsonify</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">fire</span><span class="p">(</span><span class="n">forType</span> <span class="nv">rt</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire/ResponseType.html">ResponseType</a></span><span class="p">,</span> <span class="nv">callback</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">GenericResponseCallback</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>callback Closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>void</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire4fireFT8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T___S0_"></a>
+                    <a name="//apple_ref/swift/Method/fire(callback:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire4fireFT8callbackGSqFTV7Jsonify7JsonifyGSqCSo15HTTPURLResponse__T___S0_">fire(callback:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>async response the http body in JSON type use Jsonify</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="n">open</span> <span class="kd">func</span> <span class="nf">fire</span><span class="p">(</span><span class="nv">callback</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">JOSNResponseCallback</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Fire</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>callback Closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>void</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire6cancelFGSqFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/cancel(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire6cancelFGSqFT_T__T_">cancel(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>cancel the request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">cancel</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt">VoidCallback</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>callback Closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC4Fire4Fire3API"></a>
+                    <a name="//apple_ref/swift/Struct/API" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC4Fire4Fire3API">API</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Simple API structure</p>
+<pre class="highlight plaintext"><code>let api = Fire.API(appending: ...)
+api.request(... { (_, _ , _) in 
+    // ...
+})
+</code></pre>
+
+                        <a href="../Classes/Fire/API.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">API</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC4Fire4Fire14FileDescriptor"></a>
+                    <a name="//apple_ref/swift/Struct/FileDescriptor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC4Fire4Fire14FileDescriptor">FileDescriptor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Simple file information structure for Fire to upload</p>
+
+                        <a href="../Classes/Fire/FileDescriptor.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FileDescriptor</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire10urlSessionFTCSo10URLSession12downloadTaskCSo22URLSessionDownloadTask22didFinishDownloadingToV10Foundation3URL_T_"></a>
+                    <a name="//apple_ref/swift/Method/urlSession(_:downloadTask:didFinishDownloadingTo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire10urlSessionFTCSo10URLSession12downloadTaskCSo22URLSessionDownloadTask22didFinishDownloadingToV10Foundation3URL_T_">urlSession(_:downloadTask:didFinishDownloadingTo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire10urlSessionFTCSo10URLSession12downloadTaskCSo22URLSessionDownloadTask12didWriteDataVs5Int6417totalBytesWrittenS3_25totalBytesExpectedToWriteS3__T_"></a>
+                    <a name="//apple_ref/swift/Method/urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire10urlSessionFTCSo10URLSession12downloadTaskCSo22URLSessionDownloadTask12didWriteDataVs5Int6417totalBytesWrittenS3_25totalBytesExpectedToWriteS3__T_">urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire10urlSessionFTCSo10URLSession4taskCSo14URLSessionTask15didSendBodyDataVs5Int6414totalBytesSentS3_24totalBytesExpectedToSendS3__T_"></a>
+                    <a name="//apple_ref/swift/Method/urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire10urlSessionFTCSo10URLSession4taskCSo14URLSessionTask15didSendBodyDataVs5Int6414totalBytesSentS3_24totalBytesExpectedToSendS3__T_">urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC4Fire4Fire10urlSessionFTCSo10URLSession10didReceiveCSo26URLAuthenticationChallenge17completionHandlerFTOS1_24AuthChallengeDispositionGSqCSo13URLCredential__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/urlSession(_:didReceive:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC4Fire4Fire10urlSessionFTCSo10URLSession10didReceiveCSo26URLAuthenticationChallenge17completionHandlerFTOS1_24AuthChallengeDispositionGSqCSo13URLCredential__T__T_">urlSession(_:didReceive:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>a delegate method to check whether the remote cartification is the same with given certification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc(URLSession:didReceiveChallenge:completionHandler:)</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">urlSession</span><span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">URLSession</span><span class="p">,</span> <span class="n">didReceive</span> <span class="nv">challenge</span><span class="p">:</span> <span class="kt">URLAuthenticationChallenge</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">URLSession</span><span class="o">.</span><span class="kt">AuthChallengeDisposition</span><span class="p">,</span> <span class="kt">URLCredential</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>session</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>NSURLSession</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>challenge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>NSURLAuthenticationChallenge</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completionHandler closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC4Fire4Fire6Helper"></a>
+                    <a name="//apple_ref/swift/Struct/Helper" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC4Fire4Fire6Helper">Helper</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/Fire/Helper.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC4Fire4Fire14DefaultTimeoutSd"></a>
+                    <a name="//apple_ref/swift/Variable/DefaultTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC4Fire4Fire14DefaultTimeoutSd">DefaultTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC4Fire4Fire18EmptyErrorCallbackFPs5Error_T_"></a>
+                    <a name="//apple_ref/swift/Variable/EmptyErrorCallback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC4Fire4Fire18EmptyErrorCallbackFPs5Error_T_">EmptyErrorCallback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC4Fire4Fire4Keys"></a>
+                    <a name="//apple_ref/swift/Enum/Keys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC4Fire4Fire4Keys">Keys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/Fire/Keys.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C4Fire4Fire8Dispatch"></a>
+                    <a name="//apple_ref/swift/Alias/Dispatch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C4Fire4Fire8Dispatch">Dispatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To make a Fire request Synchronously or Asynchronously</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Dispatch</span> <span class="o">=</span> <span class="kt">Fire</span><span class="o">.</span><span class="kt"><a href="../Classes/Fire/DispatchPolicy.html">DispatchPolicy</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC4Fire4Fire14DispatchPolicy"></a>
+                    <a name="//apple_ref/swift/Enum/DispatchPolicy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC4Fire4Fire14DispatchPolicy">DispatchPolicy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/Fire/DispatchPolicy.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC4Fire4Fire12ResponseType"></a>
+                    <a name="//apple_ref/swift/Enum/ResponseType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC4Fire4Fire12ResponseType">ResponseType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/Fire/ResponseType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Fire</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">URLSessionDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC4Fire4Fire10HTTPMethod"></a>
+                    <a name="//apple_ref/swift/Enum/HTTPMethod" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC4Fire4Fire10HTTPMethod">HTTPMethod</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>HTTP method enum for Fire</p>
+
+                        <a href="../Classes/Fire/HTTPMethod.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HTTPMethod</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC4Fire4Fire14ResponseStatus"></a>
+                    <a name="//apple_ref/swift/Enum/ResponseStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC4Fire4Fire14ResponseStatus">ResponseStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Response Status Codes</p>
+
+                        <a href="../Classes/Fire/ResponseStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ResponseStatus</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/Meniny/Fire" target="_blank" rel="external">Meniny</a>. All rights reserved. (Last updated: 2017-07-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

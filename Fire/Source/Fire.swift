@@ -65,11 +65,11 @@ open class Fire: NSObject, URLSessionDelegate {
     
     public struct Configuration {
         #if DEBUG
-            /// if set to true, Fire will log all information in a NSURLSession lifecycle
-            public static var DEBUG = true
+        /// if set to true, Fire will log all information in a NSURLSession lifecycle
+        public static var DEBUG = true
         #else
-            /// if set to true, Fire will log all information in a NSURLSession lifecycle
-            public static var DEBUG = false
+        /// if set to true, Fire will log all information in a NSURLSession lifecycle
+        public static var DEBUG = false
         #endif
         public static var baseURL: String? = nil
     }
@@ -176,7 +176,7 @@ open class Fire: NSObject, URLSessionDelegate {
         self.init(url: url, prependBaseURL: prependBaseURL, method: method, timeout: timeout, dispatch: dispatch)
         self.parameters = params
     }
-
+    
     // MARK: - ///////////////////////////// build & request & quick usage /////////////////////////////
     
     /**
@@ -445,7 +445,7 @@ open class Fire: NSObject, URLSessionDelegate {
             timeout: timeout,
             dispatch: dispatch).onError(onError).fireForJSON(callback)
     }
-
+    
     // MARK: - ///////////////////////////// setting & adding /////////////////////////////
     
     @discardableResult open func setSSLPinning(localCertData dataArray: [Data], SSLValidateErrorCallBack: Fire.VoidCallback? = nil) -> Fire {
@@ -507,6 +507,11 @@ open class Fire: NSObject, URLSessionDelegate {
     
     @discardableResult open func onError(_ errorCallback: Fire.ErrorCallback?) -> Fire {
         self.errorCallback = errorCallback
+        return self
+    }
+    
+    @discardableResult open func onCancel(_ cancelCallback: Fire.VoidCallback?) -> Fire {
+        self.cancelCallback = cancelCallback
         return self
     }
     
@@ -688,6 +693,20 @@ open class Fire: NSObject, URLSessionDelegate {
     open func cancel(_ callback: Fire.VoidCallback?) {
         self.cancelCallback = callback
         self.task?.cancel()
+        cancelDebugPrint()
+    }
+    
+    /**
+     cancel the request.
+     
+     - parameter callback: callback Closure
+     */
+    open func cancel() {
+        self.task?.cancel()
+        cancelDebugPrint()
+    }
+    
+    private func cancelDebugPrint() {
         if Fire.Configuration.DEBUG {
             if let u = self.request?.url {
                 print("[Fire] Request of \"\(u)\" Cancelled")

@@ -16,6 +16,8 @@ public typealias FireBasicAuth = Fire.BasicAuth
 public typealias FireHeaderFields = Fire.HeaderFields
 public typealias FireParams = Fire.Params
 public typealias FireFileDescriptor = Fire.FileDescriptor
+public typealias FireDefaults = Fire.Defaults
+public typealias FireConfiguration = Fire.Defaults
 
 public typealias FireGenericResponseCallback = Fire.GenericResponseCallback
 public typealias FireJOSNResponseCallback = Fire.JOSNResponseCallback
@@ -26,7 +28,6 @@ public typealias FireVoidCallback = Fire.VoidCallback
 public typealias FireErrorCallback = Fire.ErrorCallback
 public typealias FireProgressCallback = Fire.ProgressCallback
 
-public let FireDefaultTimeout: Double = 60.0
 public let FireEmptyErrorCallback: FireErrorCallback = { (error) in }
 
 public protocol FireResponseProtocol {}
@@ -49,9 +50,6 @@ public extension Fire {
     public typealias VoidCallback = (() -> Void)
     public typealias ErrorCallback = ((_ error: Error) -> Void)
     public typealias ProgressCallback = ((_ completedBytes: Int64, _ totalBytes: Int64, _ progress: Float) -> Void)
-    
-    public static let DefaultTimeout: Double = 60.0
-    public static let EmptyErrorCallback: FireErrorCallback = { (error) in }
     
     public enum Keys: String {
         case contentLength        = "Content-Length"

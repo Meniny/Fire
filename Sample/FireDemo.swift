@@ -15,7 +15,7 @@ open class FireDemo {
     static var POSTURL = "http://your-domain.com/post.php"
     
     open class func get() {
-        Fire.Configuration.DEBUG = true
+        FireDefaults.DEBUG = true
         Fire.async(HTTPMethod: .GET, url: FireDemo.GETURL, prependBaseURL: false, params: ["l": "zh"], callback: { (json, resp) in
 //            print(json.rawValue)
         }) { (error) in
@@ -103,7 +103,7 @@ open class FireDemo {
     }
     
     open class func escape() {
-        Fire.Configuration.baseURL = FireDemo.BASEURL
+        FireDefaults.baseURL = FireDemo.BASEURL
         let u = "/abc 123/中文/def.json"
         let p: Fire.Params = ["姓名": "ÔÓ"]
         Fire.get(u, params: p, callback: nil, onError: nil)

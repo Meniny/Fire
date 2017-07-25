@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://ooo.0o0.ooo/2017/07/20/5970669291074.png" alt="Fire">
   <br/><a href="https://cocoapods.org/pods/Fire">
-  <img alt="Version" src="https://img.shields.io/badge/version-3.0.1-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/version-3.1.0-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <img alt="Swift" src="https://img.shields.io/badge/swift-3.0%2B-orange.svg">
@@ -39,6 +39,7 @@ Fire was written for humans to read, and incidentally, for machines to execute :
 - [x] Comprehensive Unit and Integration Test Coverage
 - [x] Synchronously/Asynchronously Request
 - [x] Timeouts
+- [x] Custom Cache Policy
 - [x] form (`x-www-form-encoded`)/JSON HTTP body
 
 ## Requirements
@@ -205,6 +206,7 @@ Fire 为了更好的可读性而生，碰巧还可以运行 :)
 - [x] 全面的单元和集成测试覆盖
 - [x] 同步/异步请求
 - [x] 超时
+- [x] 自定义缓存策略
 - [x] 支持 form (`x-www-form-encoded`)/JSON HTTP 请求体
 
 ## 环境
@@ -371,6 +373,7 @@ open class func FireAPI3() {
 - [x] 全局と局部的なテスト可能
 - [x] 同期通信/非同期通信
 - [x] タイムアウト
+- [x] URLCachePolicy
 - [x] form (`x-www-form-encoded`)/JSON HTTP 制式をサポートしている
 
 ## 開発環境/動作環境

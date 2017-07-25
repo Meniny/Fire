@@ -63,7 +63,11 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 ///
 open class Fire: NSObject, URLSessionDelegate {
     
-    public struct Configuration {
+    /// Default Settings
+    public class Defaults {
+        public static var defaultTimeout: Double = 60.0
+        public static var defaultCachePolicy: URLRequest.CachePolicy = .reloadIgnoringLocalAndRemoteCacheData
+        
         #if DEBUG
         /// if set to true, Fire will log all information in a NSURLSession lifecycle
         public static var DEBUG = true
@@ -71,6 +75,7 @@ open class Fire: NSObject, URLSessionDelegate {
         /// if set to true, Fire will log all information in a NSURLSession lifecycle
         public static var DEBUG = false
         #endif
+        
         public static var baseURL: String? = nil
     }
     
@@ -100,6 +105,9 @@ open class Fire: NSObject, URLSessionDelegate {
     open var errorCallback: Fire.ErrorCallback?
     open var cancelCallback: Fire.VoidCallback?
     open var progressCallback: Fire.ProgressCallback?
+    
+    
+    open var cachePolicy: URLRequest.CachePolicy?
     
     open var session: URLSession?
     open let url: String
@@ -145,11 +153,18 @@ open class Fire: NSObject, URLSessionDelegate {
      
      - returns: a Fire object
      */
-    public init(url: String, prependBaseURL: Bool = true, method: Fire.HTTPMethod, params: Fire.Params? = nil, timeout: TimeInterval = Fire.DefaultTimeout, dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) {
+    public init(url: String,
+                prependBaseURL: Bool = true,
+                method: Fire.HTTPMethod,
+                params: Fire.Params? = nil,
+                timeout: TimeInterval = FireDefaults.defaultTimeout,
+                cachePolicy: URLRequest.CachePolicy? = nil,
+                dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) {
         self.ignoreBaseURL = !prependBaseURL
         self.parameters = params
-        self.url = Fire.Helper.escape(Fire.Helper.appendURL(url, to: prependBaseURL ? Fire.Configuration.baseURL : nil))
+        self.url = Fire.Helper.escape(Fire.Helper.appendURL(url, to: prependBaseURL ? FireDefaults.baseURL : nil))
         self.method = method
+        self.cachePolicy = cachePolicy
         self.dispatch = dispatch
         if let u = URL(string: url) {
             self.request = URLRequest(url: u)
@@ -159,7 +174,7 @@ open class Fire: NSObject, URLSessionDelegate {
         
         // setup a session with delegate to self
         let sessionConfiguration = Foundation.URLSession.shared.configuration
-        sessionConfiguration.timeoutIntervalForRequest = (timeout <= 0 ? Fire.DefaultTimeout : timeout)
+        sessionConfiguration.timeoutIntervalForRequest = (timeout <= 0 ? FireDefaults.defaultTimeout : timeout)
         self.session = Foundation.URLSession(configuration: sessionConfiguration, delegate: self, delegateQueue: Foundation.URLSession.shared.delegateQueue)
     }
     
@@ -172,8 +187,19 @@ open class Fire: NSObject, URLSessionDelegate {
      
      - returns: a Fire object
      */
-    public convenience init(HTTPMethod method: HTTPMethod, url: String, prependBaseURL: Bool = true, params: Fire.Params? = nil, timeout: TimeInterval, dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) {
-        self.init(url: url, prependBaseURL: prependBaseURL, method: method, timeout: timeout, dispatch: dispatch)
+    public convenience init(HTTPMethod method: HTTPMethod,
+                            url: String,
+                            prependBaseURL: Bool = true,
+                            params: Fire.Params? = nil,
+                            timeout: TimeInterval,
+                            cachePolicy: URLRequest.CachePolicy? = nil,
+                            dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) {
+        self.init(url: url,
+                  prependBaseURL: prependBaseURL,
+                  method: method,
+                  timeout: timeout,
+                  cachePolicy: cachePolicy,
+                  dispatch: dispatch)
         self.parameters = params
     }
     
@@ -188,42 +214,64 @@ open class Fire: NSObject, URLSessionDelegate {
      
      - returns: a Fire object
      */
-    @discardableResult open static func build(
+    @discardableResult
+    open static func build(
         HTTPMethod method: HTTPMethod,
         url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) -> Fire {
         
-        return Fire(HTTPMethod: method, url: url, prependBaseURL: prependBaseURL, params: params, timeout: timeout, dispatch: dispatch)
+        return Fire(HTTPMethod: method,
+                    url: url,
+                    prependBaseURL: prependBaseURL,
+                    params: params,
+                    timeout: timeout,
+                    cachePolicy: cachePolicy,
+                    dispatch: dispatch)
     }
     
-    @discardableResult open static func build(
+    @discardableResult
+    open static func build(
         api: Fire.API,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) -> Fire {
         
-        return Fire.build(HTTPMethod: api.method, url: api.stringValue, prependBaseURL: !api.ignoreBaseURL, timeout: timeout, dispatch: dispatch).setParams(params).addParams(api.defaultParameters ?? [:])
+        return Fire.build(HTTPMethod: api.method,
+                          url: api.stringValue,
+                          prependBaseURL: !api.ignoreBaseURL,
+                          timeout: timeout,
+                          cachePolicy: cachePolicy,
+                          dispatch: dispatch).setParams(params).addParams(api.defaultParameters ?? [:])
     }
     
-    @discardableResult open static func build(
+    @discardableResult
+    open static func build(
         fileURL: URL,
         name: String,
         mimeType: String,
         toURL: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) -> Fire {
         
         let file = Fire.FileDescriptor(name: name, url: fileURL, mimeType: mimeType)
-        
-        return Fire.build(HTTPMethod: .POST, url: toURL, prependBaseURL: prependBaseURL, dispatch: dispatch).setParams(params).setFiles([file])
+        return Fire.build(HTTPMethod: .POST,
+                          url: toURL,
+                          prependBaseURL: prependBaseURL,
+                          timeout: timeout,
+                          cachePolicy: cachePolicy,
+                          dispatch: dispatch).setParams(params).setFiles([file])
     }
     
-    @discardableResult open static func build(
+    @discardableResult
+    open static func build(
         data: Data,
         name: String,
         ext: String,
@@ -231,44 +279,67 @@ open class Fire: NSObject, URLSessionDelegate {
         toURL: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) -> Fire {
         
         let file = Fire.FileDescriptor(name: name, data: data, ext: ext, mimeType: mimeType)
         
-        return Fire.build(HTTPMethod: .POST, url: toURL, prependBaseURL: prependBaseURL, dispatch: dispatch).setParams(params).setFiles([file])
+        return Fire.build(HTTPMethod: .POST,
+                          url: toURL,
+                          prependBaseURL: prependBaseURL,
+                          timeout: timeout,
+                          cachePolicy: cachePolicy,
+                          dispatch: dispatch).setParams(params).setFiles([file])
     }
     
-    @discardableResult open static func build(
+    @discardableResult
+    open static func build(
         files: [Fire.FileDescriptor],
         toURL: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) -> Fire {
         
-        return Fire.build(HTTPMethod: .POST, url: toURL, prependBaseURL: prependBaseURL, dispatch: dispatch).setParams(params).setFiles(files)
+        return Fire.build(HTTPMethod: .POST,
+                          url: toURL,
+                          prependBaseURL: prependBaseURL,
+                          timeout: timeout,
+                          cachePolicy: cachePolicy,
+                          dispatch: dispatch).setParams(params).setFiles(files)
     }
     
     // MARK: - Request
     
-    @discardableResult open static func request(
+    @discardableResult
+    open static func request(
         HTTPMethod method: HTTPMethod,
         url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
         
-        return Fire.build(HTTPMethod: method, url: url, prependBaseURL: prependBaseURL, params: params, timeout: timeout, dispatch: dispatch).onError(onError).fireForJSON(callback)
+        return Fire.build(HTTPMethod: method,
+                          url: url,
+                          prependBaseURL: prependBaseURL,
+                          params: params,
+                          timeout: timeout,
+                          cachePolicy: cachePolicy,
+                          dispatch: dispatch).onError(onError).fireForJSON(callback)
     }
     
-    @discardableResult open static func request(
+    @discardableResult
+    open static func request(
         api: Fire.API,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
@@ -279,43 +350,63 @@ open class Fire: NSObject, URLSessionDelegate {
             prependBaseURL: !api.ignoreBaseURL,
             params: params,
             timeout: timeout,
+            cachePolicy: cachePolicy,
             dispatch: dispatch).addParams(api.defaultParameters ?? [:]).onError(onError).fireForJSON(callback)
     }
     
-    @discardableResult open static func sync(
+    @discardableResult
+    open static func sync(
         HTTPMethod
         method: HTTPMethod,
         url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
         
-        return Fire.request(HTTPMethod: method, url: url, prependBaseURL: prependBaseURL, params: params, timeout: timeout, dispatch: Fire.Dispatch.synchronously, callback: callback, onError: onError)
+        return Fire.request(HTTPMethod: method,
+                            url: url,
+                            prependBaseURL: prependBaseURL,
+                            params: params,
+                            timeout: timeout,
+                            cachePolicy: cachePolicy,
+                            dispatch: Fire.Dispatch.synchronously, callback: callback, onError: onError)
     }
     
-    @discardableResult open static func async(
+    @discardableResult
+    open static func async(
         HTTPMethod method: HTTPMethod,
         url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
         
-        return Fire.request(HTTPMethod: method, url: url, prependBaseURL: prependBaseURL, params: params, timeout: timeout, dispatch: Fire.Dispatch.asynchronously, callback: callback, onError: onError)
+        return Fire.request(HTTPMethod: method,
+                            url: url,
+                            prependBaseURL: prependBaseURL,
+                            params: params,
+                            timeout: timeout,
+                            cachePolicy: cachePolicy,
+                            dispatch: Fire.Dispatch.asynchronously,
+                            callback: callback,
+                            onError: onError)
     }
     
     // MARK: - UPLOAD
-    @discardableResult open static func upload(
+    @discardableResult
+    open static func upload(
         fileURL: URL,
         name: String,
         mimeType: String,
         toURL: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         progress: Fire.ProgressCallback?,
         callback: Fire.JOSNResponseCallback?,
@@ -331,7 +422,8 @@ open class Fire: NSObject, URLSessionDelegate {
             .fireForJSON(callback)
     }
     
-    @discardableResult open static func upload(
+    @discardableResult
+    open static func upload(
         data: Data,
         name: String,
         ext: String,
@@ -339,7 +431,7 @@ open class Fire: NSObject, URLSessionDelegate {
         toURL: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         progress: Fire.ProgressCallback?,
         callback: Fire.JOSNResponseCallback?,
@@ -355,12 +447,13 @@ open class Fire: NSObject, URLSessionDelegate {
             .fireForJSON(callback)
     }
     
-    @discardableResult open static func upload(
+    @discardableResult
+    open static func upload(
         files: [Fire.FileDescriptor],
         toURL: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         progress: Fire.ProgressCallback?,
         callback: Fire.JOSNResponseCallback?,
@@ -374,11 +467,13 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     // MARK: - GET POST PUT DELETE
-    @discardableResult open static func get(
+    @discardableResult
+    open static func get(
         _ url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
@@ -389,14 +484,17 @@ open class Fire: NSObject, URLSessionDelegate {
             prependBaseURL: prependBaseURL,
             params: params,
             timeout: timeout,
+            cachePolicy: cachePolicy,
             dispatch: dispatch).onError(onError).fire(callback: callback)
     }
     
-    @discardableResult open static func post(
+    @discardableResult
+    open static func post(
         _ url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
@@ -407,14 +505,17 @@ open class Fire: NSObject, URLSessionDelegate {
             prependBaseURL: prependBaseURL,
             params: params,
             timeout: timeout,
+            cachePolicy: cachePolicy,
             dispatch: dispatch).onError(onError).fireForJSON(callback)
     }
     
-    @discardableResult open static func put(
+    @discardableResult
+    open static func put(
         _ url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
@@ -425,14 +526,17 @@ open class Fire: NSObject, URLSessionDelegate {
             prependBaseURL: prependBaseURL,
             params: params,
             timeout: timeout,
+            cachePolicy: cachePolicy,
             dispatch: dispatch).onError(onError).fireForJSON(callback)
     }
     
-    @discardableResult open static func delete(
+    @discardableResult
+    open static func delete(
         _ url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
-        timeout: TimeInterval = Fire.DefaultTimeout,
+        timeout: TimeInterval = FireDefaults.defaultTimeout,
+        cachePolicy: URLRequest.CachePolicy? = nil,
         dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
         callback: Fire.JOSNResponseCallback?,
         onError: Fire.ErrorCallback?) -> Fire {
@@ -443,18 +547,21 @@ open class Fire: NSObject, URLSessionDelegate {
             prependBaseURL: prependBaseURL,
             params: params,
             timeout: timeout,
+            cachePolicy: cachePolicy,
             dispatch: dispatch).onError(onError).fireForJSON(callback)
     }
     
     // MARK: - ///////////////////////////// setting & adding /////////////////////////////
     
-    @discardableResult open func setSSLPinning(localCertData dataArray: [Data], SSLValidateErrorCallBack: Fire.VoidCallback? = nil) -> Fire {
+    @discardableResult
+    open func setSSLPinning(localCertData dataArray: [Data], SSLValidateErrorCallBack: Fire.VoidCallback? = nil) -> Fire {
         self.localCertDataArray = dataArray
         self.SSLValidateErrorCallBack = SSLValidateErrorCallBack
         return self
     }
     
-    @discardableResult open func addParam(_ key: String, value: Any) -> Fire {
+    @discardableResult
+    open func addParam(_ key: String, value: Any) -> Fire {
         if self.parameters == nil {
             self.parameters = [:]
         }
@@ -462,7 +569,8 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
-    @discardableResult open func addParams(_ params: Fire.Params?) -> Fire {
+    @discardableResult
+    open func addParams(_ params: Fire.Params?) -> Fire {
         if let p = params {
             if self.parameters == nil {
                 self.parameters = [:]
@@ -475,12 +583,14 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
-    @discardableResult open func setParams(_ params: Fire.Params?) -> Fire {
+    @discardableResult
+    open func setParams(_ params: Fire.Params?) -> Fire {
         self.parameters = params
         return self
     }
     
-    @discardableResult open func addFile(_ file: Fire.FileDescriptor?) -> Fire {
+    @discardableResult
+    open func addFile(_ file: Fire.FileDescriptor?) -> Fire {
         if let f = file {
             if self.uploadFiles == nil {
                 self.uploadFiles = []
@@ -490,7 +600,8 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
-    @discardableResult open func addFiles(_ files: [Fire.FileDescriptor]?) -> Fire {
+    @discardableResult
+    open func addFiles(_ files: [Fire.FileDescriptor]?) -> Fire {
         if let fs = files {
             if self.uploadFiles == nil {
                 self.uploadFiles = []
@@ -500,17 +611,20 @@ open class Fire: NSObject, URLSessionDelegate {
         return self
     }
     
-    @discardableResult open func setFiles(_ files: [Fire.FileDescriptor]?) -> Fire {
+    @discardableResult
+    open func setFiles(_ files: [Fire.FileDescriptor]?) -> Fire {
         self.uploadFiles = files
         return self
     }
     
-    @discardableResult open func onError(_ errorCallback: Fire.ErrorCallback?) -> Fire {
+    @discardableResult
+    open func onError(_ errorCallback: Fire.ErrorCallback?) -> Fire {
         self.errorCallback = errorCallback
         return self
     }
     
-    @discardableResult open func onCancel(_ cancelCallback: Fire.VoidCallback?) -> Fire {
+    @discardableResult
+    open func onCancel(_ cancelCallback: Fire.VoidCallback?) -> Fire {
         self.cancelCallback = cancelCallback
         return self
     }
@@ -523,7 +637,8 @@ open class Fire: NSObject, URLSessionDelegate {
      
      - returns: self (Fire object)
      */
-    @discardableResult open func addHTTPHeader(_ value: String, forKey key: String) -> Fire {
+    @discardableResult
+    open func addHTTPHeader(_ value: String, forKey key: String) -> Fire {
         self.extraHTTPHeaders.append((key, value))
         return self
     }
@@ -535,7 +650,8 @@ open class Fire: NSObject, URLSessionDelegate {
      
      - returns: self (Fire object)
      */
-    @discardableResult open func addHTTPHeaders(_ headers: Fire.HeaderFields?) -> Fire {
+    @discardableResult
+    open func addHTTPHeaders(_ headers: Fire.HeaderFields?) -> Fire {
         if let hs = headers {
             for (key, value) in hs {
                 self.extraHTTPHeaders.append((key, value))
@@ -551,7 +667,8 @@ open class Fire: NSObject, URLSessionDelegate {
      
      - returns: self (Fire object)
      */
-    @discardableResult open func setHTTPHeaders(_ headers: Fire.HeaderFields?) -> Fire {
+    @discardableResult
+    open func setHTTPHeaders(_ headers: Fire.HeaderFields?) -> Fire {
         self.cleanHTTPHeaders()
         if let head = headers {
             return self.addHTTPHeaders(head)
@@ -563,7 +680,8 @@ open class Fire: NSObject, URLSessionDelegate {
         self.extraHTTPHeaders.removeAll()
     }
     
-    @discardableResult open func setHTTPBody(raw: String, isJSON: Bool = false) -> Fire {
+    @discardableResult
+    open func setHTTPBody(raw: String, isJSON: Bool = false) -> Fire {
         self.HTTPBodyRaw = raw
         self.HTTPBodyRawIsJSON = isJSON
         return self
@@ -573,17 +691,20 @@ open class Fire: NSObject, URLSessionDelegate {
     ///
     /// - Parameter handler: callback
     /// - Returns: self (Fire object)
-    @discardableResult open func handleProgress(_ handler: Fire.ProgressCallback?) -> Fire {
+    @discardableResult
+    open func handleProgress(_ handler: Fire.ProgressCallback?) -> Fire {
         self.progressCallback = handler
         return self
     }
     
-    @discardableResult open func setBasicAuth(_ auth: Fire.BasicAuth) -> Fire {
+    @discardableResult
+    open func setBasicAuth(_ auth: Fire.BasicAuth) -> Fire {
         self.basicAuth = auth
         return self
     }
     
-    @discardableResult open func setUserAgent(_ agent: Fire.UserAgent) -> Fire {
+    @discardableResult
+    open func setUserAgent(_ agent: Fire.UserAgent) -> Fire {
         self.customUserAgent = agent
         return self
     }
@@ -596,7 +717,8 @@ open class Fire: NSObject, URLSessionDelegate {
      - parameter callback: callback Closure
      - parameter response: void
      */
-    @discardableResult open func fireForData(_ callback: Fire.DataResponseCallback?) -> Fire {
+    @discardableResult
+    open func fireForData(_ callback: Fire.DataResponseCallback?) -> Fire {
         self.callback = callback
         self.buildRequest()
         self.buildHeader()
@@ -611,7 +733,8 @@ open class Fire: NSObject, URLSessionDelegate {
      - parameter callback: callback Closure
      - parameter response: void
      */
-    @discardableResult open func fireForString(_ callback: Fire.StringResponseCallback?) -> Fire {
+    @discardableResult
+    open func fireForString(_ callback: Fire.StringResponseCallback?) -> Fire {
         return self.fireForData { [weak self] (data, response) -> Void in
             self?.expectedResponseType = .string
             var string = ""
@@ -620,7 +743,7 @@ open class Fire: NSObject, URLSessionDelegate {
                 string = s
             }
             callback?(string, response)
-            if Fire.Configuration.DEBUG && self?.expectedResponseType == .string {
+            if FireDefaults.DEBUG && self?.expectedResponseType == .string {
                 let info = self?.printableResponseDebugInfo(of: response, appending: string)
                 print(info!)
             }
@@ -633,7 +756,8 @@ open class Fire: NSObject, URLSessionDelegate {
      - parameter callback: callback Closure
      - parameter response: void
      */
-    @discardableResult open func fireForJSON(_ callback: Fire.JOSNResponseCallback?) -> Fire {
+    @discardableResult
+    open func fireForJSON(_ callback: Fire.JOSNResponseCallback?) -> Fire {
         return self.fireForString { [weak self] (string, response) in
             self?.expectedResponseType = .JSON
             var json = Jsonify()
@@ -641,7 +765,7 @@ open class Fire: NSObject, URLSessionDelegate {
                 json = Jsonify(string: s)
             }
             callback?(json, response)
-            if Fire.Configuration.DEBUG && self?.expectedResponseType == .JSON {
+            if FireDefaults.DEBUG && self?.expectedResponseType == .JSON {
                 let info = self?.printableResponseDebugInfo(of: response, appending: json.rawValue)
                 print(info!)
             }
@@ -654,7 +778,8 @@ open class Fire: NSObject, URLSessionDelegate {
      - parameter callback: callback Closure
      - parameter response: void
      */
-    @discardableResult open func fire(forType rt: Fire.ResponseType, callback: Fire.GenericResponseCallback?) -> Fire {
+    @discardableResult
+    open func fire(forType rt: Fire.ResponseType, callback: Fire.GenericResponseCallback?) -> Fire {
         if let cb = callback {
             switch rt {
             case .JSON:
@@ -681,7 +806,8 @@ open class Fire: NSObject, URLSessionDelegate {
      - parameter callback: callback Closure
      - parameter response: void
      */
-    @discardableResult open func fire(callback: Fire.JOSNResponseCallback?) -> Fire {
+    @discardableResult
+    open func fire(callback: Fire.JOSNResponseCallback?) -> Fire {
         return self.fireForJSON(callback)
     }
     
@@ -707,7 +833,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     private func cancelDebugPrint() {
-        if Fire.Configuration.DEBUG {
+        if FireDefaults.DEBUG {
             if let u = self.request?.url {
                 print("[Fire] Request of \"\(u)\" Cancelled")
             } else {
@@ -726,7 +852,7 @@ open class Fire: NSObject, URLSessionDelegate {
         if self.method == .GET && self.parameters?.count > 0 {
             self.request = URLRequest(url: URL(string: url + "?" + Fire.Helper.buildParams(self.parameters!))!)
         }
-        self.request?.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
+        self.request?.cachePolicy = self.cachePolicy ?? FireDefaults.defaultCachePolicy
         self.request?.httpMethod = self.method.rawValue
     }
     
@@ -764,7 +890,7 @@ open class Fire: NSObject, URLSessionDelegate {
         if !self.HTTPBodyRaw.isEmpty {
             let d1 = self.HTTPBodyRaw
             data.append(d1.data as Data)
-            if Fire.Configuration.DEBUG {
+            if FireDefaults.DEBUG {
                 self.debugBody.append(d1)
             }
         } else if self.uploadFiles?.count > 0 {
@@ -781,7 +907,7 @@ open class Fire: NSObject, URLSessionDelegate {
                         data.append(d1.data as Data)
                         data.append(d2.data as Data)
                         data.append(d3.data as Data)
-                        if Fire.Configuration.DEBUG {
+                        if FireDefaults.DEBUG {
                             self.debugBody.append(d1 + d2 + d3)
                         }
                     }
@@ -794,7 +920,7 @@ open class Fire: NSObject, URLSessionDelegate {
                         data.append(d2.data as Data)
                         let d3 = "Content-Type: \(file.mimeType)\r\n\r\n"
                         data.append(d3.data as Data)
-                        if Fire.Configuration.DEBUG {
+                        if FireDefaults.DEBUG {
                             self.debugBody.append(d1 + d2 + d3)
                         }
                         if let fileurl = file.url {
@@ -803,7 +929,7 @@ open class Fire: NSObject, URLSessionDelegate {
                                 data.append(a)
                                 let d5 = "\r\n"
                                 data.append(d5.data as Data)
-                                if Fire.Configuration.DEBUG {
+                                if FireDefaults.DEBUG {
                                     self.debugBody.append(d4 + d5)
                                 }
                             }
@@ -812,7 +938,7 @@ open class Fire: NSObject, URLSessionDelegate {
                             data.append(filedata)
                             let d5 = "\r\n"
                             data.append(d5.data as Data)
-                            if Fire.Configuration.DEBUG {
+                            if FireDefaults.DEBUG {
                                 self.debugBody.append(d4 + d5)
                             }
                         }
@@ -820,18 +946,18 @@ open class Fire: NSObject, URLSessionDelegate {
                 }
                 let d6 = "--\(self.boundary)--\r\n"
                 data.append(d6.data as Data)
-                if Fire.Configuration.DEBUG {
+                if FireDefaults.DEBUG {
                     self.debugBody.append(d6)
                 }
             }
         } else if self.parameters?.count > 0 && self.method != .GET {
             let d7 = Fire.Helper.buildParams(self.parameters!)
             data.append(d7.data)
-            if Fire.Configuration.DEBUG {
+            if FireDefaults.DEBUG {
                 self.debugBody.append(d7)
             }
         } else {
-            if Fire.Configuration.DEBUG {
+            if FireDefaults.DEBUG {
                 let d8 = String(describing: data as Data)
                 self.debugBody.append(d8.isEmpty ? "Data<\(data.length) Bytes>" : d8)
             }
@@ -841,7 +967,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     fileprivate func printReuestDebugInfo() {
-        if Fire.Configuration.DEBUG {
+        if FireDefaults.DEBUG {
             let sep = "-----------------"
             var output: String = sep + "\n"
             output.append("[Fire] URL: " + self.url)
@@ -913,7 +1039,7 @@ open class Fire: NSObject, URLSessionDelegate {
             } else {
                 DispatchQueue.main.async {
                     self?.callback?(data, response as? HTTPURLResponse)
-                    if Fire.Configuration.DEBUG && self?.expectedResponseType == .data {
+                    if FireDefaults.DEBUG && self?.expectedResponseType == .data {
                         let ds: String
                         if let d = data {
                             ds = String(describing: d )
@@ -936,7 +1062,7 @@ open class Fire: NSObject, URLSessionDelegate {
                 semaphore.wait()
             }
         } else {
-            if Fire.Configuration.DEBUG {
+            if FireDefaults.DEBUG {
                 print("[Fire] ERROR: Failed to fire task, nil request.")
             }
         }

@@ -51,7 +51,7 @@ public extension Fire {
             forType responseType: Fire.ResponseType,
             params: Fire.Params?,
             headers fields: Fire.HeaderFields? = nil,
-            timeout: TimeInterval = Fire.DefaultTimeout,
+            timeout: TimeInterval = FireDefaults.defaultTimeout,
             dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
             callback: Fire.GenericResponseCallback?,
             onError: Fire.ErrorCallback?
@@ -68,7 +68,7 @@ public extension Fire {
         @discardableResult public func requestJSON(
             params: Fire.Params?,
             headers fields: Fire.HeaderFields? = nil,
-            timeout: TimeInterval = Fire.DefaultTimeout,
+            timeout: TimeInterval = FireDefaults.defaultTimeout,
             dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
             callback: Fire.JOSNResponseCallback?,
             onError: Fire.ErrorCallback?
@@ -83,7 +83,7 @@ public extension Fire {
         @discardableResult public func requestData(
             params: Fire.Params?,
             headers fields: Fire.HeaderFields? = nil,
-            timeout: TimeInterval = Fire.DefaultTimeout,
+            timeout: TimeInterval = FireDefaults.defaultTimeout,
             dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
             callback: Fire.DataResponseCallback?,
             onError: Fire.ErrorCallback?
@@ -98,7 +98,7 @@ public extension Fire {
         @discardableResult public func requestString(
             params: Fire.Params?,
             headers fields: Fire.HeaderFields? = nil,
-            timeout: TimeInterval = Fire.DefaultTimeout,
+            timeout: TimeInterval = FireDefaults.defaultTimeout,
             dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously,
             callback: Fire.StringResponseCallback?,
             onError: Fire.ErrorCallback?

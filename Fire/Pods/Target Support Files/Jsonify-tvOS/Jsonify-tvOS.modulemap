@@ -1,6 +1,0 @@
-framework module Jsonify {
-  umbrella header "Jsonify-tvOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

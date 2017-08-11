@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.source_files = 'Fire/**/*{.h|.swift}'
+  s.source_files = 'Fire/**/*{.h,.swift}'
   s.public_header_files = 'Fire/**/*{.h}'
   s.frameworks = 'Foundation'
   s.dependency "Jsonify"

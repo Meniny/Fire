@@ -48,7 +48,7 @@ public extension Fire {
     public typealias URLResponseCallback = ((_ url: URL?, _ response: HTTPURLResponse?) -> Void)
     public typealias StringResponseCallback = ((_ string: String?, _ response: HTTPURLResponse?) -> Void)
     public typealias VoidCallback = (() -> Void)
-    public typealias ErrorCallback = ((_ error: Error) -> Void)
+    public typealias ErrorCallback = (( _ response: HTTPURLResponse?, _ error: Error) -> Void)
     public typealias ProgressCallback = ((_ completedBytes: Int64, _ totalBytes: Int64, _ progress: Float) -> Void)
     
     public enum Keys: String {

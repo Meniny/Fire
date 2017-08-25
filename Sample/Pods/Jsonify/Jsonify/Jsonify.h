@@ -3,7 +3,7 @@
 //  Jsonify
 //
 //  Created by Meniny on 2017-04-23.
-//  Copyright © 2017年 Meniny. All rights reserved.
+//  Copyright © 2017 Meniny. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,6 +14,6 @@ FOUNDATION_EXPORT double JsonifyVersionNumber;
 //! Project version string for Jsonify.
 FOUNDATION_EXPORT const unsigned char JsonifyVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Jsonify/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <Jsonify/Jsonify.h>
 
 

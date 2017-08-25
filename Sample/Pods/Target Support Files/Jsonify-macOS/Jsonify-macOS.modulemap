@@ -1,5 +1,5 @@
 framework module Jsonify {
-  umbrella header "Jsonify-OSX-umbrella.h"
+  umbrella header "Jsonify-macOS-umbrella.h"
 
   export *
   module * { export * }

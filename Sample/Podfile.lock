@@ -1,19 +1,19 @@
 PODS:
-  - Fire (2.6.6):
+  - Fire (3.2.0):
     - Jsonify
-  - Jsonify (1.1.0)
+  - Jsonify (2.0.1)
 
 DEPENDENCIES:
   - Fire (from `../`)
 
 EXTERNAL SOURCES:
   Fire:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  Fire: fea19e57791c425bbe5ddd90865a119419e1f409
-  Jsonify: 447ac08192213441d7f3984392def3a4e23941f4
+  Fire: 5cfd7e7e06f44fa59e0bd0ec9424e2d80b3f27c4
+  Jsonify: b34fe1c42048170adccc5434c4253e773ea07682
 
 PODFILE CHECKSUM: 0e30886a6fffa42663ccd3790639414ca9630c72
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

@@ -1032,7 +1032,7 @@ open class Fire: NSObject, URLSessionDelegate {
                     let e = NSError(domain: self?.errorDomain ?? "Fire", code: error.code, userInfo: error.userInfo)
                     print("[Fire] Error:\n", e.localizedDescription)
                     DispatchQueue.main.async {
-                        self?.errorCallback?(e)
+                        self?.errorCallback?(response as? HTTPURLResponse, e)
                         self?.session?.finishTasksAndInvalidate()
                     }
                 }

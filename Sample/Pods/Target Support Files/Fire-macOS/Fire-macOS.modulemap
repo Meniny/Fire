@@ -1,5 +1,5 @@
 framework module Fire {
-  umbrella header "Fire-OSX-umbrella.h"
+  umbrella header "Fire-macOS-umbrella.h"
 
   export *
   module * { export * }

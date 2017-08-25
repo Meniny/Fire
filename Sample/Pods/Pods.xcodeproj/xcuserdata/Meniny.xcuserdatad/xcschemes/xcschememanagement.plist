@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Fire-OSX.xcscheme</key>
+		<key>Fire-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fire-iOS.xcscheme</key>
+		<key>Fire-macOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,12 +24,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Jsonify-OSX.xcscheme</key>
+		<key>Jsonify-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Jsonify-iOS.xcscheme</key>
+		<key>Jsonify-macOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,6 +72,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>189E8CA4142EB94FB474EA72D48A324E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1EA83ABB11AE603C2C3F8D732BF69592</key>
 		<dict>
 			<key>primary</key>
@@ -82,17 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4737772A462B27F5C2B56C9CBB248DFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>649F851DD6DFFFD3B4EB26EAF041C8E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>71089ABFB3E92F6CE8271CF7F5B6AE98</key>
+		<key>70554E33B57DE1587F82A850C4D9EE5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E296B8AD139B908FB41BC945C8A1757</key>
+		<key>71089ABFB3E92F6CE8271CF7F5B6AE98</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +122,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C24F19C450D27BD04F391976325266B4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E2528D5DBFC85F062BF653DCCFCBDDC7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F826B4ABE1B9A330112B9CCE3A3B2C0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

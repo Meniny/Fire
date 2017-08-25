@@ -115,6 +115,9 @@ extension Jsonify {
             if let number = self.data as? NSString {
                 return number.integerValue
             }
+            if let str = self.data as? NSString {
+                return str.integerValue
+            }
             return nil
         }
     }
@@ -125,6 +128,27 @@ extension Jsonify {
         }
     }
     
+    public var float: Float? {
+        get {
+            if let number = self.data as? NSNumber {
+                return number.floatValue
+            }
+            if let number = self.data as? NSString {
+                return number.floatValue
+            }
+            if let str = self.data as? NSString {
+                return str.floatValue
+            }
+            return nil
+        }
+    }
+    
+    public var floatValue: Float {
+        get {
+            return self.float ?? 0.0
+        }
+    }
+    
     public var double: Double? {
         get {
             if let number = self.data as? NSNumber {
@@ -132,6 +156,9 @@ extension Jsonify {
             }
             if let number = self.data as? NSString {
                 return number.doubleValue
+            }
+            if let str = self.data as? NSString {
+                return str.doubleValue
             }
             return nil
         }
@@ -145,7 +172,16 @@ extension Jsonify {
     
     public var string: String? {
         get {
-            return self.data as? String
+            if let str = self.data as? String {
+                return str
+            }
+            if let number = self.data as? NSNumber {
+                return number.stringValue
+            }
+            if let bool = self.data as? Bool {
+                return bool ? "true" : "false"
+            }
+            return nil
         }
     }
     
@@ -157,7 +193,22 @@ extension Jsonify {
     
     public var bool: Bool? {
         get {
-            return self.data as? Bool
+            if let bool = self.data as? Bool {
+                return bool
+            }
+            if let number = self.data as? NSNumber {
+                return number.intValue > 0
+            }
+            if let str = self.data as? NSString {
+                if str == "true" {
+                    return true
+                }
+                if str == "false" {
+                    return false
+                }
+                return str.integerValue > 0
+            }
+            return nil
         }
     }
     
@@ -190,6 +241,32 @@ extension Jsonify {
 }
 
 // MARK: - Convertible
+extension Jsonify: CustomStringConvertible {
+    /// A textual representation of this instance.
+    ///
+    /// Instead of accessing this property directly, convert an instance of any
+    /// type to a string by using the `String(describing:)` initializer. For
+    /// example:
+    ///
+    ///     struct Point: CustomStringConvertible {
+    ///         let x: Int, y: Int
+    ///
+    ///         var description: String {
+    ///             return "(\(x), \(y))"
+    ///         }
+    ///     }
+    ///
+    ///     let p = Point(x: 21, y: 30)
+    ///     let s = String(describing: p)
+    ///     print(s)
+    ///     // Prints "(21, 30)"
+    ///
+    /// The conversion of `p` to a string in the assignment to `s` uses the
+    /// `Point` type's `description` property.
+    public var description: String {
+        return rawValue
+    }
+}
 extension Jsonify: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: Any...) {
         self.init(JSONdata: elements as AnyObject!)

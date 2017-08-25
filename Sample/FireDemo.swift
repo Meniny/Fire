@@ -18,7 +18,7 @@ open class FireDemo {
         FireDefaults.DEBUG = true
         Fire.async(HTTPMethod: .GET, url: FireDemo.GETURL, prependBaseURL: false, params: ["l": "zh"], callback: { (json, resp) in
 //            print(json.rawValue)
-        }) { (error) in
+        }) { (_, error) in
             print(error)
         }
 //        DispatchQueue.global().asyncAfter(deadline: .now() + 0.2) {
@@ -34,7 +34,7 @@ open class FireDemo {
     
     open class func post() {
         Fire.build(HTTPMethod: .POST, url: FireDemo.POSTURL, prependBaseURL: false, params: ["l": "zh"], timeout: 0)
-            .onError { (error) in
+            .onError { (_, error) in
                 print(error)
             }.fireForJSON { (json, resp) in
                 
@@ -45,7 +45,7 @@ open class FireDemo {
         Fire.build(HTTPMethod: .GET, url: FireDemo.GETURL, prependBaseURL: false)
             .setHTTPHeaders(["Agent": "Demo-App"])
             .setParams(["l": "zh"])
-            .onError { (error) in
+            .onError { (_, error) in
                 print(error)
             }.fireForJSON { (json, resp) in
 //                print(json.rawValue)
@@ -55,7 +55,7 @@ open class FireDemo {
     open class func simple() {
         Fire.get(FireDemo.GETURL, prependBaseURL: false, params: ["l": "zh"], timeout: 0, callback: { (json, resp) in
             print(json.rawValue)
-        }) { (error) in
+        }) { (_, error) in
             print(error)
         }
     }
@@ -69,7 +69,7 @@ open class FireDemo {
                     // ...
                 }
             }
-        }) { (error) in
+        }) { (_, error) in
             print(error.localizedDescription)
         }
     }
@@ -83,7 +83,7 @@ open class FireDemo {
                     // ...
                 }
             }
-        }) { (error) in
+        }) { (_, error) in
             print(error.localizedDescription)
         }
     }
@@ -97,7 +97,7 @@ open class FireDemo {
                     // ...
                 }
             }
-        }) { (error) in
+        }) { (_, error) in
             print(error.localizedDescription)
         }
     }
@@ -110,7 +110,7 @@ open class FireDemo {
         Fire.build(HTTPMethod: .POST, url: u, prependBaseURL: true, params: p, timeout: 60, dispatch: .asynchronously)
             .fire { (json, resp) in
                 
-            }.onError { (error) in
+            }.onError { (_, error) in
                 
         }
     }
@@ -139,7 +139,7 @@ open class FireDemo {
                 } else {
                     print(json["msg"].stringValue)
                 }
-            }) { (error) in
+            }) { (_, error) in
                 print(error.localizedDescription)
             }
         }

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C24F19C450D27BD04F391976325266B4"
-               BuildableName = "Fire.framework"
-               BlueprintName = "Fire-OSX"
+               BlueprintIdentifier = "70554E33B57DE1587F82A850C4D9EE5E"
+               BuildableName = "Jsonify.framework"
+               BlueprintName = "Jsonify-macOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C24F19C450D27BD04F391976325266B4"
-            BuildableName = "Fire.framework"
-            BlueprintName = "Fire-OSX"
+            BlueprintIdentifier = "70554E33B57DE1587F82A850C4D9EE5E"
+            BuildableName = "Jsonify.framework"
+            BlueprintName = "Jsonify-macOS"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -2411,370 +2411,335 @@
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 31,
-      "symbol": "FireDefaultTimeout",
+      "symbol": "FireEmptyErrorCallback",
       "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 31,
-      "symbol": "FireDefaultTimeout",
+      "symbol": "FireEmptyErrorCallback",
       "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 31,
-      "symbol": "FireDefaultTimeout",
+      "symbol": "FireEmptyErrorCallback",
       "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 31,
-      "symbol": "FireDefaultTimeout",
-      "symbol_kind": "source.lang.swift.decl.var.global",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 32,
       "symbol": "FireEmptyErrorCallback",
       "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 32,
-      "symbol": "FireEmptyErrorCallback",
-      "symbol_kind": "source.lang.swift.decl.var.global",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 32,
-      "symbol": "FireEmptyErrorCallback",
-      "symbol_kind": "source.lang.swift.decl.var.global",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 32,
-      "symbol": "FireEmptyErrorCallback",
-      "symbol_kind": "source.lang.swift.decl.var.global",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 34,
+      "line": 33,
       "symbol": "FireResponseProtocol",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 34,
+      "line": 33,
       "symbol": "FireResponseProtocol",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 34,
+      "line": 33,
       "symbol": "FireResponseProtocol",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 34,
+      "line": 33,
       "symbol": "FireResponseProtocol",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 55,
-      "symbol": "Fire.emptyErrorCallback",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 55,
-      "symbol": "Fire.emptyErrorCallback",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 55,
-      "symbol": "Fire.emptyErrorCallback",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 55,
-      "symbol": "Fire.emptyErrorCallback",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 57,
+      "line": 54,
       "symbol": "Fire.Keys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 57,
+      "line": 54,
       "symbol": "Fire.Keys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 57,
+      "line": 54,
       "symbol": "Fire.Keys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 57,
+      "line": 54,
       "symbol": "Fire.Keys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 58,
+      "line": 55,
       "symbol": "Fire.Keys.contentLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 58,
+      "line": 55,
       "symbol": "Fire.Keys.contentLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 58,
+      "line": 55,
       "symbol": "Fire.Keys.contentLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 58,
+      "line": 55,
       "symbol": "Fire.Keys.contentLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 59,
+      "line": 56,
       "symbol": "Fire.Keys.contentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 59,
+      "line": 56,
       "symbol": "Fire.Keys.contentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 59,
+      "line": 56,
       "symbol": "Fire.Keys.contentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 59,
+      "line": 56,
       "symbol": "Fire.Keys.contentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 60,
+      "line": 57,
       "symbol": "Fire.Keys.authorization",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 60,
+      "line": 57,
       "symbol": "Fire.Keys.authorization",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 60,
+      "line": 57,
       "symbol": "Fire.Keys.authorization",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 60,
+      "line": 57,
       "symbol": "Fire.Keys.authorization",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 61,
+      "line": 58,
       "symbol": "Fire.Keys.contentTypeData",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 61,
+      "line": 58,
       "symbol": "Fire.Keys.contentTypeData",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 61,
+      "line": 58,
       "symbol": "Fire.Keys.contentTypeData",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 61,
+      "line": 58,
       "symbol": "Fire.Keys.contentTypeData",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 62,
+      "line": 59,
       "symbol": "Fire.Keys.contentTypeJSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 62,
+      "line": 59,
       "symbol": "Fire.Keys.contentTypeJSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 62,
+      "line": 59,
       "symbol": "Fire.Keys.contentTypeJSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 62,
+      "line": 59,
       "symbol": "Fire.Keys.contentTypeJSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 63,
+      "line": 60,
       "symbol": "Fire.Keys.contentTypeMultipart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 63,
+      "line": 60,
       "symbol": "Fire.Keys.contentTypeMultipart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 63,
+      "line": 60,
       "symbol": "Fire.Keys.contentTypeMultipart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 63,
+      "line": 60,
       "symbol": "Fire.Keys.contentTypeMultipart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 68,
+      "line": 65,
       "symbol": "Fire.DispatchPolicy",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 68,
+      "line": 65,
       "symbol": "Fire.DispatchPolicy",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 68,
+      "line": 65,
       "symbol": "Fire.DispatchPolicy",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 68,
+      "line": 65,
       "symbol": "Fire.DispatchPolicy",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 69,
+      "line": 66,
       "symbol": "Fire.DispatchPolicy.synchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 69,
+      "line": 66,
       "symbol": "Fire.DispatchPolicy.synchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 69,
+      "line": 66,
       "symbol": "Fire.DispatchPolicy.synchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 69,
+      "line": 66,
       "symbol": "Fire.DispatchPolicy.synchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 70,
+      "line": 67,
+      "symbol": "Fire.DispatchPolicy.asynchronously",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 67,
+      "symbol": "Fire.DispatchPolicy.asynchronously",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 67,
+      "symbol": "Fire.DispatchPolicy.asynchronously",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 67,
       "symbol": "Fire.DispatchPolicy.asynchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -2782,328 +2747,307 @@
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 70,
-      "symbol": "Fire.DispatchPolicy.asynchronously",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "symbol": "Fire.ResponseType",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 70,
-      "symbol": "Fire.DispatchPolicy.asynchronously",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "symbol": "Fire.ResponseType",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 70,
-      "symbol": "Fire.DispatchPolicy.asynchronously",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 73,
       "symbol": "Fire.ResponseType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 73,
+      "line": 70,
       "symbol": "Fire.ResponseType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 71,
+      "symbol": "Fire.ResponseType.JSON",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 71,
+      "symbol": "Fire.ResponseType.JSON",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 71,
+      "symbol": "Fire.ResponseType.JSON",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 71,
+      "symbol": "Fire.ResponseType.JSON",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 72,
+      "symbol": "Fire.ResponseType.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 72,
+      "symbol": "Fire.ResponseType.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 72,
+      "symbol": "Fire.ResponseType.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "line": 72,
+      "symbol": "Fire.ResponseType.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 73,
-      "symbol": "Fire.ResponseType",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "Fire.ResponseType.data",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
       "line": 73,
-      "symbol": "Fire.ResponseType",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 74,
-      "symbol": "Fire.ResponseType.JSON",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 74,
-      "symbol": "Fire.ResponseType.JSON",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 74,
-      "symbol": "Fire.ResponseType.JSON",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 74,
-      "symbol": "Fire.ResponseType.JSON",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 75,
-      "symbol": "Fire.ResponseType.string",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 75,
-      "symbol": "Fire.ResponseType.string",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 75,
-      "symbol": "Fire.ResponseType.string",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 75,
-      "symbol": "Fire.ResponseType.string",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 76,
       "symbol": "Fire.ResponseType.data",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 76,
+      "line": 73,
       "symbol": "Fire.ResponseType.data",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 76,
+      "line": 73,
       "symbol": "Fire.ResponseType.data",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 76,
-      "symbol": "Fire.ResponseType.data",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 81,
+      "line": 78,
       "symbol": "Fire.HTTPMethod.GET",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 81,
+      "line": 78,
       "symbol": "Fire.HTTPMethod.GET",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 81,
+      "line": 78,
       "symbol": "Fire.HTTPMethod.GET",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 81,
+      "line": 78,
       "symbol": "Fire.HTTPMethod.GET",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 82,
+      "line": 79,
       "symbol": "Fire.HTTPMethod.POST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 82,
+      "line": 79,
       "symbol": "Fire.HTTPMethod.POST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 82,
+      "line": 79,
       "symbol": "Fire.HTTPMethod.POST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 82,
+      "line": 79,
       "symbol": "Fire.HTTPMethod.POST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 83,
+      "line": 80,
       "symbol": "Fire.HTTPMethod.PUT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 83,
+      "line": 80,
       "symbol": "Fire.HTTPMethod.PUT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 83,
+      "line": 80,
       "symbol": "Fire.HTTPMethod.PUT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 83,
+      "line": 80,
       "symbol": "Fire.HTTPMethod.PUT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 84,
+      "line": 81,
       "symbol": "Fire.HTTPMethod.DELETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 84,
+      "line": 81,
       "symbol": "Fire.HTTPMethod.DELETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 84,
+      "line": 81,
       "symbol": "Fire.HTTPMethod.DELETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 84,
+      "line": 81,
       "symbol": "Fire.HTTPMethod.DELETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 85,
+      "line": 82,
       "symbol": "Fire.HTTPMethod.HEAD",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 85,
+      "line": 82,
       "symbol": "Fire.HTTPMethod.HEAD",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 85,
+      "line": 82,
       "symbol": "Fire.HTTPMethod.HEAD",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 85,
+      "line": 82,
       "symbol": "Fire.HTTPMethod.HEAD",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 86,
+      "line": 83,
       "symbol": "Fire.HTTPMethod.OPTIONS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 86,
+      "line": 83,
       "symbol": "Fire.HTTPMethod.OPTIONS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 86,
+      "line": 83,
       "symbol": "Fire.HTTPMethod.OPTIONS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 86,
+      "line": 83,
       "symbol": "Fire.HTTPMethod.OPTIONS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 87,
+      "line": 84,
       "symbol": "Fire.HTTPMethod.PATCH",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 87,
+      "line": 84,
       "symbol": "Fire.HTTPMethod.PATCH",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 87,
+      "line": 84,
       "symbol": "Fire.HTTPMethod.PATCH",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
-      "line": 87,
+      "line": 84,
       "symbol": "Fire.HTTPMethod.PATCH",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"

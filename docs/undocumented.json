@@ -1,3052 +1,3052 @@
 {
   "warnings": [
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 23,
       "symbol": "Fire.API.baseURL",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 23,
       "symbol": "Fire.API.baseURL",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 23,
       "symbol": "Fire.API.baseURL",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 23,
       "symbol": "Fire.API.baseURL",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 25,
       "symbol": "Fire.API.fullURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 25,
       "symbol": "Fire.API.fullURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 25,
       "symbol": "Fire.API.fullURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 25,
       "symbol": "Fire.API.fullURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 26,
       "symbol": "Fire.API.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 26,
       "symbol": "Fire.API.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 26,
       "symbol": "Fire.API.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 26,
       "symbol": "Fire.API.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 27,
       "symbol": "Fire.API.headerFields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 27,
       "symbol": "Fire.API.headerFields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 27,
       "symbol": "Fire.API.headerFields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 27,
       "symbol": "Fire.API.headerFields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 28,
       "symbol": "Fire.API.successCode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 28,
       "symbol": "Fire.API.successCode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 28,
       "symbol": "Fire.API.successCode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 28,
       "symbol": "Fire.API.successCode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 29,
       "symbol": "Fire.API.defaultParameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 29,
       "symbol": "Fire.API.defaultParameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 29,
       "symbol": "Fire.API.defaultParameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 29,
       "symbol": "Fire.API.defaultParameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 31,
       "symbol": "Fire.API.ignoreBaseURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 31,
       "symbol": "Fire.API.ignoreBaseURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 31,
       "symbol": "Fire.API.ignoreBaseURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 31,
       "symbol": "Fire.API.ignoreBaseURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 33,
       "symbol": "Fire.API.init(useBaseURL:appending:HTTPMethod:params:headers:successCode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 33,
       "symbol": "Fire.API.init(useBaseURL:appending:HTTPMethod:params:headers:successCode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 33,
       "symbol": "Fire.API.init(useBaseURL:appending:HTTPMethod:params:headers:successCode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 33,
       "symbol": "Fire.API.init(useBaseURL:appending:HTTPMethod:params:headers:successCode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 42,
       "symbol": "Fire.API.stringValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 42,
       "symbol": "Fire.API.stringValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 42,
       "symbol": "Fire.API.stringValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 42,
       "symbol": "Fire.API.stringValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 50,
       "symbol": "Fire.API.request(forType:params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 50,
       "symbol": "Fire.API.request(forType:params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 50,
       "symbol": "Fire.API.request(forType:params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 50,
       "symbol": "Fire.API.request(forType:params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 68,
       "symbol": "Fire.API.requestJSON(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 68,
       "symbol": "Fire.API.requestJSON(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 68,
       "symbol": "Fire.API.requestJSON(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 68,
       "symbol": "Fire.API.requestJSON(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 83,
       "symbol": "Fire.API.requestData(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 83,
       "symbol": "Fire.API.requestData(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 83,
       "symbol": "Fire.API.requestData(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 83,
       "symbol": "Fire.API.requestData(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 98,
       "symbol": "Fire.API.requestString(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 98,
       "symbol": "Fire.API.requestString(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 98,
       "symbol": "Fire.API.requestString(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/API.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/API.swift",
       "line": 98,
       "symbol": "Fire.API.requestString(params:headers:timeout:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 35,
       "symbol": "Fire.FileDescriptor.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 35,
       "symbol": "Fire.FileDescriptor.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 35,
       "symbol": "Fire.FileDescriptor.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 35,
       "symbol": "Fire.FileDescriptor.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 36,
       "symbol": "Fire.FileDescriptor.nameWithExt",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 36,
       "symbol": "Fire.FileDescriptor.nameWithExt",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 36,
       "symbol": "Fire.FileDescriptor.nameWithExt",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 36,
       "symbol": "Fire.FileDescriptor.nameWithExt",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 37,
       "symbol": "Fire.FileDescriptor.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 37,
       "symbol": "Fire.FileDescriptor.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 37,
       "symbol": "Fire.FileDescriptor.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 37,
       "symbol": "Fire.FileDescriptor.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 38,
       "symbol": "Fire.FileDescriptor.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 38,
       "symbol": "Fire.FileDescriptor.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 38,
       "symbol": "Fire.FileDescriptor.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 38,
       "symbol": "Fire.FileDescriptor.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 39,
       "symbol": "Fire.FileDescriptor.mimeType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 39,
       "symbol": "Fire.FileDescriptor.mimeType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 39,
       "symbol": "Fire.FileDescriptor.mimeType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 39,
       "symbol": "Fire.FileDescriptor.mimeType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 45,
       "symbol": "Fire.FileDescriptor.init(name:path:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 45,
       "symbol": "Fire.FileDescriptor.init(name:path:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 45,
       "symbol": "Fire.FileDescriptor.init(name:path:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 45,
       "symbol": "Fire.FileDescriptor.init(name:path:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 57,
       "symbol": "Fire.FileDescriptor.init(name:url:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 57,
       "symbol": "Fire.FileDescriptor.init(name:url:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 57,
       "symbol": "Fire.FileDescriptor.init(name:url:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 57,
       "symbol": "Fire.FileDescriptor.init(name:url:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 65,
       "symbol": "Fire.FileDescriptor.init(name:data:ext:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 65,
       "symbol": "Fire.FileDescriptor.init(name:data:ext:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 65,
       "symbol": "Fire.FileDescriptor.init(name:data:ext:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/FileDescriptor.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/FileDescriptor.swift",
       "line": 65,
       "symbol": "Fire.FileDescriptor.init(name:data:ext:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 68,
       "symbol": "Fire.Defaults.defaultTimeout",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 68,
       "symbol": "Fire.Defaults.defaultTimeout",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 68,
       "symbol": "Fire.Defaults.defaultTimeout",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 68,
       "symbol": "Fire.Defaults.defaultTimeout",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 69,
       "symbol": "Fire.Defaults.defaultCachePolicy",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 69,
       "symbol": "Fire.Defaults.defaultCachePolicy",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 69,
       "symbol": "Fire.Defaults.defaultCachePolicy",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 69,
       "symbol": "Fire.Defaults.defaultCachePolicy",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 79,
       "symbol": "Fire.Defaults.baseURL",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 79,
       "symbol": "Fire.Defaults.baseURL",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 79,
       "symbol": "Fire.Defaults.baseURL",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 79,
       "symbol": "Fire.Defaults.baseURL",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 82,
       "symbol": "Fire.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 82,
       "symbol": "Fire.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 82,
       "symbol": "Fire.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 82,
       "symbol": "Fire.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 93,
       "symbol": "Fire.ignoreBaseURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 93,
       "symbol": "Fire.ignoreBaseURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 93,
       "symbol": "Fire.ignoreBaseURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 93,
       "symbol": "Fire.ignoreBaseURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 95,
       "symbol": "Fire.dispatch",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 95,
       "symbol": "Fire.dispatch",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 95,
       "symbol": "Fire.dispatch",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 95,
       "symbol": "Fire.dispatch",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 97,
       "symbol": "Fire.HTTPBodyRaw",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 97,
       "symbol": "Fire.HTTPBodyRaw",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 97,
       "symbol": "Fire.HTTPBodyRaw",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 97,
       "symbol": "Fire.HTTPBodyRaw",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 98,
       "symbol": "Fire.HTTPBodyRawIsJSON",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 98,
       "symbol": "Fire.HTTPBodyRawIsJSON",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 98,
       "symbol": "Fire.HTTPBodyRawIsJSON",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 98,
       "symbol": "Fire.HTTPBodyRawIsJSON",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 100,
       "symbol": "Fire.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 100,
       "symbol": "Fire.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 100,
       "symbol": "Fire.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 100,
       "symbol": "Fire.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 101,
       "symbol": "Fire.parameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 101,
       "symbol": "Fire.parameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 101,
       "symbol": "Fire.parameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 101,
       "symbol": "Fire.parameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 102,
       "symbol": "Fire.uploadFiles",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 102,
       "symbol": "Fire.uploadFiles",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 102,
       "symbol": "Fire.uploadFiles",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 102,
       "symbol": "Fire.uploadFiles",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 104,
       "symbol": "Fire.callback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 104,
       "symbol": "Fire.callback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 104,
       "symbol": "Fire.callback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 104,
       "symbol": "Fire.callback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 105,
       "symbol": "Fire.errorCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 105,
       "symbol": "Fire.errorCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 105,
       "symbol": "Fire.errorCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 105,
       "symbol": "Fire.errorCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 106,
       "symbol": "Fire.cancelCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 106,
       "symbol": "Fire.cancelCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 106,
       "symbol": "Fire.cancelCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 106,
       "symbol": "Fire.cancelCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 107,
       "symbol": "Fire.progressCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 107,
       "symbol": "Fire.progressCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 107,
       "symbol": "Fire.progressCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 107,
       "symbol": "Fire.progressCallback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 110,
       "symbol": "Fire.cachePolicy",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 110,
       "symbol": "Fire.cachePolicy",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 110,
       "symbol": "Fire.cachePolicy",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 110,
       "symbol": "Fire.cachePolicy",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 112,
       "symbol": "Fire.session",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 112,
       "symbol": "Fire.session",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 112,
       "symbol": "Fire.session",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 112,
       "symbol": "Fire.session",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 113,
       "symbol": "Fire.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 113,
       "symbol": "Fire.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 113,
       "symbol": "Fire.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 113,
       "symbol": "Fire.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 114,
       "symbol": "Fire.request",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 114,
       "symbol": "Fire.request",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 114,
       "symbol": "Fire.request",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 114,
       "symbol": "Fire.request",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 115,
       "symbol": "Fire.task",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 115,
       "symbol": "Fire.task",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 115,
       "symbol": "Fire.task",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 115,
       "symbol": "Fire.task",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 116,
       "symbol": "Fire.basicAuth",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 116,
       "symbol": "Fire.basicAuth",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 116,
       "symbol": "Fire.basicAuth",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 116,
       "symbol": "Fire.basicAuth",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 118,
       "symbol": "Fire.localCertDataArray",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 118,
       "symbol": "Fire.localCertDataArray",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 118,
       "symbol": "Fire.localCertDataArray",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 118,
       "symbol": "Fire.localCertDataArray",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 119,
       "symbol": "Fire.SSLValidateErrorCallBack",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 119,
       "symbol": "Fire.SSLValidateErrorCallBack",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 119,
       "symbol": "Fire.SSLValidateErrorCallBack",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 119,
       "symbol": "Fire.SSLValidateErrorCallBack",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 121,
       "symbol": "Fire.extraHTTPHeaders",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 121,
       "symbol": "Fire.extraHTTPHeaders",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 121,
       "symbol": "Fire.extraHTTPHeaders",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 121,
       "symbol": "Fire.extraHTTPHeaders",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 124,
       "symbol": "Fire.userAgent",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 124,
       "symbol": "Fire.userAgent",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 124,
       "symbol": "Fire.userAgent",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 124,
       "symbol": "Fire.userAgent",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 143,
       "symbol": "Fire.customUserAgent",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 143,
       "symbol": "Fire.customUserAgent",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 143,
       "symbol": "Fire.customUserAgent",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 143,
       "symbol": "Fire.customUserAgent",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 237,
       "symbol": "Fire.build(api:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 237,
       "symbol": "Fire.build(api:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 237,
       "symbol": "Fire.build(api:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 237,
       "symbol": "Fire.build(api:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 253,
       "symbol": "Fire.build(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 253,
       "symbol": "Fire.build(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 253,
       "symbol": "Fire.build(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 253,
       "symbol": "Fire.build(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 274,
       "symbol": "Fire.build(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 274,
       "symbol": "Fire.build(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 274,
       "symbol": "Fire.build(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 274,
       "symbol": "Fire.build(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 297,
       "symbol": "Fire.build(files:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 297,
       "symbol": "Fire.build(files:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 297,
       "symbol": "Fire.build(files:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 297,
       "symbol": "Fire.build(files:toURL:prependBaseURL:params:timeout:cachePolicy:dispatch:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 317,
       "symbol": "Fire.request(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 317,
       "symbol": "Fire.request(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 317,
       "symbol": "Fire.request(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 317,
       "symbol": "Fire.request(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 338,
       "symbol": "Fire.request(api:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 338,
       "symbol": "Fire.request(api:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 338,
       "symbol": "Fire.request(api:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 338,
       "symbol": "Fire.request(api:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 358,
       "symbol": "Fire.sync(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 358,
       "symbol": "Fire.sync(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 358,
       "symbol": "Fire.sync(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 358,
       "symbol": "Fire.sync(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 379,
       "symbol": "Fire.async(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 379,
       "symbol": "Fire.async(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 379,
       "symbol": "Fire.async(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 379,
       "symbol": "Fire.async(HTTPMethod:url:prependBaseURL:params:timeout:cachePolicy:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 402,
       "symbol": "Fire.upload(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 402,
       "symbol": "Fire.upload(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 402,
       "symbol": "Fire.upload(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 402,
       "symbol": "Fire.upload(fileURL:name:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 426,
       "symbol": "Fire.upload(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 426,
       "symbol": "Fire.upload(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 426,
       "symbol": "Fire.upload(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 426,
       "symbol": "Fire.upload(data:name:ext:mimeType:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 451,
       "symbol": "Fire.upload(files:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 451,
       "symbol": "Fire.upload(files:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 451,
       "symbol": "Fire.upload(files:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 451,
       "symbol": "Fire.upload(files:toURL:prependBaseURL:params:timeout:dispatch:progress:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 471,
       "symbol": "Fire.get(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 471,
       "symbol": "Fire.get(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 471,
       "symbol": "Fire.get(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 471,
       "symbol": "Fire.get(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 492,
       "symbol": "Fire.post(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 492,
       "symbol": "Fire.post(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 492,
       "symbol": "Fire.post(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 492,
       "symbol": "Fire.post(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 513,
       "symbol": "Fire.put(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 513,
       "symbol": "Fire.put(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 513,
       "symbol": "Fire.put(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 513,
       "symbol": "Fire.put(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 534,
       "symbol": "Fire.delete(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 534,
       "symbol": "Fire.delete(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 534,
       "symbol": "Fire.delete(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 534,
       "symbol": "Fire.delete(_:prependBaseURL:params:timeout:cachePolicy:dispatch:callback:onError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 557,
       "symbol": "Fire.setSSLPinning(localCertData:SSLValidateErrorCallBack:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 557,
       "symbol": "Fire.setSSLPinning(localCertData:SSLValidateErrorCallBack:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 557,
       "symbol": "Fire.setSSLPinning(localCertData:SSLValidateErrorCallBack:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 557,
       "symbol": "Fire.setSSLPinning(localCertData:SSLValidateErrorCallBack:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 564,
       "symbol": "Fire.addParam(_:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 564,
       "symbol": "Fire.addParam(_:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 564,
       "symbol": "Fire.addParam(_:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 564,
       "symbol": "Fire.addParam(_:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 573,
       "symbol": "Fire.addParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 573,
       "symbol": "Fire.addParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 573,
       "symbol": "Fire.addParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 573,
       "symbol": "Fire.addParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 587,
       "symbol": "Fire.setParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 587,
       "symbol": "Fire.setParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 587,
       "symbol": "Fire.setParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 587,
       "symbol": "Fire.setParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 593,
       "symbol": "Fire.addFile(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 593,
       "symbol": "Fire.addFile(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 593,
       "symbol": "Fire.addFile(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 593,
       "symbol": "Fire.addFile(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 604,
       "symbol": "Fire.addFiles(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 604,
       "symbol": "Fire.addFiles(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 604,
       "symbol": "Fire.addFiles(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 604,
       "symbol": "Fire.addFiles(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 615,
       "symbol": "Fire.setFiles(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 615,
       "symbol": "Fire.setFiles(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 615,
       "symbol": "Fire.setFiles(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 615,
       "symbol": "Fire.setFiles(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 621,
       "symbol": "Fire.onError(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 621,
       "symbol": "Fire.onError(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 621,
       "symbol": "Fire.onError(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 621,
       "symbol": "Fire.onError(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 627,
       "symbol": "Fire.onCancel(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 627,
       "symbol": "Fire.onCancel(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 627,
       "symbol": "Fire.onCancel(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 627,
       "symbol": "Fire.onCancel(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 679,
       "symbol": "Fire.cleanHTTPHeaders()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 679,
       "symbol": "Fire.cleanHTTPHeaders()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 679,
       "symbol": "Fire.cleanHTTPHeaders()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 679,
       "symbol": "Fire.cleanHTTPHeaders()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 684,
       "symbol": "Fire.setHTTPBody(raw:isJSON:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 684,
       "symbol": "Fire.setHTTPBody(raw:isJSON:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 684,
       "symbol": "Fire.setHTTPBody(raw:isJSON:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 684,
       "symbol": "Fire.setHTTPBody(raw:isJSON:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 701,
       "symbol": "Fire.setBasicAuth(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 701,
       "symbol": "Fire.setBasicAuth(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 701,
       "symbol": "Fire.setBasicAuth(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 701,
       "symbol": "Fire.setBasicAuth(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 707,
       "symbol": "Fire.setUserAgent(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 707,
       "symbol": "Fire.setUserAgent(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 707,
       "symbol": "Fire.setUserAgent(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 707,
       "symbol": "Fire.setUserAgent(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1073,
       "symbol": "Fire.urlSession(_:downloadTask:didFinishDownloadingTo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1073,
       "symbol": "Fire.urlSession(_:downloadTask:didFinishDownloadingTo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1073,
       "symbol": "Fire.urlSession(_:downloadTask:didFinishDownloadingTo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1073,
       "symbol": "Fire.urlSession(_:downloadTask:didFinishDownloadingTo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1075,
       "symbol": "Fire.urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1075,
       "symbol": "Fire.urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1075,
       "symbol": "Fire.urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1075,
       "symbol": "Fire.urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1082,
       "symbol": "Fire.urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1082,
       "symbol": "Fire.urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1082,
       "symbol": "Fire.urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Fire.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Fire.swift",
       "line": 1082,
       "symbol": "Fire.urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 33,
       "symbol": "Fire.Helper",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 33,
       "symbol": "Fire.Helper",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 33,
       "symbol": "Fire.Helper",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 33,
       "symbol": "Fire.Helper",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 35,
       "symbol": "Fire.Helper.appendURL(_:to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 35,
       "symbol": "Fire.Helper.appendURL(_:to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 35,
       "symbol": "Fire.Helper.appendURL(_:to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 35,
       "symbol": "Fire.Helper.appendURL(_:to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 53,
       "symbol": "Fire.Helper.buildParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 53,
       "symbol": "Fire.Helper.buildParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 53,
       "symbol": "Fire.Helper.buildParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 53,
       "symbol": "Fire.Helper.buildParams(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 63,
       "symbol": "Fire.Helper.queryComponents(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 63,
       "symbol": "Fire.Helper.queryComponents(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 63,
       "symbol": "Fire.Helper.queryComponents(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 63,
       "symbol": "Fire.Helper.queryComponents(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 84,
       "symbol": "Fire.Helper.escape(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 84,
       "symbol": "Fire.Helper.escape(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 84,
       "symbol": "Fire.Helper.escape(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 84,
       "symbol": "Fire.Helper.escape(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 112,
       "symbol": "String.unicodeCharactersDecodedString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 112,
       "symbol": "String.unicodeCharactersDecodedString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 112,
       "symbol": "String.unicodeCharactersDecodedString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 112,
       "symbol": "String.unicodeCharactersDecodedString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 131,
       "symbol": "Dictionary.pretty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 131,
       "symbol": "Dictionary.pretty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 131,
       "symbol": "Dictionary.pretty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 131,
       "symbol": "Dictionary.pretty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 137,
       "symbol": "Array.pretty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 137,
       "symbol": "Array.pretty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 137,
       "symbol": "Array.pretty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Helper.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Helper.swift",
       "line": 137,
       "symbol": "Array.pretty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 31,
       "symbol": "FireEmptyErrorCallback",
       "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 31,
       "symbol": "FireEmptyErrorCallback",
       "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 31,
       "symbol": "FireEmptyErrorCallback",
       "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 31,
       "symbol": "FireEmptyErrorCallback",
       "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 33,
       "symbol": "FireResponseProtocol",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 33,
       "symbol": "FireResponseProtocol",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 33,
       "symbol": "FireResponseProtocol",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 33,
       "symbol": "FireResponseProtocol",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 54,
       "symbol": "Fire.Keys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 54,
       "symbol": "Fire.Keys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 54,
       "symbol": "Fire.Keys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 54,
       "symbol": "Fire.Keys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 55,
       "symbol": "Fire.Keys.contentLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 55,
       "symbol": "Fire.Keys.contentLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 55,
       "symbol": "Fire.Keys.contentLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 55,
       "symbol": "Fire.Keys.contentLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 56,
       "symbol": "Fire.Keys.contentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 56,
       "symbol": "Fire.Keys.contentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 56,
       "symbol": "Fire.Keys.contentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 56,
       "symbol": "Fire.Keys.contentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 57,
       "symbol": "Fire.Keys.authorization",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 57,
       "symbol": "Fire.Keys.authorization",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 57,
       "symbol": "Fire.Keys.authorization",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 57,
       "symbol": "Fire.Keys.authorization",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 58,
       "symbol": "Fire.Keys.contentTypeData",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 58,
       "symbol": "Fire.Keys.contentTypeData",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 58,
       "symbol": "Fire.Keys.contentTypeData",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 58,
       "symbol": "Fire.Keys.contentTypeData",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 59,
       "symbol": "Fire.Keys.contentTypeJSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 59,
       "symbol": "Fire.Keys.contentTypeJSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 59,
       "symbol": "Fire.Keys.contentTypeJSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 59,
       "symbol": "Fire.Keys.contentTypeJSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 60,
       "symbol": "Fire.Keys.contentTypeMultipart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 60,
       "symbol": "Fire.Keys.contentTypeMultipart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 60,
       "symbol": "Fire.Keys.contentTypeMultipart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 60,
       "symbol": "Fire.Keys.contentTypeMultipart",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 65,
       "symbol": "Fire.DispatchPolicy",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 65,
       "symbol": "Fire.DispatchPolicy",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 65,
       "symbol": "Fire.DispatchPolicy",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 65,
       "symbol": "Fire.DispatchPolicy",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 66,
       "symbol": "Fire.DispatchPolicy.synchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 66,
       "symbol": "Fire.DispatchPolicy.synchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 66,
       "symbol": "Fire.DispatchPolicy.synchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 66,
       "symbol": "Fire.DispatchPolicy.synchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 67,
       "symbol": "Fire.DispatchPolicy.asynchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 67,
       "symbol": "Fire.DispatchPolicy.asynchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 67,
       "symbol": "Fire.DispatchPolicy.asynchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 67,
       "symbol": "Fire.DispatchPolicy.asynchronously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 70,
       "symbol": "Fire.ResponseType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 70,
       "symbol": "Fire.ResponseType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 70,
       "symbol": "Fire.ResponseType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 70,
       "symbol": "Fire.ResponseType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 71,
       "symbol": "Fire.ResponseType.JSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 71,
       "symbol": "Fire.ResponseType.JSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 71,
       "symbol": "Fire.ResponseType.JSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 71,
       "symbol": "Fire.ResponseType.JSON",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 72,
       "symbol": "Fire.ResponseType.string",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 72,
       "symbol": "Fire.ResponseType.string",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 72,
       "symbol": "Fire.ResponseType.string",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 72,
       "symbol": "Fire.ResponseType.string",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 73,
       "symbol": "Fire.ResponseType.data",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 73,
       "symbol": "Fire.ResponseType.data",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 73,
       "symbol": "Fire.ResponseType.data",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 73,
       "symbol": "Fire.ResponseType.data",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 78,
       "symbol": "Fire.HTTPMethod.GET",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 78,
       "symbol": "Fire.HTTPMethod.GET",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 78,
       "symbol": "Fire.HTTPMethod.GET",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 78,
       "symbol": "Fire.HTTPMethod.GET",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 79,
       "symbol": "Fire.HTTPMethod.POST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 79,
       "symbol": "Fire.HTTPMethod.POST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 79,
       "symbol": "Fire.HTTPMethod.POST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 79,
       "symbol": "Fire.HTTPMethod.POST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 80,
       "symbol": "Fire.HTTPMethod.PUT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 80,
       "symbol": "Fire.HTTPMethod.PUT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 80,
       "symbol": "Fire.HTTPMethod.PUT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 80,
       "symbol": "Fire.HTTPMethod.PUT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 81,
       "symbol": "Fire.HTTPMethod.DELETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 81,
       "symbol": "Fire.HTTPMethod.DELETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 81,
       "symbol": "Fire.HTTPMethod.DELETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 81,
       "symbol": "Fire.HTTPMethod.DELETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 82,
       "symbol": "Fire.HTTPMethod.HEAD",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 82,
       "symbol": "Fire.HTTPMethod.HEAD",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 82,
       "symbol": "Fire.HTTPMethod.HEAD",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 82,
       "symbol": "Fire.HTTPMethod.HEAD",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 83,
       "symbol": "Fire.HTTPMethod.OPTIONS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 83,
       "symbol": "Fire.HTTPMethod.OPTIONS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 83,
       "symbol": "Fire.HTTPMethod.OPTIONS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 83,
       "symbol": "Fire.HTTPMethod.OPTIONS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 84,
       "symbol": "Fire.HTTPMethod.PATCH",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 84,
       "symbol": "Fire.HTTPMethod.PATCH",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 84,
       "symbol": "Fire.HTTPMethod.PATCH",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Source/Values.swift",
+      "file": "/Users/Meniny/Projects/Github/Fire/Fire/Values.swift",
       "line": 84,
       "symbol": "Fire.HTTPMethod.PATCH",
       "symbol_kind": "source.lang.swift.decl.enumelement",

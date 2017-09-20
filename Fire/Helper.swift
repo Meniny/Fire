@@ -37,7 +37,8 @@ public extension Fire {
                 let sep = "/"
                 if base.hasSuffix(sep) {
                     if appending.hasPrefix(sep) {
-                        return base + appending.substring(from: appending.index(appending.startIndex, offsetBy: 1))
+                        return base + appending[appending.index(appending.startIndex, offsetBy: 1)..<appending.endIndex]
+//                        return base + appending.substring(from: appending.index(appending.startIndex, offsetBy: 1))
                     }
                     return base + appending
                 }

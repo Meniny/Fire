@@ -28,7 +28,7 @@ public typealias FireVoidCallback = Fire.VoidCallback
 public typealias FireErrorCallback = Fire.ErrorCallback
 public typealias FireProgressCallback = Fire.ProgressCallback
 
-public let FireEmptyErrorCallback: FireErrorCallback = { (error) in }
+public let FireEmptyErrorCallback: FireErrorCallback = { (_, _) in }
 
 public protocol FireResponseProtocol {}
 

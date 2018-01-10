@@ -163,7 +163,7 @@ open class Fire: NSObject, URLSessionDelegate {
         self.ignoreBaseURL = !prependBaseURL
         self.parameters = params
         let base = prependBaseURL ? FireDefaults.baseURL : nil
-        let appended = Fire.Helper.appendURL(Fire.Helper.escape(appending), to: base)
+        let appended = Fire.Helper.appendURL(appending, to: base)
         //Fire.Helper.escape(appended)
         self.url = appended
         self.method = method

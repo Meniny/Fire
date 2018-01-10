@@ -153,7 +153,7 @@ open class Fire: NSObject, URLSessionDelegate {
      
      - returns: a Fire object
      */
-    public init(url: String,
+    public init(url appending: String,
                 prependBaseURL: Bool = true,
                 method: Fire.HTTPMethod,
                 params: Fire.Params? = nil,
@@ -162,7 +162,10 @@ open class Fire: NSObject, URLSessionDelegate {
                 dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously) {
         self.ignoreBaseURL = !prependBaseURL
         self.parameters = params
-        self.url = Fire.Helper.escape(Fire.Helper.appendURL(url, to: prependBaseURL ? FireDefaults.baseURL : nil))
+        let base = prependBaseURL ? FireDefaults.baseURL : nil
+        let appended = Fire.Helper.appendURL(Fire.Helper.escape(appending), to: base)
+        //Fire.Helper.escape(appended)
+        self.url = appended
         self.method = method
         self.cachePolicy = cachePolicy
         self.dispatch = dispatch
@@ -866,7 +869,7 @@ open class Fire: NSObject, URLSessionDelegate {
             let f = ("Content-Type", "multipart/form-data; boundary=" + self.boundary)
             self.request?.setValue(f.1, forHTTPHeaderField: f.0)
         }
-        if self.HTTPBodyRaw != "" {
+        if !self.HTTPBodyRaw.isEmpty {
             let f = ("Content-Type", self.HTTPBodyRawIsJSON ? "application/json" : "text/plain;charset=UTF-8")
             self.request?.setValue(f.0, forHTTPHeaderField: f.1)
         }

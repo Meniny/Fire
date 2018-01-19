@@ -100,6 +100,8 @@
 		5CFBF5EB1EAC2D770013DEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CFBF5EF1EAC2D7E0013DEC2 /* Fire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Fire-Demo-cqxegecmhcqjtxexckxozcdkhyye/Build/Products/Debug-watchsimulator/Fire-watchOS/Fire.framework"; sourceTree = "<group>"; };
 		5E991301ACEF704349D43F7B /* Pods-watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS Extension/Pods-watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		64A633C22011FAAD00C61475 /* Fire.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fire.podspec; path = ../Fire.podspec; sourceTree = "<group>"; };
+		64A633C32011FAAD00C61475 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		66D27B8BAFD799C0C2F053D8 /* Pods-Fire-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fire-Demo/Pods-Fire-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		7FFD230AECDF92072D6E6F89 /* Pods_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		880579885174DEB9FBE0632B /* Pods-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS/Pods-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +179,8 @@
 		5CD2DAE91EA78EC3008B3C8A = {
 			isa = PBXGroup;
 			children = (
+				64A633C22011FAAD00C61475 /* Fire.podspec */,
+				64A633C32011FAAD00C61475 /* README.md */,
 				5CFBF5C91EAC2A590013DEC2 /* FireDemo.swift */,
 				5CFBF5691EAC29DA0013DEC2 /* iOS */,
 				5CFBF5A81EAC2A000013DEC2 /* tvOS */,

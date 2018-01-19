@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://ooo.0o0.ooo/2017/07/20/5970669291074.png" alt="Fire">
   <br/><a href="https://cocoapods.org/pods/Fire">
-  <img alt="Version" src="https://img.shields.io/badge/version-3.3.2-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/version-3.3.3-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
   <img alt="Swift" src="https://img.shields.io/badge/swift-4.0%2B-orange.svg">
@@ -87,7 +87,7 @@ f.setParams(["key": "value"])
 f.setFiles([file])
 f.setHTTPHeaders(["Accept": "application/json"])
 f.setBasicAuth("user", password: "pwd!@#")
-f.setHTTPBody(raw: json.rawValue)
+f.setHTTPBody(raw: Data)
 let certData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("FireDemo", ofType: "cer")!)!
 f.setSSLPinning(localCertData: certData) {
     print("Warning: Under Man-in-the-middle attack!!")
@@ -254,7 +254,7 @@ f.setParams(["key": "value"])
 f.setFiles([file])
 f.setHTTPHeaders(["Accept": "application/json"])
 f.setBasicAuth("user", password: "pwd!@#")
-f.setHTTPBody(raw: json.rawValue)
+f.setHTTPBody(raw: Data)
 let certData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("FireDemo", ofType: "cer")!)!
 f.setSSLPinning(localCertData: certData) {
     print("Warning: Under Man-in-the-middle attack!!")
@@ -423,7 +423,7 @@ f.setParams(["key": "value"])
 f.setFiles([file])
 f.setHTTPHeaders(["Accept": "application/json"])
 f.setBasicAuth("user", password: "pwd!@#")
-f.setHTTPBody(raw: json.rawValue)
+f.setHTTPBody(raw: Data)
 let certData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("FireDemo", ofType: "cer")!)!
 f.setSSLPinning(localCertData: certData) {
     print("Warning: Under Man-in-the-middle attack!!")

@@ -51,6 +51,8 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
 }
 
+private let kJSONStringHTTPContentType = "application/json"
+
 /// Fire is a delightful HTTP/HTTPS networking framework for Apple platforms under MIT license.
 ///
 /// It's pretty simple to use:
@@ -95,6 +97,7 @@ open class Fire: NSObject, URLSessionDelegate {
     open var dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously
     
     open var HTTPBodyRaw: Data?
+    open var HTTPBodyRawContentType: String?
     open var HTTPBodyRawIsJSON = false
     
     open let method: Fire.HTTPMethod
@@ -695,6 +698,14 @@ open class Fire: NSObject, URLSessionDelegate {
         return setHTTPBody(raw: rawString.data, isJSON: isJSON)
     }
     
+    @discardableResult
+    open func setHTTPBody(raw: Data, contentType: String) -> Fire {
+        self.HTTPBodyRaw = raw
+        self.HTTPBodyRawContentType = contentType
+        self.HTTPBodyRawIsJSON = (contentType == kJSONStringHTTPContentType)
+        return self
+    }
+    
     /// Progress callback of upload/download task
     ///
     /// - Parameter handler: callback
@@ -876,8 +887,9 @@ open class Fire: NSObject, URLSessionDelegate {
         }
         // if !self.HTTPBodyRaw.isEmpty {
         if self.HTTPBodyRaw != nil {
-            let f = ("Content-Type", self.HTTPBodyRawIsJSON ? "application/json" : "text/plain;charset=UTF-8")
-            self.request?.setValue(f.0, forHTTPHeaderField: f.1)
+            let contentType = self.HTTPBodyRawIsJSON ? "application/json" : (self.HTTPBodyRawContentType ?? "text/plain;charset=UTF-8")
+            let f = ("Content-Type", contentType)
+            self.request?.setValue(f.1, forHTTPHeaderField: f.0)
         }
         let agentKey = "User-Agent"
         if let agent = self.customUserAgent {

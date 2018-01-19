@@ -1,5 +1,5 @@
 PODS:
-  - Fire (3.3.1):
+  - Fire (3.3.2):
     - Jsonify
   - Jsonify (2.0.1)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Fire: bc62c6f3beee153572c87505e469832f6e9a085c
+  Fire: fa4a3355b86cd8e4a4cc2c9660a6a4e6b9db65a5
   Jsonify: b34fe1c42048170adccc5434c4253e773ea07682
 
 PODFILE CHECKSUM: 0e30886a6fffa42663ccd3790639414ca9630c72

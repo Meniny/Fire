@@ -94,7 +94,7 @@ open class Fire: NSObject, URLSessionDelegate {
     
     open var dispatch: Fire.Dispatch = Fire.Dispatch.asynchronously
     
-    open var HTTPBodyRaw = ""
+    open var HTTPBodyRaw: Data?
     open var HTTPBodyRawIsJSON = false
     
     open let method: Fire.HTTPMethod
@@ -684,10 +684,15 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open func setHTTPBody(raw: String, isJSON: Bool = false) -> Fire {
+    open func setHTTPBody(raw: Data, isJSON: Bool = false) -> Fire {
         self.HTTPBodyRaw = raw
         self.HTTPBodyRawIsJSON = isJSON
         return self
+    }
+    
+    @discardableResult
+    open func setHTTPBody(rawString: String, isJSON: Bool = false) -> Fire {
+        return setHTTPBody(raw: rawString.data, isJSON: isJSON)
     }
     
     /// Progress callback of upload/download task
@@ -869,7 +874,8 @@ open class Fire: NSObject, URLSessionDelegate {
             let f = ("Content-Type", "multipart/form-data; boundary=" + self.boundary)
             self.request?.setValue(f.1, forHTTPHeaderField: f.0)
         }
-        if !self.HTTPBodyRaw.isEmpty {
+        // if !self.HTTPBodyRaw.isEmpty {
+        if self.HTTPBodyRaw != nil {
             let f = ("Content-Type", self.HTTPBodyRawIsJSON ? "application/json" : "text/plain;charset=UTF-8")
             self.request?.setValue(f.0, forHTTPHeaderField: f.1)
         }
@@ -890,11 +896,11 @@ open class Fire: NSObject, URLSessionDelegate {
     
     fileprivate func buildBody() {
         let data = NSMutableData()
-        if !self.HTTPBodyRaw.isEmpty {
-            let d1 = self.HTTPBodyRaw
-            data.append(d1.data as Data)
+        if let d1 = self.HTTPBodyRaw {
+//            let d1 = self.HTTPBodyRaw
+            data.append(d1)
             if FireDefaults.DEBUG {
-                self.debugBody.append(d1)
+                self.debugBody.append("\(d1)")
             }
         } else if self.uploadFiles?.count > 0 {
             if self.method == .GET {

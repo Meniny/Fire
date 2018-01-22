@@ -2186,84 +2186,84 @@
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1094,
+      "line": 1102,
       "symbol": "Fire.urlSession(_:downloadTask:didFinishDownloadingTo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1094,
+      "line": 1102,
       "symbol": "Fire.urlSession(_:downloadTask:didFinishDownloadingTo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1094,
+      "line": 1102,
       "symbol": "Fire.urlSession(_:downloadTask:didFinishDownloadingTo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1094,
+      "line": 1102,
       "symbol": "Fire.urlSession(_:downloadTask:didFinishDownloadingTo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1096,
+      "line": 1104,
       "symbol": "Fire.urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1096,
+      "line": 1104,
       "symbol": "Fire.urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1096,
+      "line": 1104,
       "symbol": "Fire.urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1096,
+      "line": 1104,
       "symbol": "Fire.urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1103,
+      "line": 1111,
       "symbol": "Fire.urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1103,
+      "line": 1111,
       "symbol": "Fire.urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1103,
+      "line": 1111,
       "symbol": "Fire.urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/Fire/Fire/Fire.swift",
-      "line": 1103,
+      "line": 1111,
       "symbol": "Fire.urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

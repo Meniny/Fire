@@ -917,6 +917,8 @@ open class Fire: NSObject, URLSessionDelegate {
         } else { // has no raw body
             
             let hasFile = !(self.uploadFiles?.isEmpty ?? true)
+            let hasParams = !(self.parameters?.isEmpty ?? true)
+            
             if hasFile {
                 if self.method == .GET { // get request
                     let sep = "\n------------------------\n"
@@ -975,21 +977,14 @@ open class Fire: NSObject, URLSessionDelegate {
                     }
                 }
                 
-            }
-            
-            let hasParams = !(self.parameters?.isEmpty ?? true)
-            
-            if hasParams {
-                if self.method != .GET {
-                    let d7 = Fire.Helper.buildParams(self.parameters!)
-                    data.append(d7.data)
-                    if FireDefaults.DEBUG {
-                        self.debugBody.append(d7)
-                    }
+            } else if hasParams && self.method != .GET {
+                let d7 = Fire.Helper.buildParams(self.parameters!)
+                data.append(d7.data)
+                if FireDefaults.DEBUG {
+                    self.debugBody.append(d7)
                 }
-            }
-            
-            if !hasFile && !hasParams{
+                
+            } else {
                 if FireDefaults.DEBUG {
                     let d8 = String(describing: data as Data)
                     self.debugBody.append(d8.isEmpty ? "Data<\(data.length) Bytes>" : d8)

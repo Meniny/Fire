@@ -914,73 +914,86 @@ open class Fire: NSObject, URLSessionDelegate {
             if FireDefaults.DEBUG {
                 self.debugBody.append("\(d1)")
             }
-        } else if self.uploadFiles?.count > 0 {
-            if self.method == .GET {
-                let sep = "\n------------------------\n"
-                let m = "The remote server may not accept GET method with HTTP body. But Fire will send it anyway.\nIt looks like iOS 9 SDK has prevented sending http body in GET method."
-                print("\n" + sep + m + sep + "\n")
-            } else {
-                if let ps = self.parameters {
-                    for (key, value) in ps {
-                        let d1 = "--\(self.boundary)\r\n"
-                        let d2 = "Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n"
-                        let d3 = "\(value)\r\n"
-                        data.append(d1.data as Data)
-                        data.append(d2.data as Data)
-                        data.append(d3.data as Data)
-                        if FireDefaults.DEBUG {
-                            self.debugBody.append(d1 + d2 + d3)
+        } else { // has no raw body
+            
+            let hasFile = !(self.uploadFiles?.isEmpty ?? true)
+            if hasFile {
+                if self.method == .GET { // get request
+                    let sep = "\n------------------------\n"
+                    let m = "The remote server may not accept GET method with HTTP body. But Fire will send it anyway.\nIt looks like iOS 9 SDK has prevented sending http body in GET method."
+                    print("\n" + sep + m + sep + "\n")
+                } else { // not get request
+                    if let ps = self.parameters {
+                        for (key, value) in ps {
+                            let d1 = "--\(self.boundary)\r\n"
+                            let d2 = "Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n"
+                            let d3 = "\(value)\r\n"
+                            data.append(d1.data as Data)
+                            data.append(d2.data as Data)
+                            data.append(d3.data as Data)
+                            if FireDefaults.DEBUG {
+                                self.debugBody.append(d1 + d2 + d3)
+                            }
                         }
                     }
-                }
-                if let fs = self.uploadFiles {
-                    for file in fs {
-                        let d1 = "--\(self.boundary)\r\n"
-                        let d2 = "Content-Disposition: form-data; name=\"\(file.name)\"; filename=\"\(file.nameWithExt)\"\r\n"
-                        data.append(d1.data as Data)
-                        data.append(d2.data as Data)
-                        let d3 = "Content-Type: \(file.mimeType)\r\n\r\n"
-                        data.append(d3.data as Data)
-                        if FireDefaults.DEBUG {
-                            self.debugBody.append(d1 + d2 + d3)
-                        }
-                        if let fileurl = file.url {
-                            if let a = try? Data(contentsOf: fileurl as URL) {
-                                let d4 = "Data(" + fileurl.absoluteString + ")"
-                                data.append(a)
+                    if let fs = self.uploadFiles {
+                        for file in fs {
+                            let d1 = "--\(self.boundary)\r\n"
+                            let d2 = "Content-Disposition: form-data; name=\"\(file.name)\"; filename=\"\(file.nameWithExt)\"\r\n"
+                            data.append(d1.data as Data)
+                            data.append(d2.data as Data)
+                            let d3 = "Content-Type: \(file.mimeType)\r\n\r\n"
+                            data.append(d3.data as Data)
+                            if FireDefaults.DEBUG {
+                                self.debugBody.append(d1 + d2 + d3)
+                            }
+                            if let fileurl = file.url {
+                                if let a = try? Data(contentsOf: fileurl as URL) {
+                                    let d4 = "Data(" + fileurl.absoluteString + ")"
+                                    data.append(a)
+                                    let d5 = "\r\n"
+                                    data.append(d5.data as Data)
+                                    if FireDefaults.DEBUG {
+                                        self.debugBody.append(d4 + d5)
+                                    }
+                                }
+                            } else if let filedata = file.data {
+                                let d4 = "Data(file.data)"
+                                data.append(filedata)
                                 let d5 = "\r\n"
                                 data.append(d5.data as Data)
                                 if FireDefaults.DEBUG {
                                     self.debugBody.append(d4 + d5)
                                 }
                             }
-                        } else if let filedata = file.data {
-                            let d4 = "Data(file.data)"
-                            data.append(filedata)
-                            let d5 = "\r\n"
-                            data.append(d5.data as Data)
-                            if FireDefaults.DEBUG {
-                                self.debugBody.append(d4 + d5)
-                            }
                         }
                     }
+                    let d6 = "--\(self.boundary)--\r\n"
+                    data.append(d6.data as Data)
+                    if FireDefaults.DEBUG {
+                        self.debugBody.append(d6)
+                    }
                 }
-                let d6 = "--\(self.boundary)--\r\n"
-                data.append(d6.data as Data)
+                
+            }
+            
+            let hasParams = !(self.parameters?.isEmpty ?? true)
+            
+            if hasParams {
+                if self.method != .GET {
+                    let d7 = Fire.Helper.buildParams(self.parameters!)
+                    data.append(d7.data)
+                    if FireDefaults.DEBUG {
+                        self.debugBody.append(d7)
+                    }
+                }
+            }
+            
+            if !hasFile && !hasParams{
                 if FireDefaults.DEBUG {
-                    self.debugBody.append(d6)
+                    let d8 = String(describing: data as Data)
+                    self.debugBody.append(d8.isEmpty ? "Data<\(data.length) Bytes>" : d8)
                 }
-            }
-        } else if self.parameters?.count > 0 && self.method != .GET {
-            let d7 = Fire.Helper.buildParams(self.parameters!)
-            data.append(d7.data)
-            if FireDefaults.DEBUG {
-                self.debugBody.append(d7)
-            }
-        } else {
-            if FireDefaults.DEBUG {
-                let d8 = String(describing: data as Data)
-                self.debugBody.append(d8.isEmpty ? "Data<\(data.length) Bytes>" : d8)
             }
         }
         self.request?.httpBody = data as Data

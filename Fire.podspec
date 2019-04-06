@@ -11,6 +11,9 @@ Pod::Spec.new do |s|
   s.author           = { "Elias Abel" => "Meniny@qq.com" }
   s.source           = { :git => "https://github.com/Meniny/Fire.git", :tag => s.version.to_s }
   s.social_media_url = 'https://meniny.cn/'
+  
+  s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '5' }
+  s.swift_version         = "5"
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'

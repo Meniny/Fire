@@ -31,7 +31,7 @@ import Foundation
 public extension Fire {
     
     /// Simple file information structure for Fire to upload
-    public struct FileDescriptor: CustomStringConvertible {
+    struct FileDescriptor: CustomStringConvertible {
         public let name: String
         public let nameWithExt: String
         public let url: URL?
@@ -71,6 +71,6 @@ public extension Fire {
         }
     }
     
-    public typealias File = FileDescriptor
+    typealias File = FileDescriptor
 }
 

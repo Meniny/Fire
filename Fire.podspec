@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Fire"
-  s.version          = "3.3.4"
+  s.version          = "3.3.5"
   s.summary          = "A delightful HTTP/HTTPS networking framework written in Swift"
   s.description      = <<-DESC
                         Fire is a delightful HTTP/HTTPS networking framework for iOS/macOS/watchOS/tvOS platform written in Swift.

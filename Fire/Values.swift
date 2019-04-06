@@ -38,20 +38,20 @@ extension Data: FireResponseProtocol {}
 
 public extension Fire {
     
-    public typealias Params = [String: Any]
-    public typealias UserAgent = String
-    public typealias BasicAuth = (name: String, pwd: String)
-    public typealias HeaderFields = [String: String]
-    public typealias GenericResponseCallback = ((_ value: FireResponseProtocol?, _ response: HTTPURLResponse?, _ type: Fire.ResponseType) -> Void)
-    public typealias JOSNResponseCallback = ((_ json: Jsonify, _ response: HTTPURLResponse?) -> Void)
-    public typealias DataResponseCallback = ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)
-    public typealias URLResponseCallback = ((_ url: URL?, _ response: HTTPURLResponse?) -> Void)
-    public typealias StringResponseCallback = ((_ string: String?, _ response: HTTPURLResponse?) -> Void)
-    public typealias VoidCallback = (() -> Void)
-    public typealias ErrorCallback = (( _ response: HTTPURLResponse?, _ error: Error) -> Void)
-    public typealias ProgressCallback = ((_ completedBytes: Int64, _ totalBytes: Int64, _ progress: Float) -> Void)
+    typealias Params = [String: Any]
+    typealias UserAgent = String
+    typealias BasicAuth = (name: String, pwd: String)
+    typealias HeaderFields = [String: String]
+    typealias GenericResponseCallback = ((_ value: FireResponseProtocol?, _ response: HTTPURLResponse?, _ type: Fire.ResponseType) -> Void)
+    typealias JOSNResponseCallback = ((_ json: Jsonify, _ response: HTTPURLResponse?) -> Void)
+    typealias DataResponseCallback = ((_ data: Data?, _ response: HTTPURLResponse?) -> Void)
+    typealias URLResponseCallback = ((_ url: URL?, _ response: HTTPURLResponse?) -> Void)
+    typealias StringResponseCallback = ((_ string: String?, _ response: HTTPURLResponse?) -> Void)
+    typealias VoidCallback = (() -> Void)
+    typealias ErrorCallback = (( _ response: HTTPURLResponse?, _ error: Error) -> Void)
+    typealias ProgressCallback = ((_ completedBytes: Int64, _ totalBytes: Int64, _ progress: Float) -> Void)
     
-    public enum Keys: String {
+    enum Keys: String {
         case contentLength        = "Content-Length"
         case contentType          = "Content-Type"
         case authorization        = "Authorization"
@@ -61,20 +61,20 @@ public extension Fire {
     }
     
     /// To make a Fire request Synchronously or Asynchronously
-    public typealias Dispatch = Fire.DispatchPolicy
-    public enum DispatchPolicy: String {
+    typealias Dispatch = Fire.DispatchPolicy
+    enum DispatchPolicy: String {
         case synchronously = "Synchronously"
         case asynchronously = "Asynchronously"
     }
     
-    public enum ResponseType {
+    enum ResponseType {
         case JSON
         case string
         case data
     }
     
     /// HTTP method enum for Fire
-    public enum HTTPMethod: String {
+    enum HTTPMethod: String {
         case GET = "GET"
         case POST = "POST"
         case PUT = "PUT"
@@ -85,7 +85,7 @@ public extension Fire {
     }
     
     /// Response Status Codes
-    public enum ResponseStatus: Int {
+    enum ResponseStatus: Int {
         /**
          * 0
          */

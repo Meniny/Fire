@@ -100,7 +100,7 @@ open class Fire: NSObject, URLSessionDelegate {
     open var HTTPBodyRawContentType: String?
     open var HTTPBodyRawIsJSON = false
     
-    open let method: Fire.HTTPMethod
+    public let method: Fire.HTTPMethod
     open var parameters: Fire.Params?
     open var uploadFiles: [Fire.FileDescriptor]?
     
@@ -113,7 +113,7 @@ open class Fire: NSObject, URLSessionDelegate {
     open var cachePolicy: URLRequest.CachePolicy?
     
     open var session: URLSession?
-    open let url: String
+    public let url: String
     open var request: URLRequest?
     open var task: URLSessionTask?
     open var basicAuth: Fire.BasicAuth?
@@ -124,7 +124,7 @@ open class Fire: NSObject, URLSessionDelegate {
     open var extraHTTPHeaders: [(key: String, value: String)] = []
     
     // User-Agent Header; see http://tools.ietf.org/html/rfc7231#section-5.5.3
-    open let userAgent: String = {
+    public let userAgent: String = {
         if let info = Bundle.main.infoDictionary {
             let executable: Any = info[kCFBundleExecutableKey as String] ?? "Unknown"
             let bundle: Any = info[kCFBundleIdentifierKey as String] ?? "Unknown"
@@ -221,7 +221,7 @@ open class Fire: NSObject, URLSessionDelegate {
      - returns: a Fire object
      */
     @discardableResult
-    open static func build(
+    public static func build(
         HTTPMethod method: HTTPMethod,
         url: String,
         prependBaseURL: Bool = true,
@@ -240,7 +240,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func build(
+    public static func build(
         api: Fire.API,
         params: Fire.Params? = nil,
         timeout: TimeInterval = FireDefaults.defaultTimeout,
@@ -256,7 +256,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func build(
+    public static func build(
         fileURL: URL,
         name: String,
         mimeType: String,
@@ -277,7 +277,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func build(
+    public static func build(
         data: Data,
         name: String,
         ext: String,
@@ -300,7 +300,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func build(
+    public static func build(
         files: [Fire.FileDescriptor],
         toURL: String,
         prependBaseURL: Bool = true,
@@ -320,7 +320,7 @@ open class Fire: NSObject, URLSessionDelegate {
     // MARK: - Request
     
     @discardableResult
-    open static func request(
+    public static func request(
         HTTPMethod method: HTTPMethod,
         url: String,
         prependBaseURL: Bool = true,
@@ -341,7 +341,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func request(
+    public static func request(
         api: Fire.API,
         params: Fire.Params? = nil,
         timeout: TimeInterval = FireDefaults.defaultTimeout,
@@ -361,7 +361,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func sync(
+    public static func sync(
         HTTPMethod
         method: HTTPMethod,
         url: String,
@@ -382,7 +382,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func async(
+    public static func async(
         HTTPMethod method: HTTPMethod,
         url: String,
         prependBaseURL: Bool = true,
@@ -405,7 +405,7 @@ open class Fire: NSObject, URLSessionDelegate {
     
     // MARK: - UPLOAD
     @discardableResult
-    open static func upload(
+    public static func upload(
         fileURL: URL,
         name: String,
         mimeType: String,
@@ -429,7 +429,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func upload(
+    public static func upload(
         data: Data,
         name: String,
         ext: String,
@@ -454,7 +454,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func upload(
+    public static func upload(
         files: [Fire.FileDescriptor],
         toURL: String,
         prependBaseURL: Bool = true,
@@ -474,7 +474,7 @@ open class Fire: NSObject, URLSessionDelegate {
     
     // MARK: - GET POST PUT DELETE
     @discardableResult
-    open static func get(
+    public static func get(
         _ url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
@@ -495,7 +495,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func post(
+    public static func post(
         _ url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
@@ -516,7 +516,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func put(
+    public static func put(
         _ url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
@@ -537,7 +537,7 @@ open class Fire: NSObject, URLSessionDelegate {
     }
     
     @discardableResult
-    open static func delete(
+    public static func delete(
         _ url: String,
         prependBaseURL: Bool = true,
         params: Fire.Params? = nil,
@@ -1126,7 +1126,7 @@ public extension Fire {
      - parameter challenge:         NSURLAuthenticationChallenge
      - parameter completionHandler: the completionHandler closure
      */
-    @objc(URLSession:didReceiveChallenge:completionHandler:) public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    @objc(URLSession:didReceiveChallenge:completionHandler:) func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         if self.localCertDataArray.count == 0 {
             completionHandler(Foundation.URLSession.AuthChallengeDisposition.useCredential, nil)
             return

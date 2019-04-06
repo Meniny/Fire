@@ -18,7 +18,7 @@ public extension Fire {
     ///         // ...
     ///     })
     ///
-    public struct API: CustomStringConvertible {
+    struct API: CustomStringConvertible {
         
         public static var baseURL: String?
         

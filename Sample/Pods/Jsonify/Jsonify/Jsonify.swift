@@ -39,7 +39,7 @@ public struct Jsonify {
         do {
             if let data = string.data(using: encoding) {
                 let d = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
-                self.data = d as AnyObject!
+                self.data = d as AnyObject?
             }
         } catch let error as NSError {
             if Jsonify.DEBUG {
@@ -93,7 +93,7 @@ extension Jsonify {
         get {
             if let _ = self.data {
                 do {
-                    let d = try JSONSerialization.data(withJSONObject: self.data, options: .prettyPrinted)
+                    let d = try JSONSerialization.data(withJSONObject: self.data as Any, options: .prettyPrinted)
                     return NSString(data: d, encoding: String.Encoding.utf8.rawValue) as String?
                 } catch { return nil }
             }
@@ -269,7 +269,7 @@ extension Jsonify: CustomStringConvertible {
 }
 extension Jsonify: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: Any...) {
-        self.init(JSONdata: elements as AnyObject!)
+        self.init(JSONdata: elements as AnyObject?)
     }
 }
 

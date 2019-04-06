@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8F7165C8BA7B5FFCE4DC17467C8E5C5C"
+               BlueprintIdentifier = "521F96DD1FF8DAD8DD37AF48EF91B84C"
                BuildableName = "Jsonify.framework"
                BlueprintName = "Jsonify-iOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8F7165C8BA7B5FFCE4DC17467C8E5C5C"
+            BlueprintIdentifier = "521F96DD1FF8DAD8DD37AF48EF91B84C"
             BuildableName = "Jsonify.framework"
             BlueprintName = "Jsonify-iOS"
             ReferencedContainer = "container:Pods.xcodeproj">

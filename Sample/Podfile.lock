@@ -1,19 +1,23 @@
 PODS:
-  - Fire (3.3.4):
+  - Fire (3.3.5):
     - Jsonify
   - Jsonify (2.0.1)
 
 DEPENDENCIES:
   - Fire (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Jsonify
+
 EXTERNAL SOURCES:
   Fire:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Fire: 5805d421a147f8b229cd81f635e49929947789b7
+  Fire: 127c6188576b7d91bcaef1f68f44353d54e08f58
   Jsonify: b34fe1c42048170adccc5434c4253e773ea07682
 
 PODFILE CHECKSUM: 0e30886a6fffa42663ccd3790639414ca9630c72
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.7.0.beta.3

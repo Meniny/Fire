@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1EA83ABB11AE603C2C3F8D732BF69592"
+               BlueprintIdentifier = "711CC3535E38CFD6E7B40F1DEA407CC6"
                BuildableName = "Pods_watchOS.framework"
                BlueprintName = "Pods-watchOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1EA83ABB11AE603C2C3F8D732BF69592"
+            BlueprintIdentifier = "711CC3535E38CFD6E7B40F1DEA407CC6"
             BuildableName = "Pods_watchOS.framework"
             BlueprintName = "Pods-watchOS"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "189E8CA4142EB94FB474EA72D48A324E"
+               BlueprintIdentifier = "9A38CA7B118F3F5821C7E9B111CCF37C"
                BuildableName = "Fire.framework"
                BlueprintName = "Fire-macOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "189E8CA4142EB94FB474EA72D48A324E"
+            BlueprintIdentifier = "9A38CA7B118F3F5821C7E9B111CCF37C"
             BuildableName = "Fire.framework"
             BlueprintName = "Fire-macOS"
             ReferencedContainer = "container:Pods.xcodeproj">

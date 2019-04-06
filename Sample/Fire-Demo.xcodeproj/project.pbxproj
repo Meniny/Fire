@@ -290,7 +290,6 @@
 				5CFBF5661EAC29DA0013DEC2 /* Resources */,
 				5CFBF5A21EAC29EF0013DEC2 /* Embed Watch Content */,
 				B1DFCF1B9745BB555A97A473 /* [CP] Embed Pods Frameworks */,
-				82BBF2076EB59CB7A63529A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,7 +309,6 @@
 				5CFBF5A41EAC2A000013DEC2 /* Frameworks */,
 				5CFBF5A51EAC2A000013DEC2 /* Resources */,
 				1A7BF798559E67B73911E40D /* [CP] Embed Pods Frameworks */,
-				67D7CA2B5E76B869B1BA2095 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,7 +328,6 @@
 				5CFBF5B71EAC2A0B0013DEC2 /* Frameworks */,
 				5CFBF5B81EAC2A0B0013DEC2 /* Resources */,
 				28F5813B8F87794B886A13E1 /* [CP] Embed Pods Frameworks */,
-				521C489E5CEB03E12A1F13EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,7 +346,6 @@
 				5CFBF5E31EAC2D770013DEC2 /* Sources */,
 				5CFBF5E41EAC2D770013DEC2 /* Frameworks */,
 				5CFBF5E51EAC2D770013DEC2 /* Resources */,
-				7BB546DABB06D143EF127149 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,7 +454,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-tvOS/Pods-tvOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-tvOS/Pods-tvOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Fire-tvOS/Fire.framework",
 				"${BUILT_PRODUCTS_DIR}/Jsonify-tvOS/Jsonify.framework",
 			);
@@ -469,7 +465,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS/Pods-tvOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tvOS/Pods-tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1AA05DAB6093FAA394CB022E /* [CP] Check Pods Manifest.lock */ = {
@@ -496,7 +492,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-macOS/Pods-macOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-macOS/Pods-macOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Fire-macOS/Fire.framework",
 				"${BUILT_PRODUCTS_DIR}/Jsonify-macOS/Jsonify.framework",
 			);
@@ -507,22 +503,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-macOS/Pods-macOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		521C489E5CEB03E12A1F13EA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-macOS/Pods-macOS-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-macOS/Pods-macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6399D8C0A9621D59F3F4C231 /* [CP] Check Pods Manifest.lock */ = {
@@ -541,51 +522,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		67D7CA2B5E76B869B1BA2095 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS/Pods-tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BB546DABB06D143EF127149 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-watchOS/Pods-watchOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82BBF2076EB59CB7A63529A0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS/Pods-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		971C0F51643DF8B1679C817A /* [CP] Check Pods Manifest.lock */ = {
@@ -612,7 +548,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOS/Pods-iOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Fire-iOS/Fire.framework",
 				"${BUILT_PRODUCTS_DIR}/Jsonify-iOS/Jsonify.framework",
 			);
@@ -623,7 +559,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS/Pods-iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B45FEA933ED285F180291BF9 /* [CP] Check Pods Manifest.lock */ = {

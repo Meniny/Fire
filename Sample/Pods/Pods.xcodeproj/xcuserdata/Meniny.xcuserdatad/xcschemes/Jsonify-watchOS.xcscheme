@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "71089ABFB3E92F6CE8271CF7F5B6AE98"
+               BlueprintIdentifier = "D507E170C4BD270D12D2E08F66E6F79F"
                BuildableName = "Jsonify.framework"
                BlueprintName = "Jsonify-watchOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "71089ABFB3E92F6CE8271CF7F5B6AE98"
+            BlueprintIdentifier = "D507E170C4BD270D12D2E08F66E6F79F"
             BuildableName = "Jsonify.framework"
             BlueprintName = "Jsonify-watchOS"
             ReferencedContainer = "container:Pods.xcodeproj">

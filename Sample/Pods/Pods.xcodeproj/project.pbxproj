@@ -1491,6 +1491,36 @@
 			};
 			name = Release;
 		};
+		1CCCED3C24AB0D4D13A7F78E118F0DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 308BF1B99C586A86CA603312D5002528 /* Jsonify-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Jsonify;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1FF8247A29FFD1D686CEE85D8D4EF053 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F5F9511CDF28375B6D6C14E3CA74E /* Fire-macOS.xcconfig */;
@@ -1560,38 +1590,6 @@
 			};
 			name = Release;
 		};
-		26BB62215B244B73822E2FABED55F96D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 308BF1B99C586A86CA603312D5002528 /* Jsonify-tvOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = Jsonify;
-				PRODUCT_NAME = Jsonify;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		2A2D5F91743E96C51519D5BBA0565D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A27E43F47719E07AC4E173C88BD91FE9 /* Pods-tvOS.debug.xcconfig */;
@@ -1655,7 +1653,7 @@
 			};
 			name = Debug;
 		};
-		2C3749594C344662CB29DA9EBC6BA0C1 /* Release */ = {
+		34B87C70A488502090246405F2B2F9CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27398EE40E32BB466A61FCA618884D72 /* Jsonify-iOS.xcconfig */;
 			buildSettings = {
@@ -1679,8 +1677,37 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35FE273FA410219A9978B16205707193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 308BF1B99C586A86CA603312D5002528 /* Jsonify-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Jsonify;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1752,73 +1779,6 @@
 			};
 			name = Release;
 		};
-		3CB385543B0CD7CB688BD95397C7033E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3934852DE0EFA080E1AEB317DBF169FD /* Jsonify-macOS.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-macOS/Jsonify-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Jsonify-macOS/Jsonify-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Jsonify-macOS/Jsonify-macOS.modulemap";
-				PRODUCT_MODULE_NAME = Jsonify;
-				PRODUCT_NAME = Jsonify;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		469388E326BD1B159F30C7956DB0DFF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E9A559B1EA6032B3B300107D3F2DB49 /* Jsonify-watchOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS.modulemap";
-				PRODUCT_MODULE_NAME = Jsonify;
-				PRODUCT_NAME = Jsonify;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 		608A8D98428106DA6CFAF14AE8636749 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D3F13C09678855A3460E6E3A4EC0324 /* Pods-watchOS.release.xcconfig */;
@@ -1853,68 +1813,6 @@
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
-		};
-		67A328FB3F444A1F289FA8C3AFEA36D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27398EE40E32BB466A61FCA618884D72 /* Jsonify-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-iOS/Jsonify-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Jsonify-iOS/Jsonify-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Jsonify-iOS/Jsonify-iOS.modulemap";
-				PRODUCT_MODULE_NAME = Jsonify;
-				PRODUCT_NAME = Jsonify;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6C0DAC5BB8178DF21595CC3A1640FAF7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 308BF1B99C586A86CA603312D5002528 /* Jsonify-tvOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Jsonify-tvOS/Jsonify-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = Jsonify;
-				PRODUCT_NAME = Jsonify;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		70E4765292615AB6290EC577E538C80D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1981,6 +1879,39 @@
 			};
 			name = Debug;
 		};
+		7B65AD04F9E5A8B54CA7192B8A0FEF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3934852DE0EFA080E1AEB317DBF169FD /* Jsonify-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-macOS/Jsonify-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-macOS/Jsonify-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Jsonify-macOS/Jsonify-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Jsonify;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		81F4F9F69C02AC726255DBC75104D9CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 024B06ABD4207B534B8BFD0E349327F8 /* Fire-watchOS.xcconfig */;
@@ -2043,40 +1974,6 @@
 			};
 			name = Debug;
 		};
-		9170EFB48BBD02662FFA1468680D5DB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3934852DE0EFA080E1AEB317DBF169FD /* Jsonify-macOS.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-macOS/Jsonify-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Jsonify-macOS/Jsonify-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Jsonify-macOS/Jsonify-macOS.modulemap";
-				PRODUCT_MODULE_NAME = Jsonify;
-				PRODUCT_NAME = Jsonify;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		96F28775F8CD220BFC7A0AB20D996C7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3B2FC348A5964B1AB006725E0FFCBAA /* Pods-iOS.release.xcconfig */;
@@ -2111,7 +2008,7 @@
 			};
 			name = Release;
 		};
-		B53F37E14B97AD9517A57780313B78B3 /* Debug */ = {
+		A39A84184FDACA4D6FA94A99821752D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E9A559B1EA6032B3B300107D3F2DB49 /* Jsonify-watchOS.xcconfig */;
 			buildSettings = {
@@ -2135,13 +2032,13 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
-			name = Debug;
+			name = Release;
 		};
 		C9F2273DB276AF62B4277D78990656EE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2206,6 +2103,37 @@
 			};
 			name = Release;
 		};
+		CA185E090014ED60A9D3D9A35FE0B2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9A559B1EA6032B3B300107D3F2DB49 /* Jsonify-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-watchOS/Jsonify-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Jsonify;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
 		CA7ABFED2ABE3E30B0A41800B50046CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F77E18496ACDB9E3A9172215BD06732 /* Pods-iOS.debug.xcconfig */;
@@ -2234,6 +2162,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAE425D78D9885B2AFE65FEC257397F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3934852DE0EFA080E1AEB317DBF169FD /* Jsonify-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-macOS/Jsonify-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-macOS/Jsonify-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Jsonify-macOS/Jsonify-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Jsonify;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -2342,6 +2303,37 @@
 			};
 			name = Debug;
 		};
+		EB63440D4E82C02EF47C0454E8B55442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27398EE40E32BB466A61FCA618884D72 /* Jsonify-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify-iOS/Jsonify-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify-iOS/Jsonify-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jsonify-iOS/Jsonify-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Jsonify;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FF469DFFD61D105309FF93D220FF0834 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68F5ABE68DD4208685C707A4F992297E /* Fire-tvOS.xcconfig */;
@@ -2397,8 +2389,8 @@
 		376DF20909FDA5B2CBC6857815182592 /* Build configuration list for PBXNativeTarget "Jsonify-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9170EFB48BBD02662FFA1468680D5DB1 /* Debug */,
-				3CB385543B0CD7CB688BD95397C7033E /* Release */,
+				DAE425D78D9885B2AFE65FEC257397F5 /* Debug */,
+				7B65AD04F9E5A8B54CA7192B8A0FEF1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2442,8 +2434,8 @@
 		8C515AE51D6A524F692D57B4F9C940E7 /* Build configuration list for PBXNativeTarget "Jsonify-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B53F37E14B97AD9517A57780313B78B3 /* Debug */,
-				469388E326BD1B159F30C7956DB0DFF2 /* Release */,
+				CA185E090014ED60A9D3D9A35FE0B2C3 /* Debug */,
+				A39A84184FDACA4D6FA94A99821752D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2451,8 +2443,8 @@
 		9ED4B3E54DD0D3FAA06624DD8E7C090D /* Build configuration list for PBXNativeTarget "Jsonify-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67A328FB3F444A1F289FA8C3AFEA36D8 /* Debug */,
-				2C3749594C344662CB29DA9EBC6BA0C1 /* Release */,
+				34B87C70A488502090246405F2B2F9CF /* Debug */,
+				EB63440D4E82C02EF47C0454E8B55442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2460,8 +2452,8 @@
 		B5BEDE9D7081F2835CFFC327AF199D88 /* Build configuration list for PBXNativeTarget "Jsonify-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C0DAC5BB8178DF21595CC3A1640FAF7 /* Debug */,
-				26BB62215B244B73822E2FABED55F96D /* Release */,
+				1CCCED3C24AB0D4D13A7F78E118F0DD2 /* Debug */,
+				35FE273FA410219A9978B16205707193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

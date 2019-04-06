@@ -43,10 +43,18 @@ open class JsonifyModel: NSObject {
         self.mapValues()
     }
     
+    public convenience init(string: String, encoding: String.Encoding = String.Encoding.utf8) {
+        self.init(JSONString: string, encoding: encoding)
+    }
+    
     public init(JsonifyObject json: Jsonify) {
         self.JsonifyObject = json
         super.init()
         self.mapValues()
+    }
+    
+    public convenience init(json: Jsonify) {
+        self.init(JsonifyObject: json)
     }
     
     internal func mapValues() {
@@ -62,6 +70,8 @@ open class JsonifyModel: NSObject {
                     valueWillBeSet = json.intValue
                 case _ as Double:
                     valueWillBeSet = json.doubleValue
+                case _ as Float:
+                    valueWillBeSet = json.floatValue
                 case _ as Bool:
                     valueWillBeSet = json.boolValue
                 default:
@@ -81,6 +91,27 @@ open class JsonifyModel: NSObject {
     open var rawValue: String {
         get {
             return self.raw ?? ""
+        }
+    }
+    
+    open var jsonify: Jsonify? {
+        get {
+            if let json = JsonifyObject {
+                return json
+            }
+            guard let r = raw else {
+                return nil
+            }
+            return Jsonify(string: r)
+        }
+    }
+    
+    open var jsonifyValue: Jsonify {
+        get {
+            if let json = JsonifyObject {
+                return json
+            }
+            return Jsonify(string: rawValue)
         }
     }
 }
